@@ -1,0 +1,93 @@
+{
+    "id": "urn:ngsi-ld:StreetlightControlCabinet:streetlightcontrolcabinet:A45HGJK",
+    "type": "StreetlightControlCabinet",
+    "modelName": {
+        "type": "Property",
+        "value": "Simatic S7 1200"
+    },
+    "lastMeterReading": {
+        "type": "Property",
+        "value": 161237
+    },
+    "dateMeteringStarted": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2013-07-07T15:05:59.408Z"
+        }
+    },
+    "dateLastProgramming": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-07-08T16:04:30.201Z"
+        }
+    },
+    "refStreetlightGroup": {
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:StreetlightGroup:streetlightgroup:BG678",
+            "urn:ngsi-ld:StreetlightGroup:streetlightgroup:789"
+        ]
+    },
+    "compliantWith": {
+        "type": "Property",
+        "value": [
+            "IP54"
+        ]
+    },
+    "intensity": {
+        "type": "Property",
+        "value": {
+            "S": 14.4,
+            "R": 20.1,
+            "T": 22
+        }
+    },
+    "workingMode": {
+        "type": "Property",
+        "value": "automatic"
+    },
+    "energyConsumed": {
+        "type": "Property",
+        "value": 162456
+    },
+    "meterReadingPeriod": {
+        "type": "Property",
+        "value": 60
+    },
+    "cupboardMadeOf": {
+        "type": "Property",
+        "value": "plastic"
+    },
+    "brandName": {
+        "type": "Property",
+        "value": "Siemens"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -3.164485591715449,
+                40.62785133667262
+            ]
+        }
+    },
+    "reactivePower": {
+        "type": "Property",
+        "value": {
+            "S": 43.5,
+            "R": 45,
+            "T": 42
+        }
+    },
+    "maximumPowerAvailable": {
+        "type": "Property",
+        "value": 10
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
+}

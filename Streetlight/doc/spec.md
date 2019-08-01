@@ -18,18 +18,18 @@ The data model is defined as shown below:
 
 -   `source` : A sequence of characters giving the source of the entity data.
 
-    -   Attribute type: Text or URL
+    -   Attribute type: Property. Text or URL
     -   Optional
 
 -   `dataProvider` : Specifies the URL to information about the provider of this
     information
 
-    -   Attribute type: URL
+    -   Attribute type: Property. URL
     -   Optional
 
 -   `location` : Streetlight's location represented by a GeoJSON Point.
 
-    -   Attribute type: `geo:json`.
+    -   Attribute type: GeoProperty. `geo:json`.
     -   Normative References:
         [https://tools.ietf.org/html/draft-ietf-geojson-03](https://tools.ietf.org/html/draft-ietf-geojson-03)
     -   Mandatory if `address` is not present.
@@ -44,7 +44,7 @@ The data model is defined as shown below:
     can be used to group streetlights per responsible, district, neighbourhood,
     etc.
 
-    -   Attribute type: [Text](https://schema.org/Text)
+    -   Attribute type: Property. [Text](https://schema.org/Text)
     -   Normative References:
         [https://schema.org/areaServed](https://schema.org/areaServed)
     -   Optional
@@ -53,7 +53,7 @@ The data model is defined as shown below:
     from. Typically it will contain an identifier that will allow to obtain more
     information about such circuit.
 
-    -   Attribute type: [Text](http://schema.org/Text)
+    -   Attribute type: Property. [Text](http://schema.org/Text)
     -   Optional
 
 -   `refStreetlightModel` : Streetlight's model.
@@ -72,7 +72,7 @@ The data model is defined as shown below:
 
 -   `status` : The overall status of this street light.
 
-    -   Attribute type: [Text](http://schema.org/Text)
+    -   Attribute type: Relationship. [Text](http://schema.org/Text)
     -   Allowed values: one Of (`ok`, `defectiveLamp`, `columnIssue`,
         `brokenLantern`)
         -   Or any other value meaningful to the application and not covered by
@@ -85,7 +85,7 @@ The data model is defined as shown below:
 
 -   `powerState` : Streetlight's power state.
 
-    -   Attribute type: [Text](http://schema.org/Text)
+    -   Attribute type: Property. [Text](http://schema.org/Text)
     -   Attribute metadata:
         -   `timestamp` : Timestamp when the last update of the attribute
             happened.
@@ -95,7 +95,7 @@ The data model is defined as shown below:
 
 -   `refDevice` : Reference to the device(s) used to monitor this streetligth.
 
-    -   Attribute type: List of Reference to entity(ies) of type
+    -   Attribute type: Relationship. List of Reference to entity(ies) of type
         [Device](../../../Device/Device/doc/spec.md)
     -   Optional
 
@@ -106,8 +106,7 @@ The data model is defined as shown below:
         [StreetlightGroup](../../StreetlightGroup/doc/spec.md) entity.
     -   Optional
 
--   `dateLastLampChange` : Timestamp of the last change of lamp made. If `null`
-    it will mean that the lamp has never been changed.
+-   `dateLastLampChange` : Timestamp of the last change of lamp made.
 
     -   Attribute Type: [DateTime](http://schema.org/DateTime)
     -   Attribute metadata:
@@ -136,7 +135,7 @@ The data model is defined as shown below:
 
 -   `controllingMethod` : The method used to control this streetlight.
 
-    -   Attribute type: [Text](http://schema.org/Text)
+    -   Attribute type: Relationship. [Text](http://schema.org/Text)
     -   Allowed values: one Of (`group`, `individual`)
     -   Optional
 
@@ -165,7 +164,7 @@ The data model is defined as shown below:
 -   `annotations` : A field reserved for annotations (incidences, remarks,
     etc.).
 
-    -   Attribute type: List of [Text](https://schema.org/Text)
+    -   Attribute type: Property. List of [Text](https://schema.org/Text)
     -   Optional
 
 -   `locationCategory` : Category of the location where the streetlight is
@@ -181,7 +180,7 @@ The data model is defined as shown below:
     between streetlights. Another variation source of this property are
     wall-mounted streetlights.
 
-    -   Attribute type: [Number](https://schema.org/Number)
+    -   Attribute type: Property. [Number](https://schema.org/Number)
     -   Default unit: Meters.
     -   Optional
 
@@ -194,10 +193,9 @@ The data model is defined as shown below:
             -   Type: [DateTime](http://schema.org/DateTime)
     -   Optional
 
-**Note**: JSON Schemas only capture the NGSI simplified representation, this
-means that to test the JSON schema examples with a
-[FIWARE NGSI version 2](http://fiware.github.io/specifications/ngsiv2/stable)
-API implementation, you need to use the `keyValues` mode (`options=keyValues`).
+**Note**: JSON Schemas are intended to capture the data type and associated
+constraints of the different Attributes, regardless their final representation
+format in NGSI(v2, LD).
 
 ## Examples
 
@@ -274,6 +272,71 @@ Sample uses simplified representation for data consumers `?options=keyValues`
     "powerState": "off",
     "controllingMethod": "individual",
     "dateLastLampChange": "2016-07-08T08:02:21.753Z"
+}
+```
+
+### LD Example
+
+Sample uses the NGSI-LD representation
+
+```json
+{
+    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",
+    "type": "Streetlight",
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [-3.164485591715449, 40.62785133667262]
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Roundabouts city entrance"
+    },
+    "status": {
+        "type": "Property",
+        "value": "ok"
+    },
+    "refStreetlightGroup": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"
+    },
+    "refStreetlightModel": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"
+    },
+    "circuit": {
+        "type": "Property",
+        "value": "C-456-A467"
+    },
+    "lanternHeight": {
+        "type": "Property",
+        "value": 10
+    },
+    "locationCategory": {
+        "type": "Property",
+        "value": "centralIsland"
+    },
+    "powerState": {
+        "type": "Property",
+        "value": "off"
+    },
+    "controllingMethod": {
+        "type": "Property",
+        "value": "individual"
+    },
+    "dateLastLampChange": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-07-08T08:02:21.753Z"
+        }
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
 }
 ```
 

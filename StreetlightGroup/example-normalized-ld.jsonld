@@ -1,0 +1,77 @@
+{
+    "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",
+    "type": "StreetlightGroup",
+    "circuitId": {
+        "type": "Property",
+        "value": "C-456-A467"
+    },
+    "powerState": {
+        "type": "Property",
+        "value": "on"
+    },
+    "dateLastSwitchingOn": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-07-07T19:59:06.618Z"
+        }
+    },
+    "refStreetlightCabinetController": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34"
+    },
+    "dateLastSwitchingOff": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-07-07T07:59:06.618Z"
+        }
+    },
+    "switchingOnHours": {
+        "type": "Property",
+        "value": [
+            {
+                "hours": "Mo,Su 16:00-02:00",
+                "to": "--01-07",
+                "from": "--11-30",
+                "description": "Christmas"
+            }
+        ]
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "MultiLineString",
+            "coordinates": [
+                [
+                    [
+                        100.0,
+                        0.0
+                    ],
+                    [
+                        101.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        102.0,
+                        2.0
+                    ],
+                    [
+                        103.0,
+                        3.0
+                    ]
+                ]
+            ]
+        }
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "Calle Comercial Centro"
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://schema.lab.fiware.org/ld/context"
+    ]
+}
