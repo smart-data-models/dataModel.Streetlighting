@@ -1,18 +1,18 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/dataModels/specs/StreetLighting/Streetlight/schema.json",
+  "$id": "https://smart-data-models.github.io/data-models/specs/StreetLighting/Streetlight/schema.json",
   "title": " - Street Lighting / Streetlight model",
   "description": "A Street light model",
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://smart-data-models.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/dataModels/common-schema.json#/definitions/Location-Commons"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
     },
     {
-      "$ref": "https://smart-data-models.github.io/dataModels/common-schema.json#/definitions/PhysicalObject-Commons"
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/PhysicalObject-Commons"
     },
     {
       "properties": {
