@@ -342,10 +342,6 @@ Sample uses the NGSI-LD representation
     ]
 }
 ```
-
-## Test it with a real service
-
 ## Open Issues
 
--   Initially is not considered practical to monitor individual power
-    consumptions
+-   Initially is not considered practical to monitor individual power consumptions
