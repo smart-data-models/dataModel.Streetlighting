@@ -343,7 +343,3 @@ Sample uses the NGSI-LD representation
     ]
 }
 ```
-
-## Test it with a real service
-
-## Open issues
