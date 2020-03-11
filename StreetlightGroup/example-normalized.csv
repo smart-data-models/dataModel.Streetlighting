@@ -1,0 +1,2 @@
+"id", "type", "circuitId__value", "powerState__value", "dateLastSwitchingOn__value", "refStreetlightCabinetController__value", "dateLastSwitchingOff__value", "switchingOnHours__value", "location__value__coordinates", "areaServed__value"
+"streetlightgroup:mycity:A12", "StreetlightGroup", "C-456-A467", "on", "2016-07-07T19:59:06.618Z", "cabinetcontroller:CC45A34", "2016-07-07T07:59:06.618Z", "[{'hours': 'Mo,Su 16:00-02:00', 'to': '--01-07', 'from': '--11-30', 'description': 'Christmas'}]", "[[[100.0, 0.0], [101.0, 1.0]], [[102.0, 2.0], [103.0, 3.0]]]", "Calle Comercial Centro"

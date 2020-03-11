@@ -1,0 +1,2 @@
+"id", "type", "location__coordinates", "powerState", "areaServed", "circuitId", "dateLastSwitchingOn", "dateLastSwitchingOff", "refStreetlightCabinetController", "switchingOnHours"
+"streetlightgroup:mycity:A12", "StreetlightGroup", "[[[100.0, 0.0], [101.0, 1.0]], [[102.0, 2.0], [103.0, 3.0]]]", "on", "Calle Comercial Centro", "C-456-A467", "2016-07-07T19:59:06.618Z", "2016-07-07T07:59:06.618Z", "cabinetcontroller:CC45A34", "[{'from': '--11-30', 'to': '--01-07', 'hours': 'Mo,Su 16:00-02:00', 'description': 'Christmas'}]"
