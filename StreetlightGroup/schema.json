@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/StreetLighting/Streetlight/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
   "title": " - Street Lighting / Streetlight Group",
   "description": "A Street light group",
   "type": "object",

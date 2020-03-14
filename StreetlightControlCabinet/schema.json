@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://smart-data-models.github.io/data-models/specs/StreetLighting/StreetlightControlCabinet/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json",
   "title": " - Street Lighting / Streetlight Control Cabinet",
   "description": "A Streetlight control cabinet",
   "type": "object",
