@@ -141,41 +141,41 @@
           "type": "number",
           "minimum": 0
         },
-        "activePower": {
-          "type": "object",
-          "properties": {
-            "R": {
-              "type": "number",
-              "minimum": 0
-            },
-            "S": {
-              "type": "number",
-              "minimum": 0
-            },
-            "T": {
-              "type": "number",
-              "minimum": 0
-            }
-          }
+        "activePowerR": {
+          "type": "number",
+          "minimum": 0
         },
-        "reactivePower": {
-          "type": "object",
-          "properties": {
-            "R": {
-              "type": "number",
-              "minimum": 0
-            },
-            "S": {
-              "type": "number",
-              "minimum": 0
-            },
-            "T": {
-              "type": "number",
-              "minimum": 0
-            }
-          }
+        "activePowerS": {
+          "type": "number",
+          "minimum": 0
         },
-        "powerFactor": {
+        "activePowerT": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reactivePowerR": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reactivePowerS": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reactivePowerT": {
+          "type": "number",
+          "minimum": 0
+        },
+        "powerFactorR": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        },
+        "powerFactorS": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        },
+        "powerFactorT": {
           "type": "number",
           "minimum": -1,
           "maximum": 1
@@ -185,79 +185,59 @@
           "minimum": -1,
           "maximum": 1
         },
-        "intensity": {
-          "type": "object",
-          "properties": {
-            "R": {
-              "type": "number",
-              "minimum": 0
-            },
-            "S": {
-              "type": "number",
-              "minimum": 0
-            },
-            "T": {
-              "type": "number",
-              "minimum": 0
-            }
-          }
+        "intensityR": {
+          "type": "number",
+          "minimum": 0
         },
-        "voltage": {
-          "type": "object",
-          "properties": {
-            "R": {
-              "type": "number",
-              "minimum": 0
-            },
-            "S": {
-              "type": "number",
-              "minimum": 0
-            },
-            "T": {
-              "type": "number",
-              "minimum": 0
-            }
-          }
+        "intensityS": {
+          "type": "number",
+          "minimum": 0
         },
-        "thdrVoltage": {
-          "type": "object",
-          "properties": {
-            "R": {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            },
-            "S": {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            },
-            "T": {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            }
-          }
+        "intensityT": {
+          "type": "number",
+          "minimum": 0
         },
-        "thdrIntensity": {
-          "type": "object",
-          "properties": {
-            "R": {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            },
-            "S": {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            },
-            "T": {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            }
-          }
+        "voltageR": {
+          "type": "number",
+          "minimum": 0
+        },
+        "voltageS": {
+          "type": "number",
+          "minimum": 0
+        },
+        "voltageT": {
+          "type": "number",
+          "minimum": 0
+        },
+        "thdrVoltageR": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "thdrVoltageS": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "thdrVoltageT": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },       
+       "thdrIntensityR": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "thdrIntensityS": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "thdrIntensityT": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
         }
       }
     }
