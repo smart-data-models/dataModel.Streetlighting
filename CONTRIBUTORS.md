@@ -1,6 +1,6 @@
-# AUTHORS
-Every object has its AUTHORS.md file where these authors are credited
-This is a compilation list of all AUTHORS across different objects alphabetically ordered
+# CONTRIBUTORS
+Every object has its CONTRIBUTORS.md file where these authors are credited
+This is a compilation list of all CONTRIBUTORS across different objects alphabetically ordered
 
 ## [domain] data model [Object] 
 
