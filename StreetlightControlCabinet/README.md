@@ -240,23 +240,39 @@ The data model is defined as shown below:
             -   Type: [DateTime](http://schema.org/DateTime)
     -   Optional
 
--   `activePower` : Active power consumed per phase. The actual values will be
-    conveyed by subproperties which name will be equal to the name of each of
-    the alternating current phases, typically R, S, T.
+-   `activePowerR` : Active power consumed in R phase.
 
-    -   Attribute Type: [StructuredValue](http://schema.org/StructuredValue)
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
     -   Default unit: Kilowatts (kW)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
             happened.
             -   Type: [DateTime](http://schema.org/DateTime)
     -   Optional
+    
+-   `activePowerS` : Active power consumed in S phase.
 
--   `reactivePower` : Reactive power. The actual values will be conveyed by
-    subproperties which name will be equal to the name of each of the
-    alternating current phases, typically R, S, T.
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: Kilowatts (kW)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+    
+-   `activePowerT` : Active power consumed in T phase.
 
-    -   Attribute Type: [StructuredValue](http://schema.org/StructuredValue)
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: Kilowatts (kW)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional    
+
+-   `reactivePowerR` : Reactive power in R phase.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
     -   Default unit: KiloVolts-Ampere-Reactive (kVArh)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
@@ -264,7 +280,47 @@ The data model is defined as shown below:
             -   Type: [DateTime](http://schema.org/DateTime)
     -   Optional
 
--   `powerFactor` : Power factor.
+-   `reactivePowerS` : Reactive power in S phase.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: KiloVolts-Ampere-Reactive (kVArh)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+    
+-   `reactivePowerT` : Reactive power in T phase.
+ 
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: KiloVolts-Ampere-Reactive (kVArh)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+    
+-   `powerFactorR` : Power factor for phase R.
+
+    -   Attribute type: Property. [Number](http://schema.org/Number)
+    -   Allowed values: A number between -1 and 1.
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+
+-   `powerFactorS` : Power factor for phase S.
+
+    -   Attribute type: Property. [Number](http://schema.org/Number)
+    -   Allowed values: A number between -1 and 1.
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+    
+-   `powerFactorT` : Power factor for phase T.
 
     -   Attribute type: Property. [Number](http://schema.org/Number)
     -   Allowed values: A number between -1 and 1.
@@ -284,13 +340,9 @@ The data model is defined as shown below:
             -   Type: [DateTime](http://schema.org/DateTime)
     -   Optional
 
--   `intensity` : Electric intensity. The actual values will be conveyed by one
-    subproperty per alternating current phase. The name of each subproperty will
-    be equal to a phase mnemonic. The mnemonic used for denoting phases can vary
-    depending on world regions. In Europe they are typically named as `R`, `S`,
-    `T`.
+-   `intensityR` : Electric intensity in R phase.
 
-    -   Attribute Type: [StructuredValue](http://schema.org/StructuredValue)
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
     -   Default unit: Ampers (A)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
@@ -298,13 +350,49 @@ The data model is defined as shown below:
             -   Type: [DateTime](http://schema.org/DateTime)
     -   Optional
 
--   `voltage` : Electric tension. The actual values will be conveyed by one
-    subproperty alternating current phase. The name of each subproperty will be
-    equal to a phase mnemonic. The mnemonic used for denoting phases can vary
-    depending on world regions. In Europe they are typically named as `R`, `S`,
-    `T`.
+-   `intensityS` : Electric intensity in S phase.
 
-    -   Attribute Type: [StructuredValue](http://schema.org/StructuredValue)
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: Ampers (A)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+    
+-   `intensityT` : Electric intensity in T phase.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: Ampers (A)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+
+-   `voltageR` : Electric tension in phase R.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: Volts (V)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+ 
+-   `voltageS` : Electric tension in phase S.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Default unit: Volts (V)
+    -   Attribute metadata:
+        -   `timestamp`: Timestamp when the last update of the attribute
+            happened.
+            -   Type: [DateTime](http://schema.org/DateTime)
+    -   Optional
+    
+-   `voltageT` : Electric tension in phase T.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
     -   Default unit: Volts (V)
     -   Attribute metadata:
         -   `timestamp`: Timestamp when the last update of the attribute
@@ -312,21 +400,39 @@ The data model is defined as shown below:
             -   Type: [DateTime](http://schema.org/DateTime)
     -   Optional
 
--   `thdrVoltage` : Total harmonic distortion (R) of The name of each
-    subproperty will be equal to a phase mnemonic. The mnemonic used for
-    denoting phases can vary depending on world regions. In Europe they are
-    typically named as `R`, `S`, `T`.
+-   `thdrVoltageR` : Total harmonic distortion (R) of voltage in phase R.
 
-    -   Attribute Type: [StructuredValue](http://schema.org/StructuredValue)
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Allowed values: A number between 0 and 1.
+    -   Optional
+    
+-   `thdrVoltageS` : Total harmonic distortion (S) of voltage in phase S.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Allowed values: A number between 0 and 1.
+    -   Optional
+    
+-   `thdrVoltageT` : Total harmonic distortion (T) of voltage in phase T.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
     -   Allowed values: A number between 0 and 1.
     -   Optional
 
--   `thdrIntensity` : Total harmonic distortion (R) of intensity. The name of
-    each subproperty will be equal to a phase mnemonic. The mnemonic used for
-    denoting phases can vary depending on world regions. In Europe they are
-    typically named as `R`, `S`, `T`.
+-   `thdrIntensityR` : Total harmonic distortion (R) of intensity in phase R.
 
-    -   Attribute Type: [StructuredValue](http://schema.org/StructuredValue)
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Allowed values: A number between 0 and 1.
+    -   Optional
+    
+-   `thdrIntensityS` : Total harmonic distortion (S) of intensity in phase S.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
+    -   Allowed values: A number between 0 and 1.
+    -   Optional
+    
+-   `thdrIntensityT` : Total harmonic distortion (T) of intensity in phase T.
+
+    -   Attribute Type: Property. [Number](http://schema.org/Number)
     -   Allowed values: A number between 0 and 1.
     -   Optional
 
@@ -365,12 +471,17 @@ Normalized NGSI response
     "compliantWith": {
         "value": ["IP54"]
     },
-    "intensity": {
-        "value": {
-            "S": 14.4,
-            "R": 20.1,
-            "T": 22
-        }
+    "intensityR": {
+        "type": "Number",
+        "value": 20.1
+    },
+    "intensityS": {
+        "type": "Number",
+        "value": 14.4
+    },
+    "intensityT": {
+        "type": "Number",
+        "value": 22
     },
     "workingMode": {
         "value": "automatic"
@@ -394,12 +505,17 @@ Normalized NGSI response
             "coordinates": [-3.164485591715449, 40.62785133667262]
         }
     },
-    "reactivePower": {
-        "value": {
-            "S": 43.5,
-            "R": 45,
-            "T": 42
-        }
+    "reactivePowerR": {
+        "type": "Number",
+        "value": 45
+    },
+    "reactivePowerS": {
+        "type": "Number",
+        "value": 43.5
+    },
+    "reactivePowerT": {
+        "type": "Number",
+        "value": 42
     },
     "maximumPowerAvailable": {
         "value": 10
@@ -430,16 +546,12 @@ Sample uses simplified representation for data consumers `?options=keyValues`
     "dateMeteringStarted": "2013-07-07T15:05:59.408Z",
     "lastMeterReading": 161237,
     "meterReadingPeriod": 60,
-    "intensity": {
-        "R": 20.1,
-        "S": 14.4,
-        "T": 22
-    },
-    "reactivePower": {
-        "R": 45,
-        "S": 43.5,
-        "T": 42
-    },
+    "intensityR": 20.1,
+    "intensityS": 14.4,
+    "intensityT": 22,
+    "reactivePowerR": 45,
+    "reactivePowerS": 43.5,
+    "reactivePowerT": 42,
     "workingMode": "automatic"
 }
 ```
@@ -485,14 +597,18 @@ Sample uses the NGSI-LD representation
         "type": "Property",
         "value": ["IP54"]
     },
-    "intensity": {
+    "intensityR": {
         "type": "Property",
-        "value": {
-            "S": 14.4,
-            "R": 20.1,
-            "T": 22
-        }
+        "value": 20.1
     },
+    "intensityS": {
+        "type": "Property",
+        "value": 14.4
+    },
+    "intensityT": {
+        "type": "Property",
+        "value": 22
+    },    
     "workingMode": {
         "type": "Property",
         "value": "automatic"
@@ -520,14 +636,18 @@ Sample uses the NGSI-LD representation
             "coordinates": [-3.164485591715449, 40.62785133667262]
         }
     },
-    "reactivePower": {
-        "type": "Property",
-        "value": {
-            "S": 43.5,
-            "R": 45,
-            "T": 42
-        }
+    "reactivePowerR": {
+        "type": "Property", 
+        "value": 45
     },
+    "reactivePowerS": {
+        "type": "Property",
+        "value": 43.5
+    },
+    "reactivePowerT": {
+        "type": "Property",
+        "value": 42
+    },   
     "maximumPowerAvailable": {
         "type": "Property",
         "value": 10
