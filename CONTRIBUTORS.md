@@ -6,7 +6,6 @@ This is a compilation list of all CONTRIBUTORS across different objects alphabet
 
 ## List of authors
 ___
-- surname1; name1; mail@example.com; organization1
-- surname2; name2; mail@example.com; organization2
-- surnameN; nameN; mail@example.com; organizationN
+- Galán; Fermín; fermin.galanmarquez@telefonica.com; Telefónica
+- Peralta; Javier; franciscojavier.peraltalopez@telefonica.com; Telefónica
 ____
