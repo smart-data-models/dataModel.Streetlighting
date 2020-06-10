@@ -1,10 +1,9 @@
 # CONTRIBUTORS
-Every object has its CONTRIBUTORS.md file where these authors are credited
 This is a compilation list of all CONTRIBUTORS across different objects alphabetically ordered
 
-## [domain] data model [Object] 
+## Smart Cities data model StreetLight
 
-## List of authors
+## List of contributors
 ___
 - Galán; Fermín; fermin.galanmarquez@telefonica.com; Telefónica
 - Peralta; Javier; franciscojavier.peraltalopez@telefonica.com; Telefónica
