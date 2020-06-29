@@ -7,7 +7,7 @@ StreetlightControlCabinet:
     - workingMode
   allOf:
     - $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
   description: A Streetlight control cabinet
   properties:
@@ -28,17 +28,17 @@ StreetlightControlCabinet:
       description: ''
     address:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
     alternateName:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/alternateName
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
     annotations:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/annotations
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/annotations
 
     areaServed:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/areaServed
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
     brandName:
       x-ngsi:
         type: Property
@@ -47,7 +47,7 @@ StreetlightControlCabinet:
       description: ''
     color:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/color
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/color
 
     compliantWith:
       x-ngsi:
@@ -96,7 +96,7 @@ StreetlightControlCabinet:
       format: date-time
     description:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
     energyConsumed:
       x-ngsi:
         type: Property
@@ -151,7 +151,7 @@ StreetlightControlCabinet:
       description: ''
     location:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
     manufacturerName:
       x-ngsi:
         type: Property
@@ -176,7 +176,7 @@ StreetlightControlCabinet:
       description: ''
     name:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
     nextActuationDeadline:
       x-ngsi:
         type: Property
@@ -185,7 +185,7 @@ StreetlightControlCabinet:
       description: ''
       format: date-time
     owner:
-      $ref: https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/owner
+      $ref: https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     powerFactorR:
       x-ngsi:
         type: Property
@@ -247,7 +247,7 @@ StreetlightControlCabinet:
       description: ''
     source:
       $ref: >-
-        https://raw.githubusercontent.com/smart-data-models/data-models/master/fiware-terms.yaml#/source
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
     thdrIntensityR:
       x-ngsi:
         type: Property
