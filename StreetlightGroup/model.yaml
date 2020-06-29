@@ -1,0 +1,140 @@
+---
+# Copyright (c) 2020 Contributors to Smart-Data-Models
+# see https://github.com/smart-data-models/dataModel.Streetlighting
+
+Streetlight:
+  required:
+    - id
+    - type
+    - location
+  allOf:
+    - $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
+  type: object
+  description: A Street light group
+  properties:
+    activeProgramId:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    address:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
+    alternateName:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
+    annotations:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/annotations
+
+    areaServed:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
+    color:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/color
+
+    dataProvider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dateLastSwitchingOff:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateLastSwitchingOn:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    description:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
+    illuminanceLevel:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    image:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/URL'
+      type: string
+      description: ''
+      format: uri
+    location:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
+    name:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
+    owner:
+      $ref: https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+    powerState:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    refStreetlight:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items: *ref_0
+    source:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
+    switchingMode:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - night-ON
+          - night-OFF
+          - night-LOW
+          - always-ON
+          - day-ON
+          - day-OFF
+          - day-LOW
+    switchingOnHours:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: object
+        properties:
+          from:
+            type: string
+            oneOf:
+              - format: date
+              - &ref_1
+                type: string
+                pattern: >-
+                  ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$
+          to:
+            type: string
+            oneOf:
+              - format: date
+              - *ref_1
+          hours:
+            type: string
+          description:
+            type: string
+        required:
+          - from
+          - to
+          - hours

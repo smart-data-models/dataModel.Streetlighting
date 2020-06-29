@@ -1,0 +1,134 @@
+---
+# Copyright (c) 2020 Contributors to Smart-Data-Models
+# see https://github.com/smart-data-models/dataModel.Streetlighting
+
+Streetlight:
+  required:
+    - id
+    - type
+    - location
+    - status
+  allOf:
+    - $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
+  type: object
+  description: A Street light
+  properties:
+    address:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/address
+    alternateName:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/alternateName
+    annotations:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/annotations
+
+    areaServed:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/areaServed
+    circuit:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    color:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/color
+
+    controllingMethod:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dataProvider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dateLastLampChange:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateLastSwitchingOff:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateLastSwitchingOn:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    dateServiceStarted:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/DateTime'
+      type: string
+      description: ''
+      format: date-time
+    description:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/description
+    illuminanceLevel:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    image:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/URL'
+      type: string
+      description: ''
+      format: uri
+    laternHeight:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    location:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
+    locationCategory:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    name:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
+    owner:
+      $ref: https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+    powerState:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    refDevice:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items: *ref_0
+    source:
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
+    status:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
