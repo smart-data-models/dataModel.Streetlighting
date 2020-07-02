@@ -90,12 +90,8 @@ Streetlight:
       type: number
       description: ''
     image:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/URL'
-      type: string
-      description: ''
-      format: uri
+      $ref: >-
+        https://smart-data-models.github.io/data-models/schema.org.yaml#/image
     laternHeight:
       x-ngsi:
         type: Property
