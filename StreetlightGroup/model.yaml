@@ -2,7 +2,7 @@
 # Copyright (c) 2020 Contributors to Smart-Data-Models
 # see https://github.com/smart-data-models/dataModel.Streetlighting
 
-Streetlight:
+StreetlightGroup:
   required:
     - id
     - type
