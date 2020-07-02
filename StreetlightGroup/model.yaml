@@ -11,7 +11,8 @@ Streetlight:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description: A Street light group
+  description: |
+    An entity of type StreetlightGroup represents a group of streetlights. They might be controlled together by the same automated system (cabinet controller).
   properties:
     activeProgramId:
       x-ngsi:

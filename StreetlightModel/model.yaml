@@ -11,7 +11,9 @@ StreetlightModel:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description: A Street light model
+  description: |
+    It represents a model of streetlight composed by a specific supporting structure model, a lantern model and a lamp model.
+    A streetlight instance will be based on a certain streetlight model.
   properties:
     address:
       $ref: >-
