@@ -224,7 +224,7 @@ StreetlightControlCabinet:
       description: ''
     refDevice:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: ''
       items: &ref_0
@@ -238,7 +238,7 @@ StreetlightControlCabinet:
 
     refStreetlightGroup:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: ''
       items: *ref_0
