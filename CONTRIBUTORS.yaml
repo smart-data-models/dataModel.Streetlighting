@@ -1,65 +1,65 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
 -
- name: Álvaro
- surname:  Arranz
- mail: None
- organization: @Ficodes
- project: 
- comments: 
--
  name: Alberto
- surname:  Abella
- mail: None
- organization: fiware
+ surname: Abella
+ mail: alberto.abella@fiware.org
+ organization: Fiware
  project: 
  comments: 
 -
- name: Dmitrii
- surname:  Demin
- mail: mail@demin.co
- organization: None
- project: 
- comments: 
--
- name: Galán
- surname: 
- mail:  Fermín
- organization:  fermin.galanmarquez@telefonica.com
- project:  Telefónica
- comments: 
--
- name: Jason
- surname:  Fox
- mail: None
- organization: @Fiware
+ name: Álvaro
+ surname: Arranz
+ mail:
+ organization: Ficodes
  project: 
  comments: 
 -
  name: Jose M.
- surname:  Cantera
+ surname: Cantera
  mail: jmcanterafonseca4github@gmail.com
  organization: CanteraFonseca.EU
  project: 
- comments: 
--
- name: Joud
- surname: 
- mail: None
- organization: None
- project: 
- comments: 
+ comments:
 -
  name: Mathias
- surname:  Colpaert
+ surname: Colpaert
  mail: colpaert.mathias@gmail.com
- organization: None
+ organization:
+ project: 
+ comments:  
+-
+ name: Dmitrii
+ surname: Demin
+ mail: mail@demin.co
+ organization: 
  project: 
  comments: 
 -
- name: Peralta
- surname: 
- mail:  Javier
- organization:  franciscojavier.peraltalopez@telefonica.com
- project:  Telefónica
+ name: Jason
+ surname: Fox
+ mail:
+ organization: Fiware
+ project: 
  comments: 
+-
+ name: Fermín
+ surname: Galán
+ mail: fermin.galanmarquez@telefonica.com
+ organization: Telefónica
+ project:
+ comments:
+-
+ name: Javier
+ surname: Peralta
+ mail:  franciscojavier.peraltalopez@telefonica.com
+ organization: Telefónica
+ project:
+ comments:  
+-
+ name: Joud
+ surname: Sayed Issa
+ mail: joudsayedissa@gmail.com
+ organization: 
+ project: 
+ comments:
