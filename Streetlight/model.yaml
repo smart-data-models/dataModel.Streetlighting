@@ -48,11 +48,8 @@ Streetlight:
       type: string
       description: 'The method used to control this streetlight.'
     dataProvider:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: 'Specifies the URL to information about the provider of this information'
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     dateLastLampChange:
       x-ngsi:
         type: Property
@@ -110,7 +107,8 @@ Streetlight:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
     owner:
-      $ref: https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     powerState:
       x-ngsi:
         type: Property
@@ -121,8 +119,15 @@ Streetlight:
       x-ngsi:
         type: Property
       type: array
-      description: 'Reference to the device(s) used to monitor this streetligth.'
-      items: *ref_0
+      description: ''
+      items:  &ref_0
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
     source:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source

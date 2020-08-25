@@ -73,11 +73,8 @@ StreetlightControlCabinet:
       type: string
       description: ' Material the cabinet's cupboard is made of.'
     dataProvider:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: 'Specifies the URL to information about the provider of this information'
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
     dateLastProgramming:
       x-ngsi:
         type: Property
@@ -224,7 +221,7 @@ StreetlightControlCabinet:
       description: 'Reactive power in T phase.'
     refDevice:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: ''
       items: &ref_0
@@ -238,7 +235,7 @@ StreetlightControlCabinet:
 
     refStreetlightGroup:
       x-ngsi:
-        type: Property
+        type: Relationship
       type: array
       description: 'Streetlight group(s) controlled.'
       items: *ref_0
