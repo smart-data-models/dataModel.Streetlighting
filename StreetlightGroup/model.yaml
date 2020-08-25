@@ -19,7 +19,7 @@ StreetlightGroup:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Identifier of the active program for this streetlight group.'
     address:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/address
@@ -45,14 +45,14 @@ StreetlightGroup:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'Timestamp of the last switching off.'
       format: date-time
     dateLastSwitchingOn:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'Timestamp of the last switching on.'
       format: date-time
     description:
       $ref: >-
@@ -61,7 +61,7 @@ StreetlightGroup:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Relative illuminance level setting for the group.'
     image:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/image
@@ -79,7 +79,7 @@ StreetlightGroup:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Streetlight group's power state.'
     refStreetlight:
       x-ngsi:
         type: Relationship
@@ -100,7 +100,7 @@ StreetlightGroup:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'Switching mode.'
       items:
         type: string
         enum:
@@ -115,7 +115,7 @@ StreetlightGroup:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'Switching on hours. It is used normally to set special schedules for certain dates.'
       items:
         type: object
         properties:

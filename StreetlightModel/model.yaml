@@ -32,7 +32,7 @@ StreetlightModel:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'Type of asset which implements the street light.'
       items:
         type: string
         enum:
@@ -52,47 +52,47 @@ StreetlightModel:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Color rendering index of the lamp.'
     colorTemperature:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Correlated color temperature of the lamp.'
     columnBrandName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Name of the column's brand.'
     columnColor:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Column's painting color.'
     columnMadeOf:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Material column is made of.'
     columnManufacturerName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Name of the column's manufacturer.'
     columnModelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Name of the column's model.'
     compliantWith:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'A list of standards to which this streetlight model is compliant with.'
       items:
         type: string
     dataProvider:
@@ -109,54 +109,54 @@ StreetlightModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Name of the lamp's brand.'
     lampManufacturerName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Name of the lamp's manufacturer.'
     lampModelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Name of the lamp's model.'
     lampTechnology:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Technology used by the lamp.'
     lampWeight:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Lamp's weight.'
     lanternBrandName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Name of the lantern's brand.'
     lanternManufacturerName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Name of the lantern's manufacturer.'
     lanternModelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Name of the lantern's model.'
     lanternWeight:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Lantern's weight.'
     location:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
@@ -164,17 +164,17 @@ StreetlightModel:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Maximum light output which can be provided by the lamp.'
     maxPowerConsumption:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Maximum power consumption supported by the lantern.'
     minPowerConsumption:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Minimum power consumption supported by the lantern.'
     name:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
@@ -185,7 +185,7 @@ StreetlightModel:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: '(Nominal) power consumption made by the lamp.'
     source:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
@@ -193,4 +193,4 @@ StreetlightModel:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'The estimated number of hours working (the lamp) without failure.'

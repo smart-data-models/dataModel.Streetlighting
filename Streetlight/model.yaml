@@ -36,7 +36,7 @@ Streetlight:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit.'
     color:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/color
@@ -46,7 +46,7 @@ Streetlight:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'The method used to control this streetlight.'
     dataProvider:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
@@ -55,28 +55,28 @@ Streetlight:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'Timestamp of the last change of lamp made.'
       format: date-time
     dateLastSwitchingOff:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'Timestamp of the last switching off.'
       format: date-time
     dateLastSwitchingOn:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'Timestamp of the last switching on.'
       format: date-time
     dateServiceStarted:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: ' Date at which the streetlight started giving service.'
       format: date-time
     description:
       $ref: >-
@@ -85,7 +85,7 @@ Streetlight:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Relative illuminance level setting.'
     image:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/image
@@ -102,7 +102,7 @@ Streetlight:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Category of the location where the streetlight is placed.'
     name:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
@@ -114,7 +114,7 @@ Streetlight:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Streetlight's power state.'
     refDevice:
       x-ngsi:
         type: Property
@@ -128,7 +128,6 @@ Streetlight:
             pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
           - type: string
             format: uri
-
     source:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
@@ -137,4 +136,4 @@ Streetlight:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' The overall status of this street light'

@@ -20,17 +20,17 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Active power consumed in R phase'
     activePowerS:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Active power consumed in S phase.'
     activePowerT:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Active power consumed in T phase.'
     address:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/address
@@ -49,7 +49,7 @@ StreetlightControlCabinet:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Name of the cabinet's brand.'
     color:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/color
@@ -58,20 +58,20 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: ' A list of standards to which the cabinet controller is compliant with (ex. IP54)'
       items:
         type: string
     cosPhi:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Cosin of phi" parameter.'
     cupboardMadeOf:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Material the cabinet's cupboard is made of.'
     dataProvider:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/dataProvider
@@ -80,21 +80,21 @@ StreetlightControlCabinet:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: ' Date at which there was a programming operation over the cabinet.'
       format: date-time
     dateMeteringStarted:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: 'The starting date for metering energy consumed.'
       format: date-time
     dateServiceStarted:
       x-ngsi:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: ' Date at which the cabinet controller started giving service.'
       format: date-time
     description:
       $ref: >-
@@ -103,17 +103,17 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Energy consumed by the circuits controlled since metering started (since dateMeteringStarted).'
     energyCost:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Cost of the energy consumed by the circuits controlled since the metering start date (dateMeteringStarted).'
     features:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'A list of cabinet controller features.'
       items:
         type: string
         enum:
@@ -123,7 +123,7 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' The working frequency of the circuit.'
     image:
       $ref: >-
         https://smart-data-models.github.io/data-models/schema.org.yaml#/image
@@ -131,22 +131,22 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Electric intensity in R phase.'
     intensityS:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Electric intensity in S phase.'
     intensityT:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Electric intensity in T phase.'
     lastMeterReading:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Value of the last reading obtained from the energy consumed metering system.'
     location:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
@@ -155,23 +155,23 @@ StreetlightControlCabinet:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Name of the cabinet's manufacturer.'
     maximumPowerAvailable:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'The maximum power available (by contract) for the circuits controlled by this cabinet.'
     meterReadingPeriod:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' The periodicity of energy consumed meter readings in days.'
     modelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: ' Name of the cabinet's model.'
     name:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
@@ -180,7 +180,7 @@ StreetlightControlCabinet:
         type: Property
         model: 'https://schema.org/DateTime'
       type: string
-      description: ''
+      description: ' Deadline for next actuation to be performed (programming, testing, etc.).'
       format: date-time
     owner:
       $ref: https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
@@ -188,37 +188,37 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Power factor for phase R.'
     powerFactorS:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Power factor for phase S.'
     powerFactorT:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Power factor for phase T.'
     reactiveEnergyConsumed:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Energy consumed (with regards to reactive power) by circuits since the metering start date (dateMeteringStarted).'
     reactivePowerR:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Reactive power in R phase.'
     reactivePowerS:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Reactive power in S phase.'
     reactivePowerT:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Reactive power in T phase.'
     refDevice:
       x-ngsi:
         type: Relationship
@@ -237,20 +237,20 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Relationship
       type: array
-      description: ''
+      description: 'Streetlight group(s) controlled.'
       items: *ref_0
     responsible:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.).'
     serialNumber:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Serial number of the control cabinet.'
     source:
       $ref: >-
         https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
@@ -258,60 +258,60 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total harmonic distortion (R) of intensity in phase R.'
     thdrIntensityS:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total harmonic distortion (S) of intensity in phase S.'
     thdrIntensityT:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Total harmonic distortion (T) of intensity in phase T.'
     thdrVoltageR:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ': Total harmonic distortion (R) of intensity in phase R.'
     thdrVoltageS:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: ' Total harmonic distortion (S) of voltage in phase S.'
     thdrVoltageT:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Total harmonic distortion (T) of voltage in phase T.'
     totalActivePower:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Active power currently consumed (counting all phases).'
     totalReactivePower:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Reactive power currently consumed (counting all phases).'
     voltageR:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Electric tension in phase R.'
     voltageS:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Electric tension in phase S.'
     voltageT:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Electric tension in phase T.'
     workingMode:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Working mode for this cabinet controller.'
