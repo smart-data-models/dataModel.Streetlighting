@@ -114,7 +114,7 @@ Streetlight:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ' Streetlight's power state.'
+      description: ' Streetlights power state.'
     refDevice:
       x-ngsi:
         type: Property
