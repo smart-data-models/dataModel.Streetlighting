@@ -13,8 +13,7 @@ StreetlightControlCabinet:
     - $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/Common
   type: object
-  description:: |
-    It represents equipment, usually on street, used to the automated control of a group(s) of streetlights, i.e. one or more circuits.
+  description: It represents equipment, usually on street, used to the automated control of a group(s) of streetlights, i.e. one or more circuits.
   properties:
     activePowerR:
       x-ngsi:
