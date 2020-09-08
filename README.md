@@ -1,25 +1,21 @@
-[![Status badge](https://img.shields.io/badge/status-draft-red.svg)](RELEASE_NOTES)
-[![Build badge](https://img.shields.io/travis/smart-data-models/dataModel.StreetLighting.svg "Travis build status")](https://travis-ci.org/smart-data-models/dataModel.StreetLighting/)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-# Street Lighting Data Models
+# dataModel.Streetlighting
+Streetlights, commonly known as 'lamp-posts', are designed to make the streets safer for pedestrians and drivers. These data models are intended to model streetlights and all their controlling equipment towards energy-efficient and effective urban illuminance.
 
-Streetlights, commonly known as 'lamp-posts', are designed to make the streets
-safer for pedestrians and drivers. These data models are intended to model
-streetlights and all their controlling equipment towards energy-efficient and
-effective urban illuminance.
+The following entity types are available:
+- [Streetlight](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/README.md). -> An entity of type Streetlight represents a urban streetlight. Actually, there will be an entity of type Streetlight per lamp. Thus, if a particular pole holds more than one lantern there will be as many streetlight entites as installed lamps. As a result there might be more than one streetlight entity per location. A Streetlight entity does not contain any attribute corresponding to structural characteristics. Such data is captured by entities of type StreetlightModel.
 
-It encompasses the following entity types:
+- [StreetlightControlCabinet](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightControlCabinet/README.md). It represents equipment, usually on street, used to the automated control of a group(s) of streetlights, i.e. one or more circuits.
 
--   [`Streetlight`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/swagger.yaml). It represents a particular
-    instance of a streetlight. A streetlight is composed by a lantern and a
-    lamp. Such elements are mounted on a column (pole), wall or other structure.
--   [`StreetlightGroup`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightGroup/swagger.yaml). It represents a group
-    of streetlights being part of the same circuit and controlled together by an
-    automated system.
--   [`StreetlightModel`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightModel/swagger.yaml). It represents a model
-    of streetlight composed by a specific supporting structure model, a lantern
-    model and a lamp model. A streetlight instance will be based on a certain
-    streetlight model.
--   [`StreetlightControlCabinet`](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/swagger.yaml). It
-    represents automated equipment, usually on street, typically used to control
-    a group(s) of streetlights, i.e. one or more circuits.
+- [StreetlightGroup](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightGroup/README.md). An entity of type StreetlightGroup represents a group of streetlights. They might be controlled together by the same automated system (cabinet controller).
+
+
+- [StreetlightModel](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightModel/README.md). It represents a model of streetlight composed by a specific supporting structure model, a lantern model and a lamp model.
+A streetlight instance will be based on a certain streetlight model.
+
+
+
+[Link](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/CONTRIBUTORS.yaml) to the 9 current contributors of the data models of this Subject.
+
+You can raise an [issue](https://github.com/smart-data-models/dataModel.Streetlighting/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.Streetlighting/pulls) on existing data models
+
+
