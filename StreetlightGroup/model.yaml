@@ -79,7 +79,7 @@ StreetlightGroup:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Streetlight group's power state.'
+      description: 'Streetlight group power state.'
     refStreetlight:
       x-ngsi:
         type: Relationship
