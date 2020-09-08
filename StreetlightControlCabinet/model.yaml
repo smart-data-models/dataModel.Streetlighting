@@ -155,7 +155,7 @@ StreetlightControlCabinet:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ' Name of the cabinet's manufacturer.'
+      description: ' Name of the cabinet manufacturer.'
     maximumPowerAvailable:
       x-ngsi:
         type: Property
@@ -171,7 +171,7 @@ StreetlightControlCabinet:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ' Name of the cabinet's model.'
+      description: ' Name of the cabinet model.'
     name:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/name
