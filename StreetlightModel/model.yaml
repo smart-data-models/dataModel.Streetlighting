@@ -63,13 +63,13 @@ StreetlightModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ' Name of the column's brand.'
+      description: ' Name of the column brand.'
     columnColor:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Column's painting color.'
+      description: 'Column painting color.'
     columnMadeOf:
       x-ngsi:
         type: Property
@@ -81,13 +81,13 @@ StreetlightModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Name of the column's manufacturer.'
+      description: 'Name of the column manufacturer.'
     columnModelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ' Name of the column's model.'
+      description: ' Name of the column model.'
     compliantWith:
       x-ngsi:
         type: Property
@@ -109,19 +109,19 @@ StreetlightModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Name of the lamp's brand.'
+      description: 'Name of the lamps brand.'
     lampManufacturerName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ' Name of the lamp's manufacturer.'
+      description: ' Name of the lamps manufacturer.'
     lampModelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ' Name of the lamp's model.'
+      description: ' Name of the lamps model.'
     lampTechnology:
       x-ngsi:
         type: Property
@@ -133,30 +133,30 @@ StreetlightModel:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Lamp's weight.'
+      description: 'Lamps weight.'
     lanternBrandName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Name of the lantern's brand.'
+      description: 'Name of the lanterns brand.'
     lanternManufacturerName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Name of the lantern's manufacturer.'
+      description: 'Name of the lanterns manufacturer.'
     lanternModelName:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: 'Name of the lantern's model.'
+      description: 'Name of the lanterns model.'
     lanternWeight:
       x-ngsi:
         type: Property
       type: number
-      description: ' Lantern's weight.'
+      description: ' Lanterns weight.'
     location:
       $ref: >-
         https://smart-data-models.github.io/data-models/ngsi-ld.yaml#/location
