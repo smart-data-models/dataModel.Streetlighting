@@ -64,7 +64,7 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
       type: number
-      description: 'Cosin of phi" parameter.'
+      description: 'Cosin of phi parameter.'
     cupboardMadeOf:
       x-ngsi:
         type: Property
