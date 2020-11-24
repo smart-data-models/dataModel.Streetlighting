@@ -1,0 +1,403 @@
+StreetlightControlCabinet:
+  description: 'A Streetlight control cabinet'
+  properties:
+    activePowerR:
+      minimum: 0
+      type: number
+    activePowerS:
+      minimum: 0
+      type: number
+    activePowerT:
+      minimum: 0
+      type: number
+    address:
+      description: 'The mailing address.'
+      properties:
+        addressCountry:
+          type: string
+        addressLocality:
+          type: string
+        addressRegion:
+          type: string
+        areaServed:
+          type: string
+        postOfficeBoxNumber:
+          type: string
+        postalCode:
+          type: string
+        streetAddress:
+          type: string
+      type: Property
+    alternateName:
+      description: 'An alternative name for this item'
+      type: Property
+    annotations:
+      items:
+        type: string
+      type: array
+    areaServed:
+      type: string
+    brandName:
+      type: string
+    color:
+      description: 'The color of the product.'
+      type: string
+    compliantWith:
+      items:
+        type: string
+      minItems: 1
+      type: array
+      uniqueItems: true
+    cosPhi:
+      maximum: 1
+      minimum: -1
+      type: number
+    cupboardMadeOf:
+      enum:
+        - plastic
+        - metal
+        - concrete
+        - other
+      type: string
+    dataProvider:
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      type: Property
+    dateCreated:
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: Property
+    dateLastProgramming:
+      format: date-time
+      type: string
+    dateMeteringStarted:
+      format: date-time
+      type: string
+    dateModified:
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: Property
+    dateServiceStarted:
+      format: date-time
+      type: string
+    description:
+      type: string
+    energyConsumed:
+      minimum: 0
+      type: number
+    energyCost:
+      minimum: 0
+      type: number
+    features:
+      items:
+        enum:
+          - astronomicalClock
+          - individualControl
+        type: string
+      minItems: 1
+      type: array
+      uniqueItems: true
+    frequency:
+      minimum: 0
+      type: number
+    id:
+      anyOf: &streetlightcontrolcabinet_-_properties_-_owner_-_items_-_anyof
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+    image:
+      description: 'An image of the item.'
+      format: uri
+      type: string
+    intensityR:
+      minimum: 0
+      type: number
+    intensityS:
+      minimum: 0
+      type: number
+    intensityT:
+      minimum: 0
+      type: number
+    lastMeterReading:
+      minimum: 0
+      type: number
+    location:
+      $id: https://geojson.org/schema/Geometry.json
+      $schema: "http://json-schema.org/draft-07/schema#"
+      oneOf:
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                type: number
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Point'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON LineString'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Polygon'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPoint'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiLineString'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPolygon'
+          type: object
+      title: 'GeoJSON Geometry'
+    manufacturerName:
+      type: string
+    maximumPowerAvailable:
+      minimum: 0
+      type: number
+    meterReadingPeriod:
+      minimum: 0
+      type: number
+    modelName:
+      type: string
+    name:
+      description: 'The name of this item.'
+      type: Property
+    nextActuationDeadline:
+      format: date-time
+      type: string
+    owner:
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      items:
+        anyOf: *streetlightcontrolcabinet_-_properties_-_owner_-_items_-_anyof
+      type: Property
+    powerFactorR:
+      maximum: 1
+      minimum: -1
+      type: number
+    powerFactorS:
+      maximum: 1
+      minimum: -1
+      type: number
+    powerFactorT:
+      maximum: 1
+      minimum: -1
+      type: number
+    reactiveEnergyConsumed:
+      minimum: 0
+      type: number
+    reactivePowerR:
+      minimum: 0
+      type: number
+    reactivePowerS:
+      minimum: 0
+      type: number
+    reactivePowerT:
+      minimum: 0
+      type: number
+    refDevice:
+      items:
+        anyOf: *streetlightcontrolcabinet_-_properties_-_owner_-_items_-_anyof
+      minItems: 1
+      type: array
+      uniqueItems: true
+    refStreetlightGroup:
+      items:
+        anyOf: *streetlightcontrolcabinet_-_properties_-_owner_-_items_-_anyof
+      minItems: 1
+      type: array
+      uniqueItems: true
+    responsible:
+      type: string
+    seeAlso:
+      oneOf:
+        - items:
+            - format: uri
+              type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+    serialNumber:
+      type: string
+    source:
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      type: Property
+    thdrIntensityR:
+      maximum: 1
+      minimum: 0
+      type: number
+    thdrIntensityS:
+      maximum: 1
+      minimum: 0
+      type: number
+    thdrIntensityT:
+      maximum: 1
+      minimum: 0
+      type: number
+    thdrVoltageR:
+      maximum: 1
+      minimum: 0
+      type: number
+    thdrVoltageS:
+      maximum: 1
+      minimum: 0
+      type: number
+    thdrVoltageT:
+      maximum: 1
+      minimum: 0
+      type: number
+    totalActivePower:
+      minimum: 0
+      type: number
+    totalReactivePower:
+      minimum: 0
+      type: number
+    type:
+      enum:
+        - StreetlightControlCabinet
+      type: string
+    voltageR:
+      minimum: 0
+      type: number
+    voltageS:
+      minimum: 0
+      type: number
+    voltageT:
+      minimum: 0
+      type: number
+    workingMode:
+      enum:
+        - automatic
+        - manual
+        - semiautomatic
+      type: string
+  required:
+    - id
+    - type
+    - location
+    - refStreetlightGroup
+    - workingMode
+  type: object
