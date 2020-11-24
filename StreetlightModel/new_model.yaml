@@ -1,0 +1,313 @@
+StreetlightModel:
+  description: 'A Street light model'
+  properties:
+    address:
+      description: 'The mailing address.'
+      properties:
+        addressCountry:
+          type: string
+        addressLocality:
+          type: string
+        addressRegion:
+          type: string
+        areaServed:
+          type: string
+        postOfficeBoxNumber:
+          type: string
+        postalCode:
+          type: string
+        streetAddress:
+          type: string
+      type: Property
+    alternateName:
+      type: string
+    annotations:
+      items:
+        type: string
+      type: array
+    areaServed:
+      description: 'The geographic area where a service or offered item is provided.'
+      type: Property
+    category:
+      items:
+        enum:
+          - postTop
+          - bollard
+          - lamppost
+          - lightTower
+          - flashingBeacon
+          - sideEntry
+          - signLight
+          - ornamentalLantern
+        type: string
+      minItems: 1
+      type: array
+      uniqueItems: true
+    color:
+      description: 'The color of the product.'
+      type: string
+    colorRenderingIndex:
+      type: number
+    colorTemperature:
+      minimum: 0
+      type: number
+    columnBrandName:
+      type: string
+    columnColor:
+      type: string
+    columnMadeOf:
+      enum:
+        - steel
+        - aluminium
+        - wood
+        - other
+      type: string
+    columnManufacturerName:
+      type: string
+    columnModelName:
+      type: string
+    compliantWith:
+      items:
+        type: string
+      minItems: 1
+      type: array
+      uniqueItems: true
+    dataProvider:
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      type: Property
+    dateCreated:
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: Property
+    dateModified:
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: Property
+    description:
+      type: string
+    id:
+      anyOf: &streetlightmodel_-_properties_-_owner_-_items_-_anyof
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+    image:
+      format: uri
+      type: string
+    lampBrandName:
+      type: string
+    lampManufacturerName:
+      type: string
+    lampModelName:
+      type: string
+    lampTechnology:
+      enum:
+        - LED
+        - LPS
+        - HPS
+      type: string
+    lampWeight:
+      type: string
+    lanternBrandName:
+      type: string
+    lanternManufacturerName:
+      type: string
+    lanternModelName:
+      type: string
+    lanternWeight:
+      minimum: 0
+      type: number
+    location:
+      $id: https://geojson.org/schema/Geometry.json
+      $schema: "http://json-schema.org/draft-07/schema#"
+      oneOf:
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                type: number
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Point'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON LineString'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON Polygon'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPoint'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiLineString'
+          type: object
+        - properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: 'GeoJSON MultiPolygon'
+          type: object
+      title: 'GeoJSON Geometry'
+    luminousFlux:
+      minimum: 0
+      type: number
+    maxPowerConsumption:
+      minimum: 0
+      type: number
+    minPowerConsumption:
+      minimum: 0
+      type: number
+    name:
+      type: string
+    owner:
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      items:
+        anyOf: *streetlightmodel_-_properties_-_owner_-_items_-_anyof
+      type: Property
+    powerConsumption:
+      minimum: 0
+      type: number
+    seeAlso:
+      oneOf:
+        - items:
+            - format: uri
+              type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+    source:
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      type: Property
+    type:
+      enum:
+        - StreetlightModel
+      type: string
+    workingLife:
+      minimum: 0
+      type: number
+  required:
+    - id
+    - type
+    - name
+  type: object
