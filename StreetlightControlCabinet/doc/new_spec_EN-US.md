@@ -5,7 +5,7 @@ Entity: StreetlightControlCabinet
 
 ## List of properties  
 
-`activePowerR`:   `activePowerS`:   `activePowerT`:   `address`: The mailing address.  `alternateName`: An alternative name for this item  `annotations`:   `areaServed`:   `brandName`:   `color`: The color of the product.  `compliantWith`:   `cosPhi`:   `cupboardMadeOf`:   `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  `dateLastProgramming`:   `dateMeteringStarted`:   `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  `dateServiceStarted`:   `description`:   `energyConsumed`:   `energyCost`:   `features`:   `frequency`:   `id`:   `image`: An image of the item.  `intensityR`:   `intensityS`:   `intensityT`:   `lastMeterReading`:   `location`:   `manufacturerName`:   `maximumPowerAvailable`:   `meterReadingPeriod`:   `modelName`:   `name`: The name of this item.  `nextActuationDeadline`:   `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  `powerFactorR`:   `powerFactorS`:   `powerFactorT`:   `reactiveEnergyConsumed`:   `reactivePowerR`:   `reactivePowerS`:   `reactivePowerT`:   `refDevice`:   `refStreetlightGroup`:   `responsible`:   `seeAlso`:   `serialNumber`:   `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  `thdrIntensityR`:   `thdrIntensityS`:   `thdrIntensityT`:   `thdrVoltageR`:   `thdrVoltageS`:   `thdrVoltageT`:   `totalActivePower`:   `totalReactivePower`:   `type`:   `voltageR`:   `voltageS`:   `voltageT`:   `workingMode`:   ## Data Model description of properties  
+- `activePowerR`:   - `activePowerS`:   - `activePowerT`:   - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `annotations`:   - `areaServed`:   - `brandName`:   - `color`: The color of the product.  - `compliantWith`:   - `cosPhi`:   - `cupboardMadeOf`:   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateLastProgramming`:   - `dateMeteringStarted`:   - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateServiceStarted`:   - `description`:   - `energyConsumed`:   - `energyCost`:   - `features`:   - `frequency`:   - `id`:   - `image`: An image of the item.  - `intensityR`:   - `intensityS`:   - `intensityT`:   - `lastMeterReading`:   - `location`:   - `manufacturerName`:   - `maximumPowerAvailable`:   - `meterReadingPeriod`:   - `modelName`:   - `name`: The name of this item.  - `nextActuationDeadline`:   - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `powerFactorR`:   - `powerFactorS`:   - `powerFactorT`:   - `reactiveEnergyConsumed`:   - `reactivePowerR`:   - `reactivePowerS`:   - `reactivePowerT`:   - `refDevice`:   - `refStreetlightGroup`:   - `responsible`:   - `seeAlso`:   - `serialNumber`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `thdrIntensityR`:   - `thdrIntensityS`:   - `thdrIntensityT`:   - `thdrVoltageR`:   - `thdrVoltageS`:   - `thdrVoltageT`:   - `totalActivePower`:   - `totalReactivePower`:   - `type`:   - `voltageR`:   - `voltageS`:   - `voltageT`:   - `workingMode`:   ## Data Model description of properties  
 Sorted alphabetically  
 ```yaml  
 StreetlightControlCabinet:    
@@ -412,6 +412,7 @@ StreetlightControlCabinet:
     - workingMode    
   type: object    
 ```  
+#### StreetlightControlCabinet NGSI V2 key-values Example    
 Here is an example of a StreetlightControlCabinet in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
@@ -441,6 +442,7 @@ StreetlightControlCabinet:
   "workingMode": "automatic"  
 }  
 ```  
+#### StreetlightControlCabinet NGSI V2 normalized Example    
 Here is an example of a StreetlightControlCabinet in JSON format as normalized. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
@@ -518,6 +520,7 @@ StreetlightControlCabinet:
   }  
 }  
 ```  
+#### StreetlightControlCabinet NGSI-LD key-values Example    
 Here is an example of a StreetlightControlCabinet in JSON-LD format as key-values. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
@@ -548,6 +551,7 @@ StreetlightControlCabinet:
  "type": "StreetlightControlCabinet",  
  "workingMode": "automatic"}  
 ```  
+#### StreetlightControlCabinet NGSI-LD normalized Example    
 Here is an example of a StreetlightControlCabinet in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
