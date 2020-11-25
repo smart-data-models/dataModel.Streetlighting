@@ -5,9 +5,10 @@ Entité : StreetlightGroup
 
 ## Liste des biens  
 
-`activeProgramId`:   `address`: L'adresse postale.  `alternateName`: Un autre nom pour cet article  `annotations`:   `areaServed`:   `color`: La couleur du produit.  `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  `dateLastSwitchingOff`:   `dateLastSwitchingOn`:   `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  `description`:   `id`:   `illuminanceLevel`:   `image`: Une image de l'objet.  `location`:   `name`: Le nom de cet article.  `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  `powerState`:   `refStreetlight`:   `refStreetlightControlCabinet`:   `seeAlso`:   `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  `switchingMode`:   `switchingOnHours`:   `type`:   ## Modèle de données description des biens  
-Classement par ordre alphabétique  
-```yaml  
+- `activeProgramId`:   - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `annotations`:   - `areaServed`:   - `color`: La couleur du produit.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateLastSwitchingOff`:   - `dateLastSwitchingOn`:   - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`:   - `id`:   - `illuminanceLevel`:   - `image`: Une image de l'objet.  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `powerState`:   - `refStreetlight`:   - `refStreetlightControlCabinet`:   - `seeAlso`:   - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `switchingMode`:   - `switchingOnHours`:   - `type`:   ## Modèle de données description des biens  
+Classement par ordre alphabétique (cliquez pour plus de détails)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 StreetlightGroup:    
   description: 'A Street light group'    
   properties:    
@@ -309,6 +310,9 @@ StreetlightGroup:
     - location    
   type: object    
 ```  
+</details>    
+## Exemples de charges utiles  
+#### StreetlightGroup NGSI V2 valeurs clés Exemple  
 Voici un exemple de StreetlightGroup en format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -334,6 +338,7 @@ StreetlightGroup:
   ]  
 }  
 ```  
+#### StreetlightGroup NGSI V2 normalisé Exemple  
 Voici un exemple de StreetlightGroup au format JSON tel que normalisé. Il est compatible avec NGSI V2 lorsqu'il utilise "options=valeurs clés" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -382,6 +387,7 @@ StreetlightGroup:
   }  
 }  
 ```  
+#### StreetlightGroup NGSI-LD valeurs clés Exemple  
 Voici un exemple de StreetlightGroup au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
@@ -404,6 +410,7 @@ StreetlightGroup:
                        "to": "--01-07"}],  
  "type": "StreetlightGroup"}  
 ```  
+#### StreetlightGroup NGSI-LD normalisé Exemple  
 Voici un exemple de StreetlightGroup au format JSON-LD tel que normalisé. Il est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
