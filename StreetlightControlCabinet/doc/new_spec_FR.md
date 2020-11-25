@@ -5,9 +5,10 @@ Entité : StreetlightControlCabinet
 
 ## Liste des biens  
 
-`activePowerR`:   `activePowerS`:   `activePowerT`:   `address`: L'adresse postale.  `alternateName`: Un autre nom pour cet article  `annotations`:   `areaServed`:   `brandName`:   `color`: La couleur du produit.  `compliantWith`:   `cosPhi`:   `cupboardMadeOf`:   `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  `dateLastProgramming`:   `dateMeteringStarted`:   `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  `dateServiceStarted`:   `description`:   `energyConsumed`:   `energyCost`:   `features`:   `frequency`:   `id`:   `image`: Une image de l'objet.  `intensityR`:   `intensityS`:   `intensityT`:   `lastMeterReading`:   `location`:   `manufacturerName`:   `maximumPowerAvailable`:   `meterReadingPeriod`:   `modelName`:   `name`: Le nom de cet article.  `nextActuationDeadline`:   `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  `powerFactorR`:   `powerFactorS`:   `powerFactorT`:   `reactiveEnergyConsumed`:   `reactivePowerR`:   `reactivePowerS`:   `reactivePowerT`:   `refDevice`:   `refStreetlightGroup`:   `responsible`:   `seeAlso`:   `serialNumber`:   `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  `thdrIntensityR`:   `thdrIntensityS`:   `thdrIntensityT`:   `thdrVoltageR`:   `thdrVoltageS`:   `thdrVoltageT`:   `totalActivePower`:   `totalReactivePower`:   `type`:   `voltageR`:   `voltageS`:   `voltageT`:   `workingMode`:   ## Modèle de données description des biens  
-Classement par ordre alphabétique  
-```yaml  
+- `activePowerR`:   - `activePowerS`:   - `activePowerT`:   - `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `annotations`:   - `areaServed`:   - `brandName`:   - `color`: La couleur du produit.  - `compliantWith`:   - `cosPhi`:   - `cupboardMadeOf`:   - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateLastProgramming`:   - `dateMeteringStarted`:   - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateServiceStarted`:   - `description`:   - `energyConsumed`:   - `energyCost`:   - `features`:   - `frequency`:   - `id`:   - `image`: Une image de l'objet.  - `intensityR`:   - `intensityS`:   - `intensityT`:   - `lastMeterReading`:   - `location`:   - `manufacturerName`:   - `maximumPowerAvailable`:   - `meterReadingPeriod`:   - `modelName`:   - `name`: Le nom de cet article.  - `nextActuationDeadline`:   - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `powerFactorR`:   - `powerFactorS`:   - `powerFactorT`:   - `reactiveEnergyConsumed`:   - `reactivePowerR`:   - `reactivePowerS`:   - `reactivePowerT`:   - `refDevice`:   - `refStreetlightGroup`:   - `responsible`:   - `seeAlso`:   - `serialNumber`:   - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `thdrIntensityR`:   - `thdrIntensityS`:   - `thdrIntensityT`:   - `thdrVoltageR`:   - `thdrVoltageS`:   - `thdrVoltageT`:   - `totalActivePower`:   - `totalReactivePower`:   - `type`:   - `voltageR`:   - `voltageS`:   - `voltageT`:   - `workingMode`:   ## Modèle de données description des biens  
+Classement par ordre alphabétique (cliquez pour plus de détails)  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 StreetlightControlCabinet:    
   description: 'A Streetlight control cabinet'    
   properties:    
@@ -412,6 +413,9 @@ StreetlightControlCabinet:
     - workingMode    
   type: object    
 ```  
+</details>    
+## Exemples de charges utiles  
+#### StreetlightControlCabinet NGSI V2 valeurs clés Exemple  
 Voici un exemple d'un StreetlightControlCabinet au format JSON comme valeurs clés. Il est compatible avec NGSI V2 lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -441,6 +445,7 @@ StreetlightControlCabinet:
   "workingMode": "automatic"  
 }  
 ```  
+#### StreetlightControlCabinet NGSI V2 normalisé Exemple  
 Voici un exemple d'un StreetlightControlCabinet au format JSON tel que normalisé. Il est compatible avec NGSI V2 lorsqu'il utilise "options=valeurs clés" et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
@@ -518,6 +523,7 @@ StreetlightControlCabinet:
   }  
 }  
 ```  
+#### StreetlightControlCabinet NGSI-LD valeurs clés Exemple  
 Voici un exemple d'un StreetlightControlCabinet au format JSON-LD comme valeurs clés. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {"@context": ["https://schema.lab.fiware.org/ld/context",  
@@ -548,6 +554,7 @@ StreetlightControlCabinet:
  "type": "StreetlightControlCabinet",  
  "workingMode": "automatic"}  
 ```  
+#### StreetlightControlCabinet NGSI-LD normalisé Exemple  
 Voici un exemple d'un StreetlightControlCabinet au format JSON-LD tel que normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 ```json  
 {  
