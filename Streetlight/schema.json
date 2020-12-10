@@ -22,10 +22,12 @@
           "enum": ["Streetlight"]
         },
         "areaServed": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. "
         },
         "circuit": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. "
         },
         "refStreetlightModel": {
           "anyOf": [
@@ -87,11 +89,11 @@
                 "format": "uri",
                 "description": "Property. Identifier format of any NGSI entity"
               }
-            ],
-            "description": "Relationship. A reference to a point of interest associated to this observation."
+            ]
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Relationship. A reference to a point of interest associated to this observation."
         },
         "refStreetlightGroup": {
           "anyOf": [
