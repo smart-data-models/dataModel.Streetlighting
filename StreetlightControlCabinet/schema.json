@@ -24,10 +24,12 @@
           ]
         },
         "areaServed": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. "
         },
         "serialNumber": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/serialNumber' Serial number of the container."
         },
         "refStreetlightGroup": {
           "type": "array",
