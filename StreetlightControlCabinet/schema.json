@@ -21,7 +21,8 @@
           "type": "string",
           "enum": [
             "StreetlightControlCabinet"
-          ]
+          ],
+          "description": "NGSI Entity type"
         },
         "areaServed": {
           "type": "string",
