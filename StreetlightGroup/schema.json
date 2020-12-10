@@ -21,7 +21,8 @@
           "type": "string",
           "enum": [
             "StreetlightGroup"
-          ]
+          ],
+          "description": "NGSI Entity type"
         },
         "areaServed": {
           "type": "string",
