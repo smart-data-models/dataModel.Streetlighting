@@ -19,7 +19,8 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["StreetlightModel"]
+          "enum": ["StreetlightModel"],
+          "description": "NGSI Entity type"
         },
         "name": {
           "type": "string",
