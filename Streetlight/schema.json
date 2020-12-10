@@ -19,7 +19,8 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["Streetlight"]
+          "enum": ["Streetlight"],
+          "description": "NGSI Entity type"
         },
         "areaServed": {
           "type": "string",
