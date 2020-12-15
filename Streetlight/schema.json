@@ -20,15 +20,11 @@
         "type": {
           "type": "string",
           "enum": ["Streetlight"],
-          "description": "NGSI Entity type"
-        },
-        "areaServed": {
-          "type": "string",
-          "description": "Property. "
+          "description": "Property. NGSI Entity type. It has to be Streetlight"
         },
         "circuit": {
           "type": "string",
-          "description": "Property. "
+          "description": "Property. The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit."
         },
         "refStreetlightModel": {
           "anyOf": [
@@ -45,7 +41,7 @@
               "description": "Property. Identifier format of any NGSI entity"
             }
           ],
-          "description": "Relationship. Streetlight's model.."
+          "description": "Relationship. Streetlight's model."
         },
         "refStreetlightControlCabinet": {
           "anyOf": [
@@ -67,12 +63,12 @@
         "status": {
           "type": "string",
           "enum": ["ok", "defectiveLamp", "columnIssue", "brokenLantern"],
-          "description": "Properly. The overall status of this street light."
+          "description": "Properly. The overall status of this street light. Enum:'ok, defectiveLamp, columnIssue, brokenLantern'"
         },
         "powerState": {
           "type": "string",
           "enum": ["on", "off", "low", "bootingUp"],
-          "description": "Properly. Model:'https://schema.org/DateTime'. Streetlight's power state."
+          "description": "Properly. Model:'https://schema.org/Text'. Streetlight's power state. Enum:'on, off, low, bootingUp'"
         },
         "refDevice": {
           "type": "array",
@@ -94,7 +90,7 @@
           },
           "minItems": 1,
           "uniqueItems": true,
-          "description": "Relationship. A reference to a point of interest associated to this observation."
+          "description": "Relationship. Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device."
         },
         "refStreetlightGroup": {
           "anyOf": [
@@ -116,36 +112,32 @@
         "dateLastLampChange": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Timestamp of the last change of lamp made"
+          "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last change of lamp made"
         },
         "dateLastSwitchingOn": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Timestamp of the last switching on"
+          "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last switching on"
         },
         "dateLastSwitchingOff": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Timestamp of the last switching off"
+          "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last switching off"
         },
         "controllingMethod": {
           "type": "string",
           "enum": ["group", "individual"],
-          "description": "Relationship. The method used to control this streetlight"
+          "description": "Property. The method used to control this streetlight. Enum:'group, individual'. "
         },
         "dateServiceStarted": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Date at which the streetlight started giving service"
+          "description": "Property. Model:'https://schema.org/Date'. Date at which the streetlight started giving service"
         },
         "image": {
           "type": "string",
           "format": "uri",
           "description": "Relationship. Model:'https://schema.org/image'. A URL containing a photo of the streetlight"
-        },
-        "description": {
-          "type": "string",
-          "description": "Property. Timestamp of the last change of lamp made"
         },
         "annotations": {
           "type": "array",
@@ -157,19 +149,19 @@
         "locationCategory": {
           "type": "string",
           "enum": [
-            "façade",
-            "sidewalk",
-            "pedestrianPath",
-            "road",
-            "playground",
-            "park",
-            "garden",
             "bridge",
-            "tunnel",
+            "centralIsland",
+            "façade",
+            "garden",
+            "park",
             "parking",
-            "centralIsland"
+            "pedestrianPath",
+            "playground",
+            "road",
+            "sidewalk",
+            "tunnel"
           ],
-          "description": "Property. Category of the location where the streetlight is placed."
+          "description": "Property. Category of the location where the streetlight is placed. Enum:'bridge, centralIsland, façade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'"
         },
         "laternHeight": {
           "type": "number",
@@ -180,7 +172,7 @@
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Relative illuminance level setting."
+          "description": "Property. Relative illuminance level setting. A number between 0 and 1."
         }
       }
     }
