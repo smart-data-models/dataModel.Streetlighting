@@ -1,5 +1,5 @@
 notesHeader:
-
+  It represents a model of streetlight composed by a specific supporting structure model, a lantern model and a lamp model. A streetlight instance will be based on a certain streetlight model.
 notesMiddle:
 
 notesFooter:

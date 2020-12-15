@@ -1,5 +1,5 @@
 notesHeader:
-
+  An entity of type `StreetlightGroup` represents a group of streetlights. They might be controlled together by the same automated system (cabinet controller).
 notesMiddle:
 
 notesFooter:
