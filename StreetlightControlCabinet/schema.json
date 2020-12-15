@@ -22,11 +22,7 @@
           "enum": [
             "StreetlightControlCabinet"
           ],
-          "description": "NGSI Entity type"
-        },
-        "areaServed": {
-          "type": "string",
-          "description": "Property. "
+          "description": "Property. NGSI Entity type. It has to be StreetlightControlCabinet"
         },
         "serialNumber": {
           "type": "string",
@@ -51,30 +47,30 @@
             ]
           },
           "minItems": 1,
-          "uniqueItems": true,
-          "description": "Property. Identifier format of any NGSI entity"
+          "description": "Relationship. Streetlight group(s) controlled. List of references to entities of type StreetlightGroup",
+          "uniqueItems": true
         },
         "brandName": {
           "type": "string",
-          "description": "Property. Name of the cabinet's brand."
+          "description": "Property. Name of the cabinet's brand. Model:'https://schema.org/brand'"
         },
         "modelName": {
           "type": "string",
-          "description": "Property. Name of the cabinet's model."
+          "description": "Property. Name of the cabinet's model. Model:'https://schema.org/model'"
         },
         "manufacturerName": {
           "type": "string",
-          "description": "Property. Name of the cabinet's manufacturer."
+          "description": "Property. Name of the cabinet's manufacturer. Model:'https://schema.org/manufacturer'"
         },
         "cupboardMadeOf": {
           "type": "string",
           "enum": [
-            "plastic",
-            "metal",
             "concrete",
-            "other"
+            "metal",
+            "other",
+            "plastic"
           ],
-          "description": "Property. Material the cabinet's cupboard is made of."
+          "description": "Property. Material the cabinet's cupboard is made of. Enum:'concrete, metal, other, plastic'"
         },
         "features": {
           "type": "array",
@@ -87,7 +83,7 @@
           },
           "minItems": 1,
           "uniqueItems": true,
-          "description": "Property. A list of cabinet controller features."
+          "description": "Property. A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually."
         },
         "compliantWith": {
           "type": "array",
@@ -125,22 +121,22 @@
           },
           "minItems": 1,
           "uniqueItems": true,
-          "description": "Relationship. A reference to a point of interest associated to this observation."
+          "description": "Relationship. Reference to the device(s) used to monitor this control cabinet."
         },
         "dateServiceStarted": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Date at which the cabinet controller started giving service."
+          "description": "Property. Date at which the cabinet controller started giving service. Model:'https://schema.org/DateTime'"
         },
         "dateLastProgramming": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Date at which there was a programming operation over the cabinet."
+          "description": "Property. Date at which there was a programming operation over the cabinet. Model:'https://schema.org/DateTime'"
         },
         "nextActuationDeadline": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Deadline for next actuation to be performed (programming, testing, etc.)."
+          "description": "Property. Deadline for next actuation to be performed (programming, testing, etc.). Model:'https://schema.org/DateTime'"
         },
         "responsible": {
           "type": "string",
@@ -153,7 +149,7 @@
             "manual",
             "semiautomatic"
           ],
-          "description": "Property. Working mode for this cabinet controller."
+          "description": "Property. Working mode for this cabinet controller.  `automatic` : The cabinet controller decides automatically when light groups are switched on and off. Manual operation is not allowed. `manual` : Human intervention is required for switching on and off. `semiautomatic` : The same as `automatic` but in this case manual intervention is allowed."
         },
         "description": {
           "type": "string",
@@ -162,172 +158,172 @@
         "maximumPowerAvailable": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. The maximum power available (by contract) for the circuits controlled by this cabinet."
+          "description": "Property. The maximum power available (by contract) for the circuits controlled by this cabinet. Units:'Kilowatts (kW)'"
         },
         "energyConsumed": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Energy consumed by the circuits controlled since metering started (since dateMeteringStarted)."
+          "description": "Property. Energy consumed by the circuits controlled since metering started (since dateMeteringStarted). Units:'Kilowatts per hour (kWh)'. Model:'https://schema.org/Number'"
         },
         "energyCost": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Cost of the energy consumed by the circuits controlled since the metering start date."
+          "description": "Property. Cost of the energy consumed by the circuits controlled since the metering start date. Model:'https://schema.org/Number'"
         },
         "reactiveEnergyConsumed": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Energy consumed (with regards to reactive power) by circuits since the metering start date"
+          "description": "Property. Energy consumed (with regards to reactive power) by circuits since the metering start date. Model:'https://schema.org/Number'. Units:'KiloVolts-Ampere-Reactive per hour (kVArh)'"
         },
         "dateMeteringStarted": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. The starting date for metering energy consumed."
+          "description": "Property. The starting date for metering energy consumed. Model:'https://schema.org/DateTime'"
         },
         "lastMeterReading": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Value of the last reading obtained from the energy consumed metering system."
+          "description": "Property. Value of the last reading obtained from the energy consumed metering system. Model:'https://schema.org/DateTime'. Units:'Kilowatts per hour (kWh)'"
         },
         "meterReadingPeriod": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. The periodicity of energy consumed meter readings in days."
+          "description": "Property. The periodicity of energy consumed meter readings in days. Model:'http://schema.org/Number'"
         },
         "frequency": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. The working frequency of the circuit."
+          "description": "Property. The working frequency of the circuit. Units:'Hertz (Hz)'"
         },
         "totalActivePower": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Active power currently consumed (counting all phases)."
+          "description": "Property. Active power currently consumed (counting all phases). Units:'KiloWatts (kW)'"
         },
         "totalReactivePower": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Reactive power currently consumed (counting all phases)."
+          "description": "Property. Reactive power currently consumed (counting all phases). Units:'KiloVolts-Ampere-Reactive (kVArh)'"
         },
         "activePowerR": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Active power consumed in R phase."
+          "description": "Property. Active power consumed in R phase. Units:'Kilowatts (kW)'. Model:'http://schema.org/Number'"
         },
         "activePowerS": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Active power consumed in S phase."
+          "description": "Property. Active power consumed in S phase. Units:'Kilowatts (kW)'. Model:'http://schema.org/Number'"
         },
         "activePowerT": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Active power consumed in T phase."
+          "description": "Property. Active power consumed in T phase. Units:'Kilowatts (kW)'. Model:'http://schema.org/Number'"
         },
         "reactivePowerR": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Reactive power in R phase."
+          "description": "Property. Reactive power in R phase. Units:'KiloVolts-Ampere-Reactive (kVArh)'. Model:'http://schema.org/Number'"
         },
         "reactivePowerS": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Reactive power in S phase."
+          "description": "Property. Reactive power in S phase. Units:'KiloVolts-Ampere-Reactive (kVArh)'. Model:'http://schema.org/Number'"
         },
         "reactivePowerT": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Reactive power in T phase."
+          "description": "Property. Reactive power in T phase. Units:'KiloVolts-Ampere-Reactive (kVArh)'. Model:'http://schema.org/Number'"
         },
         "powerFactorR": {
           "type": "number",
           "minimum": -1,
           "maximum": 1,
-          "description": "Property. Power factor for phase R."
+          "description": "Property. Power factor for phase R. Allowed values: A number between -1 and 1. Model:'http://schema.org/Number'"
         },
         "powerFactorS": {
           "type": "number",
           "minimum": -1,
           "maximum": 1,
-          "description": "Property. Power factor for phase S."
+          "description": "Property. Power factor for phase S. Allowed values: A number between -1 and 1. Model:'http://schema.org/Number'"
         },
         "powerFactorT": {
           "type": "number",
           "minimum": -1,
           "maximum": 1,
-          "description": "Property. Power factor for phase T."
+          "description": "Property. Power factor for phase T. Allowed values: A number between -1 and 1. Model:'http://schema.org/Number'"
         },
         "cosPhi": {
           "type": "number",
           "minimum": -1,
           "maximum": 1,
-          "description": "Property. Cosin of phi parameter."
+          "description": "Property. Cosine of phi parameter. Model:'https://schema.org/Number'"
         },
         "intensityR": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Electric intensity in R phase."
+          "description": "Property. Electric intensity in R phase. Units:'Ampers (A)'. Model:'http://schema.org/Number'"
         },
         "intensityS": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Electric intensity in S phase."
+          "description": "Property. Electric intensity in S phase. Units:'Ampers (A)'. Model:'http://schema.org/Number'"
         },
         "intensityT": {
           "type": "number",
           "minimum": 0,
-          "description": "Property.  Electric intensity in T phase."
+          "description": "Property.  Electric intensity in T phase. Units:'Ampers (A)'. Model:'http://schema.org/Number'"
         },
         "voltageR": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Electric tension in phase R."
+          "description": "Property. Electric tension in phase R. Units:'Volts (V)'. Model:'http://schema.org/Number'"
         },
         "voltageS": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Electric tension in phase S."
+          "description": "Property. Electric tension in phase S. Units:'Volts (V)'. Model:'http://schema.org/Number'"
         },
         "voltageT": {
           "type": "number",
           "minimum": 0,
-          "description": "Property. Electric tension in phase T."
+          "description": "Property. Electric tension in phase T. Units:'Volts (V)'. Model:'http://schema.org/Number'"
         },
         "thdrVoltageR": {
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Total harmonic distortion (R) of voltage in phase R."
+          "description": "Property. Total harmonic distortion (R) of voltage in phase R. Allowed values: A number between 0 and 1. Model:'http://schema.org/Number'"
         },
         "thdrVoltageS": {
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Total harmonic distortion (S) of voltage in phase S."
+          "description": "Property. Total harmonic distortion (S) of voltage in phase S. Allowed values: A number between 0 and 1. Model:'http://schema.org/Number'"
         },
         "thdrVoltageT": {
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Total harmonic distortion (T) of voltage in phase T."
+          "description": "Property. Total harmonic distortion (T) of voltage in phase T. Allowed values: A number between 0 and 1. Model:'http://schema.org/Number'"
         },
         "thdrIntensityR": {
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Total harmonic distortion (R) of intensity in phase R."
+          "description": "Property. Total harmonic distortion (R) of intensity in phase R. Allowed values: A number between 0 and 1. Model:'http://schema.org/Number'"
         },
         "thdrIntensityS": {
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Total harmonic distortion (S) of intensity in phase S."
+          "description": "Property. Total harmonic distortion (S) of intensity in phase S. Allowed values: A number between 0 and 1. Model:'http://schema.org/Number'"
         },
         "thdrIntensityT": {
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "Property. Total harmonic distortion (T) of intensity in phase T."
+          "description": "Property. Total harmonic distortion (T) of intensity in phase T. Allowed values: A number between 0 and 1. Model:'http://schema.org/Number'"
         }
       }
     }
