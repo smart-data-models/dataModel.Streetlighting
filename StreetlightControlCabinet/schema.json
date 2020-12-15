@@ -19,43 +19,75 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["StreetlightControlCabinet"]
+          "enum": [
+            "StreetlightControlCabinet"
+          ],
+          "description": "NGSI Entity type"
         },
         "areaServed": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. "
         },
         "serialNumber": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/serialNumber' Serial number of the container."
         },
         "refStreetlightGroup": {
           "type": "array",
           "items": {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ]
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Property. Identifier format of any NGSI entity"
         },
         "brandName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the cabinet's brand."
         },
         "modelName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the cabinet's model."
         },
         "manufacturerName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the cabinet's manufacturer."
         },
         "cupboardMadeOf": {
           "type": "string",
-          "enum": ["plastic", "metal", "concrete", "other"]
+          "enum": [
+            "plastic",
+            "metal",
+            "concrete",
+            "other"
+          ],
+          "description": "Property. Material the cabinet's cupboard is made of."
         },
         "features": {
           "type": "array",
           "items": {
             "type": "string",
-            "enum": ["astronomicalClock", "individualControl"]
+            "enum": [
+              "astronomicalClock",
+              "individualControl"
+            ]
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Property. A list of cabinet controller features."
         },
         "compliantWith": {
           "type": "array",
@@ -63,184 +95,248 @@
             "type": "string"
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Property. A list of standards to which the cabinet controller is compliant with (ex. IP54)"
         },
         "annotations": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Property. A field reserved for annotations (incidences, remarks, etc.)"
         },
         "refDevice": {
           "type": "array",
           "items": {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ]
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Relationship. A reference to a point of interest associated to this observation."
         },
         "dateServiceStarted": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Date at which the cabinet controller started giving service."
         },
         "dateLastProgramming": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Date at which there was a programming operation over the cabinet."
         },
         "nextActuationDeadline": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. Deadline for next actuation to be performed (programming, testing, etc.)."
         },
         "responsible": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.)."
         },
         "workingMode": {
           "type": "string",
-          "enum": ["automatic", "manual", "semiautomatic"]
+          "enum": [
+            "automatic",
+            "manual",
+            "semiautomatic"
+          ],
+          "description": "Property. Working mode for this cabinet controller."
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Timestamp of the last change of lamp made"
         },
         "maximumPowerAvailable": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. The maximum power available (by contract) for the circuits controlled by this cabinet."
         },
         "energyConsumed": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Energy consumed by the circuits controlled since metering started (since dateMeteringStarted)."
         },
         "energyCost": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Cost of the energy consumed by the circuits controlled since the metering start date."
         },
         "reactiveEnergyConsumed": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Energy consumed (with regards to reactive power) by circuits since the metering start date"
         },
         "dateMeteringStarted": {
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "description": "Property. The starting date for metering energy consumed."
         },
         "lastMeterReading": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Value of the last reading obtained from the energy consumed metering system."
         },
         "meterReadingPeriod": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. The periodicity of energy consumed meter readings in days."
         },
         "frequency": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. The working frequency of the circuit."
         },
         "totalActivePower": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Active power currently consumed (counting all phases)."
         },
         "totalReactivePower": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Reactive power currently consumed (counting all phases)."
         },
         "activePowerR": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Active power consumed in R phase."
         },
         "activePowerS": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Active power consumed in S phase."
         },
         "activePowerT": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Active power consumed in T phase."
         },
         "reactivePowerR": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Reactive power in R phase."
         },
         "reactivePowerS": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Reactive power in S phase."
         },
         "reactivePowerT": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Reactive power in T phase."
         },
         "powerFactorR": {
           "type": "number",
           "minimum": -1,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Power factor for phase R."
         },
         "powerFactorS": {
           "type": "number",
           "minimum": -1,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Power factor for phase S."
         },
         "powerFactorT": {
           "type": "number",
           "minimum": -1,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Power factor for phase T."
         },
         "cosPhi": {
           "type": "number",
           "minimum": -1,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Cosin of phi parameter."
         },
         "intensityR": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Electric intensity in R phase."
         },
         "intensityS": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Electric intensity in S phase."
         },
         "intensityT": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property.  Electric intensity in T phase."
         },
         "voltageR": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Electric tension in phase R."
         },
         "voltageS": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Electric tension in phase S."
         },
         "voltageT": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Electric tension in phase T."
         },
         "thdrVoltageR": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Total harmonic distortion (R) of voltage in phase R."
         },
         "thdrVoltageS": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Total harmonic distortion (S) of voltage in phase S."
         },
         "thdrVoltageT": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
-        },       
-       "thdrIntensityR": {
+          "maximum": 1,
+          "description": "Property. Total harmonic distortion (T) of voltage in phase T."
+        },
+        "thdrIntensityR": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Total harmonic distortion (R) of intensity in phase R."
         },
         "thdrIntensityS": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Total harmonic distortion (S) of intensity in phase S."
         },
         "thdrIntensityT": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "Property. Total harmonic distortion (T) of intensity in phase T."
         }
       }
     }
   ],
-  "required": ["id", "type", "location", "refStreetlightGroup", "workingMode"]
+  "required": [
+    "id",
+    "type",
+    "location",
+    "refStreetlightGroup",
+    "workingMode"
+  ]
 }

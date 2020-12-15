@@ -19,88 +19,113 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["StreetlightModel"]
+          "enum": ["StreetlightModel"],
+          "description": "NGSI Entity type"
         },
         "name": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name given to the streetlight model."
         },
         "alternateName": {
-          "type": "string"
+          "type": "string",
+          "description": "Relationship. Alternate name given to the streetlight model."
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Timestamp of the last change of lamp made "
         },
         "maxPowerConsumption": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Maximum power consumption supported by the lantern."
         },
         "minPowerConsumption": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Minimum power consumption supported by the lantern."
         },
         "columnBrandName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the column's brand."
         },
         "columnModelName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the column's model."
         },
         "columnManufacturerName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the column's manufacturer."
         },
         "columnMadeOf": {
           "type": "string",
-          "enum": ["steel", "aluminium", "wood", "other"]
+          "enum": ["steel", "aluminium", "wood", "other"],
+          "description": "Property. Material column is made of."
         },
         "columnColor": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Column's painting color."
         },
         "lanternModelName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the lantern's model."
         },
         "lanternBrandName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the lantern's brand."
         },
         "lanternManufacturerName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the lantern's manufacturer."
         },
         "lanternWeight": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Lantern's weight."
         },
         "lampModelName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the lamp's model."
         },
         "lampBrandName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the lamp's brand."
         },
         "lampManufacturerName": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Name of the lamp's manufacturer."
         },
         "lampWeight": {
-          "type": "string"
+          "type": "string",
+          "description": "Property. Lamp's weight."
         },
         "workingLife": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. The estimated number of hours working (the lamp) without failure."
         },
         "lampTechnology": {
           "type": "string",
-          "enum": ["LED", "LPS", "HPS"]
+          "enum": ["LED", "LPS", "HPS"],
+          "description": "Property. Technology used by the lamp."
         },
         "colorTemperature": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Correlated color temperature of the lamp."
         },
         "colorRenderingIndex": {
-          "type": "number"
+          "type": "number",
+          "description": "Property. Color rendering index of the lamp."
         },
         "luminousFlux": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Maximum light output which can be provided by the lamp."
         },
         "powerConsumption": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. (Nominal) power consumption made by the lamp."
         },
         "compliantWith": {
           "type": "array",
@@ -108,11 +133,13 @@
             "type": "string"
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Property. A list of standards to which this streetlight model is compliant with."
         },
         "image": {
           "type": "string",
-          "format": "uri"
+          "format": "uri",
+          "description": "Relationship. A URL containing a photo of the streetlight model."
         },
         "category": {
           "type": "array",
@@ -130,7 +157,8 @@
             ]
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "description": "Property. Type of asset which implements the street light."
         }
       }
     }
