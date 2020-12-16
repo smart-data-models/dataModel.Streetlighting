@@ -19,7 +19,9 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["Streetlight"],
+          "enum": [
+            "Streetlight"
+          ],
           "description": "Property. NGSI Entity type. It has to be Streetlight"
         },
         "circuit": {
@@ -62,13 +64,23 @@
         },
         "status": {
           "type": "string",
-          "enum": ["ok", "defectiveLamp", "columnIssue", "brokenLantern"],
-          "description": "Properly. The overall status of this street light. Enum:'ok, defectiveLamp, columnIssue, brokenLantern'"
+          "enum": [
+            "brokenLantern",
+            "columnIssue",
+            "defectiveLamp",
+            "ok"
+          ],
+          "description": "Property. The overall status of this street light. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'"
         },
         "powerState": {
           "type": "string",
-          "enum": ["on", "off", "low", "bootingUp"],
-          "description": "Properly. Model:'https://schema.org/Text'. Streetlight's power state. Enum:'on, off, low, bootingUp'"
+          "enum": [
+            "bootingUp",
+            "low",
+            "off",
+            "on"
+          ],
+          "description": "Property. Model:'https://schema.org/Text'. Streetlight's power state. Enum:'bootingUp, low, off, on'"
         },
         "refDevice": {
           "type": "array",
@@ -126,7 +138,10 @@
         },
         "controllingMethod": {
           "type": "string",
-          "enum": ["group", "individual"],
+          "enum": [
+            "group",
+            "individual"
+          ],
           "description": "Property. The method used to control this streetlight. Enum:'group, individual'. "
         },
         "dateServiceStarted": {
@@ -177,5 +192,10 @@
       }
     }
   ],
-  "required": ["id", "type", "location", "status"]
+  "required": [
+    "id",
+    "type",
+    "location",
+    "status"
+  ]
 }

@@ -63,7 +63,7 @@
         },
         "switchingOnHours": {
           "type": "array",
-          "description": "Switching on hours. It is used normally to set special schedules for certain dates. ",
+          "description": "Property. Switching on hours. It is used normally to set special schedules for certain dates.",
           "items": {
             "type": "object",
             "properties": {

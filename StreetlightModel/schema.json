@@ -44,7 +44,7 @@
         },
         "columnManufacturerName": {
           "type": "string",
-          "description": "Property. Name of the column's manufacturer.Model:'https://schema.org/manufacturer'"
+          "description": "Property. Name of the column's manufacturer. Model:'https://schema.org/manufacturer'"
         },
         "columnMadeOf": {
           "type": "string",

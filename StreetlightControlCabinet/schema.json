@@ -26,7 +26,7 @@
         },
         "serialNumber": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/serialNumber' Serial number of the container."
+          "description": "Property. Model:'https://schema.org/serialNumber'. Serial number of the container."
         },
         "refStreetlightGroup": {
           "type": "array",
