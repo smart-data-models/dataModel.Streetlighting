@@ -2,9 +2,7 @@
 
 ## Description 
 
-It represents a model of streetlight composed by a specific supporting structure model, a lantern model and a lamp model.
-A streetlight instance will be based on a certain streetlight model.
-
+A Street light model
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightModel/swagger.yaml)
