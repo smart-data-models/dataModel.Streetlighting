@@ -2,7 +2,7 @@
 
 ## Description 
 
-It represents equipment, usually on street, used to the automated control of a group(s) of streetlights, i.e. one or more circuits.
+A Streetlight control cabinet
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/swagger.yaml)
