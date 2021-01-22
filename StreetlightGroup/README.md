@@ -2,8 +2,7 @@
 
 ## Description 
 
-An entity of type StreetlightGroup represents a group of streetlights. They might be controlled together by the same automated system (cabinet controller).
-
+A Street light group
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightGroup/swagger.yaml)
