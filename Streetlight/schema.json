@@ -154,13 +154,6 @@
           "format": "uri",
           "description": "Relationship. Model:'https://schema.org/image'. A URL containing a photo of the streetlight"
         },
-        "annotations": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "Property. A field reserved for annotations (incidences, remarks, etc.)."
-        },
         "locationCategory": {
           "type": "string",
           "enum": [
