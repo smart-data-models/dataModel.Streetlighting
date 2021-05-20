@@ -1,54 +1,56 @@
-Entité : Éclairage public  
-=========================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md)  
-Description globale : **A Street light**  
+Entité : Lampadaire  
+===================  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Description globale : **Un lampadaire**  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `annotations`: Un champ réservé aux annotations (incidences, remarques, etc.).  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `circuit`: Le circuit auquel ce réverbère se connecte et est alimenté. Il contient généralement un identificateur qui permet d'obtenir plus d'informations sur ce circuit.  - `color`: La couleur du produit  - `controllingMethod`: La méthode utilisée pour contrôler ce réverbère. Enum : "groupe, individu".  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateLastLampChange`: Horodatage du dernier changement de lampe effectué  - `dateLastSwitchingOff`: Horodatage de la dernière extinction  - `dateLastSwitchingOn`: Horodatage de la dernière mise sous tension  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateServiceStarted`: Date à laquelle le réverbère a commencé à rendre service  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `illuminanceLevel`: Réglage du niveau d'éclairement relatif. Un nombre entre 0 et 1.  - `image`: Une URL contenant une photo du réverbère  - `laternHeight`: La hauteur de la lanterne. Dans les colonnes à plusieurs bras, cela peut varier d'un lampadaire à l'autre. Les réverbères muraux constituent une autre source de variation de cette propriété.  - `location`:   - `locationCategory`: Catégorie de l'endroit où est placé le réverbère. Enum : "pont, centre de l'île, façade, jardin, parc, parking, chemin piétonnier, terrain de jeu, route, trottoir, tunnel".  - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `powerState`: L'état de puissance de Streetlight. Enum : "bootingUp, low, off, on  - `refDevice`: Référence au(x) dispositif(s) utilisé(s) pour surveiller cet éclairage de rue. Liste de référence de l'entité ou des entités de type Appareil.  - `refStreetlightControlCabinet`: Si ce réverbère est contrôlé individuellement, référence au cabinet de contrôle en charge.  - `refStreetlightGroup`: Le groupe de Streetlight, si ce lampadaire appartient à un groupe quelconque.  - `refStreetlightModel`: Le modèle du réverbère.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `status`: L'état général de ce réverbère. Enum : "brokenLantern, columnIssue, defectiveLamp, ok".  - `type`: Type d'entité NGSI. Il doit s'agir de Streetlight    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `annotations`: Annotations sur l'élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `circuit`: Le circuit auquel ce lampadaire est connecté et qui l'alimente. Il contient généralement un identifiant qui permet d'obtenir plus d'informations sur ce circuit.  - `color`: La couleur du produit  - `controllingMethod`: La méthode utilisée pour contrôler ce lampadaire. Enum : "groupe, individuel".  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateLastLampChange`: Horodatage du dernier changement de lampe effectué  - `dateLastSwitchingOff`: Horodatage de la dernière mise hors tension  - `dateLastSwitchingOn`: Horodatage de la dernière mise sous tension  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateServiceStarted`: Date de mise en service du réverbère  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `illuminanceLevel`: Réglage du niveau d'éclairement relatif. Un nombre compris entre 0 et 1.  - `image`: Une URL contenant une photo du lampadaire  - `laternHeight`: Hauteur de la lanterne. Dans les colonnes à plusieurs bras, cela peut varier d'un lampadaire à l'autre. Les lampadaires muraux sont une autre source de variation de cette propriété.  - `location`:   - `locationCategory`: Catégorie de l'emplacement où est placé le lampadaire. Enum : 'pont, île centrale, façade, jardin, parc, parking, chemin piétonnier, aire de jeux, route, trottoir, tunnel'.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `powerState`: État de l'alimentation du lampadaire. Enum : 'bootingUp, low, off, on' (démarrage)  - `refDevice`: Référence au(x) dispositif(s) utilisé(s) pour surveiller ce streetligth. Liste des références aux entités de type Dispositif.  - `refStreetlightControlCabinet`: Si ce lampadaire est à commande individuelle, référence à l'armoire de commande en charge.  - `refStreetlightGroup`: Groupe du lampadaire, si ce lampadaire appartient à un groupe.  - `refStreetlightModel`: Modèle de lampadaire.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `status`: L'état général de ce lampadaire. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'  - `type`: Type d'entité NGSI. Il doit s'agir de Streetlight    
 Propriétés requises  
 - `id`  - `location`  - `status`  - `type`    
-Une entité de type "Streetlight" représente un lampadaire urbain. En fait, il y aura une entité de type "Streetlight" par lampe. Ainsi, si un poteau particulier contient plus d'une lanterne, il y aura autant d'entités de type "Streetlight" que de lampes installées. Par conséquent, il peut y avoir plus d'une entité de type "lampadaire" par emplacement. Une entité "lampadaire" ne contient aucun attribut correspondant à des caractéristiques structurelles. Ces données sont saisies par des entités de type "StreetlightModel".  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Une entité de type `Streetlight` représente un lampadaire urbain. En fait, il y aura une entité de type `Streetlight` par lampadaire. Ainsi, si un poteau particulier contient plus d'une lanterne, il y aura autant d'entités streetlight que de lampes installées. Par conséquent, il peut y avoir plus d'une entité réverbère par emplacement. Une entité `Streetlight` ne contient pas d'attribut correspondant aux caractéristiques structurelles. De telles données sont capturées par des entités de type `StreetlightModel`.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Streetlight:    
   description: 'A Street light'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.).'    
+      description: 'Annotations about the item'    
       items:    
         type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
       type: Property    
@@ -285,7 +287,7 @@ Streetlight:
       enum:    
         - bridge    
         - centralIsland    
-        - façade    
+        - facade    
         - garden    
         - park    
         - parking    
@@ -369,8 +371,8 @@ Streetlight:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -401,8 +403,8 @@ Streetlight:
 ```  
 </details>    
 ## Exemples de charges utiles  
-#### Streetlight NGSI V2 valeurs clés Exemple  
-Voici un exemple de Streetlight au format JSON comme valeurs clés. Il est compatible avec la version 2 du NGSI lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### Exemple de valeurs-clés NGSI-v2 pour les lampadaires.  
+Voici un exemple de lampadaire au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque vous utilisez `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -423,8 +425,8 @@ Streetlight:
   "dateLastLampChange": "2016-07-08T08:02:21.753Z"  
 }  
 ```  
-#### Streetlight NGSI V2 normalisé Exemple  
-Voici un exemple d'un lampadaire au format JSON tel que normalisé. Ce format est compatible avec la version 2 du NGSI lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+#### Lampadaire NGSI-v2 normalisé Exemple  
+Voici un exemple d'un lampadaire au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -471,89 +473,100 @@ Streetlight:
   }  
 }  
 ```  
-#### Streetlight NGSI-LD valeurs clés Exemple  
-Voici un exemple de Streetlight au format JSON-LD comme valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
-```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "areaServed": "Roundabouts city entrance",  
- "circuit": "C-456-A467",  
- "controllingMethod": "individual",  
- "dateLastLampChange": {"@type": "DateTime",  
-                        "@value": "2016-07-08T08:02:21.753Z"},  
- "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
- "lanternHeight": 10,  
- "location": {"coordinates": [-3.164485591715449, 40.62785133667262],  
-              "type": "Point"},  
- "locationCategory": "centralIsland",  
- "powerState": "off",  
- "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
- "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
- "status": "ok",  
- "type": "Streetlight"}  
-```  
-#### L'éclairage public NGSI-LD normalisé Exemple  
-Voici un exemple d'un lampadaire au format JSON-LD tel que normalisé. Il est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+#### Exemple de valeurs clés de l'éclairage public NGSI-LD  
+Voici un exemple de lampadaire au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-    "type": "Streetlight",  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -3.164485591715449,  
-                40.62785133667262  
-            ]  
-        }  
-    },  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "Roundabouts city entrance"  
-    },  
-    "status": {  
-        "type": "Property",  
-        "value": "ok"  
-    },  
-    "refStreetlightGroup": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
-    },  
-    "refStreetlightModel": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
-    },  
-    "circuit": {  
-        "type": "Property",  
-        "value": "C-456-A467"  
-    },  
-    "lanternHeight": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "locationCategory": {  
-        "type": "Property",  
-        "value": "centralIsland"  
-    },  
-    "powerState": {  
-        "type": "Property",  
-        "value": "off"  
-    },  
-    "controllingMethod": {  
-        "type": "Property",  
-        "value": "individual"  
-    },  
-    "dateLastLampChange": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2016-07-08T08:02:21.753Z"  
-        }  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+  "type": "Streetlight",  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Roundabouts city entrance"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "ok"  
+  },  
+  "refStreetlightGroup": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
+  },  
+  "refStreetlightModel": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
+  },  
+  "circuit": {  
+    "type": "Property",  
+    "value": "C-456-A467"  
+  },  
+  "lanternHeight": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "locationCategory": {  
+    "type": "Property",  
+    "value": "centralIsland"  
+  },  
+  "powerState": {  
+    "type": "Property",  
+    "value": "off"  
+  },  
+  "controllingMethod": {  
+    "type": "Property",  
+    "value": "individual"  
+  },  
+  "dateLastLampChange": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-07-08T08:02:21.753Z"  
+    }  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### Eclairage public NGSI-LD normalisé Exemple  
+Voici un exemple de lampadaire au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "areaServed": "Roundabouts city entrance",  
+  "circuit": "C-456-A467",  
+  "controllingMethod": "individual",  
+  "dateLastLampChange": {  
+    "@type": "DateTime",  
+    "@value": "2016-07-08T08:02:21.753Z"  
+  },  
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+  "lanternHeight": 10,  
+  "location": {  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ],  
+    "type": "Point"  
+  },  
+  "locationCategory": "centralIsland",  
+  "powerState": "off",  
+  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
+  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
+  "status": "ok",  
+  "type": "Streetlight"  
 }  
 ```  
