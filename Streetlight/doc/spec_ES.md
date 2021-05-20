@@ -1,15 +1,16 @@
 Entidad: Farola  
 ===============  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md)  
-Descripción global: **A la luz de la calle**  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Una farola**  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Un campo reservado para las anotaciones (incidencias, observaciones, etc.).  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `circuit`: El circuito al que esta farola se conecta y del que recibe energía. Típicamente contendrá un identificador que permitirá obtener más información sobre dicho circuito.  - `color`: El color del producto  - `controllingMethod`: El método utilizado para controlar esta farola. Enum:'grupo, individuo'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateLastLampChange`: La fecha del último cambio de lámpara realizado  - `dateLastSwitchingOff`: Sello de tiempo del último apagado  - `dateLastSwitchingOn`: Sello de tiempo del último encendido  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que el farol comenzó a dar servicio  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `illuminanceLevel`: Ajuste del nivel de iluminación relativo. Un número entre 0 y 1.  - `image`: Una URL que contiene una foto del farol  - `laternHeight`: La altura de la linterna. En columnas con muchos brazos esto puede variar entre las farolas. Otra fuente de variación de esta propiedad son las farolas de pared.  - `location`:   - `locationCategory`: Categoría del lugar donde se coloca el farol. Enum:'puente, isla central, fachada, jardín, parque, estacionamiento, camino peatonal, patio de recreo, carretera, acera, túnel'.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `powerState`: El estado de energía de la luz de la calle. Enum:'BootingUp, low, off, on'.  - `refDevice`: Referencia al dispositivo(s) usado para monitorear esta farola. Lista de Referencia a la(s) entidad(es) de tipo Dispositivo.  - `refStreetlightControlCabinet`: Si esta farola se controla individualmente, referencia al armario de control a cargo de.  - `refStreetlightGroup`: El grupo del farol, si este farol pertenece a algún grupo.  - `refStreetlightModel`: El modelo de Streetlight.  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `status`: El estado general de esta farola. Enum:'Linterna rota, columna, defectuosa Lámpara, ok'.  - `type`: Tipo de entidad NGSI. Tiene que ser Streetlight    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Anotaciones sobre el artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `circuit`: El circuito al que se conecta esta farola y del que recibe energía. Normalmente contendrá un identificador que permitirá obtener más información sobre dicho circuito.  - `color`: El color del producto  - `controllingMethod`: El método utilizado para controlar esta farola. Enum:'grupo, individual'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastLampChange`: Marca de tiempo del último cambio de lámpara realizado  - `dateLastSwitchingOff`: Marca de tiempo de la última desconexión  - `dateLastSwitchingOn`: Marca de tiempo del último encendido  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que la farola empezó a dar servicio  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `illuminanceLevel`: Ajuste del nivel de iluminación relativo. Un número entre 0 y 1.  - `image`: Una URL con una foto de la farola  - `laternHeight`: Altura de la farola. En las columnas con muchos brazos esto puede variar entre las farolas. Otra fuente de variación de esta propiedad son las farolas de pared.  - `location`:   - `locationCategory`: Categoría del lugar donde se coloca la farola. Enum:'puente, isla central, fachada, jardín, parque, aparcamiento, camino peatonal, parque infantil, carretera, acera, túnel'.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerState`: Estado de energía de la farola. Enum:'bootingUp, low, off, on'  - `refDevice`: Referencia al dispositivo(s) utilizado(s) para supervisar este tramo de calle. Lista de Referencia a la(s) entidad(es) de tipo Dispositivo.  - `refStreetlightControlCabinet`: Si esta farola está controlada individualmente, referencia al gabinete de control a cargo de.  - `refStreetlightGroup`: Grupo de la farola, si esta farola pertenece a algún grupo.  - `refStreetlightModel`: El modelo de la farola.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status`: El estado general de esta farola. Enum:'farola rota, columnaIsuficiente, lámpara defectuosa, ok'  - `type`: Tipo de entidad NGSI. Tiene que ser Farola    
 Propiedades requeridas  
 - `id`  - `location`  - `status`  - `type`    
-Una entidad del tipo "luz de calle" representa un farol urbano. En realidad, habrá una entidad del tipo "luz de calle" por lámpara. Por lo tanto, si un poste en particular sostiene más de un farol habrá tantas entidades de farola como lámparas instaladas. Como resultado, podría haber más de una entidad de farola por ubicación. Una entidad de "farola" no contiene ningún atributo correspondiente a características estructurales. Tales datos son capturados por entidades de tipo "StreetlightModel".  
-## Modelo de datos Descripción de las propiedades  
+Una entidad de tipo `Alumbrado público` representa una farola urbana. En realidad, habrá una entidad de tipo `Alumbrado público` por farola. Por lo tanto, si un poste concreto tiene más de una farola, habrá tantas entidades de farola como lámparas instaladas. Como resultado, puede haber más de una entidad de farola por ubicación. Una entidad "Farola" no contiene ningún atributo correspondiente a las características estructurales. Estos datos son capturados por entidades de tipo `StreetlightModel`.  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -17,38 +18,39 @@ Streetlight:
   description: 'A Street light'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.).'    
+      description: 'Annotations about the item'    
       items:    
         type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
       type: Property    
@@ -285,7 +287,7 @@ Streetlight:
       enum:    
         - bridge    
         - centralIsland    
-        - façade    
+        - facade    
         - garden    
         - park    
         - parking    
@@ -369,8 +371,8 @@ Streetlight:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -400,9 +402,9 @@ Streetlight:
   type: object    
 ```  
 </details>    
-## Ejemplo de cargas útiles  
-#### Ejemplo de valores clave de Streetlight NGSI V2  
-Aquí hay un ejemplo de un farol en formato JSON como valores clave. Es compatible con NGSI V2 cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
+## Ejemplo de carga útil  
+#### Ejemplo de valores clave NGSI-v2 de alumbrado público  
+Aquí hay un ejemplo de una farola en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -423,8 +425,8 @@ Streetlight:
   "dateLastLampChange": "2016-07-08T08:02:21.753Z"  
 }  
 ```  
-#### Faro de la calle NGSI V2 normalizado Ejemplo  
-Aquí hay un ejemplo de un Streetlight en formato JSON como normalizado. Es compatible con NGSI V2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Ejemplo de alumbrado público NGSI-v2 normalizado  
+Este es un ejemplo de una farola en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -471,89 +473,100 @@ Streetlight:
   }  
 }  
 ```  
-#### Ejemplo de valores clave de la luz de calle NGSI-LD  
-Aquí hay un ejemplo de un farol en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
-```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "areaServed": "Roundabouts city entrance",  
- "circuit": "C-456-A467",  
- "controllingMethod": "individual",  
- "dateLastLampChange": {"@type": "DateTime",  
-                        "@value": "2016-07-08T08:02:21.753Z"},  
- "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
- "lanternHeight": 10,  
- "location": {"coordinates": [-3.164485591715449, 40.62785133667262],  
-              "type": "Point"},  
- "locationCategory": "centralIsland",  
- "powerState": "off",  
- "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
- "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
- "status": "ok",  
- "type": "Streetlight"}  
-```  
-#### Faro de la calle NGSI-LD normalizado Ejemplo  
-Aquí hay un ejemplo de un farol en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Ejemplo de valores clave de NGSI-LD de alumbrado público  
+Aquí hay un ejemplo de una farola en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-    "type": "Streetlight",  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -3.164485591715449,  
-                40.62785133667262  
-            ]  
-        }  
-    },  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "Roundabouts city entrance"  
-    },  
-    "status": {  
-        "type": "Property",  
-        "value": "ok"  
-    },  
-    "refStreetlightGroup": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
-    },  
-    "refStreetlightModel": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
-    },  
-    "circuit": {  
-        "type": "Property",  
-        "value": "C-456-A467"  
-    },  
-    "lanternHeight": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "locationCategory": {  
-        "type": "Property",  
-        "value": "centralIsland"  
-    },  
-    "powerState": {  
-        "type": "Property",  
-        "value": "off"  
-    },  
-    "controllingMethod": {  
-        "type": "Property",  
-        "value": "individual"  
-    },  
-    "dateLastLampChange": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2016-07-08T08:02:21.753Z"  
-        }  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+  "type": "Streetlight",  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Roundabouts city entrance"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "ok"  
+  },  
+  "refStreetlightGroup": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
+  },  
+  "refStreetlightModel": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
+  },  
+  "circuit": {  
+    "type": "Property",  
+    "value": "C-456-A467"  
+  },  
+  "lanternHeight": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "locationCategory": {  
+    "type": "Property",  
+    "value": "centralIsland"  
+  },  
+  "powerState": {  
+    "type": "Property",  
+    "value": "off"  
+  },  
+  "controllingMethod": {  
+    "type": "Property",  
+    "value": "individual"  
+  },  
+  "dateLastLampChange": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-07-08T08:02:21.753Z"  
+    }  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### Ejemplo de alumbrado público NGSI-LD normalizado  
+Este es un ejemplo de una farola en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "areaServed": "Roundabouts city entrance",  
+  "circuit": "C-456-A467",  
+  "controllingMethod": "individual",  
+  "dateLastLampChange": {  
+    "@type": "DateTime",  
+    "@value": "2016-07-08T08:02:21.753Z"  
+  },  
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+  "lanternHeight": 10,  
+  "location": {  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ],  
+    "type": "Point"  
+  },  
+  "locationCategory": "centralIsland",  
+  "powerState": "off",  
+  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
+  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
+  "status": "ok",  
+  "type": "Streetlight"  
 }  
 ```  
