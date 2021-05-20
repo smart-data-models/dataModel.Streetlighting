@@ -1,194 +1,201 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0",
-  "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
-  "title": " - Street Lighting / Streetlight",
-  "description": "A Street light",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/PhysicalObject-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "Streetlight"
-          ],
-          "description": "Property. NGSI Entity type. It has to be Streetlight"
+    "$schema": "http://json-schema.org/schema#",
+    "$schemaVersion": "0.0.1",
+    "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
+    "title": " - Street Lighting / Streetlight",
+    "description": "A Street light",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
         },
-        "circuit": {
-          "type": "string",
-          "description": "Property. The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit."
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "refStreetlightModel": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/PhysicalObject-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Streetlight"
+                    ],
+                    "description": "Property. NGSI Entity type. It has to be Streetlight"
+                },
+                "circuit": {
+                    "type": "string",
+                    "description": "Property. The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit."
+                },
+                "refStreetlightModel": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. Streetlight's model."
+                },
+                "refStreetlightControlCabinet": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. If this streetlight is individually controlled, reference to the control cabinet in charge of."
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "brokenLantern",
+                        "columnIssue",
+                        "defectiveLamp",
+                        "ok"
+                    ],
+                    "description": "Property. The overall status of this street light. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'"
+                },
+                "powerState": {
+                    "type": "string",
+                    "enum": [
+                        "bootingUp",
+                        "low",
+                        "off",
+                        "on"
+                    ],
+                    "description": "Property. Model:'https://schema.org/Text'. Streetlight's power state. Enum:'bootingUp, low, off, on'"
+                },
+                "refDevice": {
+                    "type": "array",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 256,
+                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            },
+                            {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            }
+                        ]
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "description": "Relationship. Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device."
+                },
+                "refStreetlightGroup": {
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Identifier format of any NGSI entity"
+                        }
+                    ],
+                    "description": "Relationship. Streetlight's group, if this streetlight belongs to any group."
+                },
+                "dateLastLampChange": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last change of lamp made"
+                },
+                "dateLastSwitchingOn": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last switching on"
+                },
+                "dateLastSwitchingOff": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last switching off"
+                },
+                "controllingMethod": {
+                    "type": "string",
+                    "enum": [
+                        "group",
+                        "individual"
+                    ],
+                    "description": "Property. The method used to control this streetlight. Enum:'group, individual'. "
+                },
+                "dateServiceStarted": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/Date'. Date at which the streetlight started giving service"
+                },
+                "image": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "Relationship. Model:'https://schema.org/image'. A URL containing a photo of the streetlight"
+                },
+                "annotations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Property. A field reserved for annotations (incidences, remarks, etc.)."
+                },
+                "locationCategory": {
+                    "type": "string",
+                    "enum": [
+                        "bridge",
+                        "centralIsland",
+                        "fa\u00e7ade",
+                        "garden",
+                        "park",
+                        "parking",
+                        "pedestrianPath",
+                        "playground",
+                        "road",
+                        "sidewalk",
+                        "tunnel"
+                    ],
+                    "description": "Property. Category of the location where the streetlight is placed. Enum:'bridge, centralIsland, fa\u00e7ade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'"
+                },
+                "laternHeight": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Property. Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights."
+                },
+                "illuminanceLevel": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "Property. Relative illuminance level setting. A number between 0 and 1."
+                }
             }
-          ],
-          "description": "Relationship. Streetlight's model."
-        },
-        "refStreetlightControlCabinet": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. If this streetlight is individually controlled, reference to the control cabinet in charge of."
-        },
-        "status": {
-          "type": "string",
-          "enum": [
-            "brokenLantern",
-            "columnIssue",
-            "defectiveLamp",
-            "ok"
-          ],
-          "description": "Property. The overall status of this street light. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'"
-        },
-        "powerState": {
-          "type": "string",
-          "enum": [
-            "bootingUp",
-            "low",
-            "off",
-            "on"
-          ],
-          "description": "Property. Model:'https://schema.org/Text'. Streetlight's power state. Enum:'bootingUp, low, off, on'"
-        },
-        "refDevice": {
-          "type": "array",
-          "items": {
-            "anyOf": [
-              {
-                "type": "string",
-                "minLength": 1,
-                "maxLength": 256,
-                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                "description": "Property. Identifier format of any NGSI entity"
-              },
-              {
-                "type": "string",
-                "format": "uri",
-                "description": "Property. Identifier format of any NGSI entity"
-              }
-            ]
-          },
-          "minItems": 1,
-          "uniqueItems": true,
-          "description": "Relationship. Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device."
-        },
-        "refStreetlightGroup": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Streetlight's group, if this streetlight belongs to any group."
-        },
-        "dateLastLampChange": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last change of lamp made"
-        },
-        "dateLastSwitchingOn": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last switching on"
-        },
-        "dateLastSwitchingOff": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/DateTime'. Timestamp of the last switching off"
-        },
-        "controllingMethod": {
-          "type": "string",
-          "enum": [
-            "group",
-            "individual"
-          ],
-          "description": "Property. The method used to control this streetlight. Enum:'group, individual'. "
-        },
-        "dateServiceStarted": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'https://schema.org/Date'. Date at which the streetlight started giving service"
-        },
-        "image": {
-          "type": "string",
-          "format": "uri",
-          "description": "Relationship. Model:'https://schema.org/image'. A URL containing a photo of the streetlight"
-        },
-        "locationCategory": {
-          "type": "string",
-          "enum": [
-            "bridge",
-            "centralIsland",
-            "façade",
-            "garden",
-            "park",
-            "parking",
-            "pedestrianPath",
-            "playground",
-            "road",
-            "sidewalk",
-            "tunnel"
-          ],
-          "description": "Property. Category of the location where the streetlight is placed. Enum:'bridge, centralIsland, façade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'"
-        },
-        "laternHeight": {
-          "type": "number",
-          "minimum": 0,
-          "description": "Property. Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights."
-        },
-        "illuminanceLevel": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1,
-          "description": "Property. Relative illuminance level setting. A number between 0 and 1."
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "location",
-    "status"
-  ]
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "status"
+    ]
 }
