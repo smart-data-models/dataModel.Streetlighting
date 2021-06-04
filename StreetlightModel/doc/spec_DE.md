@@ -1,11 +1,12 @@
 Entität: StreetlightModel  
 =========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightModel/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Ein Straßenlampenmodell**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `annotations`: Anmerkungen zum Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Typ der Kühlstelle, die die Straßenleuchte implementiert. Enum:'`PostTop, Poller, Laternenpfahl, LightTower, Blinkleuchte, SideEntry, SignLight, OrnamentalLantern'. Oder jeder andere Wert, der oben nicht definiert und für die Anwendung sinnvoll ist  - `color`: Die Farbe des Produkts  - `colorRenderingIndex`: Farbwiedergabe-Index der Lampe  - `colorTemperature`: Korrelierte Farbtemperatur der Lampe  - `columnBrandName`: Name der Marke der Säule  - `columnColor`: Die Farbe der Spalte. Erlaubte Werte: Ein Farbschlüsselwort, wie in [W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords) angegeben. Ein Farbwert, wie in [W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes) angegeben.  - `columnMadeOf`: Material, aus dem die Säule besteht. Enum:'Stahl, Aluminium, Holz, andere'  - `columnManufacturerName`: Name des Herstellers der Säule  - `columnModelName`: Name des Modells der Spalte  - `compliantWith`: Eine Liste der Normen, mit denen dieses Straßenleuchtenmodell konform ist  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `lampBrandName`: Name der Marke der Lampe  - `lampManufacturerName`: Name des Herstellers der Lampe.  - `lampModelName`: Name des Modells der Lampe  - `lampTechnology`: Von der Lampe verwendete Technologie. Enum:'LED, LPS, HPS'. Oder jeder andere Wert, der nicht durch die obige Liste abgedeckt und für die Anwendung sinnvoll ist.  - `lampWeight`: Gewicht der Lampe  - `lanternBrandName`: Name der Marke der Laterne  - `lanternManufacturerName`: Name des Herstellers der Laterne  - `lanternModelName`: Name des Modells der Laterne  - `lanternWeight`: Gewicht der Laterne  - `location`:   - `luminousFlux`: Maximale Lichtleistung, die von der Lampe erbracht werden kann  - `maxPowerConsumption`: Maximale Leistungsaufnahme, die von der Laterne unterstützt wird  - `minPowerConsumption`: Minimale Leistungsaufnahme, die von der Laterne unterstützt wird  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `powerConsumption`: (Nenn-)Leistungsaufnahme der Lampe  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI Entity-Typ. Es muss StreetlightModel sein  - `workingLife`: Die geschätzte Anzahl der Betriebsstunden (der Lampe) ohne Ausfall    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `annotations`: Anmerkungen zum Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Typ der Kühlstelle, die die Straßenleuchte implementiert. Enum:'`PostTop, Poller, Laternenpfahl, LightTower, Blinkleuchte, SideEntry, SignLight, OrnamentalLantern'. Oder jeder andere Wert, der oben nicht definiert und für die Anwendung sinnvoll ist  - `color`: Die Farbe des Produkts  - `colorRenderingIndex`: Farbwiedergabe-Index der Lampe  - `colorTemperature`: Korrelierte Farbtemperatur der Lampe  - `columnBrandName`: Name der Marke der Säule  - `columnColor`: Die Farbe der Spalte. Erlaubte Werte: Ein Farbschlüsselwort, wie in [W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords) angegeben. Ein Farbwert, wie in [W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes) angegeben.  - `columnMadeOf`: Material, aus dem die Säule besteht. Enum:'Stahl, Aluminium, Holz, andere'  - `columnManufacturerName`: Name des Herstellers der Säule  - `columnModelName`: Name des Modells der Spalte  - `compliantWith`: Eine Liste der Normen, mit denen dieses Straßenleuchtenmodell konform ist  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `lampBrandName`: Name der Marke der Lampe  - `lampManufacturerName`: Name des Herstellers der Lampe.  - `lampModelName`: Name des Modells der Lampe  - `lampTechnology`: Von der Lampe verwendete Technologie. Enum:'LED, LPS, HPS'. Oder jeder andere Wert, der nicht durch die obige Liste abgedeckt und für die Anwendung sinnvoll ist.  - `lampWeight`: Gewicht der Lampe  - `lanternBrandName`: Name der Marke der Laterne  - `lanternManufacturerName`: Name des Herstellers der Laterne  - `lanternModelName`: Name des Modells der Laterne  - `lanternWeight`: Gewicht der Laterne  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `luminousFlux`: Maximale Lichtleistung, die von der Lampe erbracht werden kann  - `maxPowerConsumption`: Maximale Leistungsaufnahme, die von der Laterne unterstützt wird  - `minPowerConsumption`: Minimale Leistungsaufnahme, die von der Laterne unterstützt wird  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `powerConsumption`: (Nenn-)Leistungsaufnahme der Lampe  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI Entity-Typ. Es muss StreetlightModel sein  - `workingLife`: Die geschätzte Anzahl der Betriebsstunden (der Lampe) ohne Ausfall    
 Erforderliche Eigenschaften  
 - `id`  - `name`  - `type`    
 Es stellt ein Modell einer Straßenlaterne dar, das aus einem spezifischen Tragwerksmodell, einem Laternenmodell und einem Lampenmodell besteht. Eine Straßenlaterneninstanz wird auf einem bestimmten Straßenlaternenmodell basieren.  
@@ -17,30 +18,29 @@ StreetlightModel:
   description: 'A Street light model'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -209,10 +209,10 @@ StreetlightModel:
         model: https://schema.org/weight    
         units: 'Kilograms (kg)'    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -232,7 +232,8 @@ StreetlightModel:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -255,7 +256,8 @@ StreetlightModel:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -280,7 +282,8 @@ StreetlightModel:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -302,7 +305,8 @@ StreetlightModel:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -327,7 +331,8 @@ StreetlightModel:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -354,7 +359,7 @@ StreetlightModel:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     luminousFlux:    
       description: 'Maximum light output which can be provided by the lamp'    
       minimum: 0    
@@ -396,8 +401,8 @@ StreetlightModel:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
