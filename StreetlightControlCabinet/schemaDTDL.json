@@ -1,0 +1,592 @@
+{
+    "@id": "dtmi:com:ngsi-ld:StreetlightControlCabinet;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " - Street Lighting / Streetlight Control Cabinet adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/StreetlightControlCabinet/schema.json",
+    "description": "A Streetlight control cabinet",
+    "displayName": "StreetlightControlCabinet",
+    "contents": [
+        {
+            "name": "activePowerR",
+            "writable": true,
+            "displayName": "activePowerR",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Active power consumed in R phase"
+        },
+        {
+            "name": "activePowerS",
+            "writable": true,
+            "displayName": "activePowerS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Active power consumed in S phase"
+        },
+        {
+            "name": "activePowerT",
+            "writable": true,
+            "displayName": "activePowerT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Active power consumed in T phase"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "brandName",
+            "writable": true,
+            "displayName": "brandName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the cabinet's brand"
+        },
+        {
+            "name": "color",
+            "writable": true,
+            "displayName": "color",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The color of the product"
+        },
+        {
+            "name": "cosPhi",
+            "writable": true,
+            "displayName": "cosPhi",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Cosine of phi parameter"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateLastProgramming",
+            "writable": true,
+            "displayName": "dateLastProgramming",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date at which there was a programming operation over the cabinet"
+        },
+        {
+            "name": "dateMeteringStarted",
+            "writable": true,
+            "displayName": "dateMeteringStarted",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "The starting date for metering energy consumed"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateServiceStarted",
+            "writable": true,
+            "displayName": "dateServiceStarted",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date at which the cabinet controller started giving service"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Timestamp of the last change of lamp made"
+        },
+        {
+            "name": "energyConsumed",
+            "writable": true,
+            "displayName": "energyConsumed",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Energy consumed by the circuits controlled since metering started (since dateMeteringStarted)"
+        },
+        {
+            "name": "energyCost",
+            "writable": true,
+            "displayName": "energyCost",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Cost of the energy consumed by the circuits controlled since the metering start date"
+        },
+        {
+            "name": "frequency",
+            "writable": true,
+            "displayName": "frequency",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The working frequency of the circuit"
+        },
+        {
+            "name": "image",
+            "writable": true,
+            "displayName": "image",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An image of the item"
+        },
+        {
+            "name": "intensityR",
+            "writable": true,
+            "displayName": "intensityR",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electric intensity in R phase"
+        },
+        {
+            "name": "intensityS",
+            "writable": true,
+            "displayName": "intensityS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electric intensity in S phase"
+        },
+        {
+            "name": "intensityT",
+            "writable": true,
+            "displayName": "intensityT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": " Electric intensity in T phase"
+        },
+        {
+            "name": "lastMeterReading",
+            "writable": true,
+            "displayName": "lastMeterReading",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Value of the last reading obtained from the energy consumed metering system"
+        },
+        {
+            "name": "manufacturerName",
+            "writable": true,
+            "displayName": "manufacturerName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the cabinet's manufacturer"
+        },
+        {
+            "name": "maximumPowerAvailable",
+            "writable": true,
+            "displayName": "maximumPowerAvailable",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The maximum power available (by contract) for the circuits controlled by this cabinet"
+        },
+        {
+            "name": "meterReadingPeriod",
+            "writable": true,
+            "displayName": "meterReadingPeriod",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The periodicity of energy consumed meter readings in days"
+        },
+        {
+            "name": "modelName",
+            "writable": true,
+            "displayName": "modelName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the cabinet's model"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "nextActuationDeadline",
+            "writable": true,
+            "displayName": "nextActuationDeadline",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Deadline for next actuation to be performed (programming, testing, etc.)"
+        },
+        {
+            "name": "powerFactorR",
+            "writable": true,
+            "displayName": "powerFactorR",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor for phase R. Allowed values: A number between -1 and 1"
+        },
+        {
+            "name": "powerFactorS",
+            "writable": true,
+            "displayName": "powerFactorS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor for phase S. Allowed values: A number between -1 and 1"
+        },
+        {
+            "name": "powerFactorT",
+            "writable": true,
+            "displayName": "powerFactorT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor for phase T. Allowed values: A number between -1 and 1"
+        },
+        {
+            "name": "reactiveEnergyConsumed",
+            "writable": true,
+            "displayName": "reactiveEnergyConsumed",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Energy consumed (with regards to reactive power) by circuits since the metering start date"
+        },
+        {
+            "name": "reactivePowerR",
+            "writable": true,
+            "displayName": "reactivePowerR",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactive power in R phase"
+        },
+        {
+            "name": "reactivePowerS",
+            "writable": true,
+            "displayName": "reactivePowerS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactive power in S phase"
+        },
+        {
+            "name": "reactivePowerT",
+            "writable": true,
+            "displayName": "reactivePowerT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactive power in T phase"
+        },
+        {
+            "name": "responsible",
+            "writable": true,
+            "displayName": "responsible",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.)."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "serialNumber",
+            "writable": true,
+            "displayName": "serialNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Serial number of the container."
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "thdrIntensityR",
+            "writable": true,
+            "displayName": "thdrIntensityR",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total harmonic distortion (R) of intensity in phase R. Allowed values: A number between 0 and 1"
+        },
+        {
+            "name": "thdrIntensityS",
+            "writable": true,
+            "displayName": "thdrIntensityS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total harmonic distortion (S) of intensity in phase S. Allowed values: A number between 0 and 1"
+        },
+        {
+            "name": "thdrIntensityT",
+            "writable": true,
+            "displayName": "thdrIntensityT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total harmonic distortion (T) of intensity in phase T. Allowed values: A number between 0 and 1"
+        },
+        {
+            "name": "thdrVoltageR",
+            "writable": true,
+            "displayName": "thdrVoltageR",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total harmonic distortion (R) of voltage in phase R. Allowed values: A number between 0 and 1"
+        },
+        {
+            "name": "thdrVoltageS",
+            "writable": true,
+            "displayName": "thdrVoltageS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total harmonic distortion (S) of voltage in phase S. Allowed values: A number between 0 and 1"
+        },
+        {
+            "name": "thdrVoltageT",
+            "writable": true,
+            "displayName": "thdrVoltageT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total harmonic distortion (T) of voltage in phase T. Allowed values: A number between 0 and 1"
+        },
+        {
+            "name": "totalActivePower",
+            "writable": true,
+            "displayName": "totalActivePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Active power currently consumed (counting all phases)"
+        },
+        {
+            "name": "totalReactivePower",
+            "writable": true,
+            "displayName": "totalReactivePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Reactive power currently consumed (counting all phases)"
+        },
+        {
+            "name": "voltageR",
+            "writable": true,
+            "displayName": "voltageR",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electric tension in phase R"
+        },
+        {
+            "name": "voltageS",
+            "writable": true,
+            "displayName": "voltageS",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electric tension in phase S"
+        },
+        {
+            "name": "voltageT",
+            "writable": true,
+            "displayName": "voltageT",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Electric tension in phase T"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "annotations",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A field reserved for annotations (incidences, remarks, etc.)",
+            "displayName": "annotations"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "compliantWith",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A list of standards to which the cabinet controller is compliant with (ex. IP54)",
+            "displayName": "compliantWith"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "features",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually.",
+            "displayName": "features"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refDevice",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Reference to the device(s) used to monitor this control cabinet.",
+            "displayName": "refDevice"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refStreetlightGroup",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Streetlight group(s) controlled. List of references to entities of type StreetlightGroup",
+            "displayName": "refStreetlightGroup"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "cupboardMadeOf",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "concrete",
+                        "displayName": "concrete",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "metal",
+                        "displayName": "metal",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "plastic",
+                        "displayName": "plastic",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "workingMode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "automatic",
+                        "displayName": "automatic",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "manual",
+                        "displayName": "manual",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "semiautomatic",
+                        "displayName": "semiautomatic",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        }
+    ]
+}
