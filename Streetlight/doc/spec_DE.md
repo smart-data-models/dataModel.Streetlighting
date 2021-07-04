@@ -6,7 +6,7 @@ Entität: Straßenlaterne
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `annotations`: Ein Feld, das für Anmerkungen (Vorkommnisse, Bemerkungen usw.) reserviert ist.  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `circuit`: Der Stromkreis, an den diese Straßenlaterne angeschlossen ist und von dem sie Strom bezieht. In der Regel enthält er eine Kennung, die es ermöglicht, weitere Informationen über diesen Stromkreis zu erhalten.  - `color`: Die Farbe des Produkts  - `controllingMethod`: Die Methode, die zur Steuerung dieser Straßenlaterne verwendet wird. Enum:'Gruppe, individuell'.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastLampChange`: Zeitstempel des zuletzt durchgeführten Lampenwechsels  - `dateLastSwitchingOff`: Zeitstempel des letzten Ausschaltens  - `dateLastSwitchingOn`: Zeitstempel des letzten Einschaltens  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateServiceStarted`: Datum, an dem die Straßenlaterne ihren Betrieb aufgenommen hat  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `illuminanceLevel`: Einstellung der relativen Beleuchtungsstärke. Eine Zahl zwischen 0 und 1.  - `image`: Eine URL, die ein Foto der Straßenlaterne enthält  - `laternHeight`: Die Höhe der Laterne. Bei Säulen mit vielen Armen kann dies zwischen den Straßenleuchten variieren. Eine weitere Variationsquelle für diese Eigenschaft sind wandmontierte Straßenleuchten.  - `location`:   - `locationCategory`: Kategorie des Ortes, an dem die Straßenleuchte platziert ist. Enum:'Brücke, centralIsland, Fassade, Garten, Park, Parkplatz, pedestrianPath, Spielplatz, Straße, Gehweg, Tunnel'  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `powerState`: Stromversorgungszustand der Straßenlaterne. Enum:'bootingUp, low, off, on'  - `refDevice`: Verweis auf das/die Gerät(e), das/die zur Überwachung dieser Straßenlaterne verwendet wird/werden. Liste der Referenz auf die Entität(en) vom Typ Gerät.  - `refStreetlightControlCabinet`: Wenn diese Straßenleuchte individuell gesteuert wird, verweisen Sie auf den zuständigen Schaltschrank.  - `refStreetlightGroup`: Gruppe der Straßenlaterne, wenn diese Straßenlaterne zu einer Gruppe gehört.  - `refStreetlightModel`: Das Modell der Straßenlaterne.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `status`: Der Gesamtstatus dieser Straßenlaterne. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'  - `type`: NGSI Entity-Typ. Es muss Streetlight sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `annotations`: Anmerkungen zum Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `circuit`: Der Stromkreis, an den diese Straßenlaterne angeschlossen ist und von dem sie Strom bezieht. In der Regel enthält er eine Kennung, die es ermöglicht, weitere Informationen über diesen Stromkreis zu erhalten.  - `color`: Die Farbe des Produkts  - `controllingMethod`: Die Methode, die zur Steuerung dieser Straßenlaterne verwendet wird. Enum:'Gruppe, individuell'.  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastLampChange`: Zeitstempel des zuletzt durchgeführten Lampenwechsels  - `dateLastSwitchingOff`: Zeitstempel des letzten Ausschaltens  - `dateLastSwitchingOn`: Zeitstempel des letzten Einschaltens  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateServiceStarted`: Datum, an dem die Straßenlaterne ihren Betrieb aufgenommen hat  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `illuminanceLevel`: Einstellung der relativen Beleuchtungsstärke. Eine Zahl zwischen 0 und 1.  - `image`: Eine URL, die ein Foto der Straßenlaterne enthält  - `laternHeight`: Die Höhe der Laterne. Bei Säulen mit vielen Armen kann dies zwischen den Straßenleuchten variieren. Eine weitere Variationsquelle für diese Eigenschaft sind wandmontierte Straßenleuchten.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `locationCategory`: Kategorie des Ortes, an dem die Straßenleuchte platziert ist. Enum:'Brücke, centralIsland, Fassade, Garten, Park, Parkplatz, pedestrianPath, Spielplatz, Straße, Gehweg, Tunnel'  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `powerState`: Stromversorgungszustand der Straßenlaterne. Enum:'bootingUp, low, off, on'  - `refDevice`: Verweis auf das/die Gerät(e), das/die zur Überwachung dieser Straßenlaterne verwendet wird/werden. Liste der Referenz auf die Entität(en) vom Typ Gerät.  - `refStreetlightControlCabinet`: Wenn diese Straßenleuchte individuell gesteuert wird, verweisen Sie auf den zuständigen Schaltschrank.  - `refStreetlightGroup`: Gruppe der Straßenlaterne, wenn diese Straßenlaterne zu einer Gruppe gehört.  - `refStreetlightModel`: Das Modell der Straßenlaterne.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `status`: Der Gesamtstatus dieser Straßenlaterne. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'  - `type`: NGSI Entity-Typ. Es muss Streetlight sein    
 Erforderliche Eigenschaften  
 - `id`  - `location`  - `status`  - `type`    
 Eine Entität vom Typ `Streetlight` repräsentiert eine städtische Straßenlaterne. Eigentlich gibt es pro Lampe eine Entität vom Typ `Streetlight`. Wenn also ein bestimmter Mast mehr als eine Laterne hält, gibt es so viele Streetlight-Entitäten wie installierte Lampen. Infolgedessen kann es mehr als eine Streetlight-Entität pro Standort geben. Eine "Streetlight"-Entität enthält kein Attribut, das den strukturellen Merkmalen entspricht. Solche Daten werden von Entitäten des Typs `StreetlightModel` erfasst.  
@@ -136,10 +136,10 @@ Streetlight:
       minimum: 0    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -159,7 +159,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -182,7 +183,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -207,7 +209,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -229,7 +232,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -254,7 +258,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -281,7 +286,7 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     locationCategory:    
       description: 'Category of the location where the streetlight is placed. Enum:''bridge, centralIsland, façade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'''    
       enum:    

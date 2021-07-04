@@ -1,15 +1,16 @@
-Entidad: Gabinete de control de la luz de la calle  
+Entidad: Gabinete de control del alumbrado público  
 ==================================================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md)  
-Descripción global: **Un armario de control de la luz de la calle**  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Un armario de control del alumbrado público.  
 
 ## Lista de propiedades  
 
-- `activePowerR`: Potencia activa consumida en la fase R  - `activePowerS`: Potencia activa consumida en la fase S  - `activePowerT`: Potencia activa consumida en la fase T  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Un campo reservado para las anotaciones (incidencias, observaciones, etc.)  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `brandName`: El nombre de la marca del gabinete  - `color`: El color del producto  - `compliantWith`: Una lista de normas a las que el controlador de gabinete cumple (ej. IP54)  - `cosPhi`: El coseno del parámetro phi  - `cupboardMadeOf`: Material del que está hecho el armario del armario. Enum:'hormigón, metal, otro, plástico'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateLastProgramming`: Fecha en la que hubo una operación de programación sobre el gabinete  - `dateMeteringStarted`: La fecha de inicio de la medición de la energía consumida  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que el controlador del gabinete comenzó a dar servicio  - `description`: La fecha del último cambio de lámpara realizado  - `energyConsumed`: Energía consumida por los circuitos controlados desde que comenzó la medición (desde la fecha de inicio de la medición)  - `energyCost`: El costo de la energía consumida por los circuitos controlados desde la fecha de inicio de la medición  - `features`: Una lista de características del controlador de gabinete.  Aquellos valores técnicos que se consideran significativos por las aplicaciones. "Relojes astronómicos". El gabinete de control incluye un reloj astronómico que se ocupa de las horas de conmutación. "Control individual". El armario de control permite controlar las luces de la calle de forma individual.  - `frequency`: La frecuencia de trabajo del circuito  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `intensityR`: La intensidad eléctrica en la fase R  - `intensityS`: La intensidad eléctrica en la fase S  - `intensityT`:  La intensidad eléctrica en la fase T  - `lastMeterReading`: Valor de la última lectura obtenida del sistema de medición de la energía consumida  - `location`:   - `manufacturerName`: Nombre del fabricante del gabinete  - `maximumPowerAvailable`: La máxima potencia disponible (por contrato) para los circuitos controlados por este gabinete  - `meterReadingPeriod`: La periodicidad de las lecturas de los contadores de energía consumida en días  - `modelName`: Nombre del modelo del gabinete  - `name`: El nombre de este artículo.  - `nextActuationDeadline`: Fecha límite para la próxima actuación a realizar (programación, pruebas, etc.)  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `powerFactorR`: Factor de potencia para la fase R. Valores permitidos: Un número entre -1 y 1  - `powerFactorS`: Factor de potencia para la fase S. Valores permitidos: Un número entre -1 y 1  - `powerFactorT`: Factor de potencia para la fase T. Valores permitidos: Un número entre -1 y 1  - `reactiveEnergyConsumed`: La energía consumida (con respecto a la potencia reactiva) por los circuitos desde la fecha de inicio de la medición  - `reactivePowerR`: Potencia reactiva en la fase R  - `reactivePowerS`: Potencia reactiva en la fase S  - `reactivePowerT`: Potencia reactiva en la fase T  - `refDevice`: Referencia al dispositivo o dispositivos usados para monitorear este gabinete de control.  - `refStreetlightGroup`: Grupo(s) de luces de la calle controlado(s). Lista de referencias a entidades del tipo StreetlightGroup  - `responsible`: Responsable del controlador del gabinete, es decir, la entidad encargada de la actuación (programación, etc.).  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `serialNumber`: Número de serie del contenedor.  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `thdrIntensityR`: Distorsión armónica total (R) de intensidad en la fase R. Valores permitidos: Un número entre 0 y 1  - `thdrIntensityS`: Distorsión armónica total (S) de intensidad en la fase S. Valores permitidos: Un número entre 0 y 1  - `thdrIntensityT`: Distorsión armónica total (T) de intensidad en la fase T. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageR`: Distorsión armónica total (R) del voltaje en la fase R. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageS`: Distorsión armónica total (S) del voltaje en la fase S. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageT`: Distorsión armónica total (T) del voltaje en la fase T. Valores permitidos: Un número entre 0 y 1  - `totalActivePower`: Potencia activa consumida actualmente (contando todas las fases)  - `totalReactivePower`: Potencia reactiva consumida actualmente (contando todas las fases)  - `type`: Tipo de entidad NGSI. Tiene que ser StreetlightControlCabinet  - `voltageR`: La tensión eléctrica en la fase R  - `voltageS`: La tensión eléctrica en la fase S  - `voltageT`: La tensión eléctrica en la fase T  - `workingMode`: Modo de trabajo para este controlador de gabinete.  `automático` : El controlador del gabinete decide automáticamente cuando los grupos de luz se encienden y se apagan. El funcionamiento manual no está permitido. `manual` : Se requiere intervención humana para el encendido y apagado. `semiautomático` : Lo mismo que `automático` pero en este caso se permite la intervención manual.    
+- `activePowerR`: Potencia activa consumida en la fase R  - `activePowerS`: Potencia activa consumida en la fase S  - `activePowerT`: Potencia activa consumida en la fase T  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Un campo reservado para anotaciones (incidencias, observaciones, etc.)  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `brandName`: Nombre de la marca del armario  - `color`: El color del producto  - `compliantWith`: Una lista de las normas que cumple el controlador del armario (por ejemplo, IP54)  - `cosPhi`: Coseno del parámetro phi  - `cupboardMadeOf`: Material del que está hecho el armario. Enum:'hormigón, metal, otro, plástico'  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastProgramming`: Fecha en la que hubo una operación de programación sobre el armario  - `dateMeteringStarted`: La fecha de inicio de la medición de la energía consumida  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que el controlador del armario comenzó a dar servicio  - `description`: Marca de tiempo del último cambio de lámpara realizado  - `energyConsumed`: Energía consumida por los circuitos controlados desde el inicio de la medición (desde dateMeteringStarted)  - `energyCost`: Coste de la energía consumida por los circuitos controlados desde la fecha de inicio de la medición  - `features`: Una lista de las características del controlador del armario.  Aquellos valores técnicos considerados significativos por las aplicaciones. `Reloj astronómico`. El armario de control incluye un reloj astronómico para tratar las horas de conmutación. `ControlIndividual`. El armario de control permite controlar las farolas de forma individual.  - `frequency`: La frecuencia de trabajo del circuito  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `intensityR`: Intensidad eléctrica en la fase R  - `intensityS`: Intensidad eléctrica en la fase S  - `intensityT`:  Intensidad eléctrica en la fase T  - `lastMeterReading`: Valor de la última lectura obtenida del sistema de medición de energía consumida  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `manufacturerName`: Nombre del fabricante del armario  - `maximumPowerAvailable`: La potencia máxima disponible (por contrato) para los circuitos controlados por este armario  - `meterReadingPeriod`: La periodicidad de las lecturas del contador de energía consumida en días  - `modelName`: Nombre del modelo de armario  - `name`: El nombre de este artículo.  - `nextActuationDeadline`: Fecha límite para la siguiente actuación que debe realizarse (programación, pruebas, etc.)  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerFactorR`: Factor de potencia para la fase R. Valores permitidos: Un número entre -1 y 1  - `powerFactorS`: Factor de potencia para la fase S. Valores permitidos: Un número entre -1 y 1  - `powerFactorT`: Factor de potencia para la fase T. Valores permitidos: Un número entre -1 y 1  - `reactiveEnergyConsumed`: Energía consumida (con respecto a la potencia reactiva) por los circuitos desde la fecha de inicio de la medición  - `reactivePowerR`: Potencia reactiva en la fase R  - `reactivePowerS`: Potencia reactiva en fase S  - `reactivePowerT`: Potencia reactiva en fase T  - `refDevice`: Referencia al dispositivo o dispositivos utilizados para supervisar este armario de control.  - `refStreetlightGroup`: Grupo(s) de farolas controlado(s). Lista de referencias a entidades de tipo StreetlightGroup  - `responsible`: Responsable del controlador del armario, es decir, entidad encargada de la actuación (programación, etc.).  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber`: Número de serie del contenedor.  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `thdrIntensityR`: Distorsión armónica total (R) de la intensidad en la fase R. Valores permitidos: Un número entre 0 y 1  - `thdrIntensityS`: Distorsión armónica total (S) de la intensidad en la fase S. Valores permitidos: Un número entre 0 y 1  - `thdrIntensityT`: Distorsión armónica total (T) de la intensidad en la fase T. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageR`: Distorsión armónica total (R) de la tensión en la fase R. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageS`: Distorsión armónica total (S) de la tensión en la fase S. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageT`: Distorsión armónica total (T) de la tensión en la fase T. Valores permitidos: Un número entre 0 y 1  - `totalActivePower`: Potencia activa consumida actualmente (contando todas las fases)  - `totalReactivePower`: Potencia reactiva consumida actualmente (contando todas las fases)  - `type`: Tipo de entidad NGSI. Tiene que ser StreetlightControlCabinet  - `voltageR`: Tensión eléctrica en la fase R  - `voltageS`: Tensión eléctrica en la fase S  - `voltageT`: Tensión eléctrica en la fase T  - `workingMode`: Modo de trabajo de este controlador de armario.  Automático": El controlador del armario decide automáticamente cuándo se encienden y apagan los grupos de luces. No se permite la operación manual. Manual": Se requiere la intervención humana para el encendido y el apagado. `semiautomatic` : Lo mismo que `automatic` pero en este caso se permite la intervención manual.    
 Propiedades requeridas  
 - `id`  - `location`  - `refStreetlightGroup`  - `type`  - `workingMode`    
-Representa el equipo, generalmente en la calle, utilizado para el control automatizado de un grupo(s) de farolas, es decir, uno o más circuitos.  
-## Modelo de datos Descripción de las propiedades  
+Representa un equipo, generalmente en la calle, utilizado para el control automatizado de un grupo o grupos de farolas, es decir, uno o varios circuitos.  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -38,30 +39,29 @@ StreetlightControlCabinet:
         model: http://schema.org/Number    
         units: 'Kilowatts (kW)'    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -215,10 +215,10 @@ StreetlightControlCabinet:
         model: https://schema.org/DateTime    
         units: 'Kilowatts per hour (kWh)'    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -238,7 +238,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -261,7 +262,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -286,7 +288,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -308,7 +311,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -333,7 +337,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -360,7 +365,7 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     manufacturerName:    
       description: 'Name of the cabinet''s manufacturer'    
       type: Property    
@@ -484,8 +489,8 @@ StreetlightControlCabinet:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -595,9 +600,9 @@ StreetlightControlCabinet:
   type: object    
 ```  
 </details>    
-## Ejemplo de cargas útiles  
-#### StreetlightControlCabinete de control NGSI V2 valores clave Ejemplo  
-Aquí hay un ejemplo de un gabinete de control de la luz de la calle en formato JSON como valores clave. Es compatible con NGSI V2 cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
+## Ejemplo de carga útil  
+#### StreetlightControlCabinet NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de un StreetlightControlCabinet en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "streetlightcontrolcabinet:A45HGJK",  
@@ -626,8 +631,8 @@ StreetlightControlCabinet:
   "workingMode": "automatic"  
 }  
 ```  
-#### StreetlightControlCabinet NGSI V2 normalizado Ejemplo  
-Aquí hay un ejemplo de un gabinete de control de la luz de la calle en formato JSON como normalizado. Es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### StreetlightControlCabinet NGSI-v2 normalizado Ejemplo  
+Este es un ejemplo de un StreetlightControlCabinet en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "streetlightcontrolcabinet:A45HGJK",  
@@ -704,139 +709,156 @@ StreetlightControlCabinet:
   }  
 }  
 ```  
-#### StreetlightControlCabinete de control de las llaves NGSI-LD Ejemplo  
-Aquí hay un ejemplo de un gabinete de control de la luz de la calle en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
-```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "brandName": "Siemens",  
- "compliantWith": ["IP54"],  
- "cupboardMadeOf": "plastic",  
- "dateLastProgramming": {"@type": "DateTime",  
-                         "@value": "2016-07-08T16:04:30.201Z"},  
- "dateMeteringStarted": {"@type": "DateTime",  
-                         "@value": "2013-07-07T15:05:59.408Z"},  
- "energyConsumed": 162456,  
- "id": "urn:ngsi-ld:StreetlightControlCabinet:streetlightcontrolcabinet:A45HGJK",  
- "intensityR": 20.1,  
- "intensityS": 14.4,  
- "intensityT": 22,  
- "lastMeterReading": 161237,  
- "location": {"coordinates": [-3.164485591715449, 40.62785133667262],  
-              "type": "Point"},  
- "maximumPowerAvailable": 10,  
- "meterReadingPeriod": 60,  
- "modelName": "Simatic S7 1200",  
- "reactivePowerR": 45,  
- "reactivePowerS": 43.5,  
- "reactivePowerT": 42,  
- "refStreetlightGroup": ["urn:ngsi-ld:StreetlightGroup:streetlightgroup:BG678",  
-                         "urn:ngsi-ld:StreetlightGroup:streetlightgroup:789"],  
- "type": "StreetlightControlCabinet",  
- "workingMode": "automatic"}  
-```  
-#### StreetlightControlCabinet NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un gabinete de control de la luz de la calle en formato JSON-LD normalizado. Es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### StreetlightControlCabinet NGSI-LD key-values Ejemplo  
+Aquí hay un ejemplo de un StreetlightControlCabinet en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:StreetlightControlCabinet:streetlightcontrolcabinet:A45HGJK",  
-    "type": "StreetlightControlCabinet",  
-    "modelName": {  
-        "type": "Property",  
-        "value": "Simatic S7 1200"  
-    },  
-    "lastMeterReading": {  
-        "type": "Property",  
-        "value": 161237  
-    },  
-    "dateMeteringStarted": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2013-07-07T15:05:59.408Z"  
-        }  
-    },  
-    "dateLastProgramming": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2016-07-08T16:04:30.201Z"  
-        }  
-    },  
-    "refStreetlightGroup": {  
-        "type": "Relationship",  
-        "object": [  
-            "urn:ngsi-ld:StreetlightGroup:streetlightgroup:BG678",  
-            "urn:ngsi-ld:StreetlightGroup:streetlightgroup:789"  
-        ]  
-    },  
-    "compliantWith": {  
-        "type": "Property",  
-        "value": [  
-            "IP54"  
-        ]  
-    },  
-    "intensityR": {  
-        "type": "Property",  
-        "value": 20.1  
-    },  
-    "intensityS": {  
-        "type": "Property",  
-        "value": 14.4  
-    },  
-    "intensityT": {  
-        "type": "Property",  
-        "value": 22  
-    },  
-    "workingMode": {  
-        "type": "Property",  
-        "value": "automatic"  
-    },  
-    "energyConsumed": {  
-        "type": "Property",  
-        "value": 162456  
-    },  
-    "meterReadingPeriod": {  
-        "type": "Property",  
-        "value": 60  
-    },  
-    "cupboardMadeOf": {  
-        "type": "Property",  
-        "value": "plastic"  
-    },  
-    "brandName": {  
-        "type": "Property",  
-        "value": "Siemens"  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -3.164485591715449,  
-                40.62785133667262  
-            ]  
-        }  
-    },  
-    "reactivePowerR": {  
-        "type": "Property",  
-        "value": 45  
-    },  
-    "reactivePowerS": {  
-        "type": "Property",  
-        "value": 43.5  
-    },  
-    "reactivePowerT": {  
-        "type": "Property",  
-        "value": 42  
-    },  
-    "maximumPowerAvailable": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  "id": "urn:ngsi-ld:StreetlightControlCabinet:streetlightcontrolcabinet:A45HGJK",  
+  "type": "StreetlightControlCabinet",  
+  "modelName": {  
+    "type": "Property",  
+    "value": "Simatic S7 1200"  
+  },  
+  "lastMeterReading": {  
+    "type": "Property",  
+    "value": 161237  
+  },  
+  "dateMeteringStarted": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2013-07-07T15:05:59.408Z"  
+    }  
+  },  
+  "dateLastProgramming": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-07-08T16:04:30.201Z"  
+    }  
+  },  
+  "refStreetlightGroup": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:StreetlightGroup:streetlightgroup:BG678",  
+      "urn:ngsi-ld:StreetlightGroup:streetlightgroup:789"  
     ]  
+  },  
+  "compliantWith": {  
+    "type": "Property",  
+    "value": [  
+      "IP54"  
+    ]  
+  },  
+  "intensityR": {  
+    "type": "Property",  
+    "value": 20.1  
+  },  
+  "intensityS": {  
+    "type": "Property",  
+    "value": 14.4  
+  },  
+  "intensityT": {  
+    "type": "Property",  
+    "value": 22  
+  },  
+  "workingMode": {  
+    "type": "Property",  
+    "value": "automatic"  
+  },  
+  "energyConsumed": {  
+    "type": "Property",  
+    "value": 162456  
+  },  
+  "meterReadingPeriod": {  
+    "type": "Property",  
+    "value": 60  
+  },  
+  "cupboardMadeOf": {  
+    "type": "Property",  
+    "value": "plastic"  
+  },  
+  "brandName": {  
+    "type": "Property",  
+    "value": "Siemens"  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
+    }  
+  },  
+  "reactivePowerR": {  
+    "type": "Property",  
+    "value": 45  
+  },  
+  "reactivePowerS": {  
+    "type": "Property",  
+    "value": 43.5  
+  },  
+  "reactivePowerT": {  
+    "type": "Property",  
+    "value": 42  
+  },  
+  "maximumPowerAvailable": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### StreetlightControlCabinet NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de un StreetlightControlCabinet en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "brandName": "Siemens",  
+  "compliantWith": [  
+    "IP54"  
+  ],  
+  "cupboardMadeOf": "plastic",  
+  "dateLastProgramming": {  
+    "@type": "DateTime",  
+    "@value": "2016-07-08T16:04:30.201Z"  
+  },  
+  "dateMeteringStarted": {  
+    "@type": "DateTime",  
+    "@value": "2013-07-07T15:05:59.408Z"  
+  },  
+  "energyConsumed": 162456,  
+  "id": "urn:ngsi-ld:StreetlightControlCabinet:streetlightcontrolcabinet:A45HGJK",  
+  "intensityR": 20.1,  
+  "intensityS": 14.4,  
+  "intensityT": 22,  
+  "lastMeterReading": 161237,  
+  "location": {  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ],  
+    "type": "Point"  
+  },  
+  "maximumPowerAvailable": 10,  
+  "meterReadingPeriod": 60,  
+  "modelName": "Simatic S7 1200",  
+  "reactivePowerR": 45,  
+  "reactivePowerS": 43.5,  
+  "reactivePowerT": 42,  
+  "refStreetlightGroup": [  
+    "urn:ngsi-ld:StreetlightGroup:streetlightgroup:BG678",  
+    "urn:ngsi-ld:StreetlightGroup:streetlightgroup:789"  
+  ],  
+  "type": "StreetlightControlCabinet",  
+  "workingMode": "automatic"  
 }  
 ```  

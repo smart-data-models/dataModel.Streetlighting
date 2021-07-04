@@ -6,7 +6,7 @@ Entidad: Farola
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Anotaciones sobre el artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `circuit`: El circuito al que se conecta esta farola y del que recibe energía. Normalmente contendrá un identificador que permitirá obtener más información sobre dicho circuito.  - `color`: El color del producto  - `controllingMethod`: El método utilizado para controlar esta farola. Enum:'grupo, individual'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastLampChange`: Marca de tiempo del último cambio de lámpara realizado  - `dateLastSwitchingOff`: Marca de tiempo de la última desconexión  - `dateLastSwitchingOn`: Marca de tiempo del último encendido  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que la farola empezó a dar servicio  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `illuminanceLevel`: Ajuste del nivel de iluminación relativo. Un número entre 0 y 1.  - `image`: Una URL con una foto de la farola  - `laternHeight`: Altura de la farola. En las columnas con muchos brazos esto puede variar entre las farolas. Otra fuente de variación de esta propiedad son las farolas de pared.  - `location`:   - `locationCategory`: Categoría del lugar donde se coloca la farola. Enum:'puente, isla central, fachada, jardín, parque, aparcamiento, camino peatonal, parque infantil, carretera, acera, túnel'.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerState`: Estado de energía de la farola. Enum:'bootingUp, low, off, on'  - `refDevice`: Referencia al dispositivo(s) utilizado(s) para supervisar este tramo de calle. Lista de Referencia a la(s) entidad(es) de tipo Dispositivo.  - `refStreetlightControlCabinet`: Si esta farola está controlada individualmente, referencia al gabinete de control a cargo de.  - `refStreetlightGroup`: Grupo de la farola, si esta farola pertenece a algún grupo.  - `refStreetlightModel`: El modelo de la farola.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status`: El estado general de esta farola. Enum:'farola rota, columnaIsuficiente, lámpara defectuosa, ok'  - `type`: Tipo de entidad NGSI. Tiene que ser Farola    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Anotaciones sobre el artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `circuit`: El circuito al que se conecta esta farola y del que recibe energía. Normalmente contendrá un identificador que permitirá obtener más información sobre dicho circuito.  - `color`: El color del producto  - `controllingMethod`: El método utilizado para controlar esta farola. Enum:'grupo, individual'.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastLampChange`: Marca de tiempo del último cambio de lámpara realizado  - `dateLastSwitchingOff`: Marca de tiempo de la última desconexión  - `dateLastSwitchingOn`: Marca de tiempo del último encendido  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que la farola empezó a dar servicio  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `illuminanceLevel`: Ajuste del nivel de iluminación relativo. Un número entre 0 y 1.  - `image`: Una URL con una foto de la farola  - `laternHeight`: Altura de la farola. En las columnas con muchos brazos esto puede variar entre las farolas. Otra fuente de variación de esta propiedad son las farolas de pared.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `locationCategory`: Categoría del lugar donde se coloca la farola. Enum:'puente, isla central, fachada, jardín, parque, aparcamiento, camino peatonal, parque infantil, carretera, acera, túnel'.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerState`: Estado de energía de la farola. Enum:'bootingUp, low, off, on'  - `refDevice`: Referencia al dispositivo(s) utilizado(s) para supervisar este tramo de calle. Lista de Referencia a la(s) entidad(es) de tipo Dispositivo.  - `refStreetlightControlCabinet`: Si esta farola está controlada individualmente, referencia al gabinete de control a cargo de.  - `refStreetlightGroup`: Grupo de la farola, si esta farola pertenece a algún grupo.  - `refStreetlightModel`: El modelo de la farola.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status`: El estado general de esta farola. Enum:'farola rota, columnaIsuficiente, lámpara defectuosa, ok'  - `type`: Tipo de entidad NGSI. Tiene que ser Farola    
 Propiedades requeridas  
 - `id`  - `location`  - `status`  - `type`    
 Una entidad de tipo `Alumbrado público` representa una farola urbana. En realidad, habrá una entidad de tipo `Alumbrado público` por farola. Por lo tanto, si un poste concreto tiene más de una farola, habrá tantas entidades de farola como lámparas instaladas. Como resultado, puede haber más de una entidad de farola por ubicación. Una entidad "Farola" no contiene ningún atributo correspondiente a las características estructurales. Estos datos son capturados por entidades de tipo `StreetlightModel`.  
@@ -136,10 +136,10 @@ Streetlight:
       minimum: 0    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -159,7 +159,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -182,7 +183,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -207,7 +209,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -229,7 +232,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -254,7 +258,8 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -281,7 +286,7 @@ Streetlight:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     locationCategory:    
       description: 'Category of the location where the streetlight is placed. Enum:''bridge, centralIsland, façade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'''    
       enum:    

@@ -1,11 +1,12 @@
 Entität: StreetlightControlCabinet  
 ==================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Ein Schaltschrank für Straßenbeleuchtung**  
 
 ## Liste der Eigenschaften  
 
-- `activePowerR`: In der R-Phase aufgenommene Wirkleistung  - `activePowerS`: In der S-Phase aufgenommene Wirkleistung  - `activePowerT`: Aufgenommene Wirkleistung in Phase T  - `address`: Die Postanschrift.  - `alternateName`: Ein alternativer Name für diesen Artikel  - `annotations`: Ein Feld, das für Anmerkungen (Vorkommnisse, Bemerkungen usw.) reserviert ist  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `brandName`: Name der Marke des Schranks  - `color`: Die Farbe des Produkts  - `compliantWith`: Eine Liste der Normen, denen der Schaltschrank-Controller entspricht (z. B. IP54)  - `cosPhi`: Kosinus des phi-Parameters  - `cupboardMadeOf`: Material, aus dem der Schrank gefertigt ist. Enum:'Beton, Metall, Sonstiges, Kunststoff'  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastProgramming`: Datum, an dem ein Programmiervorgang über den Schrank stattgefunden hat  - `dateMeteringStarted`: Das Startdatum für die Zählung der verbrauchten Energie  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateServiceStarted`: Datum, an dem die Schranksteuerung ihren Dienst aufgenommen hat  - `description`: Zeitstempel des zuletzt durchgeführten Lampenwechsels  - `energyConsumed`: Von den kontrollierten Stromkreisen verbrauchte Energie seit Beginn der Messung (seit dateMeteringStarted)  - `energyCost`: Kosten der Energie, die von den kontrollierten Stromkreisen seit dem Startdatum der Messung verbraucht wurde  - `features`: Eine Liste der Eigenschaften der Schranksteuerung.  Die technischen Werte, die von den Anwendungen als sinnvoll erachtet werden. astronomischeUhr`. Der Schaltschrank enthält eine astronomische Uhr zur Behandlung von Schaltzeiten. Einzelsteuerung". Der Schaltschrank ermöglicht die individuelle Steuerung von Straßenleuchten.  - `frequency`: Die Arbeitsfrequenz der Schaltung  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `intensityR`: Elektrische Intensität in der R-Phase  - `intensityS`: Elektrische Intensität in der S-Phase  - `intensityT`:  Elektrische Intensität in der T-Phase  - `lastMeterReading`: Wert der letzten Ablesung, die vom Messsystem für verbrauchte Energie erhalten wurde  - `location`:   - `manufacturerName`: Name des Herstellers des Schranks  - `maximumPowerAvailable`: Die maximal verfügbare Leistung (nach Vertrag) für die von diesem Schrank gesteuerten Stromkreise  - `meterReadingPeriod`: Die Periodizität der Zählerstände der verbrauchten Energie in Tagen  - `modelName`: Name des Modells des Schranks  - `name`: Der Name dieses Elements.  - `nextActuationDeadline`: Termin für die nächste auszuführende Betätigung (Programmieren, Testen, etc.)  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `powerFactorR`: Leistungsfaktor für Phase R. Erlaubte Werte: Eine Zahl zwischen -1 und 1  - `powerFactorS`: Leistungsfaktor für Phase S. Erlaubte Werte: Eine Zahl zwischen -1 und 1  - `powerFactorT`: Leistungsfaktor für Phase T. Erlaubte Werte: Eine Zahl zwischen -1 und 1  - `reactiveEnergyConsumed`: Von den Stromkreisen verbrauchte Energie (in Bezug auf die Blindleistung) seit dem Startdatum der Messung  - `reactivePowerR`: Blindleistung in der R-Phase  - `reactivePowerS`: Blindleistung in der S-Phase  - `reactivePowerT`: Blindleistung in der T-Phase  - `refDevice`: Verweis auf das/die Gerät(e), das/die zur Überwachung dieses Schaltschranks verwendet wird/werden.  - `refStreetlightGroup`: Gesteuerte Straßenlampengruppe(n). Liste der Referenzen auf Entitäten des Typs StreetlightGroup  - `responsible`: Verantwortlich für die Schaltschranksteuerung, d.h. Instanz, die für die Ansteuerung (Programmierung, etc.) zuständig ist.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `serialNumber`: Seriennummer des Containers.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `thdrIntensityR`: Gesamte harmonische Verzerrung (R) der Intensität in der Phase R. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrIntensityS`: Gesamte harmonische Verzerrung (S) der Intensität in Phase S. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrIntensityT`: Gesamte harmonische Verzerrung (T) der Intensität in der Phase T. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrVoltageR`: Gesamte harmonische Verzerrung (R) der Spannung in Phase R. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrVoltageS`: Gesamte harmonische Verzerrung (S) der Spannung in Phase S. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrVoltageT`: Gesamte harmonische Verzerrung (T) der Spannung in Phase T. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `totalActivePower`: Aktuell aufgenommene Wirkleistung (alle Phasen zählend)  - `totalReactivePower`: Aktuell aufgenommene Blindleistung (alle Phasen zählend)  - `type`: NGSI Entity-Typ. Es muss StreetlightControlCabinet sein  - `voltageR`: Elektrische Spannung in Phase R  - `voltageS`: Elektrische Spannung in der Phase S  - `voltageT`: Elektrische Spannung in der Phase T  - `workingMode`: Arbeitsmodus für diesen Schaltschrank-Controller.  Automatik": Der Schaltschrank-Controller entscheidet automatisch, wann Lichtgruppen ein- und ausgeschaltet werden. Eine manuelle Bedienung ist nicht zulässig. `manuell` : Zum Ein- und Ausschalten ist ein menschlicher Eingriff erforderlich. `semiautomatisch` : Wie `automatisch`, aber in diesem Fall ist ein manueller Eingriff erlaubt.    
+- `activePowerR`: In der R-Phase aufgenommene Wirkleistung  - `activePowerS`: In der S-Phase aufgenommene Wirkleistung  - `activePowerT`: Aufgenommene Wirkleistung in Phase T  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `annotations`: Ein Feld, das für Anmerkungen (Vorkommnisse, Bemerkungen usw.) reserviert ist  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `brandName`: Name der Marke des Schranks  - `color`: Die Farbe des Produkts  - `compliantWith`: Eine Liste der Normen, denen der Schaltschrank-Controller entspricht (z. B. IP54)  - `cosPhi`: Kosinus des phi-Parameters  - `cupboardMadeOf`: Material, aus dem der Schrank gefertigt ist. Enum:'Beton, Metall, Sonstiges, Kunststoff'  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateLastProgramming`: Datum, an dem ein Programmiervorgang über den Schrank stattgefunden hat  - `dateMeteringStarted`: Das Startdatum für die Zählung der verbrauchten Energie  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateServiceStarted`: Datum, an dem die Schranksteuerung ihren Dienst aufgenommen hat  - `description`: Zeitstempel des zuletzt durchgeführten Lampenwechsels  - `energyConsumed`: Von den kontrollierten Stromkreisen verbrauchte Energie seit Beginn der Messung (seit dateMeteringStarted)  - `energyCost`: Kosten der Energie, die von den kontrollierten Stromkreisen seit dem Startdatum der Messung verbraucht wurde  - `features`: Eine Liste der Eigenschaften der Schranksteuerung.  Die technischen Werte, die von den Anwendungen als sinnvoll erachtet werden. astronomischeUhr`. Der Schaltschrank enthält eine astronomische Uhr zur Behandlung von Schaltzeiten. Einzelsteuerung". Der Schaltschrank ermöglicht die individuelle Steuerung von Straßenleuchten.  - `frequency`: Die Arbeitsfrequenz der Schaltung  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `intensityR`: Elektrische Intensität in der R-Phase  - `intensityS`: Elektrische Intensität in der S-Phase  - `intensityT`:  Elektrische Intensität in der T-Phase  - `lastMeterReading`: Wert der letzten Ablesung, die vom Messsystem für verbrauchte Energie erhalten wurde  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `manufacturerName`: Name des Herstellers des Schaltschranks  - `maximumPowerAvailable`: Die maximal verfügbare Leistung (nach Vertrag) für die von diesem Schrank gesteuerten Stromkreise  - `meterReadingPeriod`: Die Periodizität der Zählerstände der verbrauchten Energie in Tagen  - `modelName`: Name des Modells des Schranks  - `name`: Der Name dieses Elements.  - `nextActuationDeadline`: Termin für die nächste auszuführende Betätigung (Programmieren, Testen, etc.)  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `powerFactorR`: Leistungsfaktor für Phase R. Erlaubte Werte: Eine Zahl zwischen -1 und 1  - `powerFactorS`: Leistungsfaktor für Phase S. Erlaubte Werte: Eine Zahl zwischen -1 und 1  - `powerFactorT`: Leistungsfaktor für Phase T. Erlaubte Werte: Eine Zahl zwischen -1 und 1  - `reactiveEnergyConsumed`: Von den Stromkreisen verbrauchte Energie (in Bezug auf die Blindleistung) seit dem Startdatum der Messung  - `reactivePowerR`: Blindleistung in der R-Phase  - `reactivePowerS`: Blindleistung in der S-Phase  - `reactivePowerT`: Blindleistung in der T-Phase  - `refDevice`: Verweis auf das/die Gerät(e), das/die zur Überwachung dieses Schaltschranks verwendet wird/werden.  - `refStreetlightGroup`: Gesteuerte Straßenlampengruppe(n). Liste der Referenzen auf Entitäten des Typs StreetlightGroup  - `responsible`: Verantwortlich für die Schaltschranksteuerung, d.h. Instanz, die für die Ansteuerung (Programmierung, etc.) zuständig ist.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `serialNumber`: Seriennummer des Containers.  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `thdrIntensityR`: Gesamte harmonische Verzerrung (R) der Intensität in der Phase R. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrIntensityS`: Gesamte harmonische Verzerrung (S) der Intensität in Phase S. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrIntensityT`: Gesamte harmonische Verzerrung (T) der Intensität in der Phase T. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrVoltageR`: Gesamte harmonische Verzerrung (R) der Spannung in Phase R. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrVoltageS`: Gesamte harmonische Verzerrung (S) der Spannung in Phase S. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `thdrVoltageT`: Gesamte harmonische Verzerrung (T) der Spannung in Phase T. Erlaubte Werte: Eine Zahl zwischen 0 und 1  - `totalActivePower`: Aktuell aufgenommene Wirkleistung (alle Phasen zählend)  - `totalReactivePower`: Aktuell aufgenommene Blindleistung (alle Phasen zählend)  - `type`: NGSI Entity-Typ. Es muss StreetlightControlCabinet sein  - `voltageR`: Elektrische Spannung in Phase R  - `voltageS`: Elektrische Spannung in der Phase S  - `voltageT`: Elektrische Spannung in der Phase T  - `workingMode`: Arbeitsmodus für diesen Schaltschrank-Controller.  Automatik": Der Schaltschrank-Controller entscheidet automatisch, wann Lichtgruppen ein- und ausgeschaltet werden. Eine manuelle Bedienung ist nicht zulässig. `manuell` : Zum Ein- und Ausschalten ist ein menschlicher Eingriff erforderlich. `semiautomatisch` : Wie `automatisch`, aber in diesem Fall ist ein manueller Eingriff erlaubt.    
 Erforderliche Eigenschaften  
 - `id`  - `location`  - `refStreetlightGroup`  - `type`  - `workingMode`    
 Es handelt sich um ein Gerät, in der Regel auf der Straße, das zur automatischen Steuerung einer oder mehrerer Gruppen von Straßenleuchten, d. h. eines oder mehrerer Stromkreise, verwendet wird.  
@@ -38,30 +39,29 @@ StreetlightControlCabinet:
         model: http://schema.org/Number    
         units: 'Kilowatts (kW)'    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -215,10 +215,10 @@ StreetlightControlCabinet:
         model: https://schema.org/DateTime    
         units: 'Kilowatts per hour (kWh)'    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -238,7 +238,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -261,7 +262,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -286,7 +288,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -308,7 +311,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -333,7 +337,8 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -360,7 +365,7 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     manufacturerName:    
       description: 'Name of the cabinet''s manufacturer'    
       type: Property    
@@ -484,8 +489,8 @@ StreetlightControlCabinet:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    

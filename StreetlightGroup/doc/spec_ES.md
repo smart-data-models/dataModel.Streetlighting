@@ -1,15 +1,16 @@
 Entidad: StreetlightGroup  
 =========================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightGroup/LICENSE.md)  
-Descripción global: **Un grupo de luces de la calle**  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Un grupo de alumbrado público**  
 
 ## Lista de propiedades  
 
-- `activeProgramId`: Identificador del programa activo para este grupo de farolas  - `address`: La dirección postal.  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Un campo reservado para las anotaciones (incidencias, observaciones, etc.).  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `color`: El color del producto  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Sello de tiempo de creación de la entidad. Normalmente será asignado por la plataforma de almacenamiento.  - `dateLastSwitchingOff`: Sello de tiempo del último apagado  - `dateLastSwitchingOn`: Sello de tiempo del último encendido  - `dateModified`: Sello de tiempo de la última modificación de la entidad. Esta será normalmente asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `illuminanceLevel`: Ajuste del nivel de iluminación relativo del grupo. Valores permitidos: Un número entre 0 y 1  - `image`: Una imagen del artículo  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificados JSON que hace referencia a los Ids únicos de los propietarios  - `powerState`: El estado de poder del grupo Streetlight. Enum:'on, off, low, bootingUp'.  - `refStreetlight`: Lista de entidades de alumbrado público pertenecientes a este grupo. Lista de referencias a entidades del tipo Streetlight. Valores permitidos: Debe haber integridad topográfica entre la ubicación del grupo y la de las farolas individuales.  - `refStreetlightControlCabinet`: El gabinete de control del grupo Streetlight  - `seeAlso`: lista de uri que apunta a recursos adicionales sobre el tema  - `source`: Una secuencia de caracteres que da como URL la fuente original de los datos de la entidad. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente.  - `switchingMode`: Sello de tiempo del último cambio de lámpara hecho. Enum:' night-ON, night-OFF, night-LOW, always-ON, day-ON, day-OFF, day-LOW'  - `switchingOnHours`: Encendiendo las horas. Se utiliza normalmente para establecer horarios especiales para ciertas fechas.  - `type`: Tipo de entidad NGSI. Tiene que ser StreetlightGroup    
+- `activeProgramId`: Identificador del programa activo para este grupo de farolas  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Campo reservado a las anotaciones (incidencias, observaciones, etc.).  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `color`: El color del producto  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastSwitchingOff`: Marca de tiempo de la última desconexión  - `dateLastSwitchingOn`: Marca de tiempo del último encendido  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `illuminanceLevel`: Ajuste del nivel de iluminación relativo para el grupo. Valores permitidos: Un número entre 0 y 1  - `image`: Una imagen del artículo  - `location`:   - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerState`: Estado de energía del grupo de farolas. Enum:'on, off, low, bootingUp'  - `refStreetlight`: Lista de entidades de alumbrado público pertenecientes a este grupo. Lista de referencias a entidades de tipo Farola. Valores permitidos: Debe haber integridad topográfica entre la ubicación del grupo y de las farolas individuales.  - `refStreetlightControlCabinet`: Armario de control del grupo de alumbrado público  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `switchingMode`: Marca de tiempo del último cambio de lámpara realizado. Enum:' noche-ON, noche-OFF, noche-LOW, siempre-ON, día-ON, día-OFF, día-LOW'  - `switchingOnHours`: Encendido de horas. Se utiliza normalmente para establecer horarios especiales para determinadas fechas.  - `type`: Tipo de entidad NGSI. Tiene que ser StreetlightGroup    
 Propiedades requeridas  
 - `id`  - `location`  - `type`    
-Una entidad del tipo "StreetlightGroup" representa un grupo de farolas. Pueden ser controladas juntas por el mismo sistema automatizado (controlador de gabinete).  
-## Modelo de datos Descripción de las propiedades  
+Una entidad de tipo `StreetlightGroup` representa un grupo de farolas. Pueden estar controladas conjuntamente por el mismo sistema automatizado (controlador de armario).  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -22,30 +23,32 @@ StreetlightGroup:
       x-ngsi:    
         model: https://schema.org/Text    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -312,8 +315,8 @@ StreetlightGroup:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -376,9 +379,9 @@ StreetlightGroup:
   type: object    
 ```  
 </details>    
-## Ejemplo de cargas útiles  
-#### StreetlightGroup NGSI V2 key-values Example  
-Aquí hay un ejemplo de un StreetlightGroup en formato JSON como valores clave. Esto es compatible con NGSI V2 cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
+## Ejemplo de carga útil  
+#### StreetlightGroup NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de un StreetlightGroup en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "streetlightgroup:mycity:A12",  
@@ -403,8 +406,8 @@ StreetlightGroup:
   ]  
 }  
 ```  
-#### StreetlightGroup NGSI V2 normalizado Ejemplo  
-Aquí hay un ejemplo de un StreetlightGroup en formato JSON como normalizado. Es compatible con NGSI V2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+#### StreetlightGroup NGSI-v2 normalizado Ejemplo  
+Este es un ejemplo de un StreetlightGroup en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "streetlightgroup:mycity:A12",  
@@ -452,107 +455,141 @@ StreetlightGroup:
   }  
 }  
 ```  
-#### StreetlightGroup NGSI-LD key-values Example  
-Aquí hay un ejemplo de un StreetlightGroup en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando se utiliza "opciones=valores-clave" y devuelve los datos de contexto de una entidad individual.  
-```json  
-{"@context": ["https://schema.lab.fiware.org/ld/context",  
-              "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"],  
- "areaServed": "Calle Comercial Centro",  
- "circuitId": "C-456-A467",  
- "dateLastSwitchingOff": {"@type": "DateTime",  
-                          "@value": "2016-07-07T07:59:06.618Z"},  
- "dateLastSwitchingOn": {"@type": "DateTime",  
-                         "@value": "2016-07-07T19:59:06.618Z"},  
- "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
- "location": {"coordinates": [[[100.0, 0.0], [101.0, 1.0]],  
-                              [[102.0, 2.0], [103.0, 3.0]]],  
-              "type": "MultiLineString"},  
- "powerState": "on",  
- "refStreetlightCabinetController": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34",  
- "switchingOnHours": [{"description": "Christmas",  
-                       "from": "--11-30",  
-                       "hours": "Mo,Su 16:00-02:00",  
-                       "to": "--01-07"}],  
- "type": "StreetlightGroup"}  
-```  
-#### StreetlightGroup NGSI-LD normalizado Ejemplo  
-Aquí hay un ejemplo de un StreetlightGroup en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+#### StreetlightGroup NGSI-LD key-values Ejemplo  
+Aquí hay un ejemplo de un StreetlightGroup en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-    "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
-    "type": "StreetlightGroup",  
-    "circuitId": {  
-        "type": "Property",  
-        "value": "C-456-A467"  
-    },  
-    "powerState": {  
-        "type": "Property",  
-        "value": "on"  
-    },  
-    "dateLastSwitchingOn": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2016-07-07T19:59:06.618Z"  
-        }  
-    },  
-    "refStreetlightCabinetController": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34"  
-    },  
-    "dateLastSwitchingOff": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2016-07-07T07:59:06.618Z"  
-        }  
-    },  
-    "switchingOnHours": {  
-        "type": "Property",  
-        "value": [  
-            {  
-                "hours": "Mo,Su 16:00-02:00",  
-                "to": "--01-07",  
-                "from": "--11-30",  
-                "description": "Christmas"  
-            }  
-        ]  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "MultiLineString",  
-            "coordinates": [  
-                [  
-                    [  
-                        100.0,  
-                        0.0  
-                    ],  
-                    [  
-                        101.0,  
-                        1.0  
-                    ]  
-                ],  
-                [  
-                    [  
-                        102.0,  
-                        2.0  
-                    ],  
-                    [  
-                        103.0,  
-                        3.0  
-                    ]  
-                ]  
-            ]  
-        }  
-    },  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "Calle Comercial Centro"  
-    },  
-    "@context": [  
-        "https://schema.lab.fiware.org/ld/context",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
+  "type": "StreetlightGroup",  
+  "circuitId": {  
+    "type": "Property",  
+    "value": "C-456-A467"  
+  },  
+  "powerState": {  
+    "type": "Property",  
+    "value": "on"  
+  },  
+  "dateLastSwitchingOn": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-07-07T19:59:06.618Z"  
+    }  
+  },  
+  "refStreetlightCabinetController": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34"  
+  },  
+  "dateLastSwitchingOff": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-07-07T07:59:06.618Z"  
+    }  
+  },  
+  "switchingOnHours": {  
+    "type": "Property",  
+    "value": [  
+      {  
+        "hours": "Mo,Su 16:00-02:00",  
+        "to": "--01-07",  
+        "from": "--11-30",  
+        "description": "Christmas"  
+      }  
     ]  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "MultiLineString",  
+      "coordinates": [  
+        [  
+          [  
+            100.0,  
+            0.0  
+          ],  
+          [  
+            101.0,  
+            1.0  
+          ]  
+        ],  
+        [  
+          [  
+            102.0,  
+            2.0  
+          ],  
+          [  
+            103.0,  
+            3.0  
+          ]  
+        ]  
+      ]  
+    }  
+  },  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Calle Comercial Centro"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### StreetlightGroup NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de un StreetlightGroup en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ],  
+  "areaServed": "Calle Comercial Centro",  
+  "circuitId": "C-456-A467",  
+  "dateLastSwitchingOff": {  
+    "@type": "DateTime",  
+    "@value": "2016-07-07T07:59:06.618Z"  
+  },  
+  "dateLastSwitchingOn": {  
+    "@type": "DateTime",  
+    "@value": "2016-07-07T19:59:06.618Z"  
+  },  
+  "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
+  "location": {  
+    "coordinates": [  
+      [  
+        [  
+          100.0,  
+          0.0  
+        ],  
+        [  
+          101.0,  
+          1.0  
+        ]  
+      ],  
+      [  
+        [  
+          102.0,  
+          2.0  
+        ],  
+        [  
+          103.0,  
+          3.0  
+        ]  
+      ]  
+    ],  
+    "type": "MultiLineString"  
+  },  
+  "powerState": "on",  
+  "refStreetlightCabinetController": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34",  
+  "switchingOnHours": [  
+    {  
+      "description": "Christmas",  
+      "from": "--11-30",  
+      "hours": "Mo,Su 16:00-02:00",  
+      "to": "--01-07"  
+    }  
+  ],  
+  "type": "StreetlightGroup"  
 }  
 ```  
