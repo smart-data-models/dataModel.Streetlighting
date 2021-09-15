@@ -4,5 +4,6 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json",
     "title": " - Street Lighting / Streetlight Control Cabinet",
-    "description": "A Streetlight control cabinet"
+    "description": "A Streetlight control cabinet",
+    "type": "object"
 }
