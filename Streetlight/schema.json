@@ -185,5 +185,11 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "status"
     ]
 }
