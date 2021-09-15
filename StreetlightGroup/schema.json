@@ -164,5 +164,10 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location"
     ]
 }
