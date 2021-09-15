@@ -3,5 +3,6 @@
     "$schemaVersion": "0.0.1",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
-    "title": " - Street Lighting / Streetlight model"
+    "title": " - Street Lighting / Streetlight model",
+    "description": "A Street light model"
 }
