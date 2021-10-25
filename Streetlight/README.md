@@ -6,7 +6,7 @@ Version: 0.0.1
 A Street light
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/Streetlight/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/doc/spec.md)
 
