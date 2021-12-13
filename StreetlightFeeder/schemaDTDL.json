@@ -1,0 +1,267 @@
+{
+    "@id": "dtmi:com:ngsi-ld:StreetlightFeeder;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models -StreetLightFeeder schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/StreetlightFeeder/schema.json",
+    "description": "A streetlight control panel Data Model.",
+    "displayName": "StreetlightFeeder",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "numStreetlight",
+            "writable": true,
+            "displayName": "numStreetlight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Describes the total number of streetlights connected to the feeder panel corresponding to this observation."
+        },
+        {
+            "name": "observationDateTime",
+            "writable": true,
+            "displayName": "observationDateTime",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Last reported time of observation."
+        },
+        {
+            "name": "powerState",
+            "writable": true,
+            "displayName": "powerState",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Indicates the current status of the streetlight feeder panel."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "totalActivePower",
+            "writable": true,
+            "displayName": "totalActivePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total active power consumed by all phases."
+        },
+        {
+            "name": "totalReactivePower",
+            "writable": true,
+            "displayName": "totalReactivePower",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total reactive power for all phases."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "activePower",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "Active power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
+            "displayName": "activePower"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "phaseCurrent",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "Current per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
+            "displayName": "phaseCurrent"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "phaseVoltage",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "Voltage per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
+            "displayName": "phaseVoltage"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "reactivePower",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "Reactive power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
+            "displayName": "reactivePower"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "deviceInfo",
+            "comment": "Information about the device associated with the observations.",
+            "displayName": "deviceInfo",
+            "fields": [
+                {
+                    "name": "deviceBatteryStatus",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceId",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceModel",
+                    "schema": "object"
+                },
+                {
+                    "name": "deviceName",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceSimNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "measurand",
+                    "schema": "string"
+                },
+                {
+                    "name": "rfId",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        }
+    ]
+}
