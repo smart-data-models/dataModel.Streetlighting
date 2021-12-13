@@ -2,43 +2,117 @@
   "id": "streetlight:guadalajara:4567",
   "type": "Streetlight",
   "location": {
+    "type": "geo:json",
     "value": {
       "type": "Point",
-      "coordinates": [-3.164485591715449, 40.62785133667262]
-    },
-    "type": "geo:json"
+      "coordinates": [
+        -3.164485591715449,
+        40.62785133667262
+      ]
+    }
   },
   "areaServed": {
+    "type": "Text",
     "value": "Roundabouts city entrance"
   },
   "status": {
+    "type": "Text",
     "value": "ok"
   },
   "refStreetlightGroup": {
-    "value": "streetlightgroup:G345",
-    "type": "Relationship"
+    "type": "Relationship",
+    "value": "streetlightgroup:G345"
   },
   "refStreetlightModel": {
-    "value": "streetlightmodel:STEEL_Tubular_10m",
-    "type": "Relationship"
+    "type": "Relationship",
+    "value": "streetlightmodel:STEEL_Tubular_10m"
   },
   "circuit": {
+    "type": "Text",
     "value": "C-456-A467"
   },
   "lanternHeight": {
+    "type": "Number",
     "value": 10
   },
   "locationCategory": {
+    "type": "Text",
     "value": "centralIsland"
   },
   "powerState": {
+    "type": "Text",
     "value": "off"
   },
   "controllingMethod": {
+    "type": "Text",
     "value": "individual"
   },
   "dateLastLampChange": {
-    "value": "2016-07-08T08:02:21.753Z",
-    "type": "DateTime"
+    "type": "DateTime",
+    "value": "2016-07-08T08:02:21.753Z"
+  },
+  "powerConsumption": {
+    "type": "Number",
+    "value": 10
+  },
+  "current": {
+    "type": "Number",
+    "value": 250
+  },
+  "powerRating": {
+    "type": "Number",
+    "value": 5
+  },
+  "powerFactor": {
+    "type": "Number",
+    "value": 0.7
+  },
+  "voltage": {
+    "type": "Number",
+    "value": 50
+  },
+  "feederPillarNum": {
+    "type": "Text",
+    "value": "70"
+  },
+  "streetPoleNum": {
+    "type": "Text",
+    "value": "2"
+  },
+  "feederID": {
+    "type": "Text",
+    "value": "F1"
+  },
+  "observationDateTime": {
+    "type": "DateTime",
+    "value": "2021-01-11T15:51:02+05:30"
+  },
+  "municipalityInfo": {
+    "type": "StructuredValue",
+    "value": {
+      "district": "Bangalore Urban",
+      "ulbName": "BMC",
+      "cityId": "23",
+      "stateName": "Karnataka",
+      "cityName": "Bangalore",
+      "zoneId": "2",
+      "wardNum": 4
+    },
+    "deviceInfo": {
+      "type": "StructuredValue",
+      "value": {
+        "rfId": "5634684",
+        "deviceBatteryStatus": "Connected",
+        "deviceName": "SL1",
+        "deviceID": "43",
+        "measurand": "6",
+        "deviceSimNumber": "6755375727",
+        "deviceModel": {
+          "brandName": "abc",
+          "manufacturerName": "xyz",
+          "modelName": "SL1",
+          "modelURL": "www.abcstreetlight.com"
+        }
+      }
+    }
   }
-}

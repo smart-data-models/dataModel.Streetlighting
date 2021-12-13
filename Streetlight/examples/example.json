@@ -3,7 +3,10 @@
   "type": "Streetlight",
   "location": {
     "type": "Point",
-    "coordinates": [-3.164485591715449, 40.62785133667262]
+    "coordinates": [
+      -3.164485591715449,
+      40.62785133667262
+    ]
   },
   "areaServed": "Roundabouts city entrance",
   "status": "ok",
@@ -14,5 +17,37 @@
   "locationCategory": "centralIsland",
   "powerState": "off",
   "controllingMethod": "individual",
-  "dateLastLampChange": "2016-07-08T08:02:21.753Z"
+  "dateLastLampChange": "2016-07-08T08:02:21.753Z",
+  "powerConsumption": 10,
+  "current": 250,
+  "powerRating": 5,
+  "powerFactor": 0.7,
+  "voltage": 50,
+  "feederPillarNum": "70",
+  "streetPoleNum": "2",
+  "feederID": "F1",
+  "observationDateTime": "2021-01-11T15:51:02+05:30",
+  "municipalityInfo": {
+    "district": "Bangalore Urban",
+    "ulbName": "BMC",
+    "cityID": "23",
+    "stateName": "Karnataka",
+    "cityName": "Bangalore",
+    "zoneID": "2",
+    "wardNum": 4
+  },
+  "deviceInfo": {
+    "rfID": "5634684",
+    "deviceBatteryStatus": "Connected",
+    "deviceName": "SL1",
+    "deviceID": "43",
+    "measurand": "6",
+    "deviceSimNumber": "6755375727",
+    "deviceModel": {
+      "brandName": "abc",
+      "manufacturerName": "xyz",
+      "modelName": "SL1",
+      "modelURL": "www.abcstreetlight.com"
+    }
+  }
 }

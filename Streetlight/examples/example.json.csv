@@ -1,2 +1,0 @@
-"id_", "type_", "location__type_", "location__coordinates__0_", "location__coordinates__1_", "areaServed_", "status_", "refStreetlightGroup_", "refStreetlightModel_", "circuit_", "lanternHeight_", "locationCategory_", "powerState_", "controllingMethod_", "dateLastLampChange_"
-"streetlight:guadalajara:4567", "Streetlight", "Point", "-3.164485591715449", "40.62785133667262", "Roundabouts city entrance", "ok", "streetlightgroup:G345", "streetlightmodel:STEEL_Tubular_10m", "C-456-A467", "10", "centralIsland", "off", "individual", "2016-07-08T08:02:21.753Z"
