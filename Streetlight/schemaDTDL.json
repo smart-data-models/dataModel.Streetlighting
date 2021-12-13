@@ -2,7 +2,7 @@
     "@id": "dtmi:com:ngsi-ld:Streetlight;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": " - Street Lighting / Streetlight adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/Streetlight/schema.json",
+    "comment": " Smart Data Models - Streetlight adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/Streetlight/schema.json",
     "description": "A Street light",
     "displayName": "Streetlight",
     "contents": [
@@ -37,6 +37,14 @@
             "@type": "Property",
             "schema": "string",
             "comment": "The color of the product"
+        },
+        {
+            "name": "current",
+            "writable": true,
+            "displayName": "current",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Current value of the streetlight corresponding to this observation."
         },
         {
             "name": "dataProvider",
@@ -103,6 +111,19 @@
             "comment": "A description of this item"
         },
         {
+            "name": "feederID",
+            "writable": true,
+            "displayName": "feederID"
+        },
+        {
+            "name": "feederPillarNum",
+            "writable": true,
+            "displayName": "feederPillarNum",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Streetlight feeder pillar information associated with the streetlight corresponding to this observation."
+        },
+        {
             "name": "illuminanceLevel",
             "writable": true,
             "displayName": "illuminanceLevel",
@@ -134,6 +155,38 @@
             "comment": "The name of this item."
         },
         {
+            "name": "observationDateTime",
+            "writable": true,
+            "displayName": "observationDateTime",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Last reported time of observation."
+        },
+        {
+            "name": "powerConsumption",
+            "writable": true,
+            "displayName": "powerConsumption",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power consumed by the LED or the streetlight bulb corresponding to this observation."
+        },
+        {
+            "name": "powerFactor",
+            "writable": true,
+            "displayName": "powerFactor",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power factor or the ratio of working power of the streetlight corresponding to this observation."
+        },
+        {
+            "name": "powerRating",
+            "writable": true,
+            "displayName": "powerRating",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Power rating of the LED or the streetlight bulb corresponding to this observation."
+        },
+        {
             "name": "refStreetlightControlCabinet",
             "writable": true,
             "displayName": "refStreetlightControlCabinet"
@@ -162,34 +215,20 @@
             "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
         },
         {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
+            "name": "streetPoleNum",
+            "writable": true,
+            "displayName": "streetPoleNum",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Street pole information associated with the streetlight corresponding to this observation."
         },
         {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
+            "name": "voltage",
+            "writable": true,
+            "displayName": "voltage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Voltage value of the streetlight corresponding to this observation."
         },
         {
             "@type": "Telemetry",
@@ -252,6 +291,108 @@
                     "schema": "string"
                 }
             ]
+        },
+        {
+            "@type": "object",
+            "name": "deviceInfo",
+            "comment": "Information about the device associated with the observations.",
+            "displayName": "deviceInfo",
+            "fields": [
+                {
+                    "name": "RFId",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceBatteryStatus",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceId",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceModel",
+                    "schema": "object"
+                },
+                {
+                    "name": "deviceName",
+                    "schema": "string"
+                },
+                {
+                    "name": "deviceSimNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "measurand",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "municipalityInfo",
+            "comment": "Municipality information corresponding to this observation.",
+            "displayName": "municipalityInfo",
+            "fields": [
+                {
+                    "name": "cityId",
+                    "schema": "string"
+                },
+                {
+                    "name": "cityName",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "stateName",
+                    "schema": "string"
+                },
+                {
+                    "name": "ulbName",
+                    "schema": "string"
+                },
+                {
+                    "name": "wardNum",
+                    "schema": "long"
+                },
+                {
+                    "name": "zoneId",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
         },
         {
             "@type": "Telemetry",
@@ -356,13 +497,13 @@
                         "enumValue": 2
                     },
                     {
-                        "name": false,
-                        "displayName": false,
+                        "name": "off",
+                        "displayName": "off",
                         "enumValue": 3
                     },
                     {
-                        "name": true,
-                        "displayName": true,
+                        "name": "on",
+                        "displayName": "on",
                         "enumValue": 4
                     }
                 ]
