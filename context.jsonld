@@ -1,5 +1,6 @@
 {
     "@context": {
+        "activePower": "https://smartdatamodels.org/dataModel.Streetlighting/activePower",
         "activePowerR": "https://smartdatamodels.org/dataModel.Streetlighting/activePowerR",
         "activePowerS": "https://smartdatamodels.org/dataModel.Streetlighting/activePowerS",
         "activePowerT": "https://smartdatamodels.org/dataModel.Streetlighting/activePowerT",
@@ -33,6 +34,7 @@
         "dateModified": "https://smartdatamodels.org/dateModified",
         "dateServiceStarted": "https://smartdatamodels.org/dataModel.Streetlighting/dateServiceStarted",
         "description": "http://purl.org/dc/terms/description",
+        "deviceInfo": "https://smartdatamodels.org/dataModel.Streetlighting/deviceInfo",
         "energyConsumed": "https://smartdatamodels.org/dataModel.Streetlighting/energyConsumed",
         "energyCost": "https://smartdatamodels.org/dataModel.Streetlighting/energyCost",
         "features": {
@@ -69,13 +71,18 @@
         "name": "https://smartdatamodels.org/name",
         "nextActuationDeadline": "https://smartdatamodels.org/dataModel.Streetlighting/nextActuationDeadline",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "numStreetlight": "https://smartdatamodels.org/dataModel.Streetlighting/numStreetlight",
+        "observationDateTime": "https://smartdatamodels.org/dataModel.Streetlighting/observationDateTime",
         "owner": "https://smartdatamodels.org/owner",
+        "phaseCurrent": "https://smartdatamodels.org/dataModel.Streetlighting/phaseCurrent",
+        "phaseVoltage": "https://smartdatamodels.org/dataModel.Streetlighting/phaseVoltage",
         "powerConsumption": "https://smartdatamodels.org/dataModel.Streetlighting/powerConsumption",
         "powerFactorR": "https://smartdatamodels.org/dataModel.Streetlighting/powerFactorR",
         "powerFactorS": "https://smartdatamodels.org/dataModel.Streetlighting/powerFactorS",
         "powerFactorT": "https://smartdatamodels.org/dataModel.Streetlighting/powerFactorT",
         "powerState": "https://smartdatamodels.org/dataModel.Streetlighting/powerState",
         "reactiveEnergyConsumed": "https://smartdatamodels.org/dataModel.Streetlighting/reactiveEnergyConsumed",
+        "reactivePower": "https://smartdatamodels.org/dataModel.Streetlighting/reactivePower",
         "reactivePowerR": "https://smartdatamodels.org/dataModel.Streetlighting/reactivePowerR",
         "reactivePowerS": "https://smartdatamodels.org/dataModel.Streetlighting/reactivePowerS",
         "reactivePowerT": "https://smartdatamodels.org/dataModel.Streetlighting/reactivePowerT",
