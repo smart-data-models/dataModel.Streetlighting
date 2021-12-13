@@ -10,12 +10,14 @@ The following entity types are available:
 
 - [StreetlightGroup](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightGroup/README.md). A Street light group
 
+- [StreetlightFeeder](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/README.md). A streetlight control panel Data Model.
+
 - [StreetlightModel](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightModel/README.md). A Street light model
 
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/CONTRIBUTORS.yaml) to the 9 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/CONTRIBUTORS.yaml) to the 10 current contributors of the data models of this Subject.
 
 
 ### Contribution
