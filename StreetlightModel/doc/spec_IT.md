@@ -1,17 +1,17 @@
-Entität: StreetlightModel  
-=========================  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightModel/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Ein Straßenlampenmodell**  
+Entità: StreetlightModel  
+========================  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightModel/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descrizione globale: **Un modello di luce stradale**  
 
-## Liste der Eigenschaften  
+## Elenco delle proprietà  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `annotations`: Anmerkungen zum Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `category`: Typ der Kühlstelle, die die Straßenleuchte implementiert. Enum:'`PostTop, Poller, Laternenpfahl, LightTower, Blinkleuchte, SideEntry, SignLight, OrnamentalLantern'. Oder jeder andere Wert, der oben nicht definiert und für die Anwendung sinnvoll ist  - `color`: Die Farbe des Produkts  - `colorRenderingIndex`: Farbwiedergabe-Index der Lampe  - `colorTemperature`: Korrelierte Farbtemperatur der Lampe  - `columnBrandName`: Name der Marke der Säule  - `columnColor`: Die Farbe der Spalte. Erlaubte Werte: Ein Farbschlüsselwort, wie in [W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords) angegeben. Ein Farbwert, wie in [W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes) angegeben.  - `columnMadeOf`: Material, aus dem die Säule besteht. Enum:'Stahl, Aluminium, Holz, andere'  - `columnManufacturerName`: Name des Herstellers der Säule  - `columnModelName`: Name des Modells der Spalte  - `compliantWith`: Eine Liste der Normen, mit denen dieses Straßenleuchtenmodell konform ist  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `image`: Ein Bild des Artikels  - `lampBrandName`: Name der Marke der Lampe  - `lampManufacturerName`: Name des Herstellers der Lampe.  - `lampModelName`: Name des Modells der Lampe  - `lampTechnology`: Von der Lampe verwendete Technologie. Enum:'LED, LPS, HPS'. Oder jeder andere Wert, der nicht durch die obige Liste abgedeckt und für die Anwendung sinnvoll ist.  - `lampWeight`: Gewicht der Lampe  - `lanternBrandName`: Name der Marke der Laterne  - `lanternManufacturerName`: Name des Herstellers der Laterne  - `lanternModelName`: Name des Modells der Laterne  - `lanternWeight`: Gewicht der Laterne  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `luminousFlux`: Maximale Lichtleistung, die von der Lampe erbracht werden kann  - `maxPowerConsumption`: Maximale Leistungsaufnahme, die von der Laterne unterstützt wird  - `minPowerConsumption`: Minimale Leistungsaufnahme, die von der Laterne unterstützt wird  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `powerConsumption`: (Nenn-)Leistungsaufnahme der Lampe  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI Entity-Typ. Es muss StreetlightModel sein  - `workingLife`: Die geschätzte Anzahl der Betriebsstunden (der Lampe) ohne Ausfall    
-Erforderliche Eigenschaften  
+- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `annotations`: Annotazioni sull'elemento  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `category`: Tipo di risorsa che implementa l'illuminazione stradale. Enum:'`postTop, bollard, lamppost, lightTower, flashingBeacon, sideEntry, signLight, ornamentalLantern'. O qualsiasi altro valore non definito sopra e significativo per l'applicazione  - `color`: Il colore del prodotto  - `colorRenderingIndex`: Indice di resa dei colori della lampada  - `colorTemperature`: Temperatura di colore correlata della lampada  - `columnBrandName`: Nome del marchio della colonna  - `columnColor`: Colore di pittura della colonna. Valori consentiti: Una parola chiave di colore come specificato da [W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords). Un valore di colore come specificato da [W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes)  - `columnMadeOf`: La colonna è fatta di materiale. Enum:'acciaio, alluminio, legno, altro'.  - `columnManufacturerName`: Nome del produttore della colonna  - `columnModelName`: Nome del modello della colonna  - `compliantWith`: Un elenco delle norme alle quali questo modello di lampione è conforme  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `image`: Un'immagine dell'oggetto  - `lampBrandName`: Nome della marca della lampada  - `lampManufacturerName`: Nome del produttore della lampada.  - `lampModelName`: Nome del modello della lampada  - `lampTechnology`: Tecnologia utilizzata dalla lampada. Enum:'LED, LPS, HPS'. O qualsiasi altro valore non coperto dalla lista precedente e significativo per l'applicazione.  - `lampWeight`: Peso della lampada  - `lanternBrandName`: Nome della marca della lanterna  - `lanternManufacturerName`: Nome del produttore della lanterna  - `lanternModelName`: Nome del modello della lanterna  - `lanternWeight`: Peso della lanterna  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `luminousFlux`: Potenza luminosa massima che può essere fornita dalla lampada  - `maxPowerConsumption`: Consumo massimo di energia supportato dalla lanterna  - `minPowerConsumption`: Consumo minimo di energia supportato dalla lanterna  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `powerConsumption`: Consumo di energia (nominale) fatto dalla lampada  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere StreetlightModel  - `workingLife`: Il numero stimato di ore di lavoro (della lampada) senza guasti    
+Proprietà richieste  
 - `id`  - `name`  - `type`    
-Es stellt ein Modell einer Straßenlaterne dar, das aus einem spezifischen Tragwerksmodell, einem Laternenmodell und einem Lampenmodell besteht. Eine Straßenlaterneninstanz wird auf einem bestimmten Straßenlaternenmodell basieren.  
-## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
+Rappresenta un modello di lampione composto da un modello specifico di struttura di supporto, un modello di lanterna e un modello di lampada. Un'istanza di lampione sarà basata su un certo modello di lampione.  
+## Descrizione del modello di dati delle proprietà  
+Ordinati in ordine alfabetico (clicca per i dettagli)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 StreetlightModel:    
@@ -38,24 +38,29 @@ StreetlightModel:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     annotations:    
       description: 'Annotations about the item'    
       items:    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     category:    
       description: 'Type of asset which implements the street light. Enum:''`postTop, bollard, lamppost, lightTower, flashingBeacon, sideEntry, signLight, ornamentalLantern''. Or any other value not defined above and meaningful for the application'    
       items:    
@@ -70,35 +75,42 @@ StreetlightModel:
           - signLight    
         type: string    
       minItems: 1    
-      type: Property    
+      type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
     color:    
       description: 'The color of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/color    
+        type: Property    
     colorRenderingIndex:    
       description: 'Color rendering index of the lamp'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     colorTemperature:    
       description: 'Correlated color temperature of the lamp'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Kelvin degrees (K)'    
     columnBrandName:    
       description: 'Name of the column''s brand'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/brand.    
+        type: Property    
     columnColor:    
       description: "Column's painting color. Allowed Values: A color keyword as specified by [W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords). A color value as specified by [W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes)"    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/color    
+        type: Property    
     columnMadeOf:    
       description: 'Material column is made of. Enum:''steel, aluminium, wood, other'''    
       enum:    
@@ -106,42 +118,54 @@ StreetlightModel:
         - aluminium    
         - wood    
         - other    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     columnManufacturerName:    
       description: 'Name of the column''s manufacturer'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/manufacturer    
+        type: Property    
     columnModelName:    
       description: 'Name of the column''s model'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/model    
+        type: Property    
     compliantWith:    
       description: 'A list of standards to which this streetlight model is compliant with'    
       items:    
         type: string    
       minItems: 1    
-      type: Property    
+      type: array    
       uniqueItems: true    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     id:    
       anyOf: &streetlightmodel_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -153,60 +177,73 @@ StreetlightModel:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     image:    
       description: 'An image of the item'    
       format: uri    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Property    
     lampBrandName:    
       description: 'Name of the lamp''s brand'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/brand    
+        type: Property    
     lampManufacturerName:    
       description: 'Name of the lamp''s manufacturer.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     lampModelName:    
       description: 'Name of the lamp''s model'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/model    
+        type: Property    
     lampTechnology:    
       description: 'Technology used by the lamp. Enum:''LED, LPS, HPS''. Or any other value not covered by the above list and meaningful to the application.'    
       enum:    
         - LED    
         - LPS    
         - HPS    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     lampWeight:    
       description: 'Lamp''s weight'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: 'Kilograms (kg)'    
+        type: Property    
         units: 'Kilograms (kg)'    
     lanternBrandName:    
       description: 'Name of the lantern''s brand'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/brand    
+        type: Property    
     lanternManufacturerName:    
       description: 'Name of the lantern''s manufacturer'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/manufacturer    
+        type: Property    
     lanternModelName:    
       description: 'Name of the lantern''s model'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     lanternWeight:    
       description: 'Lantern''s weight'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/weight    
+        type: Property    
         units: 'Kilograms (kg)'    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
@@ -359,43 +396,52 @@ StreetlightModel:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     luminousFlux:    
       description: 'Maximum light output which can be provided by the lamp'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Lumens (lm)'    
     maxPowerConsumption:    
       description: 'Maximum power consumption supported by the lantern'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Watts (W).'    
     minPowerConsumption:    
       description: 'Minimum power consumption supported by the lantern'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Watts (W).'    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *streetlightmodel_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     powerConsumption:    
       description: '(Nominal) power consumption made by the lamp'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Watts (W)'    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
@@ -407,32 +453,44 @@ StreetlightModel:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be StreetlightModel'    
       enum:    
         - StreetlightModel    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     workingLife:    
       description: 'The estimated number of hours working (the lamp) without failure'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: Hours    
   required:    
     - id    
     - type    
     - name    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightModel/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Beispiel-Nutzlasten  
-#### StreetlightModel NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für ein StreetlightModel im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+## Esempio di payloads  
+#### StreetlightModel NGSI-v2 valori chiave Esempio  
+Ecco un esempio di uno StreetlightModel in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
@@ -452,8 +510,8 @@ StreetlightModel:
   "category": ["postTop"]  
 }  
 ```  
-#### StreetlightModel NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein StreetlightModel im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+#### StreetlightModel NGSI-v2 normalizzato Esempio  
+Ecco un esempio di uno StreetlightModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
@@ -499,8 +557,8 @@ StreetlightModel:
   }  
 }  
 ```  
-#### StreetlightModel NGSI-LD key-values Beispiel  
-Hier ist ein Beispiel für ein StreetlightModel im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+#### StreetlightModel NGSI-LD valori chiave Esempio  
+Ecco un esempio di uno StreetlightModel in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
@@ -565,8 +623,8 @@ StreetlightModel:
   ]  
 }  
 ```  
-#### StreetlightModel NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein StreetlightModel im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+#### StreetlightModel NGSI-LD normalizzato Esempio  
+Ecco un esempio di uno StreetlightModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
 ```json  
 {  
   "@context": [  
@@ -592,4 +650,4 @@ StreetlightModel:
   "type": "StreetlightModel"  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza

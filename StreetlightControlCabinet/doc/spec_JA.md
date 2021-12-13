@@ -1,17 +1,17 @@
-Entidad: Gabinete de control del alumbrado público  
-==================================================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Un armario de control del alumbrado público.  
+エンティティStreetlightControlCabinet  
+===============================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**街灯の制御盤**。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `activePowerR`: Potencia activa consumida en la fase R  - `activePowerS`: Potencia activa consumida en la fase S  - `activePowerT`: Potencia activa consumida en la fase T  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Un campo reservado para anotaciones (incidencias, observaciones, etc.)  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `brandName`: Nombre de la marca del armario  - `color`: El color del producto  - `compliantWith`: Una lista de las normas que cumple el controlador del armario (por ejemplo, IP54)  - `cosPhi`: Coseno del parámetro phi  - `cupboardMadeOf`: Material del que está hecho el armario. Enum:'hormigón, metal, otro, plástico'  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastProgramming`: Fecha en la que hubo una operación de programación sobre el armario  - `dateMeteringStarted`: La fecha de inicio de la medición de la energía consumida  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que el controlador del armario comenzó a dar servicio  - `description`: Marca de tiempo del último cambio de lámpara realizado  - `energyConsumed`: Energía consumida por los circuitos controlados desde el inicio de la medición (desde dateMeteringStarted)  - `energyCost`: Coste de la energía consumida por los circuitos controlados desde la fecha de inicio de la medición  - `features`: Una lista de las características del controlador del armario.  Aquellos valores técnicos considerados significativos por las aplicaciones. `Reloj astronómico`. El armario de control incluye un reloj astronómico para tratar las horas de conmutación. `ControlIndividual`. El armario de control permite controlar las farolas de forma individual.  - `frequency`: La frecuencia de trabajo del circuito  - `id`: Identificador único de la entidad  - `image`: Una imagen del artículo  - `intensityR`: Intensidad eléctrica en la fase R  - `intensityS`: Intensidad eléctrica en la fase S  - `intensityT`:  Intensidad eléctrica en la fase T  - `lastMeterReading`: Valor de la última lectura obtenida del sistema de medición de energía consumida  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `manufacturerName`: Nombre del fabricante del armario  - `maximumPowerAvailable`: La potencia máxima disponible (por contrato) para los circuitos controlados por este armario  - `meterReadingPeriod`: La periodicidad de las lecturas del contador de energía consumida en días  - `modelName`: Nombre del modelo de armario  - `name`: El nombre de este artículo.  - `nextActuationDeadline`: Fecha límite para la siguiente actuación que debe realizarse (programación, pruebas, etc.)  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerFactorR`: Factor de potencia para la fase R. Valores permitidos: Un número entre -1 y 1  - `powerFactorS`: Factor de potencia para la fase S. Valores permitidos: Un número entre -1 y 1  - `powerFactorT`: Factor de potencia para la fase T. Valores permitidos: Un número entre -1 y 1  - `reactiveEnergyConsumed`: Energía consumida (con respecto a la potencia reactiva) por los circuitos desde la fecha de inicio de la medición  - `reactivePowerR`: Potencia reactiva en la fase R  - `reactivePowerS`: Potencia reactiva en fase S  - `reactivePowerT`: Potencia reactiva en fase T  - `refDevice`: Referencia al dispositivo o dispositivos utilizados para supervisar este armario de control.  - `refStreetlightGroup`: Grupo(s) de farolas controlado(s). Lista de referencias a entidades de tipo StreetlightGroup  - `responsible`: Responsable del controlador del armario, es decir, entidad encargada de la actuación (programación, etc.).  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber`: Número de serie del contenedor.  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `thdrIntensityR`: Distorsión armónica total (R) de la intensidad en la fase R. Valores permitidos: Un número entre 0 y 1  - `thdrIntensityS`: Distorsión armónica total (S) de la intensidad en la fase S. Valores permitidos: Un número entre 0 y 1  - `thdrIntensityT`: Distorsión armónica total (T) de la intensidad en la fase T. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageR`: Distorsión armónica total (R) de la tensión en la fase R. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageS`: Distorsión armónica total (S) de la tensión en la fase S. Valores permitidos: Un número entre 0 y 1  - `thdrVoltageT`: Distorsión armónica total (T) de la tensión en la fase T. Valores permitidos: Un número entre 0 y 1  - `totalActivePower`: Potencia activa consumida actualmente (contando todas las fases)  - `totalReactivePower`: Potencia reactiva consumida actualmente (contando todas las fases)  - `type`: Tipo de entidad NGSI. Tiene que ser StreetlightControlCabinet  - `voltageR`: Tensión eléctrica en la fase R  - `voltageS`: Tensión eléctrica en la fase S  - `voltageT`: Tensión eléctrica en la fase T  - `workingMode`: Modo de trabajo de este controlador de armario.  Automático": El controlador del armario decide automáticamente cuándo se encienden y apagan los grupos de luces. No se permite la operación manual. Manual": Se requiere la intervención humana para el encendido y el apagado. `semiautomatic` : Lo mismo que `automatic` pero en este caso se permite la intervención manual.    
-Propiedades requeridas  
+- `activePowerR`: Rフェーズで消費されるアクティブパワー  - `activePowerS`: Sフェーズで消費されるアクティブパワー  - `activePowerT`: Tフェーズで消費されたアクティブパワー  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `annotations`: 注釈（インシデント、備考など）を入れるためのフィールドです。  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `brandName`: キャビネットのブランド名  - `color`: 商品の色について  - `compliantWith`: キャビネットコントローラーが準拠している規格のリスト（例：IP54）  - `cosPhi`: phiパラメータのコサイン  - `cupboardMadeOf`: キャビネットの戸棚の材質。Enum:'コンクリート、金属、その他、プラスチック'  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastProgramming`: キャビネットに対するプログラミング操作が行われた日  - `dateMeteringStarted`: 消費電力量の計測開始日  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateServiceStarted`: キャビネットコントローラーがサービスを開始した日  - `description`: 最後に行われたランプの交換のタイムスタンプ  - `energyConsumed`: 計量開始以降に制御された回路で消費されたエネルギー（from dateMeteringStarted）  - `energyCost`: 計測開始日以降に制御された回路で消費されたエネルギーのコスト  - `features`: キャビネットコントローラの機能のリスト。  アプリケーションによって意味があると考えられる技術的な値です。astronomicalClock`.コントロールキャビネットには、時間の切り替えに対応するための天文時計が搭載されています。`individualControl`.制御盤は街灯を個別に制御することができます。  - `frequency`: 回路の動作周波数  - `id`: エンティティのユニークな識別子  - `image`: アイテムのイメージ  - `intensityR`: R相の電気強度  - `intensityS`: S相の電気的強度  - `intensityT`: T期の電気強度  - `lastMeterReading`: 消費電力量計測システムから得られた最後の読み取り値の値  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `manufacturerName`: キャビネットのメーカー名  - `maximumPowerAvailable`: このキャビネットで制御される回路で利用可能な（契約による）最大電力  - `meterReadingPeriod`: エネルギー消費量の計測値の周期性（日単位  - `modelName`: キャビネットのモデル名  - `name`: このアイテムの名前です。  - `nextActuationDeadline`: 次のアクチュエーション（プログラミング、テストなど）を行うための期限  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `powerFactorR`: R相の力率 許容される値1から1の間の数値  - `powerFactorS`: S相の力率 許可された値1から1の間の数値  - `powerFactorT`: T相の力率 許容される値1から1の間の数値  - `reactiveEnergyConsumed`: 計測開始日以降の回路の消費電力量（無効電力を含む）。  - `reactivePowerR`: R相のリアクティブパワー  - `reactivePowerS`: Sフェーズのリアクティブパワー  - `reactivePowerT`: Tフェーズのリアクティブパワー  - `refDevice`: このコントロール・キャビネットをモニターするために使用されるデバイスの参照。  - `refStreetlightGroup`: 制御される街灯グループ（複数可）。StreetlightGroupタイプのエンティティへの参照のリスト  - `responsible`: キャビネットコントローラーの責任者、つまり作動を担当する者（プログラミングなど）。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `serialNumber`: コンテナのシリアルナンバー。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `thdrIntensityR`: フェーズRにおける強度の全高調波歪み（R） 許容される値0から1の間の数値  - `thdrIntensityS`: 相Sにおける強度の全高調波歪み（S）。許容値。0から1の間の数値  - `thdrIntensityT`: フェーズTにおける強度の全高調波歪み（T）。許容値。0から1の間の数値  - `thdrVoltageR`: R相の電圧の全高調波歪み（R） 許容値0から1の間の数値  - `thdrVoltageS`: S相の電圧の全高調波歪み（S） 許容値0から1の間の数値  - `thdrVoltageT`: T相の電圧の全高調波歪み（T） 許容値0から1の間の数値  - `totalActivePower`: 現在消費されている有効電力（全相をカウント）  - `totalReactivePower`: 現在消費されている無効電力(全相をカウント)  - `type`: NGSIのEntityタイプ。StreetlightControlCabinetでなければならない。  - `voltageR`: フェーズRの電気抵抗  - `voltageS`: フェーズSの電気抵抗  - `voltageT`: フェーズTの電気抵抗  - `workingMode`: このキャビネットコントローラーの作業モード。  automatic` : キャビネットコントローラーは、ライトグループのスイッチのオン/オフを自動的に決定します。手動操作はできません。manual` : オン/オフの切り替えには人の介入が必要です。semiautomatic` : `automatic`と同じですが、この場合は手動操作が可能です。    
+必須項目  
 - `id`  - `location`  - `refStreetlightGroup`  - `type`  - `workingMode`    
-Representa un equipo, generalmente en la calle, utilizado para el control automatizado de un grupo o grupos de farolas, es decir, uno o varios circuitos.  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+通常は路上に設置され、街灯のグループ（1つまたは複数の回路）を自動制御するための機器を指す。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 StreetlightControlCabinet:    
@@ -20,23 +20,26 @@ StreetlightControlCabinet:
     activePowerR:    
       description: 'Active power consumed in R phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Kilowatts (kW)'    
     activePowerS:    
       description: 'Active power consumed in S phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Kilowatts (kW)'    
     activePowerT:    
       description: 'Active power consumed in T phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Kilowatts (kW)'    
     address:    
       description: 'The mailing address'    
@@ -59,46 +62,57 @@ StreetlightControlCabinet:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     annotations:    
       description: 'A field reserved for annotations (incidences, remarks, etc.)'    
       items:    
         type: string    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     brandName:    
       description: 'Name of the cabinet''s brand'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/brand    
+        type: Property    
     color:    
       description: 'The color of the product'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/color    
+        type: Property    
     compliantWith:    
       description: 'A list of standards to which the cabinet controller is compliant with (ex. IP54)'    
       items:    
         type: string    
       minItems: 1    
-      type: Property    
+      type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
     cosPhi:    
       description: 'Cosine of phi parameter'    
       maximum: 1    
       minimum: -1    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     cupboardMadeOf:    
       description: 'Material the cabinet''s cupboard is made of. Enum:''concrete, metal, other, plastic'''    
       enum:    
@@ -106,52 +120,67 @@ StreetlightControlCabinet:
         - metal    
         - other    
         - plastic    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateLastProgramming:    
       description: 'Date at which there was a programming operation over the cabinet'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateMeteringStarted:    
       description: 'The starting date for metering energy consumed'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateServiceStarted:    
       description: 'Date at which the cabinet controller started giving service'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     description:    
       description: 'Timestamp of the last change of lamp made'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     energyConsumed:    
       description: 'Energy consumed by the circuits controlled since metering started (since dateMeteringStarted)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'Kilowatts per hour (kWh)'    
     energyCost:    
       description: 'Cost of the energy consumed by the circuits controlled since the metering start date'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
     features:    
       description: 'A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually.'    
       items:    
@@ -160,13 +189,16 @@ StreetlightControlCabinet:
           - individualControl    
         type: string    
       minItems: 1    
-      type: Property    
+      type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Property    
     frequency:    
       description: 'The working frequency of the circuit'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
+        type: Property    
         units: 'Hertz (Hz)'    
     id:    
       anyOf: &streetlightcontrolcabinet_-_properties_-_owner_-_items_-_anyof    
@@ -179,40 +211,46 @@ StreetlightControlCabinet:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     image:    
       description: 'An image of the item'    
       format: uri    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Property    
     intensityR:    
       description: 'Electric intensity in R phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Ampers (A)'    
     intensityS:    
       description: 'Electric intensity in S phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Ampers (A)'    
     intensityT:    
       description: ' Electric intensity in T phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Ampers (A)'    
     lastMeterReading:    
       description: 'Value of the last reading obtained from the energy consumed metering system'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
         units: 'Kilowatts per hour (kWh)'    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
@@ -365,92 +403,109 @@ StreetlightControlCabinet:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     manufacturerName:    
       description: 'Name of the cabinet''s manufacturer'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/manufacturer    
+        type: Property    
     maximumPowerAvailable:    
       description: 'The maximum power available (by contract) for the circuits controlled by this cabinet'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
+        type: Property    
         units: 'Kilowatts (kW)'    
     meterReadingPeriod:    
       description: 'The periodicity of energy consumed meter readings in days'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     modelName:    
       description: 'Name of the cabinet''s model'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/model    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     nextActuationDeadline:    
       description: 'Deadline for next actuation to be performed (programming, testing, etc.)'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *streetlightcontrolcabinet_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     powerFactorR:    
       description: 'Power factor for phase R. Allowed values: A number between -1 and 1'    
       maximum: 1    
       minimum: -1    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     powerFactorS:    
       description: 'Power factor for phase S. Allowed values: A number between -1 and 1'    
       maximum: 1    
       minimum: -1    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     powerFactorT:    
       description: 'Power factor for phase T. Allowed values: A number between -1 and 1'    
       maximum: 1    
       minimum: -1    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     reactiveEnergyConsumed:    
       description: 'Energy consumed (with regards to reactive power) by circuits since the metering start date'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'KiloVolts-Ampere-Reactive per hour (kVArh)'    
     reactivePowerR:    
       description: 'Reactive power in R phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'KiloVolts-Ampere-Reactive (kVArh)'    
     reactivePowerS:    
       description: 'Reactive power in S phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'KiloVolts-Ampere-Reactive (kVArh)'    
     reactivePowerT:    
       description: 'Reactive power in T phase'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'KiloVolts-Ampere-Reactive (kVArh)'    
     refDevice:    
       description: 'Reference to the device(s) used to monitor this control cabinet.'    
@@ -465,8 +520,10 @@ StreetlightControlCabinet:
             format: uri    
             type: string    
       minItems: 1    
-      type: Relationship    
+      type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Relationship    
     refStreetlightGroup:    
       description: 'Streetlight group(s) controlled. List of references to entities of type StreetlightGroup'    
       items:    
@@ -480,11 +537,15 @@ StreetlightControlCabinet:
             format: uri    
             type: string    
       minItems: 1    
-      type: Relationship    
+      type: array    
       uniqueItems: true    
+      x-ngsi:    
+        type: Relationship    
     responsible:    
       description: 'Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.).'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -495,94 +556,111 @@ StreetlightControlCabinet:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     serialNumber:    
       description: 'Serial number of the container.'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/serialNumber    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     thdrIntensityR:    
       description: 'Total harmonic distortion (R) of intensity in phase R. Allowed values: A number between 0 and 1'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     thdrIntensityS:    
       description: 'Total harmonic distortion (S) of intensity in phase S. Allowed values: A number between 0 and 1'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     thdrIntensityT:    
       description: 'Total harmonic distortion (T) of intensity in phase T. Allowed values: A number between 0 and 1'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     thdrVoltageR:    
       description: 'Total harmonic distortion (R) of voltage in phase R. Allowed values: A number between 0 and 1'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     thdrVoltageS:    
       description: 'Total harmonic distortion (S) of voltage in phase S. Allowed values: A number between 0 and 1'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     thdrVoltageT:    
       description: 'Total harmonic distortion (T) of voltage in phase T. Allowed values: A number between 0 and 1'    
       maximum: 1    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
     totalActivePower:    
       description: 'Active power currently consumed (counting all phases)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
+        type: Property    
         units: 'KiloWatts (kW)'    
     totalReactivePower:    
       description: 'Reactive power currently consumed (counting all phases)'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
+        type: Property    
         units: 'KiloVolts-Ampere-Reactive (kVArh)'    
     type:    
       description: 'NGSI Entity type. It has to be StreetlightControlCabinet'    
       enum:    
         - StreetlightControlCabinet    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     voltageR:    
       description: 'Electric tension in phase R'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Volts (V)'    
     voltageS:    
       description: 'Electric tension in phase S'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Volts (V)'    
     voltageT:    
       description: 'Electric tension in phase T'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: http://schema.org/Number    
+        type: Property    
         units: 'Volts (V)'    
     workingMode:    
       description: 'Working mode for this cabinet controller.  `automatic` : The cabinet controller decides automatically when light groups are switched on and off. Manual operation is not allowed. `manual` : Human intervention is required for switching on and off. `semiautomatic` : The same as `automatic` but in this case manual intervention is allowed.'    
@@ -590,7 +668,9 @@ StreetlightControlCabinet:
         - automatic    
         - manual    
         - semiautomatic    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
@@ -598,11 +678,17 @@ StreetlightControlCabinet:
     - refStreetlightGroup    
     - workingMode    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### StreetlightControlCabinet NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un StreetlightControlCabinet en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### StreetlightControlCabinet NGSI-v2 key-values の例。  
+StreetlightControlCabinetをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "streetlightcontrolcabinet:A45HGJK",  
@@ -631,8 +717,8 @@ StreetlightControlCabinet:
   "workingMode": "automatic"  
 }  
 ```  
-#### StreetlightControlCabinet NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un StreetlightControlCabinet en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### StreetlightControlCabinet NGSI-v2 の正規化された例。  
+ここでは、正規化されたJSON-LD形式のStreetlightControlCabinetの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "streetlightcontrolcabinet:A45HGJK",  
@@ -709,8 +795,8 @@ StreetlightControlCabinet:
   }  
 }  
 ```  
-#### StreetlightControlCabinet NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un StreetlightControlCabinet en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### StreetlightControlCabinet NGSI-LDのキーバリューの例。  
+StreetlightControlCabinetをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:StreetlightControlCabinet:streetlightcontrolcabinet:A45HGJK",  
@@ -814,8 +900,8 @@ StreetlightControlCabinet:
   ]  
 }  
 ```  
-#### StreetlightControlCabinet NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un StreetlightControlCabinet en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### StreetlightControlCabinet NGSI-LDの正規化例  
+正規化されたJSON-LD形式のStreetlightControlCabinetの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": [  
@@ -862,4 +948,4 @@ StreetlightControlCabinet:
   "workingMode": "automatic"  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
