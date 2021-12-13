@@ -1,0 +1,77 @@
+{
+  "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",
+  "type": "StreetLightFeeder",
+  "totalActivePower": {
+    "type": "Number",
+    "value": 30
+  },
+  "phaseCurrent": {
+    "type": "array",
+    "value": [
+      25,
+      28,
+      30
+    ]
+  },
+  "reactivePower": {
+    "type": "array",
+    "value": [
+      25,
+      28,
+      30
+    ]
+  },
+  "numStreetlight": {
+    "type": "Number",
+    "value": 45
+  },
+  "phaseVoltage": {
+    "type": "array",
+    "value": [
+      240,
+      120,
+      50
+    ]
+  },
+  "totalReactivePower": {
+    "type": "Number",
+    "value": 200
+  },
+  "activePower": {
+    "type": "array",
+    "value": [
+      120,
+      200,
+      150
+    ]
+  },
+  "powerState": {
+    "type": "Text",
+    "value": "ON"
+  },
+  "observationDateTime": {
+    "type": "DateTime",
+    "value": "2021-03-11T15:51:02+05:30"
+  },
+  "deviceInfo": {
+    "type": "StructuredValue",
+    "value": {
+      "rfID": "5634684",
+      "deviceBatteryStatus": "Connected",
+      "deviceName": "SL1",
+      "deviceID": "43",
+      "measurand": "6",
+      "deviceSimNumber": "6755375727",
+      "deviceModel": {
+        "brandName": "abc",
+        "manufacturerName": "xyz",
+        "modelName": "SL1",
+        "modelURL": "www.abcstreetlight.com"
+      }
+    }
+  },
+  "@context": [
+    "iudx:StreetLightFeeder",
+    "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"
+  ]
+}

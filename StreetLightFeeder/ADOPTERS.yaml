@@ -1,0 +1,10 @@
+description: This is a compilation list of the current adopters of the data model StreetlightFeeder of the Subject dataModel.Streetlight.  All fields are non mandatory.
+currentAdopters:
+-
+ adopter: IUDX
+ description: A streetlight control panel Data Model.
+ mail:
+ organization: IUDX
+ project:
+ comments:
+ startDate:
