@@ -19,6 +19,13 @@
     },
     {
       "properties": {
+        "type": {
+          "type": "string",
+          "description": "Property. NGSI entity type. It has to be StreetlightFeeder",
+          "enum": [
+            "StreetlightFeeder"
+          ]
+        },
         "totalActivePower": {
           "type": "number",
           "description": "Property. Model:'https://schema.org/Number'. Total active power consumed by all phases."

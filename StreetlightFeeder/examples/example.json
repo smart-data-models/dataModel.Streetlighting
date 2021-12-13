@@ -1,10 +1,6 @@
 {
   "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",
-  "@context": [
-    "iudx:StreetLightFeeder",
-    "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"
-  ],
-  "type": "StreetLightFeeder",
+  "type": "StreetlightFeeder",
   "totalActivePower": 30,
   "phaseCurrent": [
     25,

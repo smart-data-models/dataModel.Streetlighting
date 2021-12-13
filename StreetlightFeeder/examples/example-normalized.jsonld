@@ -1,12 +1,12 @@
 {
   "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",
-  "type": "StreetLightFeeder",
+  "type": "StreetlightFeeder",
   "totalActivePower": {
-    "type": "Number",
+    "type": "Property",
     "value": 30
   },
   "phaseCurrent": {
-    "type": "array",
+    "type": "Property",
     "value": [
       25,
       28,
@@ -14,7 +14,7 @@
     ]
   },
   "reactivePower": {
-    "type": "array",
+    "type": "Property",
     "value": [
       25,
       28,
@@ -22,11 +22,11 @@
     ]
   },
   "numStreetlight": {
-    "type": "Number",
+    "type": "Property",
     "value": 45
   },
   "phaseVoltage": {
-    "type": "array",
+    "type": "Property",
     "value": [
       240,
       120,
@@ -34,11 +34,11 @@
     ]
   },
   "totalReactivePower": {
-    "type": "Number",
+    "type": "Property",
     "value": 200
   },
   "activePower": {
-    "type": "array",
+    "type": "Property",
     "value": [
       120,
       200,
@@ -46,15 +46,18 @@
     ]
   },
   "powerState": {
-    "type": "Text",
+    "type": "Property",
     "value": "ON"
   },
   "observationDateTime": {
-    "type": "DateTime",
-    "value": "2021-03-11T15:51:02+05:30"
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-03-11T15:51:02+05:30"
+    }
   },
   "deviceInfo": {
-    "type": "StructuredValue",
+    "type": "Property",
     "value": {
       "rfID": "5634684",
       "deviceBatteryStatus": "Connected",
