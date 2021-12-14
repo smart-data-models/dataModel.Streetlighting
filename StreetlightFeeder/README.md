@@ -9,6 +9,16 @@ A streetlight control panel Data Model.
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightFeeder/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/doc/spec.md)
+
+Enlace a la [Especificación en español](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/doc/spec_ES.md)
+
+Lien vers le [spécification en français](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/doc/spec_FR.md)
+
+Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/doc/spec_DE.md)
+
+Link alla [specifica](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/doc/spec_IT.md)
+
+[仕様へのリンク](https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/doc/spec_JA.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightFeeder/examples/example.json) (keyvalues) for NGSI v2
