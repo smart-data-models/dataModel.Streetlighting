@@ -139,9 +139,9 @@
             "comment": "A URL containing a photo of the streetlight"
         },
         {
-            "name": "laternHeight",
+            "name": "lanternHeight",
             "writable": true,
-            "displayName": "laternHeight",
+            "displayName": "lanternHeight",
             "@type": "Property",
             "schema": "long",
             "comment": "Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights."
