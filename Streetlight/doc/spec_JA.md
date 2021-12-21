@@ -6,7 +6,7 @@
 
 ## プロパティのリスト  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `annotations`: アイテムに関するアノテーション  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `circuit`: この街灯が接続され、電力を得るための回路。通常、この回路に関する詳細情報を得るための識別子が含まれている。  - `color`: 商品の色について  - `controllingMethod`: この街灯を制御するために使用される方法です。Enum:'group, individual'.  - `current`: この観測に対応する街灯の現在の値。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastLampChange`: 最後に行われたランプの交換のタイムスタンプ  - `dateLastSwitchingOff`: 最後に電源を切った時のタイムスタンプ  - `dateLastSwitchingOn`: 前回の電源投入時のタイムスタンプ  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateServiceStarted`: 街路灯がサービスを開始した日  - `description`: このアイテムの説明  - `deviceInfo`: オブザベーションに関連するデバイスに関する情報です。  - `feederID`: この観測に対応する街灯に関連する街灯フィーダーパネルのユニークID。  - `feederPillarNum`: この観測に対応する街灯に関連する街灯フィーダーピラー情報。  - `id`: エンティティのユニークな識別子  - `illuminanceLevel`: 相対照度レベルの設定。0から1の間の数値。  - `image`: 街路灯の写真を含むURL  - `laternHeight`: ランタンの高さ。多くのアームを持つ柱では、街灯ごとに異なる。また、壁掛け式の街路灯もこの特性を持つバリエーションの一つである。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `locationCategory`: 街灯が設置されている場所のカテゴリ。Enum:'bridge, centralIsland, facade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'.  - `municipalityInfo`: この観測に対応する自治体の情報  - `name`: このアイテムの名前です。  - `observationDateTime`: 最後に報告された観測時刻。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `powerConsumption`: この観測に対応するLEDや街灯の電球の消費電力。  - `powerFactor`: この観測値に対応する街路灯の力率または動作電力の割合。  - `powerRating`: 今回の観測に対応したLEDまたは街路灯の電球の定格電力。  - `powerState`: ストリートライトの電源状態。Enum:'bootingUp, low, off, on'.  - `refDevice`: Streetligthをモニターするために使用されるデバイスへの参照。Deviceタイプのエンティティ（複数可）への参照のリスト。  - `refStreetlightControlCabinet`: この街灯が個別に制御されている場合は、担当の制御盤を参照する。  - `refStreetlightGroup`: 街路灯のグループ（この街路灯が何らかのグループに属している場合）。  - `refStreetlightModel`: ストリートライトのモデル。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status`: この街路灯の全体的なステータス。Enum:'brokenLantern', 'columnIssue', 'defectiveLamp', 'ok'  - `streetPoleNum`: この観測に対応する街灯に関連する街灯情報。  - `type`: NGSI エンティティタイプ。Streetlightである必要があります。  - `voltage`: この観測に対応する街灯の電圧値。    
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `annotations`: アイテムに関するアノテーション  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `circuit`: この街灯が接続され、電力を得るための回路。通常、この回路に関する詳細情報を得るための識別子が含まれている。  - `color`: 商品の色について  - `controllingMethod`: この街灯を制御するために使用される方法です。Enum:'group, individual'.  - `current`: この観測に対応する街灯の現在の値。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastLampChange`: 最後に行われたランプの交換のタイムスタンプ  - `dateLastSwitchingOff`: 最後に電源を切った時のタイムスタンプ  - `dateLastSwitchingOn`: 前回の電源投入時のタイムスタンプ  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateServiceStarted`: 街路灯がサービスを開始した日  - `description`: このアイテムの説明  - `deviceInfo`: オブザベーションに関連するデバイスに関する情報です。  - `feederID`: この観測に対応する街灯に関連する街灯フィーダーパネルのユニークID。  - `feederPillarNum`: この観測に対応する街灯に関連する街灯フィーダーピラー情報。  - `id`: エンティティのユニークな識別子  - `illuminanceLevel`: 相対照度レベルの設定。0から1の間の数値。  - `image`: 街路灯の写真を含むURL  - `lanternHeight`: ランタンの高さ。アームの多い柱では、街灯ごとに異なる。また、壁掛け式の街路灯もこの特性を持つバリエーションの一つである。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `locationCategory`: 街灯が設置されている場所のカテゴリ。Enum:'bridge, centralIsland, facade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'.  - `municipalityInfo`: この観測に対応する自治体の情報  - `name`: このアイテムの名前です。  - `observationDateTime`: 最後に報告された観測時刻。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `powerConsumption`: この観測に対応するLEDや街灯の電球の消費電力。  - `powerFactor`: この観測値に対応する街路灯の力率または動作電力の割合。  - `powerRating`: 今回の観測に対応したLEDまたは街路灯の電球の定格電力。  - `powerState`: ストリートライトの電源状態。Enum:'bootingUp, low, off, on'.  - `refDevice`: Streetligthをモニターするために使用されるデバイスへの参照。Deviceタイプのエンティティ（複数可）への参照のリスト。  - `refStreetlightControlCabinet`: この街灯が個別に制御されている場合は、担当の制御盤を参照する。  - `refStreetlightGroup`: 街路灯のグループ（この街路灯が何らかのグループに属している場合）。  - `refStreetlightModel`: ストリートライトのモデル。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status`: この街路灯の全体的なステータス。Enum:'brokenLantern', 'columnIssue', 'defectiveLamp', 'ok'  - `streetPoleNum`: この観測に対応する街灯に関連する街灯情報。  - `type`: NGSI エンティティタイプ。Streetlightである必要があります。  - `voltage`: この観測に対応する街灯の電圧値。    
 必須項目  
 - `id`  - `location`  - `status`  - `type`    
 Streetlight`というタイプのエンティティは、都市部の街灯を表します。実際には、1つのランプにつき1つの `Streetlight` 型のエンティティが存在します。したがって、あるポールに複数のランタンが設置されている場合、設置されているランプの数だけ街灯のエンティティが存在することになります。その結果、1つの場所に1つ以上の街灯エンティティが存在することになります。Streetlight」エンティティには、構造的な特性に対応する属性はありません。このようなデータは `StreetlightModel` タイプのエンティティによって取得されます。  
@@ -221,7 +221,7 @@ Streetlight:
       x-ngsi:    
         model: https://schema.org/image    
         type: Relationship    
-    laternHeight:    
+    lanternHeight:    
       description: 'Lantern''s height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights.'    
       minimum: 0    
       type: number    
@@ -587,7 +587,7 @@ Streetlight:
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.0.2    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## ペイロードの例  
@@ -769,6 +769,7 @@ Streetlight:
       }  
     }  
   }  
+}  
 ```  
 #### 街灯 NGSI-LD のキーバリューの例  
 JSON-LD形式でkey-valuesとしてStreetlightを表示した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
