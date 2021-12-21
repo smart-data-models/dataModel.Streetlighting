@@ -205,7 +205,7 @@ Streetlight:
       x-ngsi:
         model: https://schema.org/image
         type: Relationship
-    laternHeight:
+    lanternHeight:
       description: 'Lantern''s height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights.'
       minimum: 0
       type: number
@@ -571,4 +571,4 @@ Streetlight:
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json
   x-model-tags: IUDX
-  x-version: 0.0.2
+  x-version: 0.1.0
