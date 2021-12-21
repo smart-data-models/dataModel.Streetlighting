@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.2",
+  "$schemaVersion": "0.1.0",
   "modelTags": "IUDX",
   "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
   "title": " Smart Data Models - Streetlight",
@@ -172,7 +172,7 @@
           ],
           "description": "Property. Category of the location where the streetlight is placed. Enum:'bridge, centralIsland, facade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'"
         },
-        "laternHeight": {
+        "lanternHeight": {
           "type": "number",
           "minimum": 0,
           "description": "Property. Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights."
