@@ -1,15 +1,17 @@
-エンティティStreetlightFeeder  
-=======================  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティストリートライトフィーダー  
+===================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightFeeder/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**街路灯の制御盤 データモデル：***。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**街路灯の制御盤 Data Model.**.  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `activePower`: フェーズごとに消費されるアクティブパワー。次の順序で3つの相の有効電力からなる順序付きトリプル。[R Y B].  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `deviceInfo`: オブザベーションに関連するデバイスに関する情報です。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `numStreetlight`: この観測データに対応するフィーダーパネルに接続されている街灯の総数を記述する。  - `observationDateTime`: 最後に報告された観測時刻。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `phaseCurrent`: 各相の電流。三相の有効電力を次の順序で構成するオーダートリプル。[R Y B].  - `phaseVoltage`: 各相の電圧。三相の有効電力を次の順序で構成するオーダートリプル。[R Y B].  - `powerState`: 街路灯フィーダーパネルの現在の状態を示す。  - `reactivePower`: 相ごとに消費される無効電力。次の順序で3つの相の有効電力からなる順序付きトリプル。[R Y B].  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `totalActivePower`: 全相で消費される総有効電力。  - `totalReactivePower`: 全相の総無効電力。  - `type`: NGSIエンティティタイプ。StreetlightFeederである必要があります。    
-必須項目  
-- `id`  - `type`  ## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+- `activePower`: 各相の有効電力消費量。3 相の有効電力を以下の順序で組み合わせた順序付きトリプル。[R Y B］  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `deviceInfo`: 観測に関連するデバイスの情報。  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `numStreetlight`: この観測に対応するフィーダパネルに接続されている街路灯の総数を記述する。  - `observationDateTime`: 最後に報告された観測時刻。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `phaseCurrent`: 各相の電流。三相の有効電力を次の順序で並べたもの。[R Y B］  - `phaseVoltage`: 各相の電圧。三相の有効電力を次の順序で並べたもの。[R Y B］  - `powerState`: 街路灯フィーダパネルの現在の状態を示す。  - `reactivePower`: 相ごとに消費される無効電力。3 相の有効電力を以下の順序で組み合わせた順序付きトリプル。[R Y B］  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `totalActivePower`: 全相の総活動電力消費量。  - `totalReactivePower`: 全相の総無効電力。  - `type`: NGSIエンティティタイプ。StreetlightFeeder である必要があります。    
+必要なプロパティ  
+- `id`  - `type`  ## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 StreetlightFeeder:    
@@ -18,7 +20,7 @@ StreetlightFeeder:
     activePower:    
       description: 'Active power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -318,7 +320,7 @@ StreetlightFeeder:
     phaseCurrent:    
       description: 'Current per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -327,7 +329,7 @@ StreetlightFeeder:
     phaseVoltage:    
       description: 'Voltage per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -342,7 +344,7 @@ StreetlightFeeder:
     reactivePower:    
       description: 'Reactive power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -389,16 +391,16 @@ StreetlightFeeder:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-#### StreetlightFeeder NGSI-v2 key-valuesの例。  
-StreetlightFeederをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### StreetlightFeeder NGSI-v2 key-value の例  
+以下はStreetlightFeederをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
@@ -444,8 +446,8 @@ StreetlightFeeder:
   }  
 }  
 ```  
-#### StreetlightFeeder NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のStreetlightFeederの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### StreetlightFeeder NGSI-v2 正規化例  
+以下は、StreetlightFeederをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
@@ -525,139 +527,140 @@ StreetlightFeeder:
   ]  
 }  
 ```  
-#### StreetlightFeeder NGSI-LD key-valuesの例。  
-StreetlightFeederをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### StreetlightFeeder NGSI-LD key-value の例  
+ここでは、StreetlightFeederをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
-  "@context": [  
-    "iudx:StreetLightFeeder",  
-    "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"  
-  ],  
-  "type": "StreetlightFeeder",  
-  "totalActivePower": 30,  
-  "phaseCurrent": [  
-    25,  
-    28,  
-    30  
-  ],  
-  "reactivePower": [  
-    25,  
-    28,  
-    30  
-  ],  
-  "numStreetlight": 45,  
-  "phaseVoltage": [  
-    240,  
-    120,  
-    50  
-  ],  
-  "totalReactivePower": 200,  
-  "activePower": [  
-    120,  
-    200,  
-    150  
-  ],  
-  "powerState": "ON",  
-  "observationDateTime": "2021-03-11T15:51:02+05:30",  
-  "deviceInfo": {  
-    "rfId": "5634684",  
-    "deviceBatteryStatus": "Connected",  
-    "deviceName": "SL1",  
-    "deviceId": "43",  
-    "measurand": "6",  
-    "deviceSimNumber": "6755375727",  
-    "deviceModel": {  
-      "brandName": "abc",  
-      "manufacturerName": "xyz",  
-      "modelName": "SL1",  
-      "modelURL": "www.abcstreetlight.com"  
-    }  
-  }  
+    "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
+    "type": "StreetlightFeeder",  
+    "activePower": [  
+        120,  
+        200,  
+        150  
+    ],  
+    "deviceInfo": {  
+        "rfId": "5634684",  
+        "deviceBatteryStatus": "Connected",  
+        "deviceName": "SL1",  
+        "deviceId": "43",  
+        "measurand": "6",  
+        "deviceSimNumber": "6755375727",  
+        "deviceModel": {  
+            "brandName": "abc",  
+            "manufacturerName": "xyz",  
+            "modelName": "SL1",  
+            "modelURL": "www.abcstreetlight.com"  
+        }  
+    },  
+    "numStreetlight": 45,  
+    "observationDateTime": "2021-03-11T15:51:02+05:30",  
+    "phaseCurrent": [  
+        25,  
+        28,  
+        30  
+    ],  
+    "phaseVoltage": [  
+        240,  
+        120,  
+        50  
+    ],  
+    "powerState": "ON",  
+    "reactivePower": [  
+        25,  
+        28,  
+        30  
+    ],  
+    "totalActivePower": 30,  
+    "totalReactivePower": 200,  
+    "@context": [  
+        "iudx:StreetLightFeeder",  
+        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### StreetlightFeeder NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のStreetlightFeederの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### StreetlightFeeder NGSI-LD 正規化例  
+以下は、StreetlightFeederを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
-  "type": "StreetlightFeeder",  
-  "totalActivePower": {  
-    "type": "Property",  
-    "value": 30  
-  },  
-  "phaseCurrent": {  
-    "type": "Property",  
-    "value": [  
-      25,  
-      28,  
-      30  
+    "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
+    "type": "StreetlightFeeder",  
+    "activePower": {  
+        "type": "Property",  
+        "value": [  
+            120,  
+            200,  
+            150  
+        ]  
+    },  
+    "deviceInfo": {  
+        "type": "Property",  
+        "value": {  
+            "rfID": "5634684",  
+            "deviceBatteryStatus": "Connected",  
+            "deviceName": "SL1",  
+            "deviceID": "43",  
+            "measurand": "6",  
+            "deviceSimNumber": "6755375727",  
+            "deviceModel": {  
+                "brandName": "abc",  
+                "manufacturerName": "xyz",  
+                "modelName": "SL1",  
+                "modelURL": "www.abcstreetlight.com"  
+            }  
+        }  
+    },  
+    "numStreetlight": {  
+        "type": "Property",  
+        "value": 45  
+    },  
+    "observationDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-03-11T15:51:02+05:30"  
+        }  
+    },  
+    "phaseCurrent": {  
+        "type": "Property",  
+        "value": [  
+            25,  
+            28,  
+            30  
+        ]  
+    },  
+    "phaseVoltage": {  
+        "type": "Property",  
+        "value": [  
+            240,  
+            120,  
+            50  
+        ]  
+    },  
+    "powerState": {  
+        "type": "Property",  
+        "value": "ON"  
+    },  
+    "reactivePower": {  
+        "type": "Property",  
+        "value": [  
+            25,  
+            28,  
+            30  
+        ]  
+    },  
+    "totalActivePower": {  
+        "type": "Property",  
+        "value": 30  
+    },  
+    "totalReactivePower": {  
+        "type": "Property",  
+        "value": 200  
+    },  
+    "@context": [  
+        "iudx:StreetLightFeeder",  
+        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"  
     ]  
-  },  
-  "reactivePower": {  
-    "type": "Property",  
-    "value": [  
-      25,  
-      28,  
-      30  
-    ]  
-  },  
-  "numStreetlight": {  
-    "type": "Property",  
-    "value": 45  
-  },  
-  "phaseVoltage": {  
-    "type": "Property",  
-    "value": [  
-      240,  
-      120,  
-      50  
-    ]  
-  },  
-  "totalReactivePower": {  
-    "type": "Property",  
-    "value": 200  
-  },  
-  "activePower": {  
-    "type": "Property",  
-    "value": [  
-      120,  
-      200,  
-      150  
-    ]  
-  },  
-  "powerState": {  
-    "type": "Property",  
-    "value": "ON"  
-  },  
-  "observationDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-03-11T15:51:02+05:30"  
-    }  
-  },  
-  "deviceInfo": {  
-    "type": "Property",  
-    "value": {  
-      "rfID": "5634684",  
-      "deviceBatteryStatus": "Connected",  
-      "deviceName": "SL1",  
-      "deviceID": "43",  
-      "measurand": "6",  
-      "deviceSimNumber": "6755375727",  
-      "deviceModel": {  
-        "brandName": "abc",  
-        "manufacturerName": "xyz",  
-        "modelName": "SL1",  
-        "modelURL": "www.abcstreetlight.com"  
-      }  
-    }  
-  },  
-  "@context": [  
-    "iudx:StreetLightFeeder",  
-    "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"  
-  ]  
 }  
 ```  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
