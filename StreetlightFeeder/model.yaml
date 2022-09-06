@@ -4,7 +4,7 @@ StreetlightFeeder:
     activePower:
       description: 'Active power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'
       items:
-        minitems: 3
+        minItems: 3
         type: number
       type: array
       x-ngsi:
@@ -304,7 +304,7 @@ StreetlightFeeder:
     phaseCurrent:
       description: 'Current per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'
       items:
-        minitems: 3
+        minItems: 3
         type: number
       type: array
       x-ngsi:
@@ -313,7 +313,7 @@ StreetlightFeeder:
     phaseVoltage:
       description: 'Voltage per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'
       items:
-        minitems: 3
+        minItems: 3
         type: number
       type: array
       x-ngsi:
@@ -328,7 +328,7 @@ StreetlightFeeder:
     reactivePower:
       description: 'Reactive power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'
       items:
-        minitems: 3
+        minItems: 3
         type: number
       type: array
       x-ngsi:
@@ -375,8 +375,8 @@ StreetlightFeeder:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json
   x-model-tags: IUDX
-  x-version: 0.0.1
+  x-version: 0.0.2
