@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",
   "title": "Smart Data models -StreetLightFeeder schema",
   "modelTags": "IUDX",
@@ -35,7 +35,7 @@
           "description": "Property. Model:'https://schema.org/Text. Current per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
           "items": {
             "type": "number",
-            "minitems": 3
+            "minItems": 3
           }
         },
         "reactivePower": {
@@ -43,7 +43,7 @@
           "description": "Property. Model:'https://schema.org/Text. Reactive power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
           "items": {
             "type": "number",
-            "minitems": 3
+            "minItems": 3
           }
         },
         "numStreetlight": {
@@ -55,7 +55,7 @@
           "description": "Property. Model:'https://schema.org/Text. Voltage per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
           "items": {
             "type": "number",
-            "minitems": 3
+            "minItems": 3
           }
         },
         "totalReactivePower": {
@@ -67,7 +67,7 @@
           "description": "Property. Model:'https://schema.org/Text. Active power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]",
           "items": {
             "type": "number",
-            "minitems": 3
+            "minItems": 3
           }
         },
         "powerState": {
