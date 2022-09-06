@@ -1,12 +1,14 @@
-Entidad: StreetlightFeeder  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: StreetlightFeeder  
 ==========================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightFeeder/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Un panel de control del alumbrado público Modelo de datos.**  
+versión: 0.0.2  
 
 ## Lista de propiedades  
 
-- `activePower`: Potencia activa consumida por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `deviceInfo`: Información sobre el dispositivo asociado a las observaciones.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `numStreetlight`: Describe el número total de farolas conectadas al panel de alimentación correspondiente a esta observación.  - `observationDateTime`: Última hora de observación comunicada.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `phaseCurrent`: Corriente por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `phaseVoltage`: Tensión por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `powerState`: Indica el estado actual del panel de alimentación del alumbrado público.  - `reactivePower`: Potencia reactiva consumida por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `totalActivePower`: Potencia activa total consumida por todas las fases.  - `totalReactivePower`: Potencia reactiva total para todas las fases.  - `type`: Tipo de entidad NGSI. Tiene que ser StreetlightFeeder    
+- `activePower`: Potencia activa consumida por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `deviceInfo`: Información sobre el dispositivo asociado a las observaciones.  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `numStreetlight`: Describe el número total de farolas conectadas al panel de alimentación correspondiente a esta observación.  - `observationDateTime`: Última hora de observación comunicada.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `phaseCurrent`: Corriente por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `phaseVoltage`: Tensión por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `powerState`: Indica el estado actual del panel de alimentación del alumbrado público.  - `reactivePower`: Potencia reactiva consumida por fase. Triple ordenado que comprende la potencia activa de tres fases en el siguiente orden: [R Y B]  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `totalActivePower`: Potencia activa total consumida por todas las fases.  - `totalReactivePower`: Potencia reactiva total para todas las fases.  - `type`: Tipo de entidad NGSI. Tiene que ser StreetlightFeeder    
 Propiedades requeridas  
 - `id`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
@@ -18,7 +20,7 @@ StreetlightFeeder:
     activePower:    
       description: 'Active power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -318,7 +320,7 @@ StreetlightFeeder:
     phaseCurrent:    
       description: 'Current per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -327,7 +329,7 @@ StreetlightFeeder:
     phaseVoltage:    
       description: 'Voltage per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -342,7 +344,7 @@ StreetlightFeeder:
     reactivePower:    
       description: 'Reactive power consumed per phase. Ordered triple comprising of active power from three phases in the following order: [R Y B]'    
       items:    
-        minitems: 3    
+        minItems: 3    
         type: number    
       type: array    
       x-ngsi:    
@@ -389,11 +391,11 @@ StreetlightFeeder:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightFeeder/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Ejemplo de carga útil  
@@ -529,135 +531,136 @@ StreetlightFeeder:
 Aquí hay un ejemplo de un StreetlightFeeder en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-  "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
-  "@context": [  
-    "iudx:StreetLightFeeder",  
-    "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"  
-  ],  
-  "type": "StreetlightFeeder",  
-  "totalActivePower": 30,  
-  "phaseCurrent": [  
-    25,  
-    28,  
-    30  
-  ],  
-  "reactivePower": [  
-    25,  
-    28,  
-    30  
-  ],  
-  "numStreetlight": 45,  
-  "phaseVoltage": [  
-    240,  
-    120,  
-    50  
-  ],  
-  "totalReactivePower": 200,  
-  "activePower": [  
-    120,  
-    200,  
-    150  
-  ],  
-  "powerState": "ON",  
-  "observationDateTime": "2021-03-11T15:51:02+05:30",  
-  "deviceInfo": {  
-    "rfId": "5634684",  
-    "deviceBatteryStatus": "Connected",  
-    "deviceName": "SL1",  
-    "deviceId": "43",  
-    "measurand": "6",  
-    "deviceSimNumber": "6755375727",  
-    "deviceModel": {  
-      "brandName": "abc",  
-      "manufacturerName": "xyz",  
-      "modelName": "SL1",  
-      "modelURL": "www.abcstreetlight.com"  
-    }  
-  }  
+    "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
+    "type": "StreetlightFeeder",  
+    "activePower": [  
+        120,  
+        200,  
+        150  
+    ],  
+    "deviceInfo": {  
+        "rfId": "5634684",  
+        "deviceBatteryStatus": "Connected",  
+        "deviceName": "SL1",  
+        "deviceId": "43",  
+        "measurand": "6",  
+        "deviceSimNumber": "6755375727",  
+        "deviceModel": {  
+            "brandName": "abc",  
+            "manufacturerName": "xyz",  
+            "modelName": "SL1",  
+            "modelURL": "www.abcstreetlight.com"  
+        }  
+    },  
+    "numStreetlight": 45,  
+    "observationDateTime": "2021-03-11T15:51:02+05:30",  
+    "phaseCurrent": [  
+        25,  
+        28,  
+        30  
+    ],  
+    "phaseVoltage": [  
+        240,  
+        120,  
+        50  
+    ],  
+    "powerState": "ON",  
+    "reactivePower": [  
+        25,  
+        28,  
+        30  
+    ],  
+    "totalActivePower": 30,  
+    "totalReactivePower": 200,  
+    "@context": [  
+        "iudx:StreetLightFeeder",  
+        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
 #### StreetlightFeeder NGSI-LD normalizado Ejemplo  
 Aquí hay un ejemplo de un StreetlightFeeder en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-  "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
-  "type": "StreetlightFeeder",  
-  "totalActivePower": {  
-    "type": "Property",  
-    "value": 30  
-  },  
-  "phaseCurrent": {  
-    "type": "Property",  
-    "value": [  
-      25,  
-      28,  
-      30  
+    "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
+    "type": "StreetlightFeeder",  
+    "activePower": {  
+        "type": "Property",  
+        "value": [  
+            120,  
+            200,  
+            150  
+        ]  
+    },  
+    "deviceInfo": {  
+        "type": "Property",  
+        "value": {  
+            "rfID": "5634684",  
+            "deviceBatteryStatus": "Connected",  
+            "deviceName": "SL1",  
+            "deviceID": "43",  
+            "measurand": "6",  
+            "deviceSimNumber": "6755375727",  
+            "deviceModel": {  
+                "brandName": "abc",  
+                "manufacturerName": "xyz",  
+                "modelName": "SL1",  
+                "modelURL": "www.abcstreetlight.com"  
+            }  
+        }  
+    },  
+    "numStreetlight": {  
+        "type": "Property",  
+        "value": 45  
+    },  
+    "observationDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-03-11T15:51:02+05:30"  
+        }  
+    },  
+    "phaseCurrent": {  
+        "type": "Property",  
+        "value": [  
+            25,  
+            28,  
+            30  
+        ]  
+    },  
+    "phaseVoltage": {  
+        "type": "Property",  
+        "value": [  
+            240,  
+            120,  
+            50  
+        ]  
+    },  
+    "powerState": {  
+        "type": "Property",  
+        "value": "ON"  
+    },  
+    "reactivePower": {  
+        "type": "Property",  
+        "value": [  
+            25,  
+            28,  
+            30  
+        ]  
+    },  
+    "totalActivePower": {  
+        "type": "Property",  
+        "value": 30  
+    },  
+    "totalReactivePower": {  
+        "type": "Property",  
+        "value": 200  
+    },  
+    "@context": [  
+        "iudx:StreetLightFeeder",  
+        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"  
     ]  
-  },  
-  "reactivePower": {  
-    "type": "Property",  
-    "value": [  
-      25,  
-      28,  
-      30  
-    ]  
-  },  
-  "numStreetlight": {  
-    "type": "Property",  
-    "value": 45  
-  },  
-  "phaseVoltage": {  
-    "type": "Property",  
-    "value": [  
-      240,  
-      120,  
-      50  
-    ]  
-  },  
-  "totalReactivePower": {  
-    "type": "Property",  
-    "value": 200  
-  },  
-  "activePower": {  
-    "type": "Property",  
-    "value": [  
-      120,  
-      200,  
-      150  
-    ]  
-  },  
-  "powerState": {  
-    "type": "Property",  
-    "value": "ON"  
-  },  
-  "observationDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-03-11T15:51:02+05:30"  
-    }  
-  },  
-  "deviceInfo": {  
-    "type": "Property",  
-    "value": {  
-      "rfID": "5634684",  
-      "deviceBatteryStatus": "Connected",  
-      "deviceName": "SL1",  
-      "deviceID": "43",  
-      "measurand": "6",  
-      "deviceSimNumber": "6755375727",  
-      "deviceModel": {  
-        "brandName": "abc",  
-        "manufacturerName": "xyz",  
-        "modelName": "SL1",  
-        "modelURL": "www.abcstreetlight.com"  
-      }  
-    }  
-  },  
-  "@context": [  
-    "iudx:StreetLightFeeder",  
-    "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"  
-  ]  
 }  
 ```  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
