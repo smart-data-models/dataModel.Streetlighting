@@ -123,6 +123,7 @@
         "value": 50
     },
     "@context": [
-        "iudx:Streetlight"
+        "iudx:Streetlight",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
     ]
 }
