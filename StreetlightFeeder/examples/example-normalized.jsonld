@@ -75,6 +75,7 @@
     },
     "@context": [
         "iudx:StreetLightFeeder",
-        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"
+        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
     ]
 }
