@@ -1,17 +1,32 @@
-エンティティストリートライトグループ  
-==================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティストリートライトグループ  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightGroup/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**街路灯グループ **A  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**街路灯グループ**。  
+バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `activeProgramId`: この街路灯グループのアクティブなプログラムの識別子  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `annotations`: 注釈（インシデント、備考など）のためのフィールドです。  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `color`: 商品の色について  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastSwitchingOff`: 最後に電源を切った時のタイムスタンプ  - `dateLastSwitchingOn`: 前回の電源投入時のタイムスタンプ  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `illuminanceLevel`: グループの相対的な照度レベルの設定。許可された値。0から1の間の数値  - `image`: アイテムのイメージ  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `powerState`: ストリートライトグループの電源状態。Enum:'on, off, low, bootingUp'.列挙型:'bootingUp, low, off, on'.  - `refStreetlight`: このグループに属する街灯のエンティティの一覧です。Streetlightタイプのエンティティへの参照のリスト。許可された値。グループの位置と個々の街灯の位置の間には、地形的な整合性がなければならない。  - `refStreetlightControlCabinet`: 街灯グループの制御盤  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `switchingMode`: 最後に行われたランプの変更のタイムスタンプ。Enum:' Night-ON, Night-OFF, Night-LOW, Always-ON, Day-ON, Day-OFF, Day-LOW'  - `switchingOnHours`: 時間を切り替える。通常は、特定の日に特別なスケジュールを設定するために使用します。  - `type`: NGSI エンティティ・タイプ。StreetlightGroupでなければならない。    
-必須項目  
-- `id`  - `location`  - `type`    
-StreetlightGroup`というタイプのエンティティは、街灯のグループを表します。これらの街灯は、同じ自動化システム（キャビネットコントローラ）によって一緒に制御されている場合があります。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `activeProgramId[string]`: この街路灯グループのアクティブプログラムの識別子  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `annotations[array]`: 注釈（発生状況、備考など）のために予約されたフィールドです。  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: 製品の色  . Model: [https://schema.org/color](https://schema.org/color)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateLastSwitchingOff[string]`: 最後のスイッチオフのタイムスタンプ  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateLastSwitchingOn[string]`: 最後のスイッチオンのタイムスタンプ  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `illuminanceLevel[number]`: グループの相対的な照度レベルの設定。許可された値。0〜1までの数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `image[string]`: アイテムの画像  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `powerState[string]`: 街灯グループの電源状態。Enum:'on, off, low, bootingUp'.Enum:'bootingUp, low, off, on'.  . Model: [htts://schema.org/Text](htts://schema.org/Text)- `refStreetlight[array]`: このグループに属する街灯の実体のリスト。エンティティfoタイプStreetlightへの参照のリスト。許容される値。グループと個々の街灯の位置の間に地形的な整合性がなければならない。  - `refStreetlightControlCabinet[*]`: 街路灯グループの制御盤  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `switchingMode[array]`: 最後にランプを交換したときのタイムスタンプ。Enum:' night-ON, night-OFF, night-LOW, always-ON, day-ON, day-OFF, day-LOW'.  - `switchingOnHours[array]`: 時間を切り換えること。通常は、特定の日付に特別なスケジュールを設定するために使用します。  - `type[string]`: NGSI Entity タイプ。StreetlightGroupでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+StreetlightGroup` 型のエンティティは、街灯のグループを表します。それらは同じ自動化システム（キャビネットコントローラ）によって一緒に制御されるかもしれません。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 StreetlightGroup:    
@@ -426,9 +441,14 @@ StreetlightGroup:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### StreetlightGroup NGSI-v2 key-values の例。  
-StreetlightGroupをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### StreetlightGroup NGSI-v2 key-value の例。  
+以下はStreetlightGroupをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlightgroup:mycity:A12",  
@@ -474,8 +494,10 @@ StreetlightGroup:
   ]  
 }  
 ```  
-#### StreetlightGroup NGSI-v2 正規化された例。  
-ここでは、正規化されたJSON-LD形式のStreetlightGroupの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### StreetlightGroup NGSI-v2 正規化例  
+以下は、StreetlightGroup を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlightgroup:mycity:A12",  
@@ -523,142 +545,154 @@ StreetlightGroup:
   }  
 }  
 ```  
-#### StreetlightGroup NGSI-LD key-valuesの例。  
-StreetlightGroupをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### StreetlightGroup NGSI-LD key-value 例  
+以下はStreetlightGroupをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
-  "type": "StreetlightGroup",  
-  "circuitId": {  
-    "type": "Property",  
-    "value": "C-456-A467"  
-  },  
-  "powerState": {  
-    "type": "Property",  
-    "value": "on"  
-  },  
-  "dateLastSwitchingOn": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-07-07T19:59:06.618Z"  
-    }  
-  },  
-  "refStreetlightCabinetController": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34"  
-  },  
-  "dateLastSwitchingOff": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-07-07T07:59:06.618Z"  
-    }  
-  },  
-  "switchingOnHours": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "hours": "Mo,Su 16:00-02:00",  
-        "to": "--01-07",  
-        "from": "--11-30",  
-        "description": "Christmas"  
-      }  
+    "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
+    "type": "StreetlightGroup",  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Calle Comercial Centro"  
+    },  
+    "circuitId": {  
+        "type": "Property",  
+        "value": "C-456-A467"  
+    },  
+    "dateLastSwitchingOff": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-07-07T07:59:06.618Z"  
+        }  
+    },  
+    "dateLastSwitchingOn": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-07-07T19:59:06.618Z"  
+        }  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "MultiLineString",  
+            "coordinates": [  
+                [  
+                    [  
+                        100.0,  
+                        0.0  
+                    ],  
+                    [  
+                        101.0,  
+                        1.0  
+                    ]  
+                ],  
+                [  
+                    [  
+                        102.0,  
+                        2.0  
+                    ],  
+                    [  
+                        103.0,  
+                        3.0  
+                    ]  
+                ]  
+            ]  
+        }  
+    },  
+    "powerState": {  
+        "type": "Property",  
+        "value": "on"  
+    },  
+    "refStreetlightCabinetController": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34"  
+    },  
+    "switchingOnHours": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "hours": "Mo,Su 16:00-02:00",  
+                "to": "--01-07",  
+                "from": "--11-30",  
+                "description": "Christmas"  
+            }  
+        ]  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
     ]  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "MultiLineString",  
-      "coordinates": [  
-        [  
-          [  
-            100.0,  
-            0.0  
-          ],  
-          [  
-            101.0,  
-            1.0  
-          ]  
-        ],  
-        [  
-          [  
-            102.0,  
-            2.0  
-          ],  
-          [  
-            103.0,  
-            3.0  
-          ]  
-        ]  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Calle Comercial Centro"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### 街路灯グループ NGSI-LD 正規化された例  
-ここでは、正規化されたJSON-LD形式のStreetlightGroupの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### StreetlightGroup NGSI-LD 正規化例  
+以下は、StreetlightGroup を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "areaServed": "Calle Comercial Centro",  
-  "circuitId": "C-456-A467",  
-  "dateLastSwitchingOff": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T07:59:06.618Z"  
-  },  
-  "dateLastSwitchingOn": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T19:59:06.618Z"  
-  },  
-  "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
-  "location": {  
-    "coordinates": [  
-      [  
-        [  
-          100.0,  
-          0.0  
+    "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",  
+    "type": "StreetlightGroup",  
+    "areaServed": "Calle Comercial Centro",  
+    "circuitId": "C-456-A467",  
+    "dateLastSwitchingOff": {  
+        "@type": "DateTime",  
+        "@value": "2016-07-07T07:59:06.618Z"  
+    },  
+    "dateLastSwitchingOn": {  
+        "@type": "DateTime",  
+        "@value": "2016-07-07T19:59:06.618Z"  
+    },  
+    "location": {  
+        "coordinates": [  
+            [  
+                [  
+                    100.0,  
+                    0.0  
+                ],  
+                [  
+                    101.0,  
+                    1.0  
+                ]  
+            ],  
+            [  
+                [  
+                    102.0,  
+                    2.0  
+                ],  
+                [  
+                    103.0,  
+                    3.0  
+                ]  
+            ]  
         ],  
-        [  
-          101.0,  
-          1.0  
-        ]  
-      ],  
-      [  
-        [  
-          102.0,  
-          2.0  
-        ],  
-        [  
-          103.0,  
-          3.0  
-        ]  
-      ]  
+        "type": "MultiLineString"  
+    },  
+    "powerState": "on",  
+    "refStreetlightCabinetController": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34",  
+    "switchingOnHours": [  
+        {  
+            "description": "Christmas",  
+            "from": "--11-30",  
+            "hours": "Mo,Su 16:00-02:00",  
+            "to": "--01-07"  
+        }  
     ],  
-    "type": "MultiLineString"  
-  },  
-  "powerState": "on",  
-  "refStreetlightCabinetController": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34",  
-  "switchingOnHours": [  
-    {  
-      "description": "Christmas",  
-      "from": "--11-30",  
-      "hours": "Mo,Su 16:00-02:00",  
-      "to": "--01-07"  
-    }  
-  ],  
-  "type": "StreetlightGroup"  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
