@@ -1,17 +1,32 @@
-Entidad: Farola  
-===============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: Alumbrado público  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Una farola**  
+versión: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `annotations`: Anotaciones sobre el artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `circuit`: El circuito al que se conecta esta farola y del que recibe energía. Normalmente contendrá un identificador que permitirá obtener más información sobre dicho circuito.  - `color`: El color del producto  - `controllingMethod`: El método utilizado para controlar esta farola. Enum:'grupo, individual'.  - `current`: Valor actual de la farola correspondiente a esta observación.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastLampChange`: Marca de tiempo del último cambio de lámpara realizado  - `dateLastSwitchingOff`: Marca de tiempo de la última desconexión  - `dateLastSwitchingOn`: Marca de tiempo del último encendido  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateServiceStarted`: Fecha en la que la farola empezó a dar servicio  - `description`: Una descripción de este artículo  - `deviceInfo`: Información sobre el dispositivo asociado a las observaciones.  - `feederID`: ID único del panel de alimentación de la farola asociado a la farola correspondiente a esta observación.  - `feederPillarNum`: Información de la columna de alimentación de la farola correspondiente a esta observación.  - `id`: Identificador único de la entidad  - `illuminanceLevel`: Ajuste del nivel de iluminación relativo. Un número entre 0 y 1.  - `image`: Una URL con una foto de la farola  - `lanternHeight`: Altura de la farola. En las columnas con muchos brazos esto puede variar entre las farolas. Otra fuente de variación de esta propiedad son las farolas de pared.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `locationCategory`: Categoría del lugar donde se coloca la farola. Enum:'puente, isla central, fachada, jardín, parque, aparcamiento, camino peatonal, parque infantil, carretera, acera, túnel'.  - `municipalityInfo`: Información del municipio correspondiente a esta observación.  - `name`: El nombre de este artículo.  - `observationDateTime`: Última hora de observación comunicada.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerConsumption`: Potencia consumida por el LED o la bombilla de la farola correspondiente a esta observación.  - `powerFactor`: El factor de potencia o la relación de la potencia de trabajo de la farola correspondiente a esta observación.  - `powerRating`: Potencia del LED o de la bombilla de la farola correspondiente a esta observación.  - `powerState`: Estado de energía de la farola. Enum:'bootingUp, low, off, on'  - `refDevice`: Referencia al dispositivo(s) utilizado(s) para supervisar este tramo de calle. Lista de Referencia a la(s) entidad(es) de tipo Dispositivo.  - `refStreetlightControlCabinet`: Si esta farola está controlada individualmente, referencia al gabinete de control a cargo de.  - `refStreetlightGroup`: Grupo de la farola, si esta farola pertenece a algún grupo.  - `refStreetlightModel`: El modelo de la farola.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status`: El estado general de esta farola. Enum:'farola rota, columnaIsuficiente, lámpara defectuosa, ok'  - `streetPoleNum`: Información del poste de la calle asociado a la farola correspondiente a esta observación.  - `type`: Tipo de entidad NGSI. Tiene que ser Farola  - `voltage`: Valor de la tensión de la farola correspondiente a esta observación.    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `annotations[array]`: Anotaciones sobre el artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `circuit[string]`: El circuito al que se conecta esta farola y del que recibe energía. Normalmente contendrá un identificador que permitirá obtener más información sobre dicho circuito.  - `color[string]`: El color del producto  . Model: [https://schema.org/color](https://schema.org/color)- `controllingMethod[string]`: El método utilizado para controlar esta farola. Enum:'grupo, individual'.  - `current[number]`: Valor actual de la farola correspondiente a esta observación.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateLastLampChange[string]`: Marca de tiempo del último cambio de lámpara realizado  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOff[string]`: Marca de tiempo de la última desconexión  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOn[string]`: Marca de tiempo del último encendido  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateServiceStarted[string]`: Fecha en la que la farola empezó a dar servicio  . Model: [https://schema.org/Date](https://schema.org/Date)- `description[string]`: Una descripción de este artículo  - `deviceInfo[object]`: Información sobre el dispositivo asociado a las observaciones.  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederID[*]`: ID único del panel de alimentación de la farola asociado a la farola correspondiente a esta observación.  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: Información de la columna de alimentación de la farola correspondiente a esta observación.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificador único de la entidad  - `illuminanceLevel[number]`: Ajuste del nivel de iluminación relativo. Un número entre 0 y 1.  - `image[string]`: Una URL con una foto de la farola  . Model: [https://schema.org/image](https://schema.org/image)- `lanternHeight[number]`: Altura de la farola. En las columnas con muchos brazos esto puede variar entre las farolas. Otra fuente de variación de esta propiedad son las farolas de pared.  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `locationCategory[string]`: Categoría del lugar donde se coloca la farola. Enum:'puente, isla central, fachada, jardín, parque, aparcamiento, camino peatonal, parque infantil, carretera, acera, túnel'.  - `municipalityInfo[object]`: Información del municipio correspondiente a esta observación.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: El nombre de este artículo.  - `observationDateTime[string]`: Última hora de observación comunicada.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `powerConsumption[number]`: Potencia consumida por el LED o la bombilla de la farola correspondiente a esta observación.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerFactor[number]`: El factor de potencia o la relación de la potencia de trabajo de la farola correspondiente a esta observación.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerRating[number]`: Potencia del LED o de la bombilla de la farola correspondiente a esta observación.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerState[string]`: Estado de energía de la farola. Enum:'bootingUp, low, off, on'  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[array]`: Referencia al dispositivo(s) utilizado(s) para supervisar este tramo de calle. Lista de Referencia a la(s) entidad(es) de tipo Dispositivo.  - `refStreetlightControlCabinet[*]`: Si esta farola está controlada individualmente, referencia al gabinete de control a cargo de.  - `refStreetlightGroup[*]`: Grupo de la farola, si esta farola pertenece a algún grupo.  - `refStreetlightModel[*]`: El modelo de la farola.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `status[string]`: El estado general de esta farola. Enum:'farola rota, columnaIsuficiente, lámpara defectuosa, ok'  - `streetPoleNum[string]`: Información del poste de la calle asociado a la farola correspondiente a esta observación.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo de entidad NGSI. Tiene que ser Farola  - `voltage[number]`: Valor de la tensión de la farola correspondiente a esta observación.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `location`  - `status`  - `type`    
+- `id`  - `location`  - `status`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Una entidad de tipo `Alumbrado público` representa una farola urbana. En realidad, habrá una entidad de tipo `Alumbrado público` por farola. Por lo tanto, si un poste concreto tiene más de una farola, habrá tantas entidades de farola como lámparas instaladas. Como resultado, puede haber más de una entidad de farola por ubicación. Una entidad "Farola" no contiene ningún atributo correspondiente a las características estructurales. Estos datos son capturados por entidades de tipo `StreetlightModel`.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Streetlight:    
@@ -590,9 +605,14 @@ Streetlight:
   x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### Ejemplo de valores clave NGSI-v2 de alumbrado público  
 Aquí hay un ejemplo de una farola en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -648,8 +668,10 @@ Streetlight:
   }  
 }  
 ```  
+</details>  
 #### Ejemplo de alumbrado público NGSI-v2 normalizado  
 Este es un ejemplo de una farola en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -771,182 +793,23 @@ Streetlight:
   }  
 }  
 ```  
+</details>  
 #### Ejemplo de valores clave de NGSI-LD de alumbrado público  
 Aquí hay un ejemplo de una farola en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "areaServed": "Roundabouts city entrance",  
-  "circuit": "C-456-A467",  
-  "controllingMethod": "individual",  
-  "dateLastLampChange": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-08T08:02:21.753Z"  
-  },  
-  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-  "lanternHeight": 10,  
-  "location": {  
-    "coordinates": [  
-      -3.164485591715449,  
-      40.62785133667262  
-    ],  
-    "type": "Point"  
-  },  
-  "locationCategory": "centralIsland",  
-  "powerState": "off",  
-  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
-  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
-  "status": "ok",  
-  "type": "Streetlight",  
-  "powerConsumption": 10,  
-  "current": 250,  
-  "powerRating": 5,  
-  "powerFactor": 0.7,  
-  "voltage": 50,  
-  "feederPillarNum": "70",  
-  "streetPoleNum": "2",  
-  "feederID": "F1",  
-  "observationDateTime": "2021-01-11T15:51:02+05:30",  
-  "municipalityInfo": {  
-    "district": "Bangalore Urban",  
-    "ulbName": "BMC",  
-    "cityID": "23",  
-    "stateName": "Karnataka",  
-    "cityName": "Bangalore",  
-    "zoneID": "2",  
-    "wardNum": 4  
-  },  
-  "deviceInfo": {  
-    "rfID": "5634684",  
-    "deviceBatteryStatus": "Connected",  
-    "deviceName": "SL1",  
-    "deviceID": "43",  
-    "measurand": "6",  
-    "deviceSimNumber": "6755375727",  
-    "deviceModel": {  
-      "brandName": "abc",  
-      "manufacturerName": "xyz",  
-      "modelName": "SL1",  
-      "modelURL": "www.abcstreetlight.com"  
-    }  
-  }  
-}  
-```  
-#### Ejemplo de alumbrado público NGSI-LD normalizado  
-Este es un ejemplo de una farola en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-{  
-  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-  "type": "Streetlight",  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -3.164485591715449,  
-        40.62785133667262  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Roundabouts city entrance"  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "refStreetlightGroup": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
-  },  
-  "refStreetlightModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
-  },  
-  "circuit": {  
-    "type": "Property",  
-    "value": "C-456-A467"  
-  },  
-  "lanternHeight": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "locationCategory": {  
-    "type": "Property",  
-    "value": "centralIsland"  
-  },  
-  "powerState": {  
-    "type": "Property",  
-    "value": "off"  
-  },  
-  "controllingMethod": {  
-    "type": "Property",  
-    "value": "individual"  
-  },  
-  "dateLastLampChange": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-07-08T08:02:21.753Z"  
-    }  
-  },  
-  "powerConsumption": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "current": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "powerRating": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "powerFactor": {  
-    "type": "Property",  
-    "value": 0.7  
-  },  
-  "voltage": {  
-    "type": "Property",  
-    "value": 50  
-  },  
-  "feederPillarNum": {  
-    "type": "Property",  
-    "value": "70"  
-  },  
-  "streetPoleNum": {  
-    "type": "Property",  
-    "value": "2"  
-  },  
-  "feederID": {  
-    "type": "Property",  
-    "value": "F1"  
-  },  
-  "observationDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-01-11T15:51:02+05:30"  
-    }  
-  },  
-  "municipalityInfo": {  
-    "type": "Property",  
-    "value": {  
-      "district": "Bangalore Urban",  
-      "ulbName": "BMC",  
-      "cityID": "23",  
-      "stateName": "Karnataka",  
-      "cityName": "Bangalore",  
-      "zoneID": "2",  
-      "wardNum": 4  
+    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+    "type": "Streetlight",  
+    "areaServed": "Roundabouts city entrance",  
+    "circuit": "C-456-A467",  
+    "controllingMethod": "individual",  
+    "current": 250,  
+    "dateLastLampChange": {  
+        "@type": "DateTime",  
+        "@value": "2016-07-08T08:02:21.753Z"  
     },  
     "deviceInfo": {  
-      "type": "Property",  
-      "value": {  
         "rfID": "5634684",  
         "deviceBatteryStatus": "Connected",  
         "deviceName": "SL1",  
@@ -954,18 +817,189 @@ Streetlight:
         "measurand": "6",  
         "deviceSimNumber": "6755375727",  
         "deviceModel": {  
-          "brandName": "abc",  
-          "manufacturerName": "xyz",  
-          "modelName": "SL1",  
-          "modelURL": "www.abcstreetlight.com"  
+            "brandName": "abc",  
+            "manufacturerName": "xyz",  
+            "modelName": "SL1",  
+            "modelURL": "www.abcstreetlight.com"  
         }  
-      }  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "iudx:Streetlight"  
-  ]  
+    },  
+    "feederID": "F1",  
+    "feederPillarNum": "70",  
+    "lanternHeight": 10,  
+    "location": {  
+        "coordinates": [  
+            -3.164485591715449,  
+            40.62785133667262  
+        ],  
+        "type": "Point"  
+    },  
+    "locationCategory": "centralIsland",  
+    "municipalityInfo": {  
+        "district": "Bangalore Urban",  
+        "ulbName": "BMC",  
+        "cityID": "23",  
+        "stateName": "Karnataka",  
+        "cityName": "Bangalore",  
+        "zoneID": "2",  
+        "wardNum": 4  
+    },  
+    "observationDateTime": "2021-01-11T15:51:02+05:30",  
+    "powerConsumption": 10,  
+    "powerFactor": 0.7,  
+    "powerRating": 5,  
+    "powerState": "off",  
+    "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
+    "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
+    "status": "ok",  
+    "streetPoleNum": "2",  
+    "voltage": 50,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
+#### Ejemplo de alumbrado público NGSI-LD normalizado  
+Este es un ejemplo de una farola en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+    "type": "Streetlight",  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Roundabouts city entrance"  
+    },  
+    "circuit": {  
+        "type": "Property",  
+        "value": "C-456-A467"  
+    },  
+    "controllingMethod": {  
+        "type": "Property",  
+        "value": "individual"  
+    },  
+    "current": {  
+        "type": "Property",  
+        "value": 250  
+    },  
+    "dateLastLampChange": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-07-08T08:02:21.753Z"  
+        }  
+    },  
+    "feederID": {  
+        "type": "Property",  
+        "value": "F1"  
+    },  
+    "feederPillarNum": {  
+        "type": "Property",  
+        "value": "70"  
+    },  
+    "lanternHeight": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -3.164485591715449,  
+                40.62785133667262  
+            ]  
+        }  
+    },  
+    "locationCategory": {  
+        "type": "Property",  
+        "value": "centralIsland"  
+    },  
+    "municipalityInfo": {  
+        "type": "Property",  
+        "value": {  
+            "district": "Bangalore Urban",  
+            "ulbName": "BMC",  
+            "cityID": "23",  
+            "stateName": "Karnataka",  
+            "cityName": "Bangalore",  
+            "zoneID": "2",  
+            "wardNum": 4  
+        },  
+        "deviceInfo": {  
+            "type": "Property",  
+            "value": {  
+                "rfID": "5634684",  
+                "deviceBatteryStatus": "Connected",  
+                "deviceName": "SL1",  
+                "deviceID": "43",  
+                "measurand": "6",  
+                "deviceSimNumber": "6755375727",  
+                "deviceModel": {  
+                    "brandName": "abc",  
+                    "manufacturerName": "xyz",  
+                    "modelName": "SL1",  
+                    "modelURL": "www.abcstreetlight.com"  
+                }  
+            }  
+        }  
+    },  
+    "observationDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-11T15:51:02+05:30"  
+        }  
+    },  
+    "powerConsumption": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "powerFactor": {  
+        "type": "Property",  
+        "value": 0.7  
+    },  
+    "powerRating": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "powerState": {  
+        "type": "Property",  
+        "value": "off"  
+    },  
+    "refStreetlightGroup": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
+    },  
+    "refStreetlightModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "ok"  
+    },  
+    "streetPoleNum": {  
+        "type": "Property",  
+        "value": "2"  
+    },  
+    "voltage": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "@context": [  
+        "iudx:Streetlight",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
