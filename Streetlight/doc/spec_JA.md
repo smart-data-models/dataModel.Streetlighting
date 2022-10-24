@@ -1,17 +1,32 @@
-エンティティストリートライト  
-==============  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ街路灯  
+=========<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**街路灯**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**街路灯**。  
+バージョン: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `annotations`: アイテムに関するアノテーション  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `circuit`: この街灯が接続され、電力を得るための回路。通常、この回路に関する詳細情報を得るための識別子が含まれている。  - `color`: 商品の色について  - `controllingMethod`: この街灯を制御するために使用される方法です。Enum:'group, individual'.  - `current`: この観測に対応する街灯の現在の値。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastLampChange`: 最後に行われたランプの交換のタイムスタンプ  - `dateLastSwitchingOff`: 最後に電源を切った時のタイムスタンプ  - `dateLastSwitchingOn`: 前回の電源投入時のタイムスタンプ  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateServiceStarted`: 街路灯がサービスを開始した日  - `description`: このアイテムの説明  - `deviceInfo`: オブザベーションに関連するデバイスに関する情報です。  - `feederID`: この観測に対応する街灯に関連する街灯フィーダーパネルのユニークID。  - `feederPillarNum`: この観測に対応する街灯に関連する街灯フィーダーピラー情報。  - `id`: エンティティのユニークな識別子  - `illuminanceLevel`: 相対照度レベルの設定。0から1の間の数値。  - `image`: 街路灯の写真を含むURL  - `lanternHeight`: ランタンの高さ。アームの多い柱では、街灯ごとに異なる。また、壁掛け式の街路灯もこの特性を持つバリエーションの一つである。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `locationCategory`: 街灯が設置されている場所のカテゴリ。Enum:'bridge, centralIsland, facade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel'.  - `municipalityInfo`: この観測に対応する自治体の情報  - `name`: このアイテムの名前です。  - `observationDateTime`: 最後に報告された観測時刻。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `powerConsumption`: この観測に対応するLEDや街灯の電球の消費電力。  - `powerFactor`: この観測値に対応する街路灯の力率または動作電力の割合。  - `powerRating`: 今回の観測に対応したLEDまたは街路灯の電球の定格電力。  - `powerState`: ストリートライトの電源状態。Enum:'bootingUp, low, off, on'.  - `refDevice`: Streetligthをモニターするために使用されるデバイスへの参照。Deviceタイプのエンティティ（複数可）への参照のリスト。  - `refStreetlightControlCabinet`: この街灯が個別に制御されている場合は、担当の制御盤を参照する。  - `refStreetlightGroup`: 街路灯のグループ（この街路灯が何らかのグループに属している場合）。  - `refStreetlightModel`: ストリートライトのモデル。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status`: この街路灯の全体的なステータス。Enum:'brokenLantern', 'columnIssue', 'defectiveLamp', 'ok'  - `streetPoleNum`: この観測に対応する街灯に関連する街灯情報。  - `type`: NGSI エンティティタイプ。Streetlightである必要があります。  - `voltage`: この観測に対応する街灯の電圧値。    
-必須項目  
-- `id`  - `location`  - `status`  - `type`    
-Streetlight`というタイプのエンティティは、都市部の街灯を表します。実際には、1つのランプにつき1つの `Streetlight` 型のエンティティが存在します。したがって、あるポールに複数のランタンが設置されている場合、設置されているランプの数だけ街灯のエンティティが存在することになります。その結果、1つの場所に1つ以上の街灯エンティティが存在することになります。Streetlight」エンティティには、構造的な特性に対応する属性はありません。このようなデータは `StreetlightModel` タイプのエンティティによって取得されます。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `annotations[array]`: アイテムに関するアノテーション  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `circuit[string]`: この街路灯が接続され、電力を得る回路。通常、この回路に関する詳細情報を取得するための識別子が含まれる。  - `color[string]`: 製品の色  . Model: [https://schema.org/color](https://schema.org/color)- `controllingMethod[string]`: この街灯を制御するために使用される方法。Enum:'group, individual'.  - `current[number]`: この観測に対応する街灯の現在値。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateLastLampChange[string]`: 最後にランプを交換した時のタイムスタンプ  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOff[string]`: 最後のスイッチオフのタイムスタンプ  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOn[string]`: 最後のスイッチオンのタイムスタンプ  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateServiceStarted[string]`: 街路灯の供用開始日  . Model: [https://schema.org/Date](https://schema.org/Date)- `description[string]`: このアイテムの説明  - `deviceInfo[object]`: 観測に関連するデバイスの情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederID[*]`: この観測に対応する街路灯に関連する街路灯フィーダパネルのユニークなID。  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: この観測に対応する街路灯に関連する街路灯フィーダーピラー情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意な識別子  - `illuminanceLevel[number]`: 相対的な照度レベルの設定。0から1の間の数値。  - `image[string]`: 街路灯の写真を含むURL  . Model: [https://schema.org/image](https://schema.org/image)- `lanternHeight[number]`: ランタンの高さ。アームの多い柱では、街路灯ごとに異なることがある。また、壁掛けタイプの街路灯も、この特性のバリエーションソースとなっています。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `locationCategory[string]`: 街路灯が設置されている場所のカテゴリ。Enum:'bridge, centralIsland, facade, garden, park, parking, pedestrianPath, playground, road, sidewalk, tunnel' （橋、中央島、ファサード、公園、駐車場、歩道、トンネル  - `municipalityInfo[object]`: この観測に対応する市町村情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: このアイテムの名称です。  - `observationDateTime[string]`: 最後に報告された観測時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `powerConsumption[number]`: この観測に対応するLEDまたは街路灯の電球が消費する電力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerFactor[number]`: この観測に対応する街路灯の力率または使用電力の比率。  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerRating[number]`: この観測に対応するLEDまたは街路灯の電球の定格電力。  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerState[string]`: 街灯の電源状態。Enum:'bootingUp, low, off, on'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[array]`: このストリートリグを監視するために使用されるデバイス（複数可）へのリファレンス。List of Reference to entity(ies) of type Device.  - `refStreetlightControlCabinet[*]`: この街路灯が個別制御されている場合は、担当の制御盤を参照すること。  - `refStreetlightGroup[*]`: 街路灯がグループに属している場合、そのグループ。  - `refStreetlightModel[*]`: ストリートライトのモデルです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status[string]`: この街路灯の全体的な状態。Enum:'brokenLantern, columnIssue, defectiveLamp, ok'.  - `streetPoleNum[string]`: この観測に対応する街路灯に関連する街路柱情報。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entityタイプ。これはStreetlightでなければなりません。  - `voltage[number]`: この観測に対応する街灯の電圧値。  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `location`  - `status`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+タイプ `Streetlight` のエンティティは、都市部の街灯を表します。実際には、ランプ1つにつき `Streetlight` 型のエンティティが存在することになります。したがって、特定の電柱に複数のランプが設置されている場合、設置されているランプと同じ数の街灯エンティティが存在することになります。その結果、1つの場所には複数の街灯エンティティが存在することになります。街灯」エンティティは、構造的な特性に対応する属性を持ちません。そのようなデータは `StreetlightModel` タイプのエンティティによって取得されます。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Streetlight:    
@@ -590,9 +605,14 @@ Streetlight:
   x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### Streetlight NGSI-v2 key-valuesの例。  
-JSON-LD形式でkey-valuesとしてStreetlightを表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 街路灯NGSI-v2キーバリュー例  
+ここでは、StreetlightをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -648,8 +668,10 @@ Streetlight:
   }  
 }  
 ```  
-#### ストリートライト NGSI-v2 正規化例  
-ここでは、JSON-LD形式のStreetlightを正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 街路灯 NGSI-v2 正規化例  
+以下は、StreetlightをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -771,182 +793,23 @@ Streetlight:
   }  
 }  
 ```  
-#### 街灯 NGSI-LD のキーバリューの例  
-JSON-LD形式でkey-valuesとしてStreetlightを表示した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### 街路灯NGSI-LDのキー値例  
+ここでは、StreetlightをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "areaServed": "Roundabouts city entrance",  
-  "circuit": "C-456-A467",  
-  "controllingMethod": "individual",  
-  "dateLastLampChange": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-08T08:02:21.753Z"  
-  },  
-  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-  "lanternHeight": 10,  
-  "location": {  
-    "coordinates": [  
-      -3.164485591715449,  
-      40.62785133667262  
-    ],  
-    "type": "Point"  
-  },  
-  "locationCategory": "centralIsland",  
-  "powerState": "off",  
-  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
-  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
-  "status": "ok",  
-  "type": "Streetlight",  
-  "powerConsumption": 10,  
-  "current": 250,  
-  "powerRating": 5,  
-  "powerFactor": 0.7,  
-  "voltage": 50,  
-  "feederPillarNum": "70",  
-  "streetPoleNum": "2",  
-  "feederID": "F1",  
-  "observationDateTime": "2021-01-11T15:51:02+05:30",  
-  "municipalityInfo": {  
-    "district": "Bangalore Urban",  
-    "ulbName": "BMC",  
-    "cityID": "23",  
-    "stateName": "Karnataka",  
-    "cityName": "Bangalore",  
-    "zoneID": "2",  
-    "wardNum": 4  
-  },  
-  "deviceInfo": {  
-    "rfID": "5634684",  
-    "deviceBatteryStatus": "Connected",  
-    "deviceName": "SL1",  
-    "deviceID": "43",  
-    "measurand": "6",  
-    "deviceSimNumber": "6755375727",  
-    "deviceModel": {  
-      "brandName": "abc",  
-      "manufacturerName": "xyz",  
-      "modelName": "SL1",  
-      "modelURL": "www.abcstreetlight.com"  
-    }  
-  }  
-}  
-```  
-#### 街灯 NGSI-LDの正規化例  
-ここでは、JSON-LD形式のStreetlightを正規化した例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-{  
-  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-  "type": "Streetlight",  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -3.164485591715449,  
-        40.62785133667262  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Roundabouts city entrance"  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "refStreetlightGroup": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
-  },  
-  "refStreetlightModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
-  },  
-  "circuit": {  
-    "type": "Property",  
-    "value": "C-456-A467"  
-  },  
-  "lanternHeight": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "locationCategory": {  
-    "type": "Property",  
-    "value": "centralIsland"  
-  },  
-  "powerState": {  
-    "type": "Property",  
-    "value": "off"  
-  },  
-  "controllingMethod": {  
-    "type": "Property",  
-    "value": "individual"  
-  },  
-  "dateLastLampChange": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-07-08T08:02:21.753Z"  
-    }  
-  },  
-  "powerConsumption": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "current": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "powerRating": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "powerFactor": {  
-    "type": "Property",  
-    "value": 0.7  
-  },  
-  "voltage": {  
-    "type": "Property",  
-    "value": 50  
-  },  
-  "feederPillarNum": {  
-    "type": "Property",  
-    "value": "70"  
-  },  
-  "streetPoleNum": {  
-    "type": "Property",  
-    "value": "2"  
-  },  
-  "feederID": {  
-    "type": "Property",  
-    "value": "F1"  
-  },  
-  "observationDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-01-11T15:51:02+05:30"  
-    }  
-  },  
-  "municipalityInfo": {  
-    "type": "Property",  
-    "value": {  
-      "district": "Bangalore Urban",  
-      "ulbName": "BMC",  
-      "cityID": "23",  
-      "stateName": "Karnataka",  
-      "cityName": "Bangalore",  
-      "zoneID": "2",  
-      "wardNum": 4  
+    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+    "type": "Streetlight",  
+    "areaServed": "Roundabouts city entrance",  
+    "circuit": "C-456-A467",  
+    "controllingMethod": "individual",  
+    "current": 250,  
+    "dateLastLampChange": {  
+        "@type": "DateTime",  
+        "@value": "2016-07-08T08:02:21.753Z"  
     },  
     "deviceInfo": {  
-      "type": "Property",  
-      "value": {  
         "rfID": "5634684",  
         "deviceBatteryStatus": "Connected",  
         "deviceName": "SL1",  
@@ -954,18 +817,189 @@ Streetlight:
         "measurand": "6",  
         "deviceSimNumber": "6755375727",  
         "deviceModel": {  
-          "brandName": "abc",  
-          "manufacturerName": "xyz",  
-          "modelName": "SL1",  
-          "modelURL": "www.abcstreetlight.com"  
+            "brandName": "abc",  
+            "manufacturerName": "xyz",  
+            "modelName": "SL1",  
+            "modelURL": "www.abcstreetlight.com"  
         }  
-      }  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "iudx:Streetlight"  
-  ]  
+    },  
+    "feederID": "F1",  
+    "feederPillarNum": "70",  
+    "lanternHeight": 10,  
+    "location": {  
+        "coordinates": [  
+            -3.164485591715449,  
+            40.62785133667262  
+        ],  
+        "type": "Point"  
+    },  
+    "locationCategory": "centralIsland",  
+    "municipalityInfo": {  
+        "district": "Bangalore Urban",  
+        "ulbName": "BMC",  
+        "cityID": "23",  
+        "stateName": "Karnataka",  
+        "cityName": "Bangalore",  
+        "zoneID": "2",  
+        "wardNum": 4  
+    },  
+    "observationDateTime": "2021-01-11T15:51:02+05:30",  
+    "powerConsumption": 10,  
+    "powerFactor": 0.7,  
+    "powerRating": 5,  
+    "powerState": "off",  
+    "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
+    "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
+    "status": "ok",  
+    "streetPoleNum": "2",  
+    "voltage": 50,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
+#### 街路灯 NGSI-LD 正規化例  
+以下は、StreetlightをJSON-LD形式で正規化した例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+    "type": "Streetlight",  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Roundabouts city entrance"  
+    },  
+    "circuit": {  
+        "type": "Property",  
+        "value": "C-456-A467"  
+    },  
+    "controllingMethod": {  
+        "type": "Property",  
+        "value": "individual"  
+    },  
+    "current": {  
+        "type": "Property",  
+        "value": 250  
+    },  
+    "dateLastLampChange": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-07-08T08:02:21.753Z"  
+        }  
+    },  
+    "feederID": {  
+        "type": "Property",  
+        "value": "F1"  
+    },  
+    "feederPillarNum": {  
+        "type": "Property",  
+        "value": "70"  
+    },  
+    "lanternHeight": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -3.164485591715449,  
+                40.62785133667262  
+            ]  
+        }  
+    },  
+    "locationCategory": {  
+        "type": "Property",  
+        "value": "centralIsland"  
+    },  
+    "municipalityInfo": {  
+        "type": "Property",  
+        "value": {  
+            "district": "Bangalore Urban",  
+            "ulbName": "BMC",  
+            "cityID": "23",  
+            "stateName": "Karnataka",  
+            "cityName": "Bangalore",  
+            "zoneID": "2",  
+            "wardNum": 4  
+        },  
+        "deviceInfo": {  
+            "type": "Property",  
+            "value": {  
+                "rfID": "5634684",  
+                "deviceBatteryStatus": "Connected",  
+                "deviceName": "SL1",  
+                "deviceID": "43",  
+                "measurand": "6",  
+                "deviceSimNumber": "6755375727",  
+                "deviceModel": {  
+                    "brandName": "abc",  
+                    "manufacturerName": "xyz",  
+                    "modelName": "SL1",  
+                    "modelURL": "www.abcstreetlight.com"  
+                }  
+            }  
+        }  
+    },  
+    "observationDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-11T15:51:02+05:30"  
+        }  
+    },  
+    "powerConsumption": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "powerFactor": {  
+        "type": "Property",  
+        "value": 0.7  
+    },  
+    "powerRating": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "powerState": {  
+        "type": "Property",  
+        "value": "off"  
+    },  
+    "refStreetlightGroup": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
+    },  
+    "refStreetlightModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "ok"  
+    },  
+    "streetPoleNum": {  
+        "type": "Property",  
+        "value": "2"  
+    },  
+    "voltage": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "@context": [  
+        "iudx:Streetlight",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
