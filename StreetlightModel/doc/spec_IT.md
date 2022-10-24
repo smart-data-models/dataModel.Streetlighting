@@ -1,17 +1,32 @@
-Entità: StreetlightModel  
-========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: StreetlightModel  
+========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightModel/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Un modello di luce stradale**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Modello di illuminazione stradale**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `annotations`: Annotazioni sull'elemento  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `category`: Tipo di risorsa che implementa l'illuminazione stradale. Enum:'`postTop, bollard, lamppost, lightTower, flashingBeacon, sideEntry, signLight, ornamentalLantern'. O qualsiasi altro valore non definito sopra e significativo per l'applicazione  - `color`: Il colore del prodotto  - `colorRenderingIndex`: Indice di resa dei colori della lampada  - `colorTemperature`: Temperatura di colore correlata della lampada  - `columnBrandName`: Nome del marchio della colonna  - `columnColor`: Colore di pittura della colonna. Valori consentiti: Una parola chiave di colore come specificato da [W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords). Un valore di colore come specificato da [W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes)  - `columnMadeOf`: La colonna è fatta di materiale. Enum:'acciaio, alluminio, legno, altro'.  - `columnManufacturerName`: Nome del produttore della colonna  - `columnModelName`: Nome del modello della colonna  - `compliantWith`: Un elenco delle norme alle quali questo modello di lampione è conforme  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `id`: Identificatore unico dell'entità  - `image`: Un'immagine dell'oggetto  - `lampBrandName`: Nome della marca della lampada  - `lampManufacturerName`: Nome del produttore della lampada.  - `lampModelName`: Nome del modello della lampada  - `lampTechnology`: Tecnologia utilizzata dalla lampada. Enum:'LED, LPS, HPS'. O qualsiasi altro valore non coperto dalla lista precedente e significativo per l'applicazione.  - `lampWeight`: Peso della lampada  - `lanternBrandName`: Nome della marca della lanterna  - `lanternManufacturerName`: Nome del produttore della lanterna  - `lanternModelName`: Nome del modello della lanterna  - `lanternWeight`: Peso della lanterna  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `luminousFlux`: Potenza luminosa massima che può essere fornita dalla lampada  - `maxPowerConsumption`: Consumo massimo di energia supportato dalla lanterna  - `minPowerConsumption`: Consumo minimo di energia supportato dalla lanterna  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `powerConsumption`: Consumo di energia (nominale) fatto dalla lampada  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Tipo di entità NGSI. Deve essere StreetlightModel  - `workingLife`: Il numero stimato di ore di lavoro (della lampada) senza guasti    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `annotations[array]`: Annotazioni sull'elemento  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: Tipo di risorsa che implementa il lampione. Enum:'palo, dissuasore, lampione, torre faro, lampeggiante, ingresso laterale, insegna luminosa, lanterna ornamentale'. O qualsiasi altro valore non definito sopra e significativo per l'applicazione.  - `color[string]`: Il colore del prodotto  . Model: [https://schema.org/color](https://schema.org/color)- `colorRenderingIndex[number]`: Indice di resa cromatica della lampada  . Model: [https://schema.org/Number](https://schema.org/Number)- `colorTemperature[number]`: Temperatura di colore correlata della lampada  . Model: [https://schema.org/Number](https://schema.org/Number)- `columnBrandName[string]`: Nome del marchio della colonna  . Model: [https://schema.org/brand.](https://schema.org/brand.)- `columnColor[string]`: Colore di pittura della colonna. Valori ammessi: Una parola chiave di colore come specificato da [W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords). Un valore di colore come specificato da [W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes).  . Model: [https://schema.org/color](https://schema.org/color)- `columnMadeOf[string]`: Materiale di cui è fatta la colonna. Enum:'acciaio, alluminio, legno, altro'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `columnManufacturerName[string]`: Nome del produttore della colonna  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `columnModelName[string]`: Nome del modello della colonna  . Model: [https://schema.org/model](https://schema.org/model)- `compliantWith[array]`: Elenco degli standard a cui questo modello di lampione è conforme  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `image[string]`: Un'immagine dell'articolo  . Model: [https://schema.org/URL](https://schema.org/URL)- `lampBrandName[string]`: Nome del marchio della lampada  . Model: [https://schema.org/brand](https://schema.org/brand)- `lampManufacturerName[string]`: Nome del produttore della lampada.  - `lampModelName[string]`: Nome del modello di lampada  . Model: [https://schema.org/model](https://schema.org/model)- `lampTechnology[string]`: Tecnologia utilizzata dalla lampada. Enum:'LED, LPS, HPS'. O qualsiasi altro valore non compreso nell'elenco precedente e significativo per l'applicazione.  - `lampWeight[string]`: Peso della lampada  . Model: [Kilograms (kg)](Kilograms (kg))- `lanternBrandName[string]`: Nome del marchio della lanterna  . Model: [https://schema.org/brand](https://schema.org/brand)- `lanternManufacturerName[string]`: Nome del produttore della lanterna  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `lanternModelName[string]`: Nome del modello di lanterna  . Model: [https://schema.org/Text](https://schema.org/Text)- `lanternWeight[number]`: Peso della lanterna  . Model: [https://schema.org/weight](https://schema.org/weight)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `luminousFlux[number]`: Potenza luminosa massima erogabile dalla lampada  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxPowerConsumption[number]`: Consumo massimo di energia supportato dal fanale  . Model: [https://schema.org/Number](https://schema.org/Number)- `minPowerConsumption[number]`: Consumo minimo di energia supportato dal fanale  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `powerConsumption[number]`: Consumo di energia (nominale) della lampada  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere StreetlightModel  - `workingLife[number]`: Il numero stimato di ore di funzionamento (della lampada) senza guasti  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `name`  - `type`    
-Rappresenta un modello di lampione composto da un modello specifico di struttura di supporto, un modello di lanterna e un modello di lampada. Un'istanza di lampione sarà basata su un certo modello di lampione.  
-## Descrizione del modello di dati delle proprietà  
+- `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Rappresenta un modello di lampione composto da uno specifico modello di struttura portante, un modello di lanterna e un modello di lampada. Un'istanza di lampione si basa su un determinato modello di lampione.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 StreetlightModel:    
@@ -488,9 +503,14 @@ StreetlightModel:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### StreetlightModel NGSI-v2 valori chiave Esempio  
-Ecco un esempio di uno StreetlightModel in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### StreetlightModel NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di StreetlightModel in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
@@ -510,8 +530,10 @@ StreetlightModel:
   "category": ["postTop"]  
 }  
 ```  
+</details>  
 #### StreetlightModel NGSI-v2 normalizzato Esempio  
-Ecco un esempio di uno StreetlightModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di StreetlightModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
@@ -557,97 +579,109 @@ StreetlightModel:
   }  
 }  
 ```  
-#### StreetlightModel NGSI-LD valori chiave Esempio  
-Ecco un esempio di uno StreetlightModel in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### StreetlightModel NGSI-LD valori-chiave Esempio  
+Ecco un esempio di StreetlightModel in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
-  "type": "StreetlightModel",  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "postTop"  
+    "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
+    "type": "StreetlightModel",  
+    "category": [  
+        "postTop"  
+    ],  
+    "colorRenderingIndex": 25,  
+    "colorTemperature": 3000,  
+    "columnColor": "green",  
+    "columnModelName": "01 TUBULAR P/T 6M NUMANA",  
+    "lampBrandName": "Philips",  
+    "lampModelName": "SON-T",  
+    "lampTechnology": "HPS",  
+    "lanternManufacturerName": "Indal WRTL",  
+    "lanternModelName": "ASR42CG",  
+    "luminousFlux": 2300,  
+    "name": "Tubular Numana 6M - ASR42CG - Son-T 100",  
+    "powerConsumption": 100,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
     ]  
-  },  
-  "colorRenderingIndex": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "columnColor": {  
-    "type": "Property",  
-    "value": "green"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Tubular Numana 6M - ASR42CG - Son-T 100"  
-  },  
-  "powerConsumption": {  
-    "type": "Property",  
-    "value": 100  
-  },  
-  "lanternManufacturerName": {  
-    "type": "Property",  
-    "value": "Indal WRTL"  
-  },  
-  "luminousFlux": {  
-    "type": "Property",  
-    "value": 2300  
-  },  
-  "lampTechnology": {  
-    "type": "Property",  
-    "value": "HPS"  
-  },  
-  "colorTemperature": {  
-    "type": "Property",  
-    "value": 3000  
-  },  
-  "lanternModelName": {  
-    "type": "Property",  
-    "value": "ASR42CG"  
-  },  
-  "columnModelName": {  
-    "type": "Property",  
-    "value": "01 TUBULAR P/T 6M NUMANA"  
-  },  
-  "lampModelName": {  
-    "type": "Property",  
-    "value": "SON-T"  
-  },  
-  "lampBrandName": {  
-    "type": "Property",  
-    "value": "Philips"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### StreetlightModel NGSI-LD normalizzato Esempio  
-Ecco un esempio di uno StreetlightModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### Modello di lampione NGSI-LD normalizzato Esempio  
+Ecco un esempio di StreetlightModel in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "category": [  
-    "postTop"  
-  ],  
-  "colorRenderingIndex": 25,  
-  "colorTemperature": 3000,  
-  "columnColor": "green",  
-  "columnModelName": "01 TUBULAR P/T 6M NUMANA",  
-  "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
-  "lampBrandName": "Philips",  
-  "lampModelName": "SON-T",  
-  "lampTechnology": "HPS",  
-  "lanternManufacturerName": "Indal WRTL",  
-  "lanternModelName": "ASR42CG",  
-  "luminousFlux": 2300,  
-  "name": "Tubular Numana 6M - ASR42CG - Son-T 100",  
-  "powerConsumption": 100,  
-  "type": "StreetlightModel"  
+    "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
+    "type": "StreetlightModel",  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "postTop"  
+        ]  
+    },  
+    "colorRenderingIndex": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "colorTemperature": {  
+        "type": "Property",  
+        "value": 3000  
+    },  
+    "columnColor": {  
+        "type": "Property",  
+        "value": "green"  
+    },  
+    "columnModelName": {  
+        "type": "Property",  
+        "value": "01 TUBULAR P/T 6M NUMANA"  
+    },  
+    "lampBrandName": {  
+        "type": "Property",  
+        "value": "Philips"  
+    },  
+    "lampModelName": {  
+        "type": "Property",  
+        "value": "SON-T"  
+    },  
+    "lampTechnology": {  
+        "type": "Property",  
+        "value": "HPS"  
+    },  
+    "lanternManufacturerName": {  
+        "type": "Property",  
+        "value": "Indal WRTL"  
+    },  
+    "lanternModelName": {  
+        "type": "Property",  
+        "value": "ASR42CG"  
+    },  
+    "luminousFlux": {  
+        "type": "Property",  
+        "value": 2300  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Tubular Numana 6M - ASR42CG - Son-T 100"  
+    },  
+    "powerConsumption": {  
+        "type": "Property",  
+        "value": 100  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
