@@ -1,17 +1,32 @@
-Entité : Lampadaire  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : Lampadaire  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Un lampadaire**  
+version : 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `annotations`: Annotations sur l'élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `circuit`: Le circuit auquel ce lampadaire est connecté et qui l'alimente. Il contient généralement un identifiant qui permet d'obtenir plus d'informations sur ce circuit.  - `color`: La couleur du produit  - `controllingMethod`: La méthode utilisée pour contrôler ce lampadaire. Enum : "groupe, individuel".  - `current`: Valeur actuelle du lampadaire correspondant à cette observation.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateLastLampChange`: Horodatage du dernier changement de lampe effectué  - `dateLastSwitchingOff`: Horodatage de la dernière mise hors tension  - `dateLastSwitchingOn`: Horodatage de la dernière mise sous tension  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateServiceStarted`: Date de mise en service du réverbère  - `description`: Une description de cet article  - `deviceInfo`: Informations sur le dispositif associé aux observations.  - `feederID`: ID unique du panneau d'alimentation de lampadaire associé au lampadaire correspondant à cette observation.  - `feederPillarNum`: Informations sur le pilier d'alimentation du réverbère associé au réverbère correspondant à cette observation.  - `id`: Identifiant unique de l'entité  - `illuminanceLevel`: Réglage du niveau d'éclairement relatif. Un nombre compris entre 0 et 1.  - `image`: Une URL contenant une photo du lampadaire  - `lanternHeight`: Hauteur de la lanterne. Dans les colonnes à plusieurs bras, cela peut varier d'un lampadaire à l'autre. Les lampadaires muraux sont une autre source de variation de cette propriété.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `locationCategory`: Catégorie de l'emplacement où est placé le lampadaire. Enum : 'pont, île centrale, façade, jardin, parc, parking, chemin piétonnier, aire de jeux, route, trottoir, tunnel'.  - `municipalityInfo`: Informations sur la municipalité correspondant à cette observation.  - `name`: Le nom de cet élément.  - `observationDateTime`: Dernière heure d'observation signalée.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `powerConsumption`: Puissance consommée par la LED ou l'ampoule du lampadaire correspondant à cette observation.  - `powerFactor`: Le facteur de puissance ou le rapport de la puissance de fonctionnement du lampadaire correspondant à cette observation.  - `powerRating`: Puissance de la LED ou de l'ampoule du lampadaire correspondant à cette observation.  - `powerState`: État de l'alimentation du lampadaire. Enum : 'bootingUp, low, off, on' (démarrage)  - `refDevice`: Référence au(x) dispositif(s) utilisé(s) pour surveiller ce streetligth. Liste des références aux entités de type Dispositif.  - `refStreetlightControlCabinet`: Si ce lampadaire est à commande individuelle, référence à l'armoire de commande en charge.  - `refStreetlightGroup`: Groupe du lampadaire, si ce lampadaire appartient à un groupe.  - `refStreetlightModel`: Modèle de lampadaire.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `status`: L'état général de ce lampadaire. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'  - `streetPoleNum`: Informations sur le poteau de rue associé au lampadaire correspondant à cette observation.  - `type`: Type d'entité NGSI. Il doit s'agir de Streetlight  - `voltage`: Valeur de la tension du lampadaire correspondant à cette observation.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `annotations[array]`: Annotations sur l'élément  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `circuit[string]`: Le circuit auquel ce lampadaire est connecté et qui l'alimente. Il contient généralement un identifiant qui permet d'obtenir plus d'informations sur ce circuit.  - `color[string]`: La couleur du produit  . Model: [https://schema.org/color](https://schema.org/color)- `controllingMethod[string]`: La méthode utilisée pour contrôler ce lampadaire. Enum : "groupe, individuel".  - `current[number]`: Valeur actuelle du lampadaire correspondant à cette observation.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateLastLampChange[string]`: Horodatage du dernier changement de lampe effectué  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOff[string]`: Horodatage de la dernière mise hors tension  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOn[string]`: Horodatage de la dernière mise sous tension  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateServiceStarted[string]`: Date de mise en service du réverbère  . Model: [https://schema.org/Date](https://schema.org/Date)- `description[string]`: Une description de cet article  - `deviceInfo[object]`: Informations sur le dispositif associé aux observations.  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederID[*]`: ID unique du panneau d'alimentation du lampadaire associé au lampadaire correspondant à cette observation.  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: Informations sur le pilier d'alimentation du réverbère associé au réverbère correspondant à cette observation.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identifiant unique de l'entité  - `illuminanceLevel[number]`: Réglage du niveau d'éclairement relatif. Un nombre compris entre 0 et 1.  - `image[string]`: Une URL contenant une photo du lampadaire  . Model: [https://schema.org/image](https://schema.org/image)- `lanternHeight[number]`: Hauteur de la lanterne. Dans les colonnes à plusieurs bras, cela peut varier d'un lampadaire à l'autre. Les lampadaires muraux sont une autre source de variation de cette propriété.  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `locationCategory[string]`: Catégorie de l'emplacement où est placé le lampadaire. Enum : 'pont, île centrale, façade, jardin, parc, parking, chemin piétonnier, aire de jeux, route, trottoir, tunnel'.  - `municipalityInfo[object]`: Informations sur la municipalité correspondant à cette observation.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Le nom de cet élément.  - `observationDateTime[string]`: Dernière heure d'observation signalée.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `powerConsumption[number]`: Puissance consommée par la LED ou l'ampoule du lampadaire correspondant à cette observation.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerFactor[number]`: Le facteur de puissance ou le rapport de la puissance de fonctionnement du lampadaire correspondant à cette observation.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerRating[number]`: Puissance de la LED ou de l'ampoule du lampadaire correspondant à cette observation.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerState[string]`: État de l'alimentation du lampadaire. Enum : 'bootingUp, low, off, on' (démarrage)  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[array]`: Référence au(x) dispositif(s) utilisé(s) pour surveiller ce streetligth. Liste des références aux entités de type Dispositif.  - `refStreetlightControlCabinet[*]`: Si ce lampadaire est à commande individuelle, référence à l'armoire de commande en charge.  - `refStreetlightGroup[*]`: Groupe du lampadaire, si ce lampadaire appartient à un groupe.  - `refStreetlightModel[*]`: Modèle de lampadaire.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `status[string]`: L'état général de ce lampadaire. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'  - `streetPoleNum[string]`: Informations sur le poteau de rue associé au lampadaire correspondant à cette observation.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Type d'entité NGSI. Il doit s'agir de Streetlight  - `voltage[number]`: Valeur de la tension du lampadaire correspondant à cette observation.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `location`  - `status`  - `type`    
-Une entité de type `Streetlight` représente un lampadaire urbain. En fait, il y aura une entité de type `Streetlight` par lampadaire. Ainsi, si un poteau particulier contient plus d'une lanterne, il y aura autant d'entités streetlight que de lampes installées. Par conséquent, il peut y avoir plus d'une entité réverbère par emplacement. Une entité `Streetlight` ne contient pas d'attribut correspondant aux caractéristiques structurelles. De telles données sont capturées par des entités de type `StreetlightModel`.  
+- `id`  - `location`  - `status`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Une entité de type `Streetlight` représente un lampadaire urbain. En fait, il y aura une entité de type `Streetlight` par lampadaire. Ainsi, si un poteau particulier contient plus d'une lanterne, il y aura autant d'entités streetlight que de lampes installées. Par conséquent, il peut y avoir plus d'une entité lampadaire par emplacement. Une entité `Streetlight` ne contient pas d'attribut correspondant aux caractéristiques structurelles. De telles données sont capturées par des entités de type `StreetlightModel`.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Streetlight:    
@@ -590,9 +605,14 @@ Streetlight:
   x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Exemple de valeurs-clés NGSI-v2 pour les lampadaires.  
 Voici un exemple de lampadaire au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque vous utilisez `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -648,8 +668,10 @@ Streetlight:
   }  
 }  
 ```  
-#### Lampadaire NGSI-v2 normalisé Exemple  
+</details>  
+#### Eclairage public NGSI-v2 normalisé Exemple  
 Voici un exemple d'un lampadaire au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlight:guadalajara:4567",  
@@ -771,182 +793,23 @@ Streetlight:
   }  
 }  
 ```  
-#### Exemple de valeurs clés de l'éclairage public NGSI-LD  
+</details>  
+#### Exemple de valeurs-clés NGSI-LD pour les lampadaires.  
 Voici un exemple de lampadaire au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "areaServed": "Roundabouts city entrance",  
-  "circuit": "C-456-A467",  
-  "controllingMethod": "individual",  
-  "dateLastLampChange": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-08T08:02:21.753Z"  
-  },  
-  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-  "lanternHeight": 10,  
-  "location": {  
-    "coordinates": [  
-      -3.164485591715449,  
-      40.62785133667262  
-    ],  
-    "type": "Point"  
-  },  
-  "locationCategory": "centralIsland",  
-  "powerState": "off",  
-  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
-  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
-  "status": "ok",  
-  "type": "Streetlight",  
-  "powerConsumption": 10,  
-  "current": 250,  
-  "powerRating": 5,  
-  "powerFactor": 0.7,  
-  "voltage": 50,  
-  "feederPillarNum": "70",  
-  "streetPoleNum": "2",  
-  "feederID": "F1",  
-  "observationDateTime": "2021-01-11T15:51:02+05:30",  
-  "municipalityInfo": {  
-    "district": "Bangalore Urban",  
-    "ulbName": "BMC",  
-    "cityID": "23",  
-    "stateName": "Karnataka",  
-    "cityName": "Bangalore",  
-    "zoneID": "2",  
-    "wardNum": 4  
-  },  
-  "deviceInfo": {  
-    "rfID": "5634684",  
-    "deviceBatteryStatus": "Connected",  
-    "deviceName": "SL1",  
-    "deviceID": "43",  
-    "measurand": "6",  
-    "deviceSimNumber": "6755375727",  
-    "deviceModel": {  
-      "brandName": "abc",  
-      "manufacturerName": "xyz",  
-      "modelName": "SL1",  
-      "modelURL": "www.abcstreetlight.com"  
-    }  
-  }  
-}  
-```  
-#### Eclairage public NGSI-LD normalisé Exemple  
-Voici un exemple de lampadaire au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
-```json  
-{  
-  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-  "type": "Streetlight",  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -3.164485591715449,  
-        40.62785133667262  
-      ]  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Roundabouts city entrance"  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "ok"  
-  },  
-  "refStreetlightGroup": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
-  },  
-  "refStreetlightModel": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
-  },  
-  "circuit": {  
-    "type": "Property",  
-    "value": "C-456-A467"  
-  },  
-  "lanternHeight": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "locationCategory": {  
-    "type": "Property",  
-    "value": "centralIsland"  
-  },  
-  "powerState": {  
-    "type": "Property",  
-    "value": "off"  
-  },  
-  "controllingMethod": {  
-    "type": "Property",  
-    "value": "individual"  
-  },  
-  "dateLastLampChange": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-07-08T08:02:21.753Z"  
-    }  
-  },  
-  "powerConsumption": {  
-    "type": "Property",  
-    "value": 10  
-  },  
-  "current": {  
-    "type": "Property",  
-    "value": 250  
-  },  
-  "powerRating": {  
-    "type": "Property",  
-    "value": 5  
-  },  
-  "powerFactor": {  
-    "type": "Property",  
-    "value": 0.7  
-  },  
-  "voltage": {  
-    "type": "Property",  
-    "value": 50  
-  },  
-  "feederPillarNum": {  
-    "type": "Property",  
-    "value": "70"  
-  },  
-  "streetPoleNum": {  
-    "type": "Property",  
-    "value": "2"  
-  },  
-  "feederID": {  
-    "type": "Property",  
-    "value": "F1"  
-  },  
-  "observationDateTime": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-01-11T15:51:02+05:30"  
-    }  
-  },  
-  "municipalityInfo": {  
-    "type": "Property",  
-    "value": {  
-      "district": "Bangalore Urban",  
-      "ulbName": "BMC",  
-      "cityID": "23",  
-      "stateName": "Karnataka",  
-      "cityName": "Bangalore",  
-      "zoneID": "2",  
-      "wardNum": 4  
+    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+    "type": "Streetlight",  
+    "areaServed": "Roundabouts city entrance",  
+    "circuit": "C-456-A467",  
+    "controllingMethod": "individual",  
+    "current": 250,  
+    "dateLastLampChange": {  
+        "@type": "DateTime",  
+        "@value": "2016-07-08T08:02:21.753Z"  
     },  
     "deviceInfo": {  
-      "type": "Property",  
-      "value": {  
         "rfID": "5634684",  
         "deviceBatteryStatus": "Connected",  
         "deviceName": "SL1",  
@@ -954,18 +817,189 @@ Streetlight:
         "measurand": "6",  
         "deviceSimNumber": "6755375727",  
         "deviceModel": {  
-          "brandName": "abc",  
-          "manufacturerName": "xyz",  
-          "modelName": "SL1",  
-          "modelURL": "www.abcstreetlight.com"  
+            "brandName": "abc",  
+            "manufacturerName": "xyz",  
+            "modelName": "SL1",  
+            "modelURL": "www.abcstreetlight.com"  
         }  
-      }  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "iudx:Streetlight"  
-  ]  
+    },  
+    "feederID": "F1",  
+    "feederPillarNum": "70",  
+    "lanternHeight": 10,  
+    "location": {  
+        "coordinates": [  
+            -3.164485591715449,  
+            40.62785133667262  
+        ],  
+        "type": "Point"  
+    },  
+    "locationCategory": "centralIsland",  
+    "municipalityInfo": {  
+        "district": "Bangalore Urban",  
+        "ulbName": "BMC",  
+        "cityID": "23",  
+        "stateName": "Karnataka",  
+        "cityName": "Bangalore",  
+        "zoneID": "2",  
+        "wardNum": 4  
+    },  
+    "observationDateTime": "2021-01-11T15:51:02+05:30",  
+    "powerConsumption": 10,  
+    "powerFactor": 0.7,  
+    "powerRating": 5,  
+    "powerState": "off",  
+    "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
+    "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
+    "status": "ok",  
+    "streetPoleNum": "2",  
+    "voltage": 50,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
+#### Eclairage public NGSI-LD normalisé Exemple  
+Voici un exemple de lampadaire au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+    "type": "Streetlight",  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Roundabouts city entrance"  
+    },  
+    "circuit": {  
+        "type": "Property",  
+        "value": "C-456-A467"  
+    },  
+    "controllingMethod": {  
+        "type": "Property",  
+        "value": "individual"  
+    },  
+    "current": {  
+        "type": "Property",  
+        "value": 250  
+    },  
+    "dateLastLampChange": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-07-08T08:02:21.753Z"  
+        }  
+    },  
+    "feederID": {  
+        "type": "Property",  
+        "value": "F1"  
+    },  
+    "feederPillarNum": {  
+        "type": "Property",  
+        "value": "70"  
+    },  
+    "lanternHeight": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -3.164485591715449,  
+                40.62785133667262  
+            ]  
+        }  
+    },  
+    "locationCategory": {  
+        "type": "Property",  
+        "value": "centralIsland"  
+    },  
+    "municipalityInfo": {  
+        "type": "Property",  
+        "value": {  
+            "district": "Bangalore Urban",  
+            "ulbName": "BMC",  
+            "cityID": "23",  
+            "stateName": "Karnataka",  
+            "cityName": "Bangalore",  
+            "zoneID": "2",  
+            "wardNum": 4  
+        },  
+        "deviceInfo": {  
+            "type": "Property",  
+            "value": {  
+                "rfID": "5634684",  
+                "deviceBatteryStatus": "Connected",  
+                "deviceName": "SL1",  
+                "deviceID": "43",  
+                "measurand": "6",  
+                "deviceSimNumber": "6755375727",  
+                "deviceModel": {  
+                    "brandName": "abc",  
+                    "manufacturerName": "xyz",  
+                    "modelName": "SL1",  
+                    "modelURL": "www.abcstreetlight.com"  
+                }  
+            }  
+        }  
+    },  
+    "observationDateTime": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2021-01-11T15:51:02+05:30"  
+        }  
+    },  
+    "powerConsumption": {  
+        "type": "Property",  
+        "value": 10  
+    },  
+    "powerFactor": {  
+        "type": "Property",  
+        "value": 0.7  
+    },  
+    "powerRating": {  
+        "type": "Property",  
+        "value": 5  
+    },  
+    "powerState": {  
+        "type": "Property",  
+        "value": "off"  
+    },  
+    "refStreetlightGroup": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
+    },  
+    "refStreetlightModel": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "ok"  
+    },  
+    "streetPoleNum": {  
+        "type": "Property",  
+        "value": "2"  
+    },  
+    "voltage": {  
+        "type": "Property",  
+        "value": 50  
+    },  
+    "@context": [  
+        "iudx:Streetlight",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
