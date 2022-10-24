@@ -1,17 +1,32 @@
-エンティティStreetlightModel  
-======================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティStreetlightModel  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightModel/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**ストリートライトモデル  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**街路灯モデル  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `annotations`: アイテムに関するアノテーション  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `category`: 街路灯を実装するアセットのタイプ。Enum:'`postTop, bollard, lamppost, lightTower, flashingBeacon, sideEntry, signLight, ornamentalLantern'.または、上記で定義されていない、アプリケーションにとって意味のあるその他の値  - `color`: 商品の色について  - `colorRenderingIndex`: ランプの演色性  - `colorTemperature`: ランプの相関色温度  - `columnBrandName`: コラムのブランド名  - `columnColor`: カラムの塗装色。許可された値W3Cカラーキーワード](https://www.w3.org/TR/SVG/types.html#ColorKeywords)で指定されたカラーキーワード。W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes)で指定された色の値。  - `columnMadeOf`: カラムの材質です。Enum:'スチール、アルミニウム、木、その他'  - `columnManufacturerName`: コラムのメーカー名  - `columnModelName`: コラムのモデル名  - `compliantWith`: この街灯モデルが準拠している規格のリスト  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `image`: アイテムのイメージ  - `lampBrandName`: ランプのブランド名  - `lampManufacturerName`: ランプのメーカー名。  - `lampModelName`: ランプのモデル名  - `lampTechnology`: ランプが使用する技術。Enum:'LED, LPS, HPS'.または、上記のリストでカバーされていない、アプリケーションにとって意味のあるその他の値。  - `lampWeight`: ランプの重さ  - `lanternBrandName`: ランタンのブランド名  - `lanternManufacturerName`: ランタンのメーカー名  - `lanternModelName`: ランタンのモデル名  - `lanternWeight`: ランタンの重量  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `luminousFlux`: ランプが提供できる最大光量  - `maxPowerConsumption`: ランタンがサポートする最大消費電力  - `minPowerConsumption`: ランタンがサポートする最小限の消費電力  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `powerConsumption`: (公称)ランプによる消費電力  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ。StreetlightModelである必要があります。  - `workingLife`: 故障せずに（ランプが）作動する推定時間数    
-必須項目  
-- `id`  - `name`  - `type`    
-このモデルは、特定の支持構造モデル、ランタンモデル、ランプモデルによって構成される街灯のモデルを表しています。街路灯インスタンスは、特定の街路灯モデルに基づいています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `annotations[array]`: アイテムに関するアノテーション  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `category[array]`: 街灯を実装するアセットのタイプ。Enum:'`postTop, bollard, lamppost, lightTower, flashingBeacon, sideEntry, signLight, ornamentalLantern'.または、上記で定義されていない、アプリケーションにとって意味のある他の値。  - `color[string]`: 製品の色  . Model: [https://schema.org/color](https://schema.org/color)- `colorRenderingIndex[number]`: ランプの演色評価数  . Model: [https://schema.org/Number](https://schema.org/Number)- `colorTemperature[number]`: ランプの相関色温度  . Model: [https://schema.org/Number](https://schema.org/Number)- `columnBrandName[string]`: カラムのブランド名  . Model: [https://schema.org/brand.](https://schema.org/brand.)- `columnColor[string]`: 列の描画色。許可された値。W3C Color Keywords](https://www.w3.org/TR/SVG/types.html#ColorKeywords)に規定されるカラーキーワード。W3C Color Data Type](https://www.w3.org/TR/SVG/types.html#BasicDataTypes)で指定された色値。  . Model: [https://schema.org/color](https://schema.org/color)- `columnMadeOf[string]`: コラムの材質。Enum:'steel, aluminium, wood, other'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `columnManufacturerName[string]`: カラムの製造元名  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `columnModelName[string]`: 列のモデル名  . Model: [https://schema.org/model](https://schema.org/model)- `compliantWith[array]`: この街路灯モデルが準拠している規格の一覧です。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `image[string]`: アイテムの画像  . Model: [https://schema.org/URL](https://schema.org/URL)- `lampBrandName[string]`: ランプのブランド名  . Model: [https://schema.org/brand](https://schema.org/brand)- `lampManufacturerName[string]`: ランプの製造元名。  - `lampModelName[string]`: ランプの機種名  . Model: [https://schema.org/model](https://schema.org/model)- `lampTechnology[string]`: ランプが使用する技術。Enum:'LED, LPS, HPS'。または、上記のリストでカバーされていない、アプリケーションにとって意味のあるその他の値。  - `lampWeight[string]`: ランプの重量  . Model: [Kilograms (kg)](Kilograms (kg))- `lanternBrandName[string]`: ランタンのブランド名  . Model: [https://schema.org/brand](https://schema.org/brand)- `lanternManufacturerName[string]`: ランタンのメーカー名  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `lanternModelName[string]`: ランタンの機種名  . Model: [https://schema.org/Text](https://schema.org/Text)- `lanternWeight[number]`: ランタン重量  . Model: [https://schema.org/weight](https://schema.org/weight)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `luminousFlux[number]`: ランプが提供できる最大光量  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxPowerConsumption[number]`: ランタンがサポートする最大消費電力  . Model: [https://schema.org/Number](https://schema.org/Number)- `minPowerConsumption[number]`: ランタンがサポートする最小限の消費電力  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `powerConsumption[number]`: (ランプが作る（公称）消費電力  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI Entity タイプ。StreetlightModel である必要があります。  - `workingLife[number]`: 故障しないで（ランプが）動作する推定時間数  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+特定の支持構造モデル、ランタンモデル、ランプモデルで構成される街路灯のモデルを表します。街路灯のインスタンスは、ある街路灯モデルに基づいて作成されます。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 StreetlightModel:    
@@ -488,9 +503,14 @@ StreetlightModel:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### StreetlightModel NGSI-v2 key-valuesの例。  
-StreetlightModelをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### StreetlightModel NGSI-v2 key-value の例。  
+ここではStreetlightModelをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
@@ -510,8 +530,10 @@ StreetlightModel:
   "category": ["postTop"]  
 }  
 ```  
+</details>  
 #### StreetlightModel NGSI-v2 正規化例  
-ここでは、JSON-LD形式のStreetlightModelを正規化した例を紹介します。これはオプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、StreetlightModel を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
@@ -557,97 +579,109 @@ StreetlightModel:
   }  
 }  
 ```  
-#### StreetlightModel NGSI-LD key-valuesの例。  
-StreetlightModelをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### StreetlightModel NGSI-LD key-value 例  
+ここではStreetlightModelをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返されます。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
-  "type": "StreetlightModel",  
-  "category": {  
-    "type": "Property",  
-    "value": [  
-      "postTop"  
+    "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
+    "type": "StreetlightModel",  
+    "category": [  
+        "postTop"  
+    ],  
+    "colorRenderingIndex": 25,  
+    "colorTemperature": 3000,  
+    "columnColor": "green",  
+    "columnModelName": "01 TUBULAR P/T 6M NUMANA",  
+    "lampBrandName": "Philips",  
+    "lampModelName": "SON-T",  
+    "lampTechnology": "HPS",  
+    "lanternManufacturerName": "Indal WRTL",  
+    "lanternModelName": "ASR42CG",  
+    "luminousFlux": 2300,  
+    "name": "Tubular Numana 6M - ASR42CG - Son-T 100",  
+    "powerConsumption": 100,  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
     ]  
-  },  
-  "colorRenderingIndex": {  
-    "type": "Property",  
-    "value": 25  
-  },  
-  "columnColor": {  
-    "type": "Property",  
-    "value": "green"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Tubular Numana 6M - ASR42CG - Son-T 100"  
-  },  
-  "powerConsumption": {  
-    "type": "Property",  
-    "value": 100  
-  },  
-  "lanternManufacturerName": {  
-    "type": "Property",  
-    "value": "Indal WRTL"  
-  },  
-  "luminousFlux": {  
-    "type": "Property",  
-    "value": 2300  
-  },  
-  "lampTechnology": {  
-    "type": "Property",  
-    "value": "HPS"  
-  },  
-  "colorTemperature": {  
-    "type": "Property",  
-    "value": 3000  
-  },  
-  "lanternModelName": {  
-    "type": "Property",  
-    "value": "ASR42CG"  
-  },  
-  "columnModelName": {  
-    "type": "Property",  
-    "value": "01 TUBULAR P/T 6M NUMANA"  
-  },  
-  "lampModelName": {  
-    "type": "Property",  
-    "value": "SON-T"  
-  },  
-  "lampBrandName": {  
-    "type": "Property",  
-    "value": "Philips"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### StreetlightModel NGSI-LDの正規化例  
-ここでは、JSON-LD形式のStreetlightModelを正規化した例を紹介します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### StreetlightModel NGSI-LD 正規化例  
+以下は、StreetlightModel を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ],  
-  "category": [  
-    "postTop"  
-  ],  
-  "colorRenderingIndex": 25,  
-  "colorTemperature": 3000,  
-  "columnColor": "green",  
-  "columnModelName": "01 TUBULAR P/T 6M NUMANA",  
-  "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
-  "lampBrandName": "Philips",  
-  "lampModelName": "SON-T",  
-  "lampTechnology": "HPS",  
-  "lanternManufacturerName": "Indal WRTL",  
-  "lanternModelName": "ASR42CG",  
-  "luminousFlux": 2300,  
-  "name": "Tubular Numana 6M - ASR42CG - Son-T 100",  
-  "powerConsumption": 100,  
-  "type": "StreetlightModel"  
+    "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",  
+    "type": "StreetlightModel",  
+    "category": {  
+        "type": "Property",  
+        "value": [  
+            "postTop"  
+        ]  
+    },  
+    "colorRenderingIndex": {  
+        "type": "Property",  
+        "value": 25  
+    },  
+    "colorTemperature": {  
+        "type": "Property",  
+        "value": 3000  
+    },  
+    "columnColor": {  
+        "type": "Property",  
+        "value": "green"  
+    },  
+    "columnModelName": {  
+        "type": "Property",  
+        "value": "01 TUBULAR P/T 6M NUMANA"  
+    },  
+    "lampBrandName": {  
+        "type": "Property",  
+        "value": "Philips"  
+    },  
+    "lampModelName": {  
+        "type": "Property",  
+        "value": "SON-T"  
+    },  
+    "lampTechnology": {  
+        "type": "Property",  
+        "value": "HPS"  
+    },  
+    "lanternManufacturerName": {  
+        "type": "Property",  
+        "value": "Indal WRTL"  
+    },  
+    "lanternModelName": {  
+        "type": "Property",  
+        "value": "ASR42CG"  
+    },  
+    "luminousFlux": {  
+        "type": "Property",  
+        "value": 2300  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Tubular Numana 6M - ASR42CG - Son-T 100"  
+    },  
+    "powerConsumption": {  
+        "type": "Property",  
+        "value": 100  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+    ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
