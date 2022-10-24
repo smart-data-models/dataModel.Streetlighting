@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: StreetlightFeeder  
-==========================  
+==========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.Streetlighting/blob/master/StreetlightFeeder/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Ein Straßenlaternen-Bedienfeld Datenmodell.**  
 Version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `activePower`: Verbrauchte Wirkleistung pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `deviceInfo`: Informationen über das Gerät, das mit den Beobachtungen verbunden ist.  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `numStreetlight`: Beschreibt die Gesamtzahl der Straßenlaternen, die an die dieser Beobachtung entsprechende Einspeiseplatte angeschlossen sind.  - `observationDateTime`: Letzter gemeldeter Zeitpunkt der Beobachtung.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `phaseCurrent`: Strom pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  - `phaseVoltage`: Spannung pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  - `powerState`: Zeigt den aktuellen Status der Straßenlaternen-Zuführungstafel an.  - `reactivePower`: Verbrauchte Blindleistung pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `totalActivePower`: Gesamtwirkleistung, die von allen Phasen verbraucht wird.  - `totalReactivePower`: Gesamtblindleistung für alle Phasen.  - `type`: NGSI-Entitätstyp. Es muss StreetlightFeeder sein    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `activePower[array]`: Verbrauchte Wirkleistung pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `deviceInfo[object]`: Informationen über das Gerät, das mit den Beobachtungen verbunden ist.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `numStreetlight[number]`: Beschreibt die Gesamtzahl der Straßenlaternen, die an die dieser Beobachtung entsprechende Einspeiseplatte angeschlossen sind.  . Model: [https://schema.org/Number](https://schema.org/Number)- `observationDateTime[string]`: Letzter gemeldeter Zeitpunkt der Beobachtung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `phaseCurrent[array]`: Strom pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  . Model: [https://schema.org/Text](https://schema.org/Text)- `phaseVoltage[array]`: Spannung pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  . Model: [https://schema.org/Text](https://schema.org/Text)- `powerState[string]`: Zeigt den aktuellen Status der Straßenlaternen-Zuführungstafel an.  . Model: [https://schema.org/Text](https://schema.org/Text)- `reactivePower[array]`: Verbrauchte Blindleistung pro Phase. Geordnetes Dreifach, bestehend aus der Wirkleistung von drei Phasen in folgender Reihenfolge: [R Y B]  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `totalActivePower[number]`: Gesamtwirkleistung, die von allen Phasen verbraucht wird.  . Model: [https://schema.org/Number](https://schema.org/Number)- `totalReactivePower[number]`: Gesamtblindleistung für alle Phasen.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI-Entitätstyp. Es muss StreetlightFeeder sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`  ## Datenmodell Beschreibung der Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 StreetlightFeeder:    
@@ -398,9 +412,14 @@ StreetlightFeeder:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### StreetlightFeeder NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen StreetlightFeeder im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
@@ -446,8 +465,10 @@ StreetlightFeeder:
   }  
 }  
 ```  
+</details>  
 #### StreetlightFeeder NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen StreetlightFeeder im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
@@ -527,8 +548,10 @@ StreetlightFeeder:
   ]  
 }  
 ```  
+</details>  
 #### StreetlightFeeder NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für einen StreetlightFeeder im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
@@ -579,8 +602,10 @@ StreetlightFeeder:
     ]  
 }  
 ```  
+</details>  
 #### StreetlightFeeder NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen StreetlightFeeder im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",  
@@ -659,8 +684,17 @@ StreetlightFeeder:
     },  
     "@context": [  
         "iudx:StreetLightFeeder",  
-        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld"  
+        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
