@@ -1,0 +1,3 @@
+/* (Beta) Export of data model StreetlightFeeder of the subject dataModel.Streetlighting for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE StreetlightFeeder_type AS ENUM ('StreetlightFeeder');
+CREATE TABLE StreetlightFeeder (activePower json, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, deviceInfo json, id text, location json, name text, numStreetlight text, observationDateTime timestamp, owner json, phaseCurrent json, phaseVoltage json, powerState text, reactivePower json, seeAlso json, source text, totalActivePower text, totalReactivePower text, type StreetlightFeeder_type);
