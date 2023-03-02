@@ -1,5 +1,10 @@
 {
     "@context": {
+        "Streetlight": "https://smartdatamodels.org/dataModel.Streetlighting/Streetlight",
+        "StreetlightControlCabinet": "https://smartdatamodels.org/dataModel.Streetlighting/StreetlightControlCabinet",
+        "StreetlightFeeder": "https://smartdatamodels.org/dataModel.Streetlighting/StreetlightFeeder",
+        "StreetlightGroup": "https://smartdatamodels.org/dataModel.Streetlighting/StreetlightGroup",
+        "StreetlightModel": "https://smartdatamodels.org/dataModel.Streetlighting/StreetlightModel",
         "activePower": "https://smartdatamodels.org/dataModel.Streetlighting/activePower",
         "activePowerR": "https://smartdatamodels.org/dataModel.Streetlighting/activePowerR",
         "activePowerS": "https://smartdatamodels.org/dataModel.Streetlighting/activePowerS",
