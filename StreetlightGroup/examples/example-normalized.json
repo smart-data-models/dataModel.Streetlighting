@@ -5,6 +5,7 @@
     "value": "C-456-A467"
   },
   "powerState": {
+    "type": "Text",
     "value": "on"
   },
   "dateLastSwitchingOn": {
@@ -20,6 +21,7 @@
     "value": "2016-07-07T07:59:06.618Z"
   },
   "switchingOnHours": {
+    "type": "StructuredValue",
     "value": [
       {
         "hours": "Mo,Su 16:00-02:00",
@@ -34,12 +36,31 @@
     "value": {
       "type": "MultiLineString",
       "coordinates": [
-        [[100.0, 0.0], [101.0, 1.0]],
-        [[102.0, 2.0], [103.0, 3.0]]
+        [
+          [
+            100.0,
+            0.0
+          ],
+          [
+            101.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            102.0,
+            2.0
+          ],
+          [
+            103.0,
+            3.0
+          ]
+        ]
       ]
     }
   },
   "areaServed": {
+    "type": "Text",
     "value": "Calle Comercial Centro"
   }
 }

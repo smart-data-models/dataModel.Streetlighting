@@ -1,129 +1,128 @@
 {
-    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",
-    "type": "Streetlight",
-    "areaServed": {
-        "type": "Property",
-        "value": "Roundabouts city entrance"
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",
+  "type": "Streetlight",
+  "areaServed": {
+    "type": "Property",
+    "value": "Roundabouts city entrance"
+  },
+  "circuit": {
+    "type": "Property",
+    "value": "C-456-A467"
+  },
+  "controllingMethod": {
+    "type": "Property",
+    "value": "individual"
+  },
+  "current": {
+    "type": "Property",
+    "value": 250
+  },
+  "dateLastLampChange": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-07-08T08:02:21.753Z"
+    }
+  },
+  "feederID": {
+    "type": "Property",
+    "value": "F1"
+  },
+  "feederPillarNum": {
+    "type": "Property",
+    "value": "70"
+  },
+  "lanternHeight": {
+    "type": "Property",
+    "value": 10
+  },
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -3.164485591715449,
+        40.62785133667262
+      ]
+    }
+  },
+  "locationCategory": {
+    "type": "Property",
+    "value": "centralIsland"
+  },
+  "municipalityInfo": {
+    "type": "Property",
+    "value": {
+      "district": "Bangalore Urban",
+      "ulbName": "BMC",
+      "cityID": "23",
+      "stateName": "Karnataka",
+      "cityName": "Bangalore",
+      "zoneID": "2",
+      "wardNum": 4
     },
-    "circuit": {
-        "type": "Property",
-        "value": "C-456-A467"
-    },
-    "controllingMethod": {
-        "type": "Property",
-        "value": "individual"
-    },
-    "current": {
-        "type": "Property",
-        "value": 250
-    },
-    "dateLastLampChange": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2016-07-08T08:02:21.753Z"
+    "deviceInfo": {
+      "type": "Property",
+      "value": {
+        "rfID": "5634684",
+        "deviceBatteryStatus": "Connected",
+        "deviceName": "SL1",
+        "deviceID": "43",
+        "measurand": "6",
+        "deviceSimNumber": "6755375727",
+        "deviceModel": {
+          "brandName": "abc",
+          "manufacturerName": "xyz",
+          "modelName": "SL1",
+          "modelURL": "www.abcstreetlight.com"
         }
-    },
-    "feederID": {
-        "type": "Property",
-        "value": "F1"
-    },
-    "feederPillarNum": {
-        "type": "Property",
-        "value": "70"
-    },
-    "lanternHeight": {
-        "type": "Property",
-        "value": 10
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                -3.164485591715449,
-                40.62785133667262
-            ]
-        }
-    },
-    "locationCategory": {
-        "type": "Property",
-        "value": "centralIsland"
-    },
-    "municipalityInfo": {
-        "type": "Property",
-        "value": {
-            "district": "Bangalore Urban",
-            "ulbName": "BMC",
-            "cityID": "23",
-            "stateName": "Karnataka",
-            "cityName": "Bangalore",
-            "zoneID": "2",
-            "wardNum": 4
-        },
-        "deviceInfo": {
-            "type": "Property",
-            "value": {
-                "rfID": "5634684",
-                "deviceBatteryStatus": "Connected",
-                "deviceName": "SL1",
-                "deviceID": "43",
-                "measurand": "6",
-                "deviceSimNumber": "6755375727",
-                "deviceModel": {
-                    "brandName": "abc",
-                    "manufacturerName": "xyz",
-                    "modelName": "SL1",
-                    "modelURL": "www.abcstreetlight.com"
-                }
-            }
-        }
-    },
-    "observationDateTime": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2021-01-11T15:51:02+05:30"
-        }
-    },
-    "powerConsumption": {
-        "type": "Property",
-        "value": 10
-    },
-    "powerFactor": {
-        "type": "Property",
-        "value": 0.7
-    },
-    "powerRating": {
-        "type": "Property",
-        "value": 5
-    },
-    "powerState": {
-        "type": "Property",
-        "value": "off"
-    },
-    "refStreetlightGroup": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"
-    },
-    "refStreetlightModel": {
-        "type": "Relationship",
-        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"
-    },
-    "status": {
-        "type": "Property",
-        "value": "ok"
-    },
-    "streetPoleNum": {
-        "type": "Property",
-        "value": "2"
-    },
-    "voltage": {
-        "type": "Property",
-        "value": 50
-    },
-    "@context": [
-        "iudx:Streetlight",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
-    ]
+      }
+    }
+  },
+  "observationDateTime": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-01-11T15:51:02+05:30"
+    }
+  },
+  "powerConsumption": {
+    "type": "Property",
+    "value": 10
+  },
+  "powerFactor": {
+    "type": "Property",
+    "value": 0.7
+  },
+  "powerRating": {
+    "type": "Property",
+    "value": 5
+  },
+  "powerState": {
+    "type": "Property",
+    "value": "off"
+  },
+  "refStreetlightGroup": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"
+  },
+  "refStreetlightModel": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"
+  },
+  "status": {
+    "type": "Property",
+    "value": "ok"
+  },
+  "streetPoleNum": {
+    "type": "Property",
+    "value": "2"
+  },
+  "voltage": {
+    "type": "Property",
+    "value": 50
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
+  ]
 }

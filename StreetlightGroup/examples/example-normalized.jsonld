@@ -1,53 +1,76 @@
 {
-    "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",
-    "type": "StreetlightGroup",
-    "areaServed": "Calle Comercial Centro",
-    "circuitId": "C-456-A467",
-    "dateLastSwitchingOff": {
-        "@type": "DateTime",
-        "@value": "2016-07-07T07:59:06.618Z"
-    },
-    "dateLastSwitchingOn": {
-        "@type": "DateTime",
-        "@value": "2016-07-07T19:59:06.618Z"
-    },
-    "location": {
-        "coordinates": [
-            [
-                [
-                    100.0,
-                    0.0
-                ],
-                [
-                    101.0,
-                    1.0
-                ]
-            ],
-            [
-                [
-                    102.0,
-                    2.0
-                ],
-                [
-                    103.0,
-                    3.0
-                ]
-            ]
+  "id": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:mycity:A12",
+  "type": "StreetlightGroup",
+  "areaServed": {
+    "type": "Property",
+    "value": "Calle Comercial Centro"
+  },
+  "circuitId": {
+    "type": "Property",
+    "value": "C-456-A467"
+  },
+  "dateLastSwitchingOff": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-07-07T07:59:06.618Z"
+    }
+  },
+  "dateLastSwitchingOn": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2016-07-07T19:59:06.618Z"
+    }
+  },
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            100.0,
+            0.0
+          ],
+          [
+            101.0,
+            1.0
+          ]
         ],
-        "type": "MultiLineString"
-    },
-    "powerState": "on",
-    "refStreetlightCabinetController": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34",
-    "switchingOnHours": [
-        {
-            "description": "Christmas",
-            "from": "--11-30",
-            "hours": "Mo,Su 16:00-02:00",
-            "to": "--01-07"
-        }
-    ],
-    "@context": [
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
+        [
+          [
+            102.0,
+            2.0
+          ],
+          [
+            103.0,
+            3.0
+          ]
+        ]
+      ]
+    }
+  },
+  "powerState": {
+    "type": "Property",
+    "value": "on"
+  },
+  "refStreetlightCabinetController": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:StreetlightCabinetController:cabinetcontroller:CC45A34"
+  },
+  "switchingOnHours": {
+    "type": "Property",
+    "value": [
+      {
+        "hours": "Mo,Su 16:00-02:00",
+        "to": "--01-07",
+        "from": "--11-30",
+        "description": "Christmas"
+      }
     ]
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
+  ]
 }
