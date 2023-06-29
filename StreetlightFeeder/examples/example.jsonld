@@ -1,48 +1,46 @@
 {
-    "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",
-    "type": "StreetlightFeeder",
-    "activePower": [
-        120,
-        200,
-        150
-    ],
-    "deviceInfo": {
-        "rfId": "5634684",
-        "deviceBatteryStatus": "Connected",
-        "deviceName": "SL1",
-        "deviceId": "43",
-        "measurand": "6",
-        "deviceSimNumber": "6755375727",
-        "deviceModel": {
-            "brandName": "abc",
-            "manufacturerName": "xyz",
-            "modelName": "SL1",
-            "modelURL": "www.abcstreetlight.com"
-        }
-    },
-    "numStreetlight": 45,
-    "observationDateTime": "2021-03-11T15:51:02+05:30",
-    "phaseCurrent": [
-        25,
-        28,
-        30
-    ],
-    "phaseVoltage": [
-        240,
-        120,
-        50
-    ],
-    "powerState": "ON",
-    "reactivePower": [
-        25,
-        28,
-        30
-    ],
-    "totalActivePower": 30,
-    "totalReactivePower": 200,
-    "@context": [
-        "iudx:StreetLightFeeder",
-        "https://smart-data-models.github.io/dataModel.StreetLight/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
-    ]
+  "id": "https://smart-data-models.github.io/dataModel.Streetlighting/StreetLightFeeder/schema.json",
+  "type": "StreetlightFeeder",
+  "activePower": [
+    120,
+    200,
+    150
+  ],
+  "deviceInfo": {
+    "rfId": "5634684",
+    "deviceBatteryStatus": "Connected",
+    "deviceName": "SL1",
+    "deviceId": "43",
+    "measurand": "6",
+    "deviceSimNumber": "6755375727",
+    "deviceModel": {
+      "brandName": "abc",
+      "manufacturerName": "xyz",
+      "modelName": "SL1",
+      "modelURL": "www.abcstreetlight.com"
+    }
+  },
+  "numStreetlight": 45,
+  "observationDateTime": "2021-03-11T15:51:02+05:30",
+  "phaseCurrent": [
+    25,
+    28,
+    30
+  ],
+  "phaseVoltage": [
+    240,
+    120,
+    50
+  ],
+  "powerState": "ON",
+  "reactivePower": [
+    25,
+    28,
+    30
+  ],
+  "totalActivePower": 30,
+  "totalReactivePower": 200,
+  "@context": [
+    "https://smart-data-models.github.io/dataModel.Streetlighting/context.jsonld"
+  ]
 }
