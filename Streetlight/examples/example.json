@@ -30,17 +30,17 @@
   "municipalityInfo": {
     "district": "Bangalore Urban",
     "ulbName": "BMC",
-    "cityID": "23",
+    "cityId": "23",
     "stateName": "Karnataka",
     "cityName": "Bangalore",
-    "zoneID": "2",
+    "zoneId": "2",
     "wardNum": 4
   },
   "deviceInfo": {
-    "rfID": "5634684",
+    "rfId": "5634684",
     "deviceBatteryStatus": "Connected",
     "deviceName": "SL1",
-    "deviceID": "43",
+    "deviceId": "43",
     "measurand": "6",
     "deviceSimNumber": "6755375727",
     "deviceModel": {
