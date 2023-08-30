@@ -27,7 +27,7 @@
                 },
                 "serialNumber": {
                     "type": "string",
-                    "description": "Property. Model:'https://schema.org/serialNumber'. Serial number of the container."
+                    "description": "Property. Model:'https://schema.org/serialNumber'. Serial number of the container"
                 },
                 "refStreetlightGroup": {
                     "type": "array",
@@ -84,7 +84,7 @@
                     },
                     "minItems": 1,
                     "uniqueItems": true,
-                    "description": "Property. A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually."
+                    "description": "Property. A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually"
                 },
                 "compliantWith": {
                     "type": "array",
@@ -122,7 +122,7 @@
                     },
                     "minItems": 1,
                     "uniqueItems": true,
-                    "description": "Relationship. Reference to the device(s) used to monitor this control cabinet."
+                    "description": "Relationship. Reference to the device(s) used to monitor this control cabinet"
                 },
                 "dateServiceStarted": {
                     "type": "string",
@@ -141,7 +141,7 @@
                 },
                 "responsible": {
                     "type": "string",
-                    "description": "Property. Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.)."
+                    "description": "Property. Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.)"
                 },
                 "workingMode": {
                     "type": "string",
@@ -150,7 +150,7 @@
                         "manual",
                         "semiautomatic"
                     ],
-                    "description": "Property. Working mode for this cabinet controller.  `automatic` : The cabinet controller decides automatically when light groups are switched on and off. Manual operation is not allowed. `manual` : Human intervention is required for switching on and off. `semiautomatic` : The same as `automatic` but in this case manual intervention is allowed."
+                    "description": "Property. Working mode for this cabinet controller.  `automatic` : The cabinet controller decides automatically when light groups are switched on and off. Manual operation is not allowed. `manual` : Human intervention is required for switching on and off. `semiautomatic` : The same as `automatic` but in this case manual intervention is allowed"
                 },
                 "description": {
                     "type": "string",
