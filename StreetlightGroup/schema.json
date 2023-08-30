@@ -64,7 +64,7 @@
                 },
                 "switchingOnHours": {
                     "type": "array",
-                    "description": "Property. Switching on hours. It is used normally to set special schedules for certain dates.",
+                    "description": "Property. Switching on hours. It is used normally to set special schedules for certain dates",
                     "items": {
                         "type": "object",
                         "properties": {
@@ -138,7 +138,7 @@
                     "items": {
                         "type": "string"
                     },
-                    "description": "Property. A field reserved for annotations (incidences, remarks, etc.)."
+                    "description": "Property. A field reserved for annotations (incidences, remarks, etc.)"
                 },
                 "refStreetlight": {
                     "type": "array",
@@ -160,7 +160,7 @@
                     },
                     "minItems": 1,
                     "uniqueItems": true,
-                    "description": "Relationship. List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights."
+                    "description": "Relationship. List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights"
                 }
             }
         }
