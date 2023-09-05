@@ -14,8 +14,27 @@
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `annotations[array]`: Anmerkungen zum Artikel  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `circuit[string]`: Der Stromkreis, an den diese Straßenlaterne angeschlossen ist und von dem sie Strom bezieht. In der Regel enthält er eine Kennung, die es ermöglicht, weitere Informationen über diesen Stromkreis zu erhalten.  - `color[string]`: Die Farbe des Produkts  . Model: [https://schema.org/color](https://schema.org/color)- `controllingMethod[string]`: Die Methode zur Steuerung dieser Straßenlaterne. Enum:'Gruppe, individuell'.  - `current[number]`: Aktueller Wert der Straßenlaterne, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateLastLampChange[string]`: Zeitstempel des zuletzt vorgenommenen Lampenwechsels  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOff[string]`: Zeitstempel des letzten Ausschaltens  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOn[string]`: Zeitstempel des letzten Einschaltens  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateServiceStarted[string]`: Datum, an dem die Straßenlaterne in Betrieb genommen wurde  . Model: [https://schema.org/Date](https://schema.org/Date)- `description[string]`: Eine Beschreibung dieses Artikels  - `deviceInfo[object]`: Informationen über das Gerät, das mit den Beobachtungen verbunden ist.  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederID[*]`: Eindeutige ID der Straßenlaternen-Zuleitungstafel, die mit der dieser Beobachtung entsprechenden Straßenlaterne verbunden ist.  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: Informationen zur Straßenlaterne, die mit der dieser Beobachtung entsprechenden Straßenlaterne verbunden sind.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `illuminanceLevel[number]`: Einstellung der relativen Beleuchtungsstärke. Eine Zahl zwischen 0 und 1.  - `image[string]`: Eine URL mit einem Foto der Straßenlaterne  . Model: [https://schema.org/image](https://schema.org/image)- `lanternHeight[number]`: Höhe der Laterne. Bei Säulen mit vielen Armen kann dies von Straßenlaterne zu Straßenlaterne variieren. Eine weitere Variationsquelle dieser Eigenschaft sind wandmontierte Straßenlaternen.  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `locationCategory[string]`: Kategorie des Ortes, an dem die Straßenlaterne aufgestellt ist. Enum:'Brücke, centralIsland, Fassade, Garten, Park, Parkplatz, Fußgängerweg, Spielplatz, Straße, Gehweg, Tunnel'  - `municipalityInfo[object]`: Informationen der Gemeinde zu dieser Beobachtung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Der Name dieses Artikels.  - `observationDateTime[string]`: Letzter gemeldeter Zeitpunkt der Beobachtung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `powerConsumption[number]`: Stromverbrauch der LED oder der Glühbirne der Straßenlaterne entsprechend dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerFactor[number]`: Leistungsfaktor oder das Verhältnis der Arbeitsleistung der Straßenlaterne entsprechend dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerRating[number]`: Nennleistung der LED oder des Leuchtmittels der Straßenlaterne entsprechend dieser Beobachtung.  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerState[string]`: Stromversorgungszustand der Straßenlaterne. Enum:'bootingUp, low, off, on'  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[array]`: Verweis auf das/die Gerät(e), das/die zur Überwachung dieser Straßenlaterne verwendet wird/werden. Liste der Verweise auf die Einheit(en) des Typs Gerät.  - `refStreetlightControlCabinet[*]`: Wenn diese Straßenlaterne individuell gesteuert wird, verweisen Sie auf den zuständigen Schaltschrank.  - `refStreetlightGroup[*]`: Gruppe der Straßenlaterne, wenn diese Straßenlaterne zu einer Gruppe gehört.  - `refStreetlightModel[*]`: Das Modell der Straßenlaterne.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `status[string]`: Der Gesamtstatus dieser Straßenlaterne. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'  - `streetPoleNum[string]`: Informationen über den Straßenmast, der der Straßenlaterne zugeordnet ist, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-Entitätstyp. Es muss Streetlight sein  - `voltage[number]`: Spannungswert der Straßenlaterne, die dieser Beobachtung entspricht.  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `annotations[array]`: Anmerkungen zum Artikel  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `circuit[string]`: Der Stromkreis, an den diese Straßenlaterne angeschlossen ist und von dem sie Strom bezieht. In der Regel enthält er eine Kennung, die es ermöglicht, weitere Informationen über diesen Stromkreis zu erhalten  - `color[string]`: Die Farbe des Produkts  . Model: [https://schema.org/color](https://schema.org/color)- `controllingMethod[string]`: Die Methode zur Steuerung dieser Straßenlaterne. Enum:'Gruppe, individuell'.  - `current[number]`: Aktueller Wert der Straßenlaterne, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateLastLampChange[date-time]`: Zeitstempel des zuletzt durchgeführten Lampenwechsels  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOff[date-time]`: Zeitstempel des letzten Ausschaltens  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: Zeitstempel des letzten Einschaltens  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateServiceStarted[date-time]`: Datum, an dem die Straßenlaterne in Betrieb genommen wurde  . Model: [https://schema.org/Date](https://schema.org/Date)- `description[string]`: Eine Beschreibung dieses Artikels  - `deviceInfo[object]`: Informationen über das mit den Beobachtungen verbundene Gerät  . Model: [https://schema.org/Text](https://schema.org/Text)	- `RFId[string]`: Gibt die ID des RFID-Lesegeräts an  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceBatteryStatus[string]`: Gibt den Batterieladestatus des meldenden Geräts an (verbunden, getrennt)  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceId[string]`: Geräte-ID des physischen Sensors/der Messstation, der/die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceModel[object]`: Beschreibt die Informationen über das betreffende Gerät, den Sensor oder das System  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceName[string]`: Gerätename oder Stationsname des Sensorgeräts/der Station, das/die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `deviceSimNumber[string]`: Gibt die Sim-Nummer des Geräts im Entsorgungsfahrzeug an  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `feederID[*]`: Eindeutige ID der Straßenlaternen-Einspeisungstafel, die mit der dieser Beobachtung entsprechenden Straßenlaterne verbunden ist  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: Informationen zur Straßenlaterne, die mit der dieser Beobachtung entsprechenden Straßenlaterne verbunden sind  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `illuminanceLevel[number]`: Einstellung der relativen Beleuchtungsstärke. Eine Zahl zwischen 0 und 1  - `image[uri]`: Eine URL mit einem Foto der Straßenlaterne  . Model: [https://schema.org/image](https://schema.org/image)- `lanternHeight[number]`: Höhe der Laterne. Bei Säulen mit vielen Armen kann dies von Straßenlaterne zu Straßenlaterne variieren. Eine weitere Variationsquelle dieser Eigenschaft sind wandmontierte Straßenlaternen  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `locationCategory[string]`: Kategorie des Ortes, an dem die Straßenlaterne aufgestellt ist. Enum:'Brücke, centralIsland, Fassade, Garten, Park, Parkplatz, Fußgängerweg, Spielplatz, Straße, Gehweg, Tunnel'  - `municipalityInfo[object]`: Informationen der Gemeinde zu dieser Beobachtung  . Model: [https://schema.org/Text](https://schema.org/Text)	- `cityId[string]`: ID der Stadt, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `cityName[string]`: Name der Stadt, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `district[string]`: Name des Bezirks, der dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `stateName[string]`: Name des Staates, der dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `ulbName[string]`:   . Model: [https://schema.org/Text.Name of the Urban Local Body corresponding to this observation](https://schema.org/Text.Name of the Urban Local Body corresponding to this observation)  
+	- `wardNum[number]`: Stationsnummer, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)  
+- `name[string]`: Der Name dieses Artikels  - `observationDateTime[date-time]`: Letzter gemeldeter Zeitpunkt der Beobachtung  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `powerConsumption[number]`: Stromverbrauch der LED oder der Glühbirne der Straßenlaterne entsprechend dieser Beobachtung  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerFactor[number]`: Leistungsfaktor oder das Verhältnis der Arbeitsleistung der Straßenlaterne entsprechend dieser Beobachtung  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerRating[number]`: Nennleistung der LED oder des Leuchtmittels der Straßenlaterne entsprechend dieser Beobachtung  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerState[string]`: Stromversorgungszustand der Straßenlaterne. Enum:'bootingUp, low, off, on'  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[array]`: Verweis auf das/die Gerät(e), das/die zur Überwachung dieser Straßenlaterne verwendet wird/werden. Liste der Verweise auf die Einheit(en) vom Typ Gerät  - `refStreetlightControlCabinet[*]`: Wenn diese Straßenlaterne individuell gesteuert wird, ist der Hinweis auf den Schaltschrank, der für die  - `refStreetlightGroup[*]`: Gruppe der Straßenlaterne, wenn diese Straßenlaterne zu einer Gruppe gehört  - `refStreetlightModel[*]`: Modell der Straßenlaterne  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `status[string]`: Der Gesamtstatus dieser Straßenlaterne. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'  - `streetPoleNum[string]`: Informationen über den Straßenmast, der der Straßenlaterne zugeordnet ist, die dieser Beobachtung entspricht  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-Entitätstyp. Es muss Streetlight sein  - `voltage[number]`: Spannungswert der Straßenlaterne, die dieser Beobachtung entspricht  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `id`  - `location`  - `status`  - `type`  <!-- /35-RequiredProperties -->  
@@ -30,40 +49,68 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Streetlight:    
-  description: 'A Street light'    
+  description: A Street light    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'Annotations about the item'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
@@ -71,18 +118,18 @@ Streetlight:
         model: https://schema.org/Text    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     circuit:    
-      description: 'The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit.'    
+      description: The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit    
       type: string    
       x-ngsi:    
         type: Property    
     color:    
-      description: 'The color of the product'    
+      description: The color of the product    
       type: string    
       x-ngsi:    
         model: https://schema.org/color    
@@ -96,148 +143,190 @@ Streetlight:
       x-ngsi:    
         type: Property    
     current:    
-      description: 'Current value of the streetlight corresponding to this observation.'    
+      description: Current value of the streetlight corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateLastLampChange:    
-      description: 'Timestamp of the last change of lamp made'    
+      description: Timestamp of the last change of lamp made    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateLastSwitchingOff:    
-      description: 'Timestamp of the last switching off'    
+      description: Timestamp of the last switching off    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateLastSwitchingOn:    
-      description: 'Timestamp of the last switching on'    
+      description: Timestamp of the last switching on    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateServiceStarted:    
-      description: 'Date at which the streetlight started giving service'    
+      description: Date at which the streetlight started giving service    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/Date    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     deviceInfo:    
-      description: 'Information about the device associated with the observations.'    
+      description: Information about the device associated with the observations    
       properties:    
         RFId:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the ID of the RFID reader.'    
+          description: Gives the ID of the RFID reader    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceBatteryStatus:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the Battery charging status of the reporting device(Connected, Disconnected).'    
+          description: 'Gives the Battery charging status of the reporting device(Connected, Disconnected)'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceId:    
-          description: 'Property. Model:''https://schema.org/Text''. Device ID of the physical sensor/ measurement station corresponding to this observation.'    
+          description: Device ID of the physical sensor/ measurement station corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceModel:    
-          description: 'Property. Model:''https://schema.org/Text''. Describes the information of the device, sensor or system in consideration.'    
+          description: 'Describes the information of the device, sensor or system in consideration'    
           properties:    
             brandName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of the brand associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of the brand associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             manufacturerName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of the manufacturer associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of the manufacturer associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             modelName:    
-              description: 'Property. Model:''https://schema.org/Text''. Name of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'Name of a specific model associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
             modelURL:    
-              description: 'Property. Model:''https://schema.org/Text''. URL providing further information of a specific model associated with an entity, e.g., sensor, device etc.'    
+              description: 'URL providing further information of a specific model associated with an entity, e.g., sensor, device etc'    
               type: string    
+              x-ngsi:    
+                model: https://schema.org/Text    
+                type: Property    
           type: object    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceName:    
-          description: 'Property. Model:''https://schema.org/Text''. Device Name or Station name of the sensor device/station corresponding to this observation.'    
+          description: Device Name or Station name of the sensor device/station corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         deviceSimNumber:    
-          description: 'Property. Model:''https://schema.org/Text''. Gives the sim number of the device in the waste management vehicle.'    
+          description: Gives the sim number of the device in the waste management vehicle    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         measurand:    
-          description: 'Property. Model:''https://schema.org/Text''. Property/properties sensed/observed/measured by the device.'    
+          description: Property/properties sensed/observed/measured by the device    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     feederID:    
       anyOf:    
-        - description: 'Property. '    
+        - description: ""    
           type: string    
-        - description: 'Property. Model:''https://schema.org/Text'    
+          x-ngsi:    
+            type: Property    
+        - description: ""    
           format: uri    
           type: string    
-      description: 'Unique ID of the streetlight feeder panel associated with the streetlight corresponding to this observation.'    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
+      description: Unique ID of the streetlight feeder panel associated with the streetlight corresponding to this observation    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Relationship    
     feederPillarNum:    
-      description: 'Streetlight feeder pillar information associated with the streetlight corresponding to this observation.'    
+      description: Streetlight feeder pillar information associated with the streetlight corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     id:    
-      anyOf: &streetlight_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     illuminanceLevel:    
-      description: 'Relative illuminance level setting. A number between 0 and 1.'    
+      description: Relative illuminance level setting. A number between 0 and 1    
       maximum: 1    
       minimum: 0    
       type: number    
       x-ngsi:    
         type: Property    
     image:    
-      description: 'A URL containing a photo of the streetlight'    
+      description: A URL containing a photo of the streetlight    
       format: uri    
       type: string    
       x-ngsi:    
         model: https://schema.org/image    
         type: Relationship    
     lanternHeight:    
-      description: 'Lantern''s height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights.'    
+      description: Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights    
       minimum: 0    
       type: number    
       x-ngsi:    
@@ -245,7 +334,7 @@ Streetlight:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -264,9 +353,11 @@ Streetlight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -288,9 +379,11 @@ Streetlight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -314,9 +407,11 @@ Streetlight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -337,9 +432,11 @@ Streetlight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -363,9 +460,11 @@ Streetlight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -391,8 +490,10 @@ Streetlight:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     locationCategory:    
@@ -413,67 +514,102 @@ Streetlight:
       x-ngsi:    
         type: Property    
     municipalityInfo:    
-      description: 'Municipality information corresponding to this observation.'    
+      description: Municipality information corresponding to this observation    
       properties:    
         cityId:    
-          description: 'Property. Model:''https://schema.org/Text''. City ID corresponding to this observation'    
+          description: City ID corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         cityName:    
-          description: 'Property. Model:''https://schema.org/Text''. City name corresponding to this observation'    
+          description: City name corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         district:    
-          description: 'Property. Model:''https://schema.org/Text''. District name corresponding to this observation.'    
+          description: District name corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         stateName:    
-          description: 'Property. Model:''https://schema.org/Text''. Name of the state corresponding to this observation.'    
+          description: Name of the state corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
         ulbName:    
-          description: 'Property. Model:''https://schema.org/Text''.Name of the Urban Local Body corresponding to this observation.'    
+          description: ""    
           type: string    
+          x-ngsi:    
+            model: 'https://schema.org/Text.Name of the Urban Local Body corresponding to this observation'    
+            type: Property    
         wardNum:    
-          description: 'Property. Model:''https://schema.org/Number''. Ward number corresponding to this observation.'    
+          description: Ward number corresponding to this observation    
           type: number    
+          x-ngsi:    
+            model: https://schema.org/Number    
+            type: Property    
         zoneId:    
-          description: 'Property. Model:''https://schema.org/Text''. Zone ID corresponding to this observation.'    
+          description: Zone ID corresponding to this observation    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/Text    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observationDateTime:    
-      description: 'Last reported time of observation.'    
+      description: Last reported time of observation    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *streetlight_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     powerConsumption:    
-      description: 'Power consumed by the LED or the streetlight bulb corresponding to this observation.'    
+      description: Power consumed by the LED or the streetlight bulb corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     powerFactor:    
-      description: 'Power factor or the ratio of working power of the streetlight corresponding to this observation.'    
+      description: Power factor or the ratio of working power of the streetlight corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
     powerRating:    
-      description: 'Power rating of the LED or the streetlight bulb corresponding to this observation.'    
+      description: Power rating of the LED or the streetlight bulb corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -490,17 +626,21 @@ Streetlight:
         model: https://schema.org/Text    
         type: Property    
     refDevice:    
-      description: 'Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device.'    
+      description: Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device    
       items:    
         anyOf:    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: 'Property. Identifier format of any NGSI entity'    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
+            x-ngsi:    
+              type: Property    
       minItems: 1    
       type: array    
       uniqueItems: true    
@@ -508,45 +648,57 @@ Streetlight:
         type: Relationship    
     refStreetlightControlCabinet:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'If this streetlight is individually controlled, reference to the control cabinet in charge of.'    
+          x-ngsi:    
+            type: Property    
+      description: 'If this streetlight is individually controlled, reference to the control cabinet in charge of'    
       x-ngsi:    
         type: Relationship    
     refStreetlightGroup:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Streetlight''s group, if this streetlight belongs to any group.'    
+          x-ngsi:    
+            type: Property    
+      description: 'Streetlight''s group, if this streetlight belongs to any group'    
       x-ngsi:    
         type: Relationship    
     refStreetlightModel:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Streetlight''s model.'    
+          x-ngsi:    
+            type: Property    
+      description: Streetlight's model    
       x-ngsi:    
         type: Relationship    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -558,7 +710,7 @@ Streetlight:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -573,20 +725,20 @@ Streetlight:
       x-ngsi:    
         type: Property    
     streetPoleNum:    
-      description: 'Street pole information associated with the streetlight corresponding to this observation.'    
+      description: Street pole information associated with the streetlight corresponding to this observation    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be Streetlight'    
+      description: NGSI Entity type. It has to be Streetlight    
       enum:    
         - Streetlight    
       type: string    
       x-ngsi:    
         type: Property    
     voltage:    
-      description: 'Voltage value of the streetlight corresponding to this observation.'    
+      description: Voltage value of the streetlight corresponding to this observation    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -598,7 +750,7 @@ Streetlight:
     - status    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
   x-model-tags: IUDX    
@@ -611,7 +763,7 @@ Streetlight:
 <!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### Straßenbeleuchtung NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für eine Straßenlaterne im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für eine Straßenlaterne im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -646,17 +798,17 @@ Streetlight:
   "municipalityInfo": {  
     "district": "Bangalore Urban",  
     "ulbName": "BMC",  
-    "cityID": "23",  
+    "cityId": "23",  
     "stateName": "Karnataka",  
     "cityName": "Bangalore",  
-    "zoneID": "2",  
+    "zoneId": "2",  
     "wardNum": 4  
   },  
   "deviceInfo": {  
-    "rfID": "5634684",  
+    "rfId": "5634684",  
     "deviceBatteryStatus": "Connected",  
     "deviceName": "SL1",  
-    "deviceID": "43",  
+    "deviceId": "43",  
     "measurand": "6",  
     "deviceSimNumber": "6755375727",  
     "deviceModel": {  
@@ -854,7 +1006,6 @@ Streetlight:
     "streetPoleNum": "2",  
     "voltage": 50,  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
     ]  
 }  
@@ -865,133 +1016,132 @@ Streetlight:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-    "type": "Streetlight",  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "Roundabouts city entrance"  
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+  "type": "Streetlight",  
+  "areaServed": {  
+    "type": "Property",  
+    "value": "Roundabouts city entrance"  
+  },  
+  "circuit": {  
+    "type": "Property",  
+    "value": "C-456-A467"  
+  },  
+  "controllingMethod": {  
+    "type": "Property",  
+    "value": "individual"  
+  },  
+  "current": {  
+    "type": "Property",  
+    "value": 250  
+  },  
+  "dateLastLampChange": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2016-07-08T08:02:21.753Z"  
+    }  
+  },  
+  "feederID": {  
+    "type": "Property",  
+    "value": "F1"  
+  },  
+  "feederPillarNum": {  
+    "type": "Property",  
+    "value": "70"  
+  },  
+  "lanternHeight": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
+    }  
+  },  
+  "locationCategory": {  
+    "type": "Property",  
+    "value": "centralIsland"  
+  },  
+  "municipalityInfo": {  
+    "type": "Property",  
+    "value": {  
+      "district": "Bangalore Urban",  
+      "ulbName": "BMC",  
+      "cityId": "23",  
+      "stateName": "Karnataka",  
+      "cityName": "Bangalore",  
+      "zoneId": "2",  
+      "wardNum": 4  
     },  
-    "circuit": {  
-        "type": "Property",  
-        "value": "C-456-A467"  
-    },  
-    "controllingMethod": {  
-        "type": "Property",  
-        "value": "individual"  
-    },  
-    "current": {  
-        "type": "Property",  
-        "value": 250  
-    },  
-    "dateLastLampChange": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2016-07-08T08:02:21.753Z"  
+    "deviceInfo": {  
+      "type": "Property",  
+      "value": {  
+        "rfId": "5634684",  
+        "deviceBatteryStatus": "Connected",  
+        "deviceName": "SL1",  
+        "deviceId": "43",  
+        "measurand": "6",  
+        "deviceSimNumber": "6755375727",  
+        "deviceModel": {  
+          "brandName": "abc",  
+          "manufacturerName": "xyz",  
+          "modelName": "SL1",  
+          "modelURL": "www.abcstreetlight.com"  
         }  
-    },  
-    "feederID": {  
-        "type": "Property",  
-        "value": "F1"  
-    },  
-    "feederPillarNum": {  
-        "type": "Property",  
-        "value": "70"  
-    },  
-    "lanternHeight": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -3.164485591715449,  
-                40.62785133667262  
-            ]  
-        }  
-    },  
-    "locationCategory": {  
-        "type": "Property",  
-        "value": "centralIsland"  
-    },  
-    "municipalityInfo": {  
-        "type": "Property",  
-        "value": {  
-            "district": "Bangalore Urban",  
-            "ulbName": "BMC",  
-            "cityID": "23",  
-            "stateName": "Karnataka",  
-            "cityName": "Bangalore",  
-            "zoneID": "2",  
-            "wardNum": 4  
-        },  
-        "deviceInfo": {  
-            "type": "Property",  
-            "value": {  
-                "rfID": "5634684",  
-                "deviceBatteryStatus": "Connected",  
-                "deviceName": "SL1",  
-                "deviceID": "43",  
-                "measurand": "6",  
-                "deviceSimNumber": "6755375727",  
-                "deviceModel": {  
-                    "brandName": "abc",  
-                    "manufacturerName": "xyz",  
-                    "modelName": "SL1",  
-                    "modelURL": "www.abcstreetlight.com"  
-                }  
-            }  
-        }  
-    },  
-    "observationDateTime": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2021-01-11T15:51:02+05:30"  
-        }  
-    },  
-    "powerConsumption": {  
-        "type": "Property",  
-        "value": 10  
-    },  
-    "powerFactor": {  
-        "type": "Property",  
-        "value": 0.7  
-    },  
-    "powerRating": {  
-        "type": "Property",  
-        "value": 5  
-    },  
-    "powerState": {  
-        "type": "Property",  
-        "value": "off"  
-    },  
-    "refStreetlightGroup": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
-    },  
-    "refStreetlightModel": {  
-        "type": "Relationship",  
-        "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
-    },  
-    "status": {  
-        "type": "Property",  
-        "value": "ok"  
-    },  
-    "streetPoleNum": {  
-        "type": "Property",  
-        "value": "2"  
-    },  
-    "voltage": {  
-        "type": "Property",  
-        "value": 50  
-    },  
-    "@context": [  
-        "iudx:Streetlight",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
-    ]  
+      }  
+    }  
+  },  
+  "observationDateTime": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2021-01-11T15:51:02+05:30"  
+    }  
+  },  
+  "powerConsumption": {  
+    "type": "Property",  
+    "value": 10  
+  },  
+  "powerFactor": {  
+    "type": "Property",  
+    "value": 0.7  
+  },  
+  "powerRating": {  
+    "type": "Property",  
+    "value": 5  
+  },  
+  "powerState": {  
+    "type": "Property",  
+    "value": "off"  
+  },  
+  "refStreetlightGroup": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345"  
+  },  
+  "refStreetlightModel": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "ok"  
+  },  
+  "streetPoleNum": {  
+    "type": "Property",  
+    "value": "2"  
+  },  
+  "voltage": {  
+    "type": "Property",  
+    "value": 50  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
