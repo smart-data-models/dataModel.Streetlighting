@@ -18,6 +18,10 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "annotations": "https://smartdatamodels.org/annotations",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "brandName": "https://smartdatamodels.org/dataModel.Streetlighting/brandName",
         "category": "https://smartdatamodels.org/dataModel.Streetlighting/category",
         "circuit": "https://smartdatamodels.org/dataModel.Streetlighting/circuit",
@@ -33,6 +37,10 @@
         "columnModelName": "https://smartdatamodels.org/dataModel.Streetlighting/columnModelName",
         "compliantWith": "https://smartdatamodels.org/dataModel.Streetlighting/compliantWith",
         "controllingMethod": "https://smartdatamodels.org/dataModel.Streetlighting/controllingMethod",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "cosPhi": "https://smartdatamodels.org/dataModel.Streetlighting/cosPhi",
         "cupboardMadeOf": "https://smartdatamodels.org/dataModel.Streetlighting/cupboardMadeOf",
         "current": "https://smartdatamodels.org/dataModel.Streetlighting/current",
@@ -62,6 +70,8 @@
         "feederID": "https://smartdatamodels.org/dataModel.Streetlighting/feederID",
         "feederPillarNum": "https://smartdatamodels.org/dataModel.Streetlighting/feederPillarNum",
         "frequency": "https://smartdatamodels.org/dataModel.Streetlighting/frequency",
+        "from": "https://smartdatamodels.org/dataModel.Streetlighting/from",
+        "hours": "https://smartdatamodels.org/dataModel.Streetlighting/hours",
         "id": "@id",
         "illuminanceLevel": "https://smartdatamodels.org/dataModel.Streetlighting/illuminanceLevel",
         "image": "https://smartdatamodels.org/image",
@@ -136,6 +146,7 @@
         "thdrVoltageR": "https://smartdatamodels.org/dataModel.Streetlighting/thdrVoltageR",
         "thdrVoltageS": "https://smartdatamodels.org/dataModel.Streetlighting/thdrVoltageS",
         "thdrVoltageT": "https://smartdatamodels.org/dataModel.Streetlighting/thdrVoltageT",
+        "to": "https://smartdatamodels.org/dataModel.Streetlighting/to",
         "totalActivePower": "https://smartdatamodels.org/dataModel.Streetlighting/totalActivePower",
         "totalReactivePower": "https://smartdatamodels.org/dataModel.Streetlighting/totalReactivePower",
         "type": "@type",
