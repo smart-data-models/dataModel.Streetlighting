@@ -44,7 +44,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -52,7 +52,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateLastSwitchingOff",
@@ -76,7 +76,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "description",
@@ -103,12 +103,17 @@
             "comment": "An image of the item"
         },
         {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
             "name": "name",
             "writable": true,
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "refStreetlightControlCabinet",
@@ -126,7 +131,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "@type": "Telemetry",
@@ -135,7 +140,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "A field reserved for annotations (incidences, remarks, etc.).",
+            "comment": "A field reserved for annotations (incidences, remarks, etc.)",
             "displayName": "annotations"
         },
         {
@@ -155,7 +160,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights.",
+            "comment": "List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights",
             "displayName": "refStreetlight"
         },
         {
@@ -175,7 +180,7 @@
                 "@type": "Array",
                 "elementSchema": "object"
             },
-            "comment": "Switching on hours. It is used normally to set special schedules for certain dates.",
+            "comment": "Switching on hours. It is used normally to set special schedules for certain dates",
             "displayName": "switchingOnHours"
         },
         {
@@ -197,6 +202,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -207,38 +216,12 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
                 }
             ]
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
         },
         {
             "@type": "Telemetry",
