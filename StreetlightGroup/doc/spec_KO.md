@@ -474,7 +474,7 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           from:    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
@@ -485,11 +485,11 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           to:    
-            description: Ending date (it can be yearless)    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
+            description: Ending date (it can be yearless)    
             type: string    
             x-ngsi:    
               type: Property    
@@ -790,7 +790,7 @@ StreetlightGroup:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
