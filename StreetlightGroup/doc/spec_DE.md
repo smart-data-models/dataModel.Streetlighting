@@ -17,11 +17,12 @@
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
 - `activeProgramId[string]`: Kennung des aktiven Programms für diese Straßenlampengruppe  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Lande liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `annotations[array]`: Ein Feld, das für Anmerkungen (Vorkommnisse, Bemerkungen usw.) reserviert ist.  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: Die Farbe des Produkts  . Model: [https://schema.org/color](https://schema.org/color)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateLastSwitchingOff[date-time]`: Zeitstempel des letzten Ausschaltens  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: Zeitstempel des letzten Einschaltens  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `illuminanceLevel[number]`: Einstellung der relativen Beleuchtungsstärke für die Gruppe. Erlaubte Werte: Eine Zahl zwischen 0 und 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `image[uri]`: Ein Bild des Artikels  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `powerState[string]`: Stromversorgungszustand der Straßenleuchtengruppe. Enum:'on, off, low, bootingUp'. Enum:'bootingUp, niedrig, aus, an'  . Model: [htts://schema.org/Text](htts://schema.org/Text)- `refStreetlight[array]`: Liste der Straßenlaternen-Entitäten, die zu dieser Gruppe gehören. Liste der Verweise auf Entitäten des Typs Straßenlaterne. Erlaubte Werte: Zwischen dem Standort der Gruppe und dem der einzelnen Straßenlaternen muss topografische Integrität bestehen  - `refStreetlightControlCabinet[*]`: Schaltschrank der Straßenbeleuchtungsgruppe  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `switchingMode[array]`: Zeitstempel des zuletzt vorgenommenen Lampenwechsels. Enum:' night-ON, night-OFF, night-LOW, always-ON, day-ON, day-OFF, day-LOW'  - `switchingOnHours[array]`: Einschaltzeiten. Sie wird normalerweise verwendet, um spezielle Zeitpläne für bestimmte Daten festzulegen  - `type[string]`: NGSI-Entitätstyp. Es muss StreetlightGroup sein  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
@@ -473,7 +474,7 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           from:    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
@@ -484,11 +485,11 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           to:    
-            description: Ending date (it can be yearless)    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
+            description: Ending date (it can be yearless)    
             type: string    
             x-ngsi:    
               type: Property    
