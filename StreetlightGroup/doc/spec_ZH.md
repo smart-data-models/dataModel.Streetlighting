@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: 该项目的替代名称  - `annotations[array]`: 为注释（事件、备注等）预留的字段  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: 产品的颜色  . Model: [https://schema.org/color](https://schema.org/color)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateLastSwitchingOff[date-time]`: 最后一次关机的时间戳  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: 最后一次开机的时间戳  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `illuminanceLevel[number]`: 组的相对照度设置。允许值：介于 0 和 1 之间的数字  . Model: [http://schema.org/Number](http://schema.org/Number)- `image[uri]`: 物品的图片  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `powerState[string]`: 路灯组的电源状态。枚举："on、off、low、bootingUp"。枚举："bootingUp、low、off、on"。  . Model: [htts://schema.org/Text](htts://schema.org/Text)- `refStreetlight[array]`: 属于该组的路灯实体列表。路灯类型实体的引用列表。允许值：组与单个路灯的位置之间必须具有地形完整性  - `refStreetlightControlCabinet[*]`: 路灯组控制柜  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `switchingMode[array]`: 上次换灯的时间戳。枚举："夜-开、夜-关、夜-关、常-开、日-开、日-关、日-关  - `switchingOnHours[array]`: 开关时间。通常用于为特定日期设置特殊时间表  - `type[string]`: NGSI 实体类型。必须是 StreetlightGroup  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `annotations[array]`: 为注释（事件、备注等）预留的字段  - `areaServed[string]`: 提供服务或产品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: 产品的颜色  . Model: [https://schema.org/color](https://schema.org/color)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateLastSwitchingOff[date-time]`: 最后一次关机的时间戳  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: 最后一次开机的时间戳  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `illuminanceLevel[number]`: 组的相对照度设置。允许值：介于 0 和 1 之间的数字  . Model: [http://schema.org/Number](http://schema.org/Number)- `image[uri]`: 物品的图片  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `powerState[string]`: 路灯组的电源状态。枚举："on、off、low、bootingUp"。枚举："bootingUp、low、off、on"。  . Model: [htts://schema.org/Text](htts://schema.org/Text)- `refStreetlight[array]`: 属于该组的路灯实体列表。路灯类型实体的引用列表。允许值：组与单个路灯的位置之间必须具有地形完整性  - `refStreetlightControlCabinet[*]`: 路灯组控制柜  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `switchingMode[array]`: 上次换灯的时间戳。枚举："夜-开、夜-关、夜-关、常-开、日-开、日-关、日-关  - `switchingOnHours[array]`: 开关时间。通常用于为特定日期设置特殊时间表  - `type[string]`: NGSI 实体类型。必须是 StreetlightGroup  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -473,7 +474,7 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           from:    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
@@ -484,11 +485,11 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           to:    
-            description: Ending date (it can be yearless)    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
+            description: Ending date (it can be yearless)    
             type: string    
             x-ngsi:    
               type: Property    
