@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `annotations[array]`: Champ réservé aux annotations (incidences, remarques, etc.)  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: La couleur du produit  . Model: [https://schema.org/color](https://schema.org/color)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateLastSwitchingOff[date-time]`: Horodatage de la dernière mise hors tension  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: Date de la dernière mise en marche  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `illuminanceLevel[number]`: Réglage du niveau d'éclairement relatif pour le groupe. Valeurs autorisées : Un nombre entre 0 et 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `image[uri]`: Une image de l'objet  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `powerState[string]`: État de l'alimentation du groupe de lampadaires. Enum : "on, off, low, bootingUp". Enum : "bootingUp, low, off, on".  . Model: [htts://schema.org/Text](htts://schema.org/Text)- `refStreetlight[array]`: Liste des entités lampadaires appartenant à ce groupe. Liste des références aux entités de type Streetlight. Valeurs autorisées : Il doit y avoir une intégrité topographique entre l'emplacement du groupe et celui des lampadaires individuels.  - `refStreetlightControlCabinet[*]`: Armoire de commande du groupe d'éclairage public  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `switchingMode[array]`: Horodatage du dernier changement de lampe effectué. Enum:' nuit-ON, nuit-OFF, nuit-BAS, toujours-ON, jour-ON, jour-OFF, jour-BAS'  - `switchingOnHours[array]`: Activation des heures. Il est normalement utilisé pour définir des horaires spéciaux pour certaines dates.  - `type[string]`: Type d'entité NGSI. Il doit s'agir de StreetlightGroup  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -473,7 +474,7 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           from:    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
@@ -484,11 +485,11 @@ StreetlightGroup:
             x-ngsi:    
               type: Property    
           to:    
-            description: Ending date (it can be yearless)    
-            oneOf:    
+            anyOf:    
               - format: date    
               - pattern: ^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\d|1[0-2])-([0-2]\d))$    
                 type: string    
+            description: Ending date (it can be yearless)    
             type: string    
             x-ngsi:    
               type: Property    
