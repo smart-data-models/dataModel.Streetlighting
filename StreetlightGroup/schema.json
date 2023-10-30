@@ -70,7 +70,7 @@
                         "properties": {
                             "from": {
                                 "type": "string",
-                                "oneOf": [
+                                "anyOf": [
                                     {
                                         "format": "date"
                                     },
@@ -81,7 +81,7 @@
                             },
                             "to": {
                                 "type": "string",
-                                "oneOf": [
+                                "anyOf": [
                                     {
                                         "format": "date"
                                     },
