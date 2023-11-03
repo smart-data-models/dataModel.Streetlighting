@@ -1,0 +1,2 @@
+"id_", "type_", "name_", "columnModelName_", "columnColor_", "lanternModelName_", "lanternManufacturerName_", "lampModelName_", "lampBrandName_", "lampTechnology_", "powerConsumption_", "colorTemperature_", "colorRenderingIndex_", "luminousFlux_", "category__0_"
+"streetlightmodel:TubularNumana:ASR42CG:HPS:100", "StreetlightModel", "Tubular Numana 6M - ASR42CG - Son-T 100", "01 TUBULAR P/T 6M NUMANA", "green", "ASR42CG", "Indal WRTL", "SON-T", "Philips", "HPS", "100", "3000", "25", "2300", "postTop"
