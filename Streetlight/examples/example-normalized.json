@@ -20,11 +20,11 @@
     "value": "ok"
   },
   "refStreetlightGroup": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "streetlightgroup:G345"
   },
   "refStreetlightModel": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "streetlightmodel:STEEL_Tubular_10m"
   },
   "circuit": {
@@ -97,23 +97,6 @@
       "cityName": "Bangalore",
       "zoneId": "2",
       "wardNum": 4
-    },
-    "deviceInfo": {
-      "type": "StructuredValue",
-      "value": {
-        "rfId": "5634684",
-        "deviceBatteryStatus": "Connected",
-        "deviceName": "SL1",
-        "deviceID": "43",
-        "measurand": "6",
-        "deviceSimNumber": "6755375727",
-        "deviceModel": {
-          "brandName": "abc",
-          "manufacturerName": "xyz",
-          "modelName": "SL1",
-          "modelURL": "www.abcstreetlight.com"
-        }
-      }
     }
   }
 }
