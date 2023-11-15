@@ -2,7 +2,7 @@
   "id": "streetlightmodel:TubularNumana:ASR42CG:HPS:100",
   "type": "StreetlightModel",
   "category": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "postTop"
     ]
