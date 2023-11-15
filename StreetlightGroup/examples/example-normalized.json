@@ -2,6 +2,7 @@
   "id": "streetlightgroup:mycity:A12",
   "type": "StreetlightGroup",
   "circuitId": {
+    "type": "Text",
     "value": "C-456-A467"
   },
   "powerState": {
@@ -13,7 +14,7 @@
     "value": "2016-07-07T19:59:06.618Z"
   },
   "refStreetlightCabinetController": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "cabinetcontroller:CC45A34"
   },
   "dateLastSwitchingOff": {
