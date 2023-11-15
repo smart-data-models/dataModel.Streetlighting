@@ -6,7 +6,7 @@
     "value": 30
   },
   "phaseCurrent": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       25,
       28,
@@ -14,7 +14,7 @@
     ]
   },
   "reactivePower": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       25,
       28,
@@ -26,7 +26,7 @@
     "value": 45
   },
   "phaseVoltage": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       240,
       120,
@@ -38,7 +38,7 @@
     "value": 200
   },
   "activePower": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       120,
       200,
