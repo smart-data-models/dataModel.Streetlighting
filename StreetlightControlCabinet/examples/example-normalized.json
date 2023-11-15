@@ -18,13 +18,14 @@
     "value": "2016-07-08T16:04:30.201Z"
   },
   "refStreetlightGroup": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "value": [
       "streetlightgroup:BG678",
       "streetlightgroup:789"
     ]
   },
   "compliantWith": {
+    "type": "StructuredValue",
     "value": [
       "IP54"
     ]
@@ -84,6 +85,7 @@
     "value": 42
   },
   "maximumPowerAvailable": {
+    "type": "Number",
     "value": 10
   }
 }
