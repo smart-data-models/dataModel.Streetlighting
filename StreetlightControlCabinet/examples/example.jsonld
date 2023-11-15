@@ -6,14 +6,8 @@
     "IP54"
   ],
   "cupboardMadeOf": "plastic",
-  "dateLastProgramming": {
-    "@type": "DateTime",
-    "@value": "2016-07-08T16:04:30.201Z"
-  },
-  "dateMeteringStarted": {
-    "@type": "DateTime",
-    "@value": "2013-07-07T15:05:59.408Z"
-  },
+  "dateLastProgramming": "2016-07-08T16:04:30.201Z",
+  "dateMeteringStarted": "2013-07-07T15:05:59.408Z",
   "energyConsumed": 162456,
   "intensityR": 20.1,
   "intensityS": 14.4,
