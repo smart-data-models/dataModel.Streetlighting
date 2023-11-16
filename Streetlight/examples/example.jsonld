@@ -1,59 +1,56 @@
 {
-    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",
-    "type": "Streetlight",
-    "areaServed": "Roundabouts city entrance",
-    "circuit": "C-456-A467",
-    "controllingMethod": "individual",
-    "current": 250,
-    "dateLastLampChange": {
-        "@type": "DateTime",
-        "@value": "2016-07-08T08:02:21.753Z"
-    },
-    "deviceInfo": {
-        "rfID": "5634684",
-        "deviceBatteryStatus": "Connected",
-        "deviceName": "SL1",
-        "deviceID": "43",
-        "measurand": "6",
-        "deviceSimNumber": "6755375727",
-        "deviceModel": {
-            "brandName": "abc",
-            "manufacturerName": "xyz",
-            "modelName": "SL1",
-            "modelURL": "www.abcstreetlight.com"
-        }
-    },
-    "feederID": "F1",
-    "feederPillarNum": "70",
-    "lanternHeight": 10,
-    "location": {
-        "coordinates": [
-            -3.164485591715449,
-            40.62785133667262
-        ],
-        "type": "Point"
-    },
-    "locationCategory": "centralIsland",
-    "municipalityInfo": {
-        "district": "Bangalore Urban",
-        "ulbName": "BMC",
-        "cityID": "23",
-        "stateName": "Karnataka",
-        "cityName": "Bangalore",
-        "zoneID": "2",
-        "wardNum": 4
-    },
-    "observationDateTime": "2021-01-11T15:51:02+05:30",
-    "powerConsumption": 10,
-    "powerFactor": 0.7,
-    "powerRating": 5,
-    "powerState": "off",
-    "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",
-    "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",
-    "status": "ok",
-    "streetPoleNum": "2",
-    "voltage": 50,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",
+  "type": "Streetlight",
+  "areaServed": "Roundabouts city entrance",
+  "circuit": "C-456-A467",
+  "controllingMethod": "individual",
+  "current": 250,
+  "dateLastLampChange": "2016-07-08T08:02:21.753Z",
+  "deviceInfo": {
+    "rfID": "5634684",
+    "deviceBatteryStatus": "Connected",
+    "deviceName": "SL1",
+    "deviceID": "43",
+    "measurand": "6",
+    "deviceSimNumber": "6755375727",
+    "deviceModel": {
+      "brandName": "abc",
+      "manufacturerName": "xyz",
+      "modelName": "SL1",
+      "modelURL": "www.abcstreetlight.com"
+    }
+  },
+  "feederID": "F1",
+  "feederPillarNum": "70",
+  "lanternHeight": 10,
+  "location": {
+    "coordinates": [
+      -3.164485591715449,
+      40.62785133667262
+    ],
+    "type": "Point"
+  },
+  "locationCategory": "centralIsland",
+  "municipalityInfo": {
+    "district": "Bangalore Urban",
+    "ulbName": "BMC",
+    "cityID": "23",
+    "stateName": "Karnataka",
+    "cityName": "Bangalore",
+    "zoneID": "2",
+    "wardNum": 4
+  },
+  "observationDateTime": "2021-01-11T15:51:02+05:30",
+  "powerConsumption": 10,
+  "powerFactor": 0.7,
+  "powerRating": 5,
+  "powerState": "off",
+  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",
+  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",
+  "status": "ok",
+  "streetPoleNum": "2",
+  "voltage": 50,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
+  ]
 }
