@@ -28,7 +28,7 @@
             "displayName": "circuit",
             "@type": "Property",
             "schema": "string",
-            "comment": "The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit."
+            "comment": "The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit"
         },
         {
             "name": "color",
@@ -44,7 +44,7 @@
             "displayName": "current",
             "@type": "Property",
             "schema": "long",
-            "comment": "Current value of the streetlight corresponding to this observation."
+            "comment": "Current value of the streetlight corresponding to this observation"
         },
         {
             "name": "dataProvider",
@@ -52,7 +52,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -60,7 +60,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateLastLampChange",
@@ -92,7 +92,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateServiceStarted",
@@ -121,7 +121,7 @@
             "displayName": "feederPillarNum",
             "@type": "Property",
             "schema": "string",
-            "comment": "Streetlight feeder pillar information associated with the streetlight corresponding to this observation."
+            "comment": "Streetlight feeder pillar information associated with the streetlight corresponding to this observation"
         },
         {
             "name": "illuminanceLevel",
@@ -129,14 +129,15 @@
             "displayName": "illuminanceLevel",
             "@type": "Property",
             "schema": "long",
-            "comment": "Relative illuminance level setting. A number between 0 and 1."
+            "comment": "Relative illuminance level setting. A number between 0 and 1"
         },
         {
             "name": "image",
             "writable": true,
             "displayName": "image",
-            "@type": "Relationship",
-            "comment": "A URL containing a photo of the streetlight"
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An image of the item"
         },
         {
             "name": "lanternHeight",
@@ -144,7 +145,12 @@
             "displayName": "lanternHeight",
             "@type": "Property",
             "schema": "long",
-            "comment": "Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights."
+            "comment": "Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
         },
         {
             "name": "name",
@@ -152,7 +158,7 @@
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "observationDateTime",
@@ -160,7 +166,7 @@
             "displayName": "observationDateTime",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Last reported time of observation."
+            "comment": "Last reported time of observation"
         },
         {
             "name": "powerConsumption",
@@ -168,7 +174,7 @@
             "displayName": "powerConsumption",
             "@type": "Property",
             "schema": "long",
-            "comment": "Power consumed by the LED or the streetlight bulb corresponding to this observation."
+            "comment": "Power consumed by the LED or the streetlight bulb corresponding to this observation"
         },
         {
             "name": "powerFactor",
@@ -176,7 +182,7 @@
             "displayName": "powerFactor",
             "@type": "Property",
             "schema": "long",
-            "comment": "Power factor or the ratio of working power of the streetlight corresponding to this observation."
+            "comment": "Power factor or the ratio of working power of the streetlight corresponding to this observation"
         },
         {
             "name": "powerRating",
@@ -184,7 +190,7 @@
             "displayName": "powerRating",
             "@type": "Property",
             "schema": "long",
-            "comment": "Power rating of the LED or the streetlight bulb corresponding to this observation."
+            "comment": "Power rating of the LED or the streetlight bulb corresponding to this observation"
         },
         {
             "name": "refStreetlightControlCabinet",
@@ -212,7 +218,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "name": "streetPoleNum",
@@ -220,7 +226,7 @@
             "displayName": "streetPoleNum",
             "@type": "Property",
             "schema": "string",
-            "comment": "Street pole information associated with the streetlight corresponding to this observation."
+            "comment": "Street pole information associated with the streetlight corresponding to this observation"
         },
         {
             "name": "voltage",
@@ -228,7 +234,7 @@
             "displayName": "voltage",
             "@type": "Property",
             "schema": "long",
-            "comment": "Voltage value of the streetlight corresponding to this observation."
+            "comment": "Voltage value of the streetlight corresponding to this observation"
         },
         {
             "@type": "Telemetry",
@@ -257,7 +263,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device.",
+            "comment": "Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device",
             "displayName": "refDevice"
         },
         {
@@ -279,6 +285,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -289,13 +299,17 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
                 }
             ]
         },
         {
             "@type": "object",
             "name": "deviceInfo",
-            "comment": "Information about the device associated with the observations.",
+            "comment": "Information about the device associated with the observations",
             "displayName": "deviceInfo",
             "fields": [
                 {
@@ -331,7 +345,7 @@
         {
             "@type": "object",
             "name": "municipalityInfo",
-            "comment": "Municipality information corresponding to this observation.",
+            "comment": "Municipality information corresponding to this observation",
             "displayName": "municipalityInfo",
             "fields": [
                 {
@@ -363,36 +377,6 @@
                     "schema": "string"
                 }
             ]
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
         },
         {
             "@type": "Telemetry",
