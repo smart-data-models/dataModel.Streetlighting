@@ -140,7 +140,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "A field reserved for annotations (incidences, remarks, etc.)",
+            "comment": "Annotations about the item",
             "displayName": "annotations"
         },
         {
