@@ -17,7 +17,7 @@
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
 - `activeProgramId[string]`: Kennung des aktiven Programms für diese Straßenlampengruppe  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Lande liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
@@ -28,7 +28,7 @@
 Erforderliche Eigenschaften  
 - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Eine Entität vom Typ `StreetlightGroup` stellt eine Gruppe von Straßenleuchten dar. Sie können gemeinsam von demselben automatischen System (Schaltschranksteuerung) gesteuert werden.  
+Ein Objekt des Typs `StreetlightGroup` stellt eine Gruppe von Straßenleuchten dar. Sie können gemeinsam von demselben automatischen System (Schaltschranksteuerung) gesteuert werden.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -105,11 +105,12 @@ StreetlightGroup:
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
       x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
@@ -514,11 +515,11 @@ StreetlightGroup:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightGroup/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -583,6 +584,7 @@ StreetlightGroup:
   "id": "streetlightgroup:mycity:A12",  
   "type": "StreetlightGroup",  
   "circuitId": {  
+    "type": "Text",  
     "value": "C-456-A467"  
   },  
   "powerState": {  
@@ -594,7 +596,7 @@ StreetlightGroup:
     "value": "2016-07-07T19:59:06.618Z"  
   },  
   "refStreetlightCabinetController": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "cabinetcontroller:CC45A34"  
   },  
   "dateLastSwitchingOff": {  
@@ -656,14 +658,8 @@ StreetlightGroup:
   "type": "StreetlightGroup",  
   "areaServed": "Calle Comercial Centro",  
   "circuitId": "C-456-A467",  
-  "dateLastSwitchingOff": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T07:59:06.618Z"  
-  },  
-  "dateLastSwitchingOn": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T19:59:06.618Z"  
-  },  
+  "dateLastSwitchingOff": "2016-07-07T07:59:06.618Z",  
+  "dateLastSwitchingOn": "2016-07-07T19:59:06.618Z",  
   "location": {  
     "coordinates": [  
       [  
