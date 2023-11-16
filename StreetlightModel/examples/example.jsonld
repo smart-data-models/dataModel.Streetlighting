@@ -1,22 +1,22 @@
 {
-    "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",
-    "type": "StreetlightModel",
-    "category": [
-        "postTop"
-    ],
-    "colorRenderingIndex": 25,
-    "colorTemperature": 3000,
-    "columnColor": "green",
-    "columnModelName": "01 TUBULAR P/T 6M NUMANA",
-    "lampBrandName": "Philips",
-    "lampModelName": "SON-T",
-    "lampTechnology": "HPS",
-    "lanternManufacturerName": "Indal WRTL",
-    "lanternModelName": "ASR42CG",
-    "luminousFlux": 2300,
-    "name": "Tubular Numana 6M - ASR42CG - Son-T 100",
-    "powerConsumption": 100,
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
-    ]
+  "id": "urn:ngsi-ld:StreetlightModel:streetlightmodel:TubularNumana:ASR42CG:HPS:100",
+  "type": "StreetlightModel",
+  "category": [
+    "postTop"
+  ],
+  "colorRenderingIndex": 25,
+  "colorTemperature": 3000,
+  "columnColor": "green",
+  "columnModelName": "01 TUBULAR P/T 6M NUMANA",
+  "lampBrandName": "Philips",
+  "lampModelName": "SON-T",
+  "lampTechnology": "HPS",
+  "lanternManufacturerName": "Indal WRTL",
+  "lanternModelName": "ASR42CG",
+  "luminousFlux": 2300,
+  "name": "Tubular Numana 6M - ASR42CG - Son-T 100",
+  "powerConsumption": 100,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"
+  ]
 }
