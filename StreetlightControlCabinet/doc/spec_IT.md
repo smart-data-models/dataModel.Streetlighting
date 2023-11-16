@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descrizione globale: **Un armadio di controllo per lampioni**  
-versione: 0.0.1  
+versione: 0.1.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -18,11 +18,12 @@
 - `activePowerR[number]`: Potenza attiva consumata nella fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `activePowerS[number]`: Potenza attiva consumata nella fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `activePowerT[number]`: Potenza attiva consumata nella fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Un nome alternativo per questa voce  - `annotations[array]`: Campo riservato alle annotazioni (incidenze, osservazioni, ecc.).  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Nome del marchio del mobile  . Model: [https://schema.org/brand](https://schema.org/brand)- `color[string]`: Il colore del prodotto  . Model: [https://schema.org/color](https://schema.org/color)- `compliantWith[array]`: Elenco degli standard a cui è conforme il controllore dell'armadio (es. IP54)  - `cosPhi[number]`: Coseno del parametro phi  . Model: [https://schema.org/Number](https://schema.org/Number)- `cupboardMadeOf[string]`: Materiale di cui è fatto l'armadio del mobile. Enum:'cemento, metallo, altro, plastica'.  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateLastProgramming[date-time]`: Data in cui è stata effettuata un'operazione di programmazione sul cabinet  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateMeteringStarted[date-time]`: La data di inizio della misurazione dell'energia consumata  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateServiceStarted[date-time]`: Data in cui il controllore dell'armadio ha iniziato a prestare servizio  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Timestamp dell'ultimo cambio di lampada effettuato  - `energyConsumed[number]`: Energia consumata dai circuiti controllati dall'inizio della misurazione (da dataAvvioMetering)  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyCost[number]`: Costo dell'energia consumata dai circuiti controllati a partire dalla data di inizio della misurazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `features[array]`: Un elenco delle caratteristiche del controllore dell'armadio.  I valori tecnici considerati significativi dalle applicazioni. Orologio astronomico". L'armadio di comando include un orologio astronomico per gestire le ore di commutazione. `Controllo individuale`. L'armadio di comando permette di controllare i lampioni individualmente.  - `frequency[number]`: La frequenza di lavoro del circuito  - `id[*]`: Identificatore univoco dell'entità  - `image[uri]`: Un'immagine dell'articolo  . Model: [https://schema.org/URL](https://schema.org/URL)- `intensityR[number]`: Intensità elettrica nella fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityS[number]`: Intensità elettrica in fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityT[number]`:  Intensità elettrica in fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `lastMeterReading[number]`: Valore dell'ultima lettura ottenuta dal sistema di misurazione dell'energia consumata  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `manufacturerName[string]`: Nome del produttore del mobile  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumPowerAvailable[number]`: La potenza massima disponibile (per contratto) per i circuiti controllati da questo armadio  - `meterReadingPeriod[number]`: La periodicità delle letture del contatore dell'energia consumata, espressa in giorni.  . Model: [http://schema.org/Number](http://schema.org/Number)- `modelName[string]`: Nome del modello del mobile  . Model: [https://schema.org/model](https://schema.org/model)- `name[string]`: Il nome di questo elemento  - `nextActuationDeadline[date-time]`: Termine ultimo per l'esecuzione della prossima operazione (programmazione, test, ecc.).  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `powerFactorR[number]`: Fattore di potenza per la fase R. Valori ammessi: Un numero compreso tra -1 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorS[number]`: Fattore di potenza per la fase S. Valori ammessi: Un numero compreso tra -1 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorT[number]`: Fattore di potenza per la fase T. Valori ammessi: Un numero compreso tra -1 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactiveEnergyConsumed[number]`: Energia consumata (con riferimento alla potenza reattiva) dai circuiti dalla data di inizio della misurazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `reactivePowerR[number]`: Potenza reattiva nella fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerS[number]`: Potenza reattiva nella fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerT[number]`: Potenza reattiva nella fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `refDevice[array]`: Riferimento al/ai dispositivo/i utilizzato/i per il monitoraggio di questo quadro elettrico  - `refStreetlightGroup[array]`: Gruppo/i di lampioni controllato/i. Elenco dei riferimenti alle entità di tipo StreetlightGroup  - `responsible[string]`: Responsabile del controllore dell'armadio, ovvero soggetto incaricato dell'attuazione (programmazione, ecc.)  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `serialNumber[string]`: Numero di serie del contenitore  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `thdrIntensityR[number]`: Distorsione armonica totale (R) dell'intensità nella fase R. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityS[number]`: Distorsione armonica totale (S) dell'intensità nella fase S. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityT[number]`: Distorsione armonica totale (T) dell'intensità nella fase T. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageR[number]`: Distorsione armonica totale (R) della tensione nella fase R. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageS[number]`: Distorsione armonica totale (S) della tensione nella fase S. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageT[number]`: Distorsione armonica totale (T) della tensione nella fase T. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalActivePower[number]`: Potenza attiva attualmente consumata (contando tutte le fasi)  - `totalReactivePower[number]`: Potenza reattiva attualmente consumata (contando tutte le fasi)  - `type[string]`: Tipo di entità NGSI. Deve essere StreetlightControlCabinet (armadietto di controllo).  - `voltageR[number]`: Tensione elettrica nella fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageS[number]`: Tensione elettrica nella fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageT[number]`: Tensione elettrica in fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `workingMode[string]`: Modalità di funzionamento di questo controllore di quadri elettrici.  `automatico` : il controllore dell'armadio decide automaticamente l'accensione e lo spegnimento dei gruppi di luci. Il funzionamento manuale non è consentito. `manuale` : Per l'accensione e lo spegnimento è necessario l'intervento umano. `semiautomatico` : Come `automatico`, ma in questo caso è consentito l'intervento manuale.  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `annotations[array]`: Annotazioni sull'elemento  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Nome del marchio del mobile  . Model: [https://schema.org/brand](https://schema.org/brand)- `color[string]`: Il colore del prodotto  . Model: [https://schema.org/color](https://schema.org/color)- `compliantWith[array]`: Elenco degli standard a cui è conforme il controllore dell'armadio (es. IP54)  - `cosPhi[number]`: Coseno del parametro phi  . Model: [https://schema.org/Number](https://schema.org/Number)- `cupboardMadeOf[string]`: Materiale di cui è fatto l'armadio del mobile. Enum:'cemento, metallo, altro, plastica'.  - `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateLastProgramming[date-time]`: Data in cui è stata effettuata un'operazione di programmazione sul cabinet  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateMeteringStarted[date-time]`: La data di inizio della misurazione dell'energia consumata  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateServiceStarted[date-time]`: Data in cui il controllore dell'armadio ha iniziato a prestare servizio  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Descrizione dell'articolo  - `energyConsumed[number]`: Energia consumata dai circuiti controllati dall'inizio della misurazione (da dataAvvioMetering)  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyCost[number]`: Costo dell'energia consumata dai circuiti controllati a partire dalla data di inizio della misurazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `features[array]`: Un elenco delle caratteristiche del controllore dell'armadio.  I valori tecnici considerati significativi dalle applicazioni. Orologio astronomico". L'armadio di comando include un orologio astronomico per gestire le ore di commutazione. `Controllo individuale`. L'armadio di comando permette di controllare i lampioni individualmente.  - `frequency[number]`: La frequenza di lavoro del circuito  - `id[*]`: Identificatore univoco dell'entità  - `image[uri]`: Un'immagine dell'articolo  . Model: [https://schema.org/URL](https://schema.org/URL)- `intensityR[number]`: Intensità elettrica nella fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityS[number]`: Intensità elettrica in fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityT[number]`:  Intensità elettrica in fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `lastMeterReading[number]`: Valore dell'ultima lettura ottenuta dal sistema di misurazione dell'energia consumata  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `manufacturerName[string]`: Nome del produttore del mobile  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumPowerAvailable[number]`: La potenza massima disponibile (per contratto) per i circuiti controllati da questo armadio  - `meterReadingPeriod[number]`: La periodicità delle letture del contatore dell'energia consumata, espressa in giorni.  . Model: [http://schema.org/Number](http://schema.org/Number)- `modelName[string]`: Nome del modello del mobile  . Model: [https://schema.org/model](https://schema.org/model)- `name[string]`: Il nome di questo elemento  - `nextActuationDeadline[date-time]`: Termine ultimo per l'esecuzione della prossima operazione (programmazione, test, ecc.).  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `powerFactorR[number]`: Fattore di potenza per la fase R. Valori ammessi: Un numero compreso tra -1 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorS[number]`: Fattore di potenza per la fase S. Valori ammessi: Un numero compreso tra -1 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorT[number]`: Fattore di potenza per la fase T. Valori ammessi: Un numero compreso tra -1 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactiveEnergyConsumed[number]`: Energia consumata (con riferimento alla potenza reattiva) dai circuiti dalla data di inizio della misurazione  . Model: [https://schema.org/Number](https://schema.org/Number)- `reactivePowerR[number]`: Potenza reattiva nella fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerS[number]`: Potenza reattiva nella fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerT[number]`: Potenza reattiva nella fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `refDevice[array]`: Riferimento al/ai dispositivo/i utilizzato/i per il monitoraggio di questo quadro elettrico  - `refStreetlightGroup[array]`: Gruppo/i di lampioni controllato/i. Elenco dei riferimenti alle entità di tipo StreetlightGroup  - `responsible[string]`: Responsabile del controllore dell'armadio, ovvero soggetto incaricato dell'attuazione (programmazione, ecc.)  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `serialNumber[string]`: Numero di serie del contenitore  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `thdrIntensityR[number]`: Distorsione armonica totale (R) dell'intensità nella fase R. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityS[number]`: Distorsione armonica totale (S) dell'intensità nella fase S. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityT[number]`: Distorsione armonica totale (T) dell'intensità nella fase T. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageR[number]`: Distorsione armonica totale (R) della tensione nella fase R. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageS[number]`: Distorsione armonica totale (S) della tensione nella fase S. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageT[number]`: Distorsione armonica totale (T) della tensione nella fase T. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalActivePower[number]`: Potenza attiva attualmente consumata (contando tutte le fasi)  - `totalReactivePower[number]`: Potenza reattiva attualmente consumata (contando tutte le fasi)  - `type[string]`: Tipo di entità NGSI. Deve essere StreetlightControlCabinet (armadietto di controllo).  - `voltageR[number]`: Tensione elettrica nella fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageS[number]`: Tensione elettrica nella fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageT[number]`: Tensione elettrica in fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `workingMode[string]`: Modalità di funzionamento di questo controllore di quadri elettrici.  `automatico` : il controllore dell'armadio decide automaticamente l'accensione e lo spegnimento dei gruppi di luci. Il funzionamento manuale non è consentito. `manuale` : Per l'accensione e lo spegnimento è necessario l'intervento umano. `semiautomatico` : Come `automatico`, ma in questo caso è consentito l'intervento manuale.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `location`  - `refStreetlightGroup`  - `type`  - `workingMode`  <!-- /35-RequiredProperties -->  
@@ -122,11 +123,12 @@ StreetlightControlCabinet:
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
       x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
@@ -212,7 +214,7 @@ StreetlightControlCabinet:
         model: https://schema.org/DateTime    
         type: Property    
     description:    
-      description: Timestamp of the last change of lamp made    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -767,11 +769,11 @@ StreetlightControlCabinet:
     - workingMode    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -788,13 +790,21 @@ StreetlightControlCabinet:
   "type": "StreetlightControlCabinet",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-3.164485591715449, 40.62785133667262]  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ]  
   },  
   "cupboardMadeOf": "plastic",  
   "brandName": "Siemens",  
   "modelName": "Simatic S7 1200",  
-  "refStreetlightGroup": ["streetlightgroup:BG678", "streetlightgroup:789"],  
-  "compliantWith": ["IP54"],  
+  "refStreetlightGroup": [  
+    "streetlightgroup:BG678",  
+    "streetlightgroup:789"  
+  ],  
+  "compliantWith": [  
+    "IP54"  
+  ],  
   "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
   "maximumPowerAvailable": 10,  
   "energyConsumed": 162456,  
@@ -819,9 +829,11 @@ StreetlightControlCabinet:
   "id": "streetlightcontrolcabinet:A45HGJK",  
   "type": "StreetlightControlCabinet",  
   "modelName": {  
+    "type": "Text",  
     "value": "Simatic S7 1200"  
   },  
   "lastMeterReading": {  
+    "type": "Number",  
     "value": 161237  
   },  
   "dateMeteringStarted": {  
@@ -833,11 +845,17 @@ StreetlightControlCabinet:
     "value": "2016-07-08T16:04:30.201Z"  
   },  
   "refStreetlightGroup": {  
-    "type": "Relationship",  
-    "value": ["streetlightgroup:BG678", "streetlightgroup:789"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "streetlightgroup:BG678",  
+      "streetlightgroup:789"  
+    ]  
   },  
   "compliantWith": {  
-    "value": ["IP54"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "IP54"  
+    ]  
   },  
   "intensityR": {  
     "type": "Number",  
@@ -852,25 +870,33 @@ StreetlightControlCabinet:
     "value": 22  
   },  
   "workingMode": {  
+    "type": "Text",  
     "value": "automatic"  
   },  
   "energyConsumed": {  
+    "type": "Number",  
     "value": 162456  
   },  
   "meterReadingPeriod": {  
+    "type": "Number",  
     "value": 60  
   },  
   "cupboardMadeOf": {  
+    "type": "Text",  
     "value": "plastic"  
   },  
   "brandName": {  
+    "type": "Text",  
     "value": "Siemens"  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-3.164485591715449, 40.62785133667262]  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
     }  
   },  
   "reactivePowerR": {  
@@ -886,6 +912,7 @@ StreetlightControlCabinet:
     "value": 42  
   },  
   "maximumPowerAvailable": {  
+    "type": "Number",  
     "value": 10  
   }  
 }  
@@ -903,14 +930,8 @@ StreetlightControlCabinet:
     "IP54"  
   ],  
   "cupboardMadeOf": "plastic",  
-  "dateLastProgramming": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-08T16:04:30.201Z"  
-  },  
-  "dateMeteringStarted": {  
-    "@type": "DateTime",  
-    "@value": "2013-07-07T15:05:59.408Z"  
-  },  
+  "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
+  "dateMeteringStarted": "2013-07-07T15:05:59.408Z",  
   "energyConsumed": 162456,  
   "intensityR": 20.1,  
   "intensityS": 14.4,  
