@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `alternateName[string]`: An alternative name for this item  - `annotations[array]`: A field reserved for annotations (incidences, remarks, etc.)  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Name of the cabinet's brand  . Model: [https://schema.org/brand](https://schema.org/brand)- `color[string]`: The color of the product  . Model: [https://schema.org/color](https://schema.org/color)- `compliantWith[array]`: A list of standards to which the cabinet controller is compliant with (ex. IP54)  - `cosPhi[number]`: Cosine of phi parameter  . Model: [https://schema.org/Number](https://schema.org/Number)- `cupboardMadeOf[string]`: Material the cabinet's cupboard is made of. Enum:'concrete, metal, other, plastic'  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateLastProgramming[date-time]`: Date at which there was a programming operation over the cabinet  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateMeteringStarted[date-time]`: The starting date for metering energy consumed  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `dateServiceStarted[date-time]`: Date at which the cabinet controller started giving service  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Timestamp of the last change of lamp made  - `energyConsumed[number]`: Energy consumed by the circuits controlled since metering started (since dateMeteringStarted)  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyCost[number]`: Cost of the energy consumed by the circuits controlled since the metering start date  . Model: [https://schema.org/Number](https://schema.org/Number)- `features[array]`: A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually  - `frequency[number]`: The working frequency of the circuit  - `id[*]`: Unique identifier of the entity  - `image[uri]`: An image of the item  . Model: [https://schema.org/URL](https://schema.org/URL)- `intensityR[number]`: Electric intensity in R phase  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityS[number]`: Electric intensity in S phase  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityT[number]`:  Electric intensity in T phase  . Model: [http://schema.org/Number](http://schema.org/Number)- `lastMeterReading[number]`: Value of the last reading obtained from the energy consumed metering system  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `manufacturerName[string]`: Name of the cabinet's manufacturer  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumPowerAvailable[number]`: The maximum power available (by contract) for the circuits controlled by this cabinet  - `meterReadingPeriod[number]`: The periodicity of energy consumed meter readings in days  . Model: [http://schema.org/Number](http://schema.org/Number)- `modelName[string]`: Name of the cabinet's model  . Model: [https://schema.org/model](https://schema.org/model)- `name[string]`: The name of this item  - `nextActuationDeadline[date-time]`: Deadline for next actuation to be performed (programming, testing, etc.)  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `powerFactorR[number]`: Power factor for phase R. Allowed values: A number between -1 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorS[number]`: Power factor for phase S. Allowed values: A number between -1 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorT[number]`: Power factor for phase T. Allowed values: A number between -1 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactiveEnergyConsumed[number]`: Energy consumed (with regards to reactive power) by circuits since the metering start date  . Model: [https://schema.org/Number](https://schema.org/Number)- `reactivePowerR[number]`: Reactive power in R phase  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerS[number]`: Reactive power in S phase  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerT[number]`: Reactive power in T phase  . Model: [http://schema.org/Number](http://schema.org/Number)- `refDevice[array]`: Reference to the device(s) used to monitor this control cabinet  - `refStreetlightGroup[array]`: Streetlight group(s) controlled. List of references to entities of type StreetlightGroup  - `responsible[string]`: Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.)  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `serialNumber[string]`: Serial number of the container  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `thdrIntensityR[number]`: Total harmonic distortion (R) of intensity in phase R. Allowed values: A number between 0 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityS[number]`: Total harmonic distortion (S) of intensity in phase S. Allowed values: A number between 0 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityT[number]`: Total harmonic distortion (T) of intensity in phase T. Allowed values: A number between 0 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageR[number]`: Total harmonic distortion (R) of voltage in phase R. Allowed values: A number between 0 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageS[number]`: Total harmonic distortion (S) of voltage in phase S. Allowed values: A number between 0 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageT[number]`: Total harmonic distortion (T) of voltage in phase T. Allowed values: A number between 0 and 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalActivePower[number]`: Active power currently consumed (counting all phases)  - `totalReactivePower[number]`: Reactive power currently consumed (counting all phases)  - `type[string]`: NGSI Entity type. It has to be StreetlightControlCabinet  - `voltageR[number]`: Electric tension in phase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageS[number]`: Electric tension in phase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageT[number]`: Electric tension in phase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `workingMode[string]`: Working mode for this cabinet controller.  `automatic` : The cabinet controller decides automatically when light groups are switched on and off. Manual operation is not allowed. `manual` : Human intervention is required for switching on and off. `semiautomatic` : The same as `automatic` but in this case manual intervention is allowed  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
@@ -122,11 +123,12 @@ StreetlightControlCabinet:
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
       x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
@@ -212,7 +214,7 @@ StreetlightControlCabinet:
         model: https://schema.org/DateTime    
         type: Property    
     description:    
-      description: Timestamp of the last change of lamp made    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -767,11 +769,11 @@ StreetlightControlCabinet:
     - workingMode    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -788,13 +790,21 @@ StreetlightControlCabinet:
   "type": "StreetlightControlCabinet",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-3.164485591715449, 40.62785133667262]  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ]  
   },  
   "cupboardMadeOf": "plastic",  
   "brandName": "Siemens",  
   "modelName": "Simatic S7 1200",  
-  "refStreetlightGroup": ["streetlightgroup:BG678", "streetlightgroup:789"],  
-  "compliantWith": ["IP54"],  
+  "refStreetlightGroup": [  
+    "streetlightgroup:BG678",  
+    "streetlightgroup:789"  
+  ],  
+  "compliantWith": [  
+    "IP54"  
+  ],  
   "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
   "maximumPowerAvailable": 10,  
   "energyConsumed": 162456,  
@@ -819,9 +829,11 @@ StreetlightControlCabinet:
   "id": "streetlightcontrolcabinet:A45HGJK",  
   "type": "StreetlightControlCabinet",  
   "modelName": {  
+    "type": "Text",  
     "value": "Simatic S7 1200"  
   },  
   "lastMeterReading": {  
+    "type": "Number",  
     "value": 161237  
   },  
   "dateMeteringStarted": {  
@@ -833,11 +845,17 @@ StreetlightControlCabinet:
     "value": "2016-07-08T16:04:30.201Z"  
   },  
   "refStreetlightGroup": {  
-    "type": "Relationship",  
-    "value": ["streetlightgroup:BG678", "streetlightgroup:789"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "streetlightgroup:BG678",  
+      "streetlightgroup:789"  
+    ]  
   },  
   "compliantWith": {  
-    "value": ["IP54"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "IP54"  
+    ]  
   },  
   "intensityR": {  
     "type": "Number",  
@@ -852,25 +870,33 @@ StreetlightControlCabinet:
     "value": 22  
   },  
   "workingMode": {  
+    "type": "Text",  
     "value": "automatic"  
   },  
   "energyConsumed": {  
+    "type": "Number",  
     "value": 162456  
   },  
   "meterReadingPeriod": {  
+    "type": "Number",  
     "value": 60  
   },  
   "cupboardMadeOf": {  
+    "type": "Text",  
     "value": "plastic"  
   },  
   "brandName": {  
+    "type": "Text",  
     "value": "Siemens"  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-3.164485591715449, 40.62785133667262]  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
     }  
   },  
   "reactivePowerR": {  
@@ -886,6 +912,7 @@ StreetlightControlCabinet:
     "value": 42  
   },  
   "maximumPowerAvailable": {  
+    "type": "Number",  
     "value": 10  
   }  
 }  
@@ -903,14 +930,8 @@ StreetlightControlCabinet:
     "IP54"  
   ],  
   "cupboardMadeOf": "plastic",  
-  "dateLastProgramming": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-08T16:04:30.201Z"  
-  },  
-  "dateMeteringStarted": {  
-    "@type": "DateTime",  
-    "@value": "2013-07-07T15:05:59.408Z"  
-  },  
+  "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
+  "dateMeteringStarted": "2013-07-07T15:05:59.408Z",  
   "energyConsumed": 162456,  
   "intensityR": 20.1,  
   "intensityS": 14.4,  
