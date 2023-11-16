@@ -76,7 +76,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -84,7 +84,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateLastProgramming",
@@ -108,7 +108,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateServiceStarted",
@@ -124,7 +124,7 @@
             "displayName": "description",
             "@type": "Property",
             "schema": "string",
-            "comment": "Timestamp of the last change of lamp made"
+            "comment": "A description of this item"
         },
         {
             "name": "energyConsumed",
@@ -191,6 +191,11 @@
             "comment": "Value of the last reading obtained from the energy consumed metering system"
         },
         {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
             "name": "manufacturerName",
             "writable": true,
             "displayName": "manufacturerName",
@@ -228,7 +233,7 @@
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "nextActuationDeadline",
@@ -300,7 +305,7 @@
             "displayName": "responsible",
             "@type": "Property",
             "schema": "string",
-            "comment": "Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.)."
+            "comment": "Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.)"
         },
         {
             "name": "seeAlso",
@@ -313,7 +318,7 @@
             "displayName": "serialNumber",
             "@type": "Property",
             "schema": "string",
-            "comment": "Serial number of the container."
+            "comment": "Serial number of the container"
         },
         {
             "name": "source",
@@ -321,7 +326,7 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
         },
         {
             "name": "thdrIntensityR",
@@ -413,42 +418,12 @@
         },
         {
             "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
-        },
-        {
-            "@type": "Telemetry",
             "name": "annotations",
             "schema": {
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "A field reserved for annotations (incidences, remarks, etc.)",
+            "comment": "Annotations about the item",
             "displayName": "annotations"
         },
         {
@@ -468,7 +443,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually.",
+            "comment": "A list of cabinet controller features.  Those technical values considered meaningful by applications. `astronomicalClock`. The control cabinet includes an astronomical clock to deal with switching hours. `individualControl`. The control cabinet allows to control street lights individually",
             "displayName": "features"
         },
         {
@@ -488,7 +463,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "Reference to the device(s) used to monitor this control cabinet.",
+            "comment": "Reference to the device(s) used to monitor this control cabinet",
             "displayName": "refDevice"
         },
         {
@@ -520,6 +495,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -529,6 +508,10 @@
                 },
                 {
                     "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
                     "schema": "string"
                 }
             ]
