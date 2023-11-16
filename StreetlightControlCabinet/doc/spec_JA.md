@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな説明**街灯制御盤  
-バージョン: 0.0.1  
+バージョン: 0.1.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: この項目の別名  - `annotations[array]`: 注釈（インシデンス、備考など）用のフィールド。  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: キャビネットのブランド名  . Model: [https://schema.org/brand](https://schema.org/brand)- `color[string]`: 製品の色  . Model: [https://schema.org/color](https://schema.org/color)- `compliantWith[array]`: キャビネットコントローラが準拠している規格のリスト（例：IP54）  - `cosPhi[number]`: ファイ・パラメータのコサイン  . Model: [https://schema.org/Number](https://schema.org/Number)- `cupboardMadeOf[string]`: キャビネットの戸棚の材質。列挙:'コンクリート、金属、その他、プラスチック'  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastProgramming[date-time]`: キャビネットに対するプログラミング作業が行われた日付  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateMeteringStarted[date-time]`: 消費エネルギーの計測開始日  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateServiceStarted[date-time]`: キャビネットコントローラーがサービスを開始した日付  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 最後にランプを交換したタイムスタンプ  - `energyConsumed[number]`: 計測開始以降に制御された回路で消費されたエネルギー（dateMeteringStarted以降）  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyCost[number]`: 計測開始日以降に制御された回路で消費されたエネルギーのコスト  . Model: [https://schema.org/Number](https://schema.org/Number)- `features[array]`: キャビネットコントローラの機能のリスト。  アプリケーションによって意味があると考えられる技術的な値。天文時計`。コントロール・キャビネットは、スイッチング時間に対処するための天文時計を含む。individualControl`.制御盤は街灯を個別に制御することを可能にします。  - `frequency[number]`: 回路の動作周波数  - `id[*]`: エンティティの一意識別子  - `image[uri]`: 商品の画像  . Model: [https://schema.org/URL](https://schema.org/URL)- `intensityR[number]`: R相の電気強度  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityS[number]`: S相の電気強度  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityT[number]`: T相の電気強度  . Model: [http://schema.org/Number](http://schema.org/Number)- `lastMeterReading[number]`: 消費電力量計測システムから得られた最後の読み取り値  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `manufacturerName[string]`: キャビネットのメーカー名  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumPowerAvailable[number]`: このキャビネットによって制御される回路で利用可能な最大電力（契約による  - `meterReadingPeriod[number]`: エネルギー消費量計の測定値の周期性（単位：日  . Model: [http://schema.org/Number](http://schema.org/Number)- `modelName[string]`: キャビネットのモデル名  . Model: [https://schema.org/model](https://schema.org/model)- `name[string]`: このアイテムの名前  - `nextActuationDeadline[date-time]`: 次に実行されるアクチュエーションの期限（プログラミング、テストなど）  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `powerFactorR[number]`: R相の力率：1から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorS[number]`: S相の力率：1から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorT[number]`: T相の力率：1から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactiveEnergyConsumed[number]`: 計測開始日以降に回路が消費したエネルギー（無効電力に関して  . Model: [https://schema.org/Number](https://schema.org/Number)- `reactivePowerR[number]`: R相の無効電力  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerS[number]`: S相の無効電力  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerT[number]`: T相の無効電力  . Model: [http://schema.org/Number](http://schema.org/Number)- `refDevice[array]`: このコントロールキャビネットを監視するために使用される装置への参照  - `refStreetlightGroup[array]`: 制御される街灯グループ。StreetlightGroup タイプのエンティティへの参照のリスト  - `responsible[string]`: キャビネット・コントローラーの責任者、すなわち作動（プログラミングなど）を担当する主体。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `serialNumber[string]`: 容器のシリアル番号  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thdrIntensityR[number]`: R相の強度の全高調波歪み（R）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityS[number]`: S相の強度の全高調波歪み（S）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityT[number]`: T相の強度の全高調波歪み（T）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageR[number]`: R 相電圧の全高調波ひずみ（R）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageS[number]`: S相電圧の全高調波ひずみ（S）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageT[number]`: T相電圧の全高調波歪み（T）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalActivePower[number]`: 現在消費されている有効電力（全相をカウント）  - `totalReactivePower[number]`: 現在消費されている無効電力（全相をカウント）  - `type[string]`: NGSI エンティティタイプ。これは StreetlightControlCabinet でなければなりません。  - `voltageR[number]`: R相の電気張力  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageS[number]`: S相の電気張力  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageT[number]`: T相の電気張力  . Model: [http://schema.org/Number](http://schema.org/Number)- `workingMode[string]`: このキャビネットコントローラーの動作モード。  automatic` : キャビネット・コントローラーは照明グループのスイッチのオンとオフを自動的に決定します。手動操作はできません。manual` : 点灯と消灯の切り替えには人間の操作が必要。`semiautomatic` : `automatic`と同じですが、この場合は手動操作が可能です。  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
+- `alternateName[string]`: この項目の別名  - `annotations[array]`: アイテムに関する注釈  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: キャビネットのブランド名  . Model: [https://schema.org/brand](https://schema.org/brand)- `color[string]`: 製品の色  . Model: [https://schema.org/color](https://schema.org/color)- `compliantWith[array]`: キャビネットコントローラが準拠している規格のリスト（例：IP54）  - `cosPhi[number]`: ファイ・パラメータのコサイン  . Model: [https://schema.org/Number](https://schema.org/Number)- `cupboardMadeOf[string]`: キャビネットの戸棚の材質。列挙:'コンクリート、金属、その他、プラスチック'  - `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastProgramming[date-time]`: キャビネットに対するプログラミング作業が行われた日付  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateMeteringStarted[date-time]`: 消費エネルギーの計測開始日  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateServiceStarted[date-time]`: キャビネットコントローラーがサービスを開始した日付  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: この商品の説明  - `energyConsumed[number]`: 計測開始以降に制御された回路で消費されたエネルギー（dateMeteringStarted以降）  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyCost[number]`: 計測開始日以降に制御された回路で消費されたエネルギーのコスト  . Model: [https://schema.org/Number](https://schema.org/Number)- `features[array]`: キャビネットコントローラの機能のリスト。  アプリケーションによって意味があると考えられる技術的な値。天文時計`。コントロール・キャビネットは、スイッチング時間に対処するための天文時計を含む。individualControl`.制御盤は街灯を個別に制御することを可能にします。  - `frequency[number]`: 回路の動作周波数  - `id[*]`: エンティティの一意識別子  - `image[uri]`: 商品の画像  . Model: [https://schema.org/URL](https://schema.org/URL)- `intensityR[number]`: R相の電気強度  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityS[number]`: S相の電気強度  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityT[number]`: T相の電気強度  . Model: [http://schema.org/Number](http://schema.org/Number)- `lastMeterReading[number]`: 消費電力量計測システムから得られた最後の読み取り値  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `manufacturerName[string]`: キャビネットのメーカー名  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumPowerAvailable[number]`: このキャビネットによって制御される回路で利用可能な最大電力（契約による  - `meterReadingPeriod[number]`: エネルギー消費量計の測定値の周期性（単位：日  . Model: [http://schema.org/Number](http://schema.org/Number)- `modelName[string]`: キャビネットのモデル名  . Model: [https://schema.org/model](https://schema.org/model)- `name[string]`: このアイテムの名前  - `nextActuationDeadline[date-time]`: 次に実行されるアクチュエーションの期限（プログラミング、テストなど）  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `powerFactorR[number]`: R相の力率：1から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorS[number]`: S相の力率：1から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorT[number]`: T相の力率：1から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactiveEnergyConsumed[number]`: 計測開始日以降に回路が消費したエネルギー（無効電力に関して  . Model: [https://schema.org/Number](https://schema.org/Number)- `reactivePowerR[number]`: R相の無効電力  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerS[number]`: S相の無効電力  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerT[number]`: T相の無効電力  . Model: [http://schema.org/Number](http://schema.org/Number)- `refDevice[array]`: このコントロールキャビネットを監視するために使用される装置への参照  - `refStreetlightGroup[array]`: 制御される街灯グループ。StreetlightGroup タイプのエンティティへの参照のリスト  - `responsible[string]`: キャビネット・コントローラーの責任者、すなわち作動（プログラミングなど）を担当する主体。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `serialNumber[string]`: 容器のシリアル番号  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `thdrIntensityR[number]`: R相の強度の全高調波歪み（R）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityS[number]`: S相の強度の全高調波歪み（S）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityT[number]`: T相の強度の全高調波歪み（T）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageR[number]`: R 相電圧の全高調波ひずみ（R）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageS[number]`: S相電圧の全高調波ひずみ（S）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageT[number]`: T相電圧の全高調波歪み（T）：0から1の間の数値  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalActivePower[number]`: 現在消費されている有効電力（全相をカウント）  - `totalReactivePower[number]`: 現在消費されている無効電力（全相をカウント）  - `type[string]`: NGSI エンティティタイプ。これは StreetlightControlCabinet でなければなりません。  - `voltageR[number]`: R相の電気張力  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageS[number]`: S相の電気張力  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageT[number]`: T相の電気張力  . Model: [http://schema.org/Number](http://schema.org/Number)- `workingMode[string]`: このキャビネットコントローラーの動作モード。  automatic` : キャビネット・コントローラーは照明グループのスイッチのオンとオフを自動的に決定します。手動操作はできません。manual` : 点灯と消灯の切り替えには人間の操作が必要。`semiautomatic` : `automatic`と同じですが、この場合は手動操作が可能です。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `location`  - `refStreetlightGroup`  - `type`  - `workingMode`  <!-- /35-RequiredProperties -->  
@@ -122,11 +123,12 @@ StreetlightControlCabinet:
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
       x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
@@ -212,7 +214,7 @@ StreetlightControlCabinet:
         model: https://schema.org/DateTime    
         type: Property    
     description:    
-      description: Timestamp of the last change of lamp made    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -767,11 +769,11 @@ StreetlightControlCabinet:
     - workingMode    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -788,13 +790,21 @@ StreetlightControlCabinet:
   "type": "StreetlightControlCabinet",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-3.164485591715449, 40.62785133667262]  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ]  
   },  
   "cupboardMadeOf": "plastic",  
   "brandName": "Siemens",  
   "modelName": "Simatic S7 1200",  
-  "refStreetlightGroup": ["streetlightgroup:BG678", "streetlightgroup:789"],  
-  "compliantWith": ["IP54"],  
+  "refStreetlightGroup": [  
+    "streetlightgroup:BG678",  
+    "streetlightgroup:789"  
+  ],  
+  "compliantWith": [  
+    "IP54"  
+  ],  
   "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
   "maximumPowerAvailable": 10,  
   "energyConsumed": 162456,  
@@ -819,9 +829,11 @@ StreetlightControlCabinet:
   "id": "streetlightcontrolcabinet:A45HGJK",  
   "type": "StreetlightControlCabinet",  
   "modelName": {  
+    "type": "Text",  
     "value": "Simatic S7 1200"  
   },  
   "lastMeterReading": {  
+    "type": "Number",  
     "value": 161237  
   },  
   "dateMeteringStarted": {  
@@ -833,11 +845,17 @@ StreetlightControlCabinet:
     "value": "2016-07-08T16:04:30.201Z"  
   },  
   "refStreetlightGroup": {  
-    "type": "Relationship",  
-    "value": ["streetlightgroup:BG678", "streetlightgroup:789"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "streetlightgroup:BG678",  
+      "streetlightgroup:789"  
+    ]  
   },  
   "compliantWith": {  
-    "value": ["IP54"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "IP54"  
+    ]  
   },  
   "intensityR": {  
     "type": "Number",  
@@ -852,25 +870,33 @@ StreetlightControlCabinet:
     "value": 22  
   },  
   "workingMode": {  
+    "type": "Text",  
     "value": "automatic"  
   },  
   "energyConsumed": {  
+    "type": "Number",  
     "value": 162456  
   },  
   "meterReadingPeriod": {  
+    "type": "Number",  
     "value": 60  
   },  
   "cupboardMadeOf": {  
+    "type": "Text",  
     "value": "plastic"  
   },  
   "brandName": {  
+    "type": "Text",  
     "value": "Siemens"  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-3.164485591715449, 40.62785133667262]  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
     }  
   },  
   "reactivePowerR": {  
@@ -886,6 +912,7 @@ StreetlightControlCabinet:
     "value": 42  
   },  
   "maximumPowerAvailable": {  
+    "type": "Number",  
     "value": 10  
   }  
 }  
@@ -903,14 +930,8 @@ StreetlightControlCabinet:
     "IP54"  
   ],  
   "cupboardMadeOf": "plastic",  
-  "dateLastProgramming": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-08T16:04:30.201Z"  
-  },  
-  "dateMeteringStarted": {  
-    "@type": "DateTime",  
-    "@value": "2013-07-07T15:05:59.408Z"  
-  },  
+  "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
+  "dateMeteringStarted": "2013-07-07T15:05:59.408Z",  
   "energyConsumed": 162456,  
   "intensityR": 20.1,  
   "intensityS": 14.4,  
