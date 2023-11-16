@@ -105,11 +105,12 @@ StreetlightGroup:
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
       x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
@@ -514,11 +515,11 @@ StreetlightGroup:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightGroup/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -583,6 +584,7 @@ StreetlightGroup:
   "id": "streetlightgroup:mycity:A12",  
   "type": "StreetlightGroup",  
   "circuitId": {  
+    "type": "Text",  
     "value": "C-456-A467"  
   },  
   "powerState": {  
@@ -594,7 +596,7 @@ StreetlightGroup:
     "value": "2016-07-07T19:59:06.618Z"  
   },  
   "refStreetlightCabinetController": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "cabinetcontroller:CC45A34"  
   },  
   "dateLastSwitchingOff": {  
@@ -656,14 +658,8 @@ StreetlightGroup:
   "type": "StreetlightGroup",  
   "areaServed": "Calle Comercial Centro",  
   "circuitId": "C-456-A467",  
-  "dateLastSwitchingOff": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T07:59:06.618Z"  
-  },  
-  "dateLastSwitchingOn": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T19:59:06.618Z"  
-  },  
+  "dateLastSwitchingOff": "2016-07-07T07:59:06.618Z",  
+  "dateLastSwitchingOn": "2016-07-07T19:59:06.618Z",  
   "location": {  
     "coordinates": [  
       [  
