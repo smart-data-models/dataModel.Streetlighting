@@ -84,11 +84,12 @@ StreetlightControlCabinet:
       x-ngsi:
         type: Property
     annotations:
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'
+      description: Annotations about the item
       items:
         type: string
       type: array
       x-ngsi:
+        model: https://schema.org/Text
         type: Property
     areaServed:
       description: The geographic area where a service or offered item is provided
@@ -174,7 +175,7 @@ StreetlightControlCabinet:
         model: https://schema.org/DateTime
         type: Property
     description:
-      description: Timestamp of the last change of lamp made
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
@@ -729,8 +730,8 @@ StreetlightControlCabinet:
     - workingMode
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.1.0
