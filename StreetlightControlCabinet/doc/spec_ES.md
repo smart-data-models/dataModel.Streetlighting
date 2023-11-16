@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
 - `alternateName[string]`: Un nombre alternativo para este artículo  - `annotations[array]`: Campo reservado a las anotaciones (incidencias, observaciones, etc.)  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Nombre de la marca del armario  . Model: [https://schema.org/brand](https://schema.org/brand)- `color[string]`: El color del producto  . Model: [https://schema.org/color](https://schema.org/color)- `compliantWith[array]`: Lista de normas que cumple el controlador del armario (por ejemplo, IP54)  - `cosPhi[number]`: Coseno del parámetro phi  . Model: [https://schema.org/Number](https://schema.org/Number)- `cupboardMadeOf[string]`: Material del que está hecho el armario. Enum:'hormigón, metal, otro, plástico'  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateLastProgramming[date-time]`: Fecha en la que se realizó una operación de programación sobre el armario  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateMeteringStarted[date-time]`: Fecha de inicio de la medición de la energía consumida  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `dateServiceStarted[date-time]`: Fecha en la que el controlador del armario empezó a dar servicio  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Marca de tiempo del último cambio de lámpara realizado  - `energyConsumed[number]`: Energía consumida por los circuitos controlados desde el inicio de la medición (desde dateMeteringStarted)  . Model: [https://schema.org/Number](https://schema.org/Number)- `energyCost[number]`: Coste de la energía consumida por los circuitos controlados desde la fecha de inicio de la medición  . Model: [https://schema.org/Number](https://schema.org/Number)- `features[array]`: Una lista de las características del controlador del armario.  Aquellos valores técnicos considerados significativos por las aplicaciones. `relojastronómico`. El armario regulador incluye un reloj astronómico para tratar las horas de conmutación. `ControlIndividual`. El armario de control permite controlar las farolas individualmente  - `frequency[number]`: La frecuencia de trabajo del circuito  - `id[*]`: Identificador único de la entidad  - `image[uri]`: Una imagen del artículo  . Model: [https://schema.org/URL](https://schema.org/URL)- `intensityR[number]`: Intensidad eléctrica en fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityS[number]`: Intensidad eléctrica en fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `intensityT[number]`:  Intensidad eléctrica en fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `lastMeterReading[number]`: Valor de la última lectura obtenida del sistema de medición de la energía consumida  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `manufacturerName[string]`: Nombre del fabricante del armario  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `maximumPowerAvailable[number]`: La potencia máxima disponible (por contrato) para los circuitos controlados por este armario.  - `meterReadingPeriod[number]`: La periodicidad de las lecturas del contador de energía consumida en días  . Model: [http://schema.org/Number](http://schema.org/Number)- `modelName[string]`: Nombre del modelo de armario  . Model: [https://schema.org/model](https://schema.org/model)- `name[string]`: El nombre de este artículo  - `nextActuationDeadline[date-time]`: Fecha límite para realizar la siguiente actuación (programación, pruebas, etc.)  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `powerFactorR[number]`: Factor de potencia para la fase R. Valores permitidos: Un número entre -1 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorS[number]`: Factor de potencia para la fase S. Valores permitidos: Un número entre -1 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `powerFactorT[number]`: Factor de potencia para la fase T. Valores permitidos: Un número entre -1 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactiveEnergyConsumed[number]`: Energía consumida (con respecto a la potencia reactiva) por los circuitos desde la fecha de inicio de la medición  . Model: [https://schema.org/Number](https://schema.org/Number)- `reactivePowerR[number]`: Potencia reactiva en fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerS[number]`: Potencia reactiva en fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `reactivePowerT[number]`: Potencia reactiva en fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `refDevice[array]`: Referencia al dispositivo o dispositivos utilizados para supervisar este armario eléctrico  - `refStreetlightGroup[array]`: Grupo(s) de farolas controlado(s). Lista de referencias a entidades de tipo StreetlightGroup  - `responsible[string]`: Responsable del controlador del armario, es decir, entidad encargada de accionar (programar, etc.)  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `serialNumber[string]`: Número de serie del contenedor  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `thdrIntensityR[number]`: Distorsión armónica total (R) de la intensidad en fase R. Valores permitidos: Un número entre 0 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityS[number]`: Distorsión armónica total (S) de la intensidad en fase S. Valores permitidos: Un número entre 0 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrIntensityT[number]`: Distorsión armónica total (T) de la intensidad en fase T. Valores permitidos: Un número entre 0 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageR[number]`: Distorsión armónica total (R) de la tensión en la fase R. Valores permitidos: Un número entre 0 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageS[number]`: Distorsión armónica total (S) de la tensión en la fase S. Valores permitidos: Un número entre 0 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `thdrVoltageT[number]`: Distorsión armónica total (T) de la tensión en la fase T. Valores permitidos: Un número entre 0 y 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `totalActivePower[number]`: Potencia activa consumida actualmente (contando todas las fases)  - `totalReactivePower[number]`: Potencia reactiva consumida actualmente (contando todas las fases)  - `type[string]`: Tipo de entidad NGSI. Tiene que ser StreetlightControlCabinet  - `voltageR[number]`: Tensión eléctrica en fase R  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageS[number]`: Tensión eléctrica en fase S  . Model: [http://schema.org/Number](http://schema.org/Number)- `voltageT[number]`: Tensión eléctrica en fase T  . Model: [http://schema.org/Number](http://schema.org/Number)- `workingMode[string]`: Modo de funcionamiento de este controlador de armario.  Automático": El controlador del armario decide automáticamente cuándo se encienden y apagan los grupos de luces. No se permite el funcionamiento manual. manual` : Es necesaria la intervención humana para encender y apagar. `semiautomatic` : Igual que `automatic` pero en este caso se permite la intervención manual.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
@@ -122,11 +123,12 @@ StreetlightControlCabinet:
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
       x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
@@ -212,7 +214,7 @@ StreetlightControlCabinet:
         model: https://schema.org/DateTime    
         type: Property    
     description:    
-      description: Timestamp of the last change of lamp made    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -767,11 +769,11 @@ StreetlightControlCabinet:
     - workingMode    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightControlCabinet/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/StreetlightControlCabinet/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -788,13 +790,21 @@ StreetlightControlCabinet:
   "type": "StreetlightControlCabinet",  
   "location": {  
     "type": "Point",  
-    "coordinates": [-3.164485591715449, 40.62785133667262]  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ]  
   },  
   "cupboardMadeOf": "plastic",  
   "brandName": "Siemens",  
   "modelName": "Simatic S7 1200",  
-  "refStreetlightGroup": ["streetlightgroup:BG678", "streetlightgroup:789"],  
-  "compliantWith": ["IP54"],  
+  "refStreetlightGroup": [  
+    "streetlightgroup:BG678",  
+    "streetlightgroup:789"  
+  ],  
+  "compliantWith": [  
+    "IP54"  
+  ],  
   "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
   "maximumPowerAvailable": 10,  
   "energyConsumed": 162456,  
@@ -819,9 +829,11 @@ StreetlightControlCabinet:
   "id": "streetlightcontrolcabinet:A45HGJK",  
   "type": "StreetlightControlCabinet",  
   "modelName": {  
+    "type": "Text",  
     "value": "Simatic S7 1200"  
   },  
   "lastMeterReading": {  
+    "type": "Number",  
     "value": 161237  
   },  
   "dateMeteringStarted": {  
@@ -833,11 +845,17 @@ StreetlightControlCabinet:
     "value": "2016-07-08T16:04:30.201Z"  
   },  
   "refStreetlightGroup": {  
-    "type": "Relationship",  
-    "value": ["streetlightgroup:BG678", "streetlightgroup:789"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "streetlightgroup:BG678",  
+      "streetlightgroup:789"  
+    ]  
   },  
   "compliantWith": {  
-    "value": ["IP54"]  
+    "type": "StructuredValue",  
+    "value": [  
+      "IP54"  
+    ]  
   },  
   "intensityR": {  
     "type": "Number",  
@@ -852,25 +870,33 @@ StreetlightControlCabinet:
     "value": 22  
   },  
   "workingMode": {  
+    "type": "Text",  
     "value": "automatic"  
   },  
   "energyConsumed": {  
+    "type": "Number",  
     "value": 162456  
   },  
   "meterReadingPeriod": {  
+    "type": "Number",  
     "value": 60  
   },  
   "cupboardMadeOf": {  
+    "type": "Text",  
     "value": "plastic"  
   },  
   "brandName": {  
+    "type": "Text",  
     "value": "Siemens"  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
       "type": "Point",  
-      "coordinates": [-3.164485591715449, 40.62785133667262]  
+      "coordinates": [  
+        -3.164485591715449,  
+        40.62785133667262  
+      ]  
     }  
   },  
   "reactivePowerR": {  
@@ -886,6 +912,7 @@ StreetlightControlCabinet:
     "value": 42  
   },  
   "maximumPowerAvailable": {  
+    "type": "Number",  
     "value": 10  
   }  
 }  
@@ -903,14 +930,8 @@ StreetlightControlCabinet:
     "IP54"  
   ],  
   "cupboardMadeOf": "plastic",  
-  "dateLastProgramming": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-08T16:04:30.201Z"  
-  },  
-  "dateMeteringStarted": {  
-    "@type": "DateTime",  
-    "@value": "2013-07-07T15:05:59.408Z"  
-  },  
+  "dateLastProgramming": "2016-07-08T16:04:30.201Z",  
+  "dateMeteringStarted": "2013-07-07T15:05:59.408Z",  
   "energyConsumed": 162456,  
   "intensityR": 20.1,  
   "intensityS": 14.4,  
