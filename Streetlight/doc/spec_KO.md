@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 글로벌 설명: 가로등 ** **  
-버전: 0.1.0  
+버전: 0.2.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -30,7 +30,7 @@
 	- `deviceName[string]`: 이 관측에 해당하는 센서 장치/스테이션의 장치 이름 또는 스테이션 이름  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `deviceSimNumber[string]`: 폐기물 관리 차량에 있는 기기의 심 번호를 제공합니다.  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `measurand[string]`: 장치에서 감지/관찰/측정된 속성/특성  . Model: [https://schema.org/Text](https://schema.org/Text)  
-- `feederID[*]`: 이 관측에 해당하는 가로등과 연결된 가로등 피더 패널의 고유 ID  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: 이 관측에 해당하는 가로등과 관련된 가로등 지주 기둥 정보  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 엔티티의 고유 식별자  - `illuminanceLevel[number]`: 상대 조도 레벨 설정입니다. 0에서 1 사이의 숫자  - `image[uri]`: 가로등 사진이 포함된 URL  . Model: [https://schema.org/image](https://schema.org/image)- `lanternHeight[number]`: 랜턴의 높이. 팔이 많은 기둥의 경우 가로등마다 다를 수 있습니다. 이 속성의 또 다른 변형 소스는 벽걸이형 가로등입니다.  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `locationCategory[string]`: 가로등이 설치된 위치의 카테고리입니다. Enum:'교량, 중앙섬, 파사드, 정원, 공원, 주차, 보행자통로, 놀이터, 도로, 보도, 터널'  - `municipalityInfo[object]`: 이 관측에 해당하는 지자체 정보  . Model: [https://schema.org/Text](https://schema.org/Text)	- `cityId[string]`: 이 관측에 해당하는 도시 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `feederID[*]`: 이 관측에 해당하는 가로등과 연결된 가로등 피더 패널의 고유 ID  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: 이 관측에 해당하는 가로등과 관련된 가로등 지주 기둥 정보  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 엔티티의 고유 식별자  - `illuminanceLevel[number]`: 상대 조도 레벨 설정입니다. 0에서 1 사이의 숫자  - `image[uri]`: 항목 이미지  . Model: [https://schema.org/URL](https://schema.org/URL)- `lanternHeight[number]`: 랜턴의 높이. 팔이 많은 기둥의 경우 가로등마다 다를 수 있습니다. 이 속성의 또 다른 변형 소스는 벽걸이형 가로등입니다.  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `locationCategory[string]`: 가로등이 설치된 위치의 카테고리입니다. Enum:'교량, 중앙섬, 파사드, 정원, 공원, 주차, 보행자통로, 놀이터, 도로, 보도, 터널'  - `municipalityInfo[object]`: 이 관측에 해당하는 지자체 정보  . Model: [https://schema.org/Text](https://schema.org/Text)	- `cityId[string]`: 이 관측에 해당하는 도시 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `cityName[string]`: 이 관측에 해당하는 도시 이름  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `district[string]`: 이 관측에 해당하는 지구 이름  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `stateName[string]`: 이 관찰에 해당하는 상태의 이름  . Model: [https://schema.org/Text](https://schema.org/Text)  
@@ -322,12 +322,12 @@ Streetlight:
       x-ngsi:    
         type: Property    
     image:    
-      description: A URL containing a photo of the streetlight    
+      description: An image of the item    
       format: uri    
       type: string    
       x-ngsi:    
-        model: https://schema.org/image    
-        type: Relationship    
+        model: https://schema.org/URL    
+        type: Property    
     lanternHeight:    
       description: Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights    
       minimum: 0    
@@ -753,11 +753,11 @@ Streetlight:
     - status    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.1.0    
+  x-version: 0.2.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -765,7 +765,7 @@ Streetlight:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## 페이로드 예시  
-#### 가로등 NGSI-v2 키값 예시  
+#### 가로등 NGSI-v2 키 값 예시  
 다음은 키-값으로 JSON-LD 형식의 가로등 예제입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -850,11 +850,11 @@ Streetlight:
     "value": "ok"  
   },  
   "refStreetlightGroup": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "streetlightgroup:G345"  
   },  
   "refStreetlightModel": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "streetlightmodel:STEEL_Tubular_10m"  
   },  
   "circuit": {  
@@ -927,23 +927,6 @@ Streetlight:
       "cityName": "Bangalore",  
       "zoneId": "2",  
       "wardNum": 4  
-    },  
-    "deviceInfo": {  
-      "type": "StructuredValue",  
-      "value": {  
-        "rfId": "5634684",  
-        "deviceBatteryStatus": "Connected",  
-        "deviceName": "SL1",  
-        "deviceID": "43",  
-        "measurand": "6",  
-        "deviceSimNumber": "6755375727",  
-        "deviceModel": {  
-          "brandName": "abc",  
-          "manufacturerName": "xyz",  
-          "modelName": "SL1",  
-          "modelURL": "www.abcstreetlight.com"  
-        }  
-      }  
     }  
   }  
 }  
@@ -954,63 +937,60 @@ Streetlight:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-    "type": "Streetlight",  
-    "areaServed": "Roundabouts city entrance",  
-    "circuit": "C-456-A467",  
-    "controllingMethod": "individual",  
-    "current": 250,  
-    "dateLastLampChange": {  
-        "@type": "DateTime",  
-        "@value": "2016-07-08T08:02:21.753Z"  
-    },  
-    "deviceInfo": {  
-        "rfID": "5634684",  
-        "deviceBatteryStatus": "Connected",  
-        "deviceName": "SL1",  
-        "deviceID": "43",  
-        "measurand": "6",  
-        "deviceSimNumber": "6755375727",  
-        "deviceModel": {  
-            "brandName": "abc",  
-            "manufacturerName": "xyz",  
-            "modelName": "SL1",  
-            "modelURL": "www.abcstreetlight.com"  
-        }  
-    },  
-    "feederID": "F1",  
-    "feederPillarNum": "70",  
-    "lanternHeight": 10,  
-    "location": {  
-        "coordinates": [  
-            -3.164485591715449,  
-            40.62785133667262  
-        ],  
-        "type": "Point"  
-    },  
-    "locationCategory": "centralIsland",  
-    "municipalityInfo": {  
-        "district": "Bangalore Urban",  
-        "ulbName": "BMC",  
-        "cityID": "23",  
-        "stateName": "Karnataka",  
-        "cityName": "Bangalore",  
-        "zoneID": "2",  
-        "wardNum": 4  
-    },  
-    "observationDateTime": "2021-01-11T15:51:02+05:30",  
-    "powerConsumption": 10,  
-    "powerFactor": 0.7,  
-    "powerRating": 5,  
-    "powerState": "off",  
-    "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
-    "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
-    "status": "ok",  
-    "streetPoleNum": "2",  
-    "voltage": 50,  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+  "type": "Streetlight",  
+  "areaServed": "Roundabouts city entrance",  
+  "circuit": "C-456-A467",  
+  "controllingMethod": "individual",  
+  "current": 250,  
+  "dateLastLampChange": "2016-07-08T08:02:21.753Z",  
+  "deviceInfo": {  
+    "rfID": "5634684",  
+    "deviceBatteryStatus": "Connected",  
+    "deviceName": "SL1",  
+    "deviceID": "43",  
+    "measurand": "6",  
+    "deviceSimNumber": "6755375727",  
+    "deviceModel": {  
+      "brandName": "abc",  
+      "manufacturerName": "xyz",  
+      "modelName": "SL1",  
+      "modelURL": "www.abcstreetlight.com"  
+    }  
+  },  
+  "feederID": "F1",  
+  "feederPillarNum": "70",  
+  "lanternHeight": 10,  
+  "location": {  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ],  
+    "type": "Point"  
+  },  
+  "locationCategory": "centralIsland",  
+  "municipalityInfo": {  
+    "district": "Bangalore Urban",  
+    "ulbName": "BMC",  
+    "cityID": "23",  
+    "stateName": "Karnataka",  
+    "cityName": "Bangalore",  
+    "zoneID": "2",  
+    "wardNum": 4  
+  },  
+  "observationDateTime": "2021-01-11T15:51:02+05:30",  
+  "powerConsumption": 10,  
+  "powerFactor": 0.7,  
+  "powerRating": 5,  
+  "powerState": "off",  
+  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
+  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
+  "status": "ok",  
+  "streetPoleNum": "2",  
+  "voltage": 50,  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
@@ -1151,7 +1131,7 @@ Streetlight:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
+10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
