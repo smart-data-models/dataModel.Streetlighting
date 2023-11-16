@@ -23,7 +23,7 @@
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
-- `alternateName[string]`: Un nome alternativo per questa voce  - `annotations[array]`: Campo riservato alle annotazioni (incidenze, osservazioni, ecc.).  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: Il colore del prodotto  . Model: [https://schema.org/color](https://schema.org/color)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateLastSwitchingOff[date-time]`: Data e ora dell'ultimo spegnimento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: Data e ora dell'ultima accensione  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `illuminanceLevel[number]`: Impostazione del livello di illuminamento relativo per il gruppo. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `image[uri]`: Un'immagine dell'articolo  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `powerState[string]`: Stato di alimentazione del gruppo di lampioni. Enum:'on, off, low, bootingUp'. Enum:'bootingUp, low, off, on'.  . Model: [htts://schema.org/Text](htts://schema.org/Text)- `refStreetlight[array]`: Elenco delle entità lampione appartenenti a questo gruppo. Elenco di riferimenti a entità di tipo Lampione. Valori ammessi: Deve esserci integrità topografica tra la posizione del gruppo e quella dei singoli lampioni.  - `refStreetlightControlCabinet[*]`: Armadio di controllo del gruppo di lampioni  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `switchingMode[array]`: Timestamp dell'ultimo cambio di lampada effettuato. Enum:' notte-ON, notte-OFF, notte-LOW, sempre-ON, giorno-ON, giorno-OFF, giorno-LOW'.  - `switchingOnHours[array]`: Orari di accensione. Viene utilizzato normalmente per impostare orari speciali per determinate date.  - `type[string]`: Tipo di entità NGSI. Deve essere StreetlightGroup  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: Un nome alternativo per questa voce  - `annotations[array]`: Campo riservato alle annotazioni (incidenze, osservazioni, ecc.).  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `color[string]`: Il colore del prodotto  . Model: [https://schema.org/color](https://schema.org/color)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzati  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateLastSwitchingOff[date-time]`: Data e ora dell'ultimo spegnimento  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: Data e ora dell'ultima accensione  . Model: [http://schema.org/DateTime](http://schema.org/DateTime)- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `illuminanceLevel[number]`: Impostazione del livello di illuminamento relativo per il gruppo. Valori ammessi: Un numero compreso tra 0 e 1  . Model: [http://schema.org/Number](http://schema.org/Number)- `image[uri]`: Un'immagine dell'articolo  . Model: [https://schema.org/URL](https://schema.org/URL)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `powerState[string]`: Stato di alimentazione del gruppo di lampioni. Enum:'on, off, low, bootingUp'. Enum:'bootingUp, low, off, on'.  . Model: [htts://schema.org/Text](htts://schema.org/Text)- `refStreetlight[array]`: Elenco delle entità lampione appartenenti a questo gruppo. Elenco di riferimenti a entità di tipo Lampione. Valori ammessi: Deve esserci integrità topografica tra la posizione del gruppo e quella dei singoli lampioni.  - `refStreetlightControlCabinet[*]`: Armadio di controllo del gruppo di lampioni  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `switchingMode[array]`: Timestamp dell'ultimo cambio di lampada effettuato. Enum:' notte-ON, notte-OFF, notte-LOW, sempre-ON, giorno-ON, giorno-OFF, giorno-LOW'.  - `switchingOnHours[array]`: Orari di accensione. Viene utilizzato normalmente per impostare orari speciali per determinate date.  - `type[string]`: Tipo di entità NGSI. Deve essere StreetlightGroup  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
@@ -105,11 +105,12 @@ StreetlightGroup:
       x-ngsi:    
         type: Property    
     annotations:    
-      description: 'A field reserved for annotations (incidences, remarks, etc.)'    
+      description: Annotations about the item    
       items:    
         type: string    
       type: array    
       x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
@@ -514,11 +515,11 @@ StreetlightGroup:
     - location    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightGroup/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -576,13 +577,14 @@ StreetlightGroup:
 ```  
 </details>  
 #### StreetlightGroup NGSI-v2 normalizzato Esempio  
-Ecco un esempio di StreetlightGroup in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di StreetlightGroup in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "streetlightgroup:mycity:A12",  
   "type": "StreetlightGroup",  
   "circuitId": {  
+    "type": "Text",  
     "value": "C-456-A467"  
   },  
   "powerState": {  
@@ -594,7 +596,7 @@ StreetlightGroup:
     "value": "2016-07-07T19:59:06.618Z"  
   },  
   "refStreetlightCabinetController": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "cabinetcontroller:CC45A34"  
   },  
   "dateLastSwitchingOff": {  
@@ -647,7 +649,7 @@ StreetlightGroup:
 }  
 ```  
 </details>  
-#### StreetlightGroup Valori chiave NGSI-LD Esempio  
+#### Gruppo di lampioni Valori chiave NGSI-LD Esempio  
 Ecco un esempio di StreetlightGroup in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
@@ -656,14 +658,8 @@ StreetlightGroup:
   "type": "StreetlightGroup",  
   "areaServed": "Calle Comercial Centro",  
   "circuitId": "C-456-A467",  
-  "dateLastSwitchingOff": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T07:59:06.618Z"  
-  },  
-  "dateLastSwitchingOn": {  
-    "@type": "DateTime",  
-    "@value": "2016-07-07T19:59:06.618Z"  
-  },  
+  "dateLastSwitchingOff": "2016-07-07T07:59:06.618Z",  
+  "dateLastSwitchingOn": "2016-07-07T19:59:06.618Z",  
   "location": {  
     "coordinates": [  
       [  
@@ -706,7 +702,7 @@ StreetlightGroup:
 ```  
 </details>  
 #### Gruppo di lampioni NGSI-LD normalizzato Esempio  
-Ecco un esempio di StreetlightGroup in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di StreetlightGroup in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
