@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 全球描述：**一盏路灯**  
-版本： 0.1.0  
+版本： 0.2.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -22,18 +22,21 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `annotations[array]`: 项目说明  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `circuit[string]`: 路灯连接和供电的电路。通常它包含一个标识符，可用于获取有关该电路的更多信息  - `color[string]`: 产品的颜色  . Model: [https://schema.org/color](https://schema.org/color)- `controllingMethod[string]`: 用于控制该路灯的方法。枚举："组、个"。  - `current[number]`: 该观测值对应的路灯当前值  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateLastLampChange[date-time]`: 最后一次更换灯泡的时间戳  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOff[date-time]`: 最后一次关机的时间戳  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateLastSwitchingOn[date-time]`: 最后一次开机的时间戳  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateServiceStarted[date-time]`: 路灯开始提供服务的日期  . Model: [https://schema.org/Date](https://schema.org/Date)- `description[string]`: 项目描述  - `deviceInfo[object]`: 与观测结果相关的设备信息  . Model: [https://schema.org/Text](https://schema.org/Text)	- `RFId[string]`: 提供 RFID 阅读器的 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `deviceBatteryStatus[string]`: 显示报告设备的电池充电状态（连接、断开）  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `deviceId[string]`: 与该观测值相对应的物理传感器/测量站的设备 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `deviceModel[object]`: 描述有关设备、传感器或系统的信息  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `deviceName[string]`: 该观测点对应的传感设备/站的设备名称或站名  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `deviceSimNumber[string]`: 提供废物管理车上设备的模拟号码  . Model: [https://schema.org/Text](https://schema.org/Text)  
-- `feederID[*]`: 与该观测值对应的路灯相关联的路灯馈电面板的唯一 ID  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: 与该观测点对应的路灯相关联的路灯馈电支柱信息  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `illuminanceLevel[number]`: 相对照度水平设置。一个介于 0 和 1 之间的数字  - `image[uri]`: 包含路灯照片的 URL  . Model: [https://schema.org/image](https://schema.org/image)- `lanternHeight[number]`: 灯的高度。在有许多灯臂的立柱中，路灯之间的高度会有所不同。壁装路灯是这一特性的另一个变化来源。  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `locationCategory[string]`: 路灯所在位置的类别。枚举："桥梁、中央岛、外墙、花园、公园、停车场、人行道、游乐场、道路、人行道、隧道"。  - `municipalityInfo[object]`: 与该观测结果相对应的城市信息  . Model: [https://schema.org/Text](https://schema.org/Text)	- `cityId[string]`: 该观测值对应的城市 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
+	- `measurand[string]`: 设备感知/观测/测量的属性  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `feederID[*]`: 与该观测值对应的路灯相关联的路灯馈电面板的唯一 ID  . Model: [https://schema.org/Text](https://schema.org/Text)- `feederPillarNum[string]`: 与该观测点对应的路灯相关联的路灯馈电支柱信息  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: 实体的唯一标识符  - `illuminanceLevel[number]`: 相对照度水平设置。一个介于 0 和 1 之间的数字  - `image[uri]`: 物品的图片  . Model: [https://schema.org/URL](https://schema.org/URL)- `lanternHeight[number]`: 灯的高度。在有许多灯臂的立柱中，路灯之间的高度会有所不同。壁装路灯是这一特性的另一个变化来源。  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `locationCategory[string]`: 路灯所在位置的类别。枚举："桥梁、中央岛、外墙、花园、公园、停车场、人行道、游乐场、道路、人行道、隧道"。  - `municipalityInfo[object]`: 与该观测结果相对应的城市信息  . Model: [https://schema.org/Text](https://schema.org/Text)	- `cityId[string]`: 该观测值对应的城市 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `cityName[string]`: 该观测值对应的城市名称  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `district[string]`: 与该观测结果相对应的地区名称  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `stateName[string]`: 该观测值对应的国家名称  . Model: [https://schema.org/Text](https://schema.org/Text)  
 	- `ulbName[string]`:   . Model: [https://schema.org/Text.Name of the Urban Local Body corresponding to this observation](https://schema.org/Text.Name of the Urban Local Body corresponding to this observation)  
 	- `wardNum[number]`: 与该观察结果相对应的病房号  . Model: [https://schema.org/Number](https://schema.org/Number)  
+	- `zoneId[string]`: 该观测值对应的区域 ID  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `name[string]`: 该项目的名称  - `observationDateTime[date-time]`: 最后报告的观察时间  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `powerConsumption[number]`: 与此观测结果相对应的 LED 或路灯灯泡的耗电量  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerFactor[number]`: 功率因数或与该观测值相对应的路灯工作功率比率  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerRating[number]`: 与该观测值相对应的 LED 或路灯灯泡的额定功率  . Model: [https://schema.org/Number](https://schema.org/Number)- `powerState[string]`: 路灯的电源状态。枚举："bootingUp"、"low"、"off"、"on"。  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[array]`: 用于监控该街道的设备的参考信息。设备类型实体参照列表  - `refStreetlightControlCabinet[*]`: 如果该路灯是单独控制的，请参考负责以下工作的控制柜  - `refStreetlightGroup[*]`: 路灯组，如果该路灯属于任何一个组  - `refStreetlightModel[*]`: 路灯模型  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `status[string]`: 该路灯的总体状态。枚举：'坏灯、灯柱问题、灯泡故障、正常'。  - `streetPoleNum[string]`: 与该观测点对应的路灯相关的路灯杆信息  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI 实体类型。必须是路灯  - `voltage[number]`: 该观测值对应的路灯电压值  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -319,12 +322,12 @@ Streetlight:
       x-ngsi:    
         type: Property    
     image:    
-      description: A URL containing a photo of the streetlight    
+      description: An image of the item    
       format: uri    
       type: string    
       x-ngsi:    
-        model: https://schema.org/image    
-        type: Relationship    
+        model: https://schema.org/URL    
+        type: Property    
     lanternHeight:    
       description: Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights    
       minimum: 0    
@@ -750,11 +753,11 @@ Streetlight:
     - status    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json    
   x-model-tags: IUDX    
-  x-version: 0.1.0    
+  x-version: 0.2.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -847,11 +850,11 @@ Streetlight:
     "value": "ok"  
   },  
   "refStreetlightGroup": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "streetlightgroup:G345"  
   },  
   "refStreetlightModel": {  
-    "type": "Relationship",  
+    "type": "Text",  
     "value": "streetlightmodel:STEEL_Tubular_10m"  
   },  
   "circuit": {  
@@ -924,23 +927,6 @@ Streetlight:
       "cityName": "Bangalore",  
       "zoneId": "2",  
       "wardNum": 4  
-    },  
-    "deviceInfo": {  
-      "type": "StructuredValue",  
-      "value": {  
-        "rfId": "5634684",  
-        "deviceBatteryStatus": "Connected",  
-        "deviceName": "SL1",  
-        "deviceID": "43",  
-        "measurand": "6",  
-        "deviceSimNumber": "6755375727",  
-        "deviceModel": {  
-          "brandName": "abc",  
-          "manufacturerName": "xyz",  
-          "modelName": "SL1",  
-          "modelURL": "www.abcstreetlight.com"  
-        }  
-      }  
     }  
   }  
 }  
@@ -951,63 +937,60 @@ Streetlight:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
-    "type": "Streetlight",  
-    "areaServed": "Roundabouts city entrance",  
-    "circuit": "C-456-A467",  
-    "controllingMethod": "individual",  
-    "current": 250,  
-    "dateLastLampChange": {  
-        "@type": "DateTime",  
-        "@value": "2016-07-08T08:02:21.753Z"  
-    },  
-    "deviceInfo": {  
-        "rfID": "5634684",  
-        "deviceBatteryStatus": "Connected",  
-        "deviceName": "SL1",  
-        "deviceID": "43",  
-        "measurand": "6",  
-        "deviceSimNumber": "6755375727",  
-        "deviceModel": {  
-            "brandName": "abc",  
-            "manufacturerName": "xyz",  
-            "modelName": "SL1",  
-            "modelURL": "www.abcstreetlight.com"  
-        }  
-    },  
-    "feederID": "F1",  
-    "feederPillarNum": "70",  
-    "lanternHeight": 10,  
-    "location": {  
-        "coordinates": [  
-            -3.164485591715449,  
-            40.62785133667262  
-        ],  
-        "type": "Point"  
-    },  
-    "locationCategory": "centralIsland",  
-    "municipalityInfo": {  
-        "district": "Bangalore Urban",  
-        "ulbName": "BMC",  
-        "cityID": "23",  
-        "stateName": "Karnataka",  
-        "cityName": "Bangalore",  
-        "zoneID": "2",  
-        "wardNum": 4  
-    },  
-    "observationDateTime": "2021-01-11T15:51:02+05:30",  
-    "powerConsumption": 10,  
-    "powerFactor": 0.7,  
-    "powerRating": 5,  
-    "powerState": "off",  
-    "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
-    "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
-    "status": "ok",  
-    "streetPoleNum": "2",  
-    "voltage": 50,  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
-    ]  
+  "id": "urn:ngsi-ld:Streetlight:streetlight:guadalajara:4567",  
+  "type": "Streetlight",  
+  "areaServed": "Roundabouts city entrance",  
+  "circuit": "C-456-A467",  
+  "controllingMethod": "individual",  
+  "current": 250,  
+  "dateLastLampChange": "2016-07-08T08:02:21.753Z",  
+  "deviceInfo": {  
+    "rfID": "5634684",  
+    "deviceBatteryStatus": "Connected",  
+    "deviceName": "SL1",  
+    "deviceID": "43",  
+    "measurand": "6",  
+    "deviceSimNumber": "6755375727",  
+    "deviceModel": {  
+      "brandName": "abc",  
+      "manufacturerName": "xyz",  
+      "modelName": "SL1",  
+      "modelURL": "www.abcstreetlight.com"  
+    }  
+  },  
+  "feederID": "F1",  
+  "feederPillarNum": "70",  
+  "lanternHeight": 10,  
+  "location": {  
+    "coordinates": [  
+      -3.164485591715449,  
+      40.62785133667262  
+    ],  
+    "type": "Point"  
+  },  
+  "locationCategory": "centralIsland",  
+  "municipalityInfo": {  
+    "district": "Bangalore Urban",  
+    "ulbName": "BMC",  
+    "cityID": "23",  
+    "stateName": "Karnataka",  
+    "cityName": "Bangalore",  
+    "zoneID": "2",  
+    "wardNum": 4  
+  },  
+  "observationDateTime": "2021-01-11T15:51:02+05:30",  
+  "powerConsumption": 10,  
+  "powerFactor": 0.7,  
+  "powerRating": 5,  
+  "powerState": "off",  
+  "refStreetlightGroup": "urn:ngsi-ld:StreetlightGroup:streetlightgroup:G345",  
+  "refStreetlightModel": "urn:ngsi-ld:StreetlightModel:streetlightmodel:STEEL_Tubular_10m",  
+  "status": "ok",  
+  "streetPoleNum": "2",  
+  "voltage": 50,  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Streetlighting/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
