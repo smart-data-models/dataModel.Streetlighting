@@ -269,12 +269,12 @@ Streetlight:
       x-ngsi:
         type: Property
     image:
-      description: A URL containing a photo of the streetlight
+      description: An image of the item
       format: uri
       type: string
       x-ngsi:
-        model: https://schema.org/image
-        type: Relationship
+        model: https://schema.org/URL
+        type: Property
     lanternHeight:
       description: Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights
       minimum: 0
@@ -700,8 +700,8 @@ Streetlight:
     - status
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json
   x-model-tags: IUDX
-  x-version: 0.1.0
+  x-version: 0.2.0
