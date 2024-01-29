@@ -31,6 +31,14 @@
             "comment": "The geographic area where a service or offered item is provided"
         },
         {
+            "name": "circuitId",
+            "writable": true,
+            "displayName": "circuitId",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Identifier of the circuit the group is connected to"
+        },
+        {
             "name": "color",
             "writable": true,
             "displayName": "color",
