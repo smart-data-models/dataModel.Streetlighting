@@ -79,6 +79,11 @@ StreetlightGroup:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+    circuitId:
+      description: Identifier of the circuit the group is connected to
+      type: string
+      x-ngsi:
+        type: Property
     color:
       description: The color of the product
       type: string
@@ -480,4 +485,4 @@ StreetlightGroup:
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/StreetlightGroup/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json
   x-model-tags: ""
-  x-version: 0.1.0
+  x-version: 0.1.1
