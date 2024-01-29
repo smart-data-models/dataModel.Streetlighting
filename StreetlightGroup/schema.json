@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.0",
+  "$schemaVersion": "0.1.1",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
   "title": " - Street Lighting / Streetlight Group",
@@ -154,6 +154,10 @@
           "minItems": 1,
           "uniqueItems": true,
           "description": "Relationship. List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights"
+        },
+        "circuitId": {
+          "type": "string",
+          "description": "Property. Identifier of the circuit the group is connected to"
         }
       }
     }
