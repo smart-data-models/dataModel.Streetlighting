@@ -25,6 +25,7 @@
         "brandName": "https://smartdatamodels.org/dataModel.Streetlighting/brandName",
         "category": "https://smartdatamodels.org/dataModel.Streetlighting/category",
         "circuit": "https://smartdatamodels.org/dataModel.Streetlighting/circuit",
+        "circuitId": "https://smartdatamodels.org/dataModel.Streetlighting/circuitId",
         "cityId": "https://smartdatamodels.org/dataModel.Streetlighting/cityId",
         "cityName": "https://smartdatamodels.org/dataModel.Streetlighting/cityName",
         "color": "https://smartdatamodels.org/color",
