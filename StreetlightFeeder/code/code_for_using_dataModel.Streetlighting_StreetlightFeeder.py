@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "StreetlightFeeder"
 subject = "dataModel.Streetlighting"
-activePower = {'type': 'Property', 'value': [120, 200, 150]}
+activePower = [120, 200, 150]
 attribute = "activePower"
 value = activePower
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-deviceInfo = {'type': 'Property', 'value': {'rfId': '5634684', 'deviceBatteryStatus': 'Connected', 'deviceName': 'SL1', 'deviceId': '43', 'measurand': '6', 'deviceSimNumber': '6755375727', 'deviceModel': {'brandName': 'abc', 'manufacturerName': 'xyz', 'modelName': 'SL1', 'modelURL': 'www.abcstreetlight.com'}}}
+deviceInfo = {'rfId': '5634684', 'deviceBatteryStatus': 'Connected', 'deviceName': 'SL1', 'deviceId': '43', 'measurand': '6', 'deviceSimNumber': '6755375727', 'deviceModel': {'brandName': 'abc', 'manufacturerName': 'xyz', 'modelName': 'SL1', 'modelURL': 'www.abcstreetlight.com'}}
 attribute = "deviceInfo"
 value = deviceInfo
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-numStreetlight = {'type': 'Property', 'value': 45}
+numStreetlight = 45
 attribute = "numStreetlight"
 value = numStreetlight
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-observationDateTime = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2021-03-11T15:51:02+05:30'}}"
+observationDateTime = "2021-03-11T15:51:02+05:30"
 attribute = "observationDateTime"
 value = observationDateTime
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
