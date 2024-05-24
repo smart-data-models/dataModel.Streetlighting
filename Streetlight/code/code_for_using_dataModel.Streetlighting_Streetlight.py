@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Streetlight"
 subject = "dataModel.Streetlighting"
-circuit = "{'type': 'Property', 'value': 'C-456-A467'}"
+circuit = "C-456-A467"
 attribute = "circuit"
 value = circuit
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-controllingMethod = "{'type': 'Property', 'value': 'individual'}"
+controllingMethod = "individual"
 attribute = "controllingMethod"
 value = controllingMethod
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-current = {'type': 'Property', 'value': 250}
+current = 250
 attribute = "current"
 value = current
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-dateLastLampChange = "{'type': 'Property', 'value': {'@type': 'DateTime', '@value': '2016-07-08T08:02:21.753Z'}}"
+dateLastLampChange = "2016-07-08T08:02:21.753Z"
 attribute = "dateLastLampChange"
 value = dateLastLampChange
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
