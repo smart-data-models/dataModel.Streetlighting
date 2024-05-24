@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "StreetlightModel"
 subject = "dataModel.Streetlighting"
-category = {'type': 'Property', 'value': ['postTop']}
+category = ['postTop']
 attribute = "category"
 value = category
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-colorRenderingIndex = {'type': 'Property', 'value': 25}
+colorRenderingIndex = 25
 attribute = "colorRenderingIndex"
 value = colorRenderingIndex
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-colorTemperature = {'type': 'Property', 'value': 3000}
+colorTemperature = 3000
 attribute = "colorTemperature"
 value = colorTemperature
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-columnColor = "{'type': 'Property', 'value': 'green'}"
+columnColor = "green"
 attribute = "columnColor"
 value = columnColor
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
