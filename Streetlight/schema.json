@@ -172,6 +172,14 @@
           "minimum": 0,
           "description": "Property. Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights"
         },
+		"lifetimeMotionDetected": {
+          "description": "Property. Accumulated count of motion detections.",
+          "type": "number"
+        },
+        "lifetimePowerConsumption": {
+          "description": "Property. Total power consumed by the device over its entire operational lifespan.",
+          "type": "number"
+        },
         "illuminanceLevel": {
           "type": "number",
           "minimum": 0,

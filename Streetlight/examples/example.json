@@ -27,6 +27,8 @@
   "streetPoleNum": "2",
   "feederID": "F1",
   "observationDateTime": "2021-01-11T15:51:02+05:30",
+  "lifetimeMotionDetected": 4147,
+  "lifetimePowerConsumption": 93.4,
   "municipalityInfo": {
     "district": "Bangalore Urban",
     "ulbName": "BMC",

@@ -87,6 +87,14 @@
     "type": "DateTime",
     "value": "2021-01-11T15:51:02+05:30"
   },
+  "lifetimeMotionDetected": {
+    "type": "Number",
+    "value": 4147
+  },
+  "lifetimePowerConsumption": {
+    "type": "Number",
+    "value": 93.4
+  },
   "municipalityInfo": {
     "type": "StructuredValue",
     "value": {
