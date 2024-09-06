@@ -6,6 +6,8 @@
   "controllingMethod": "individual",
   "current": 250,
   "dateLastLampChange": "2016-07-08T08:02:21.753Z",
+  "lifetimeMotionDetected": 4147,
+  "lifetimePowerConsumption": 93.4,
   "deviceInfo": {
     "rfID": "5634684",
     "deviceBatteryStatus": "Connected",
