@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.2.0",
+  "$schemaVersion": "0.2.1",
   "modelTags": "IUDX",
   "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
   "title": " Smart Data Models - Streetlight",
