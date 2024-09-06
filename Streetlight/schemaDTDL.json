@@ -148,6 +148,22 @@
             "comment": "Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights"
         },
         {
+            "name": "lifetimeMotionDetected",
+            "writable": true,
+            "displayName": "lifetimeMotionDetected",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Accumulated count of motion detections"
+        },
+        {
+            "name": "lifetimePowerConsumption",
+            "writable": true,
+            "displayName": "lifetimePowerConsumption",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Total power consumed by the device over its entire operational lifespan"
+        },
+        {
             "name": "location",
             "writable": true,
             "displayName": "location"
