@@ -281,6 +281,16 @@ Streetlight:
       type: number
       x-ngsi:
         type: Property
+    lifetimeMotionDetected:
+      description: Accumulated count of motion detections
+      type: number
+      x-ngsi:
+        type: Property
+    lifetimePowerConsumption:
+      description: Total power consumed by the device over its entire operational lifespan
+      type: number
+      x-ngsi:
+        type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
@@ -700,8 +710,8 @@ Streetlight:
     - status
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.Streetlighting/blob/master/Streetlight/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json
   x-model-tags: IUDX
-  x-version: 0.2.0
+  x-version: 0.2.1
