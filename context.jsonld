@@ -90,6 +90,8 @@
         "lanternModelName": "https://smartdatamodels.org/dataModel.Streetlighting/lanternModelName",
         "lanternWeight": "https://smartdatamodels.org/dataModel.Streetlighting/lanternWeight",
         "lastMeterReading": "https://smartdatamodels.org/dataModel.Streetlighting/lastMeterReading",
+        "lifetimeMotionDetected": "https://smartdatamodels.org/dataModel.Streetlighting/lifetimeMotionDetected",
+        "lifetimePowerConsumption": "https://smartdatamodels.org/dataModel.Streetlighting/lifetimePowerConsumption",
         "location": "ngsi-ld:location",
         "locationCategory": "https://smartdatamodels.org/dataModel.Streetlighting/locationCategory",
         "luminousFlux": "https://smartdatamodels.org/dataModel.Streetlighting/luminousFlux",
