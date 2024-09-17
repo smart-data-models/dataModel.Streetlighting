@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.2.1",
   "modelTags": "IUDX",
   "$id": "https://smart-data-models.github.io/dataModel.Streetlighting/Streetlight/schema.json",
@@ -172,7 +172,7 @@
           "minimum": 0,
           "description": "Property. Lantern's height. In columns with many arms this can vary between streetlights. Another variation source of this property are wall-mounted streetlights"
         },
-		"lifetimeMotionDetected": {
+        "lifetimeMotionDetected": {
           "description": "Property. Accumulated count of motion detections",
           "type": "number"
         },
