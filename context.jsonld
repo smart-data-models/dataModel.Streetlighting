@@ -20,7 +20,7 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "brandName": "https://smartdatamodels.org/dataModel.Streetlighting/brandName",
         "category": "https://smartdatamodels.org/dataModel.Streetlighting/category",
@@ -40,7 +40,7 @@
         "controllingMethod": "https://smartdatamodels.org/dataModel.Streetlighting/controllingMethod",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "cosPhi": "https://smartdatamodels.org/dataModel.Streetlighting/cosPhi",
         "cupboardMadeOf": "https://smartdatamodels.org/dataModel.Streetlighting/cupboardMadeOf",
@@ -66,7 +66,7 @@
         "energyCost": "https://smartdatamodels.org/dataModel.Streetlighting/energyCost",
         "features": {
             "@container": "@set",
-            "@id": "geojson:features"
+            "@id": "https://purl.org/geojson/vocab#features"
         },
         "feederID": "https://smartdatamodels.org/dataModel.Streetlighting/feederID",
         "feederPillarNum": "https://smartdatamodels.org/dataModel.Streetlighting/feederPillarNum",
@@ -92,7 +92,7 @@
         "lastMeterReading": "https://smartdatamodels.org/dataModel.Streetlighting/lastMeterReading",
         "lifetimeMotionDetected": "https://smartdatamodels.org/dataModel.Streetlighting/lifetimeMotionDetected",
         "lifetimePowerConsumption": "https://smartdatamodels.org/dataModel.Streetlighting/lifetimePowerConsumption",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "locationCategory": "https://smartdatamodels.org/dataModel.Streetlighting/locationCategory",
         "luminousFlux": "https://smartdatamodels.org/dataModel.Streetlighting/luminousFlux",
         "manufacturerName": "https://smartdatamodels.org/dataModel.Streetlighting/manufacturerName",
@@ -137,7 +137,7 @@
         "serialNumber": "https://smartdatamodels.org/dataModel.Streetlighting/serialNumber",
         "source": "https://smartdatamodels.org/source",
         "stateName": "https://smartdatamodels.org/dataModel.Streetlighting/stateName",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "streetPoleNum": "https://smartdatamodels.org/dataModel.Streetlighting/streetPoleNum",
