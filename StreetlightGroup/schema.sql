@@ -1,5 +1,5 @@
 /* (Beta) Export of data model StreetlightGroup of the subject dataModel.Streetlighting for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE powerState_type AS ENUM ('bootingUp', 'low', 'off', 'on');
+CREATE TYPE StreetlightGroup_powerState_type AS ENUM ('bootingUp', 'low', 'off', 'on');
 CREATE TYPE StreetlightGroup_type AS ENUM ('StreetlightGroup');
 CREATE TABLE StreetlightGroup (
   "activeProgramId" TEXT,
@@ -21,7 +21,7 @@ CREATE TABLE StreetlightGroup (
   "location" JSON,
   "name" TEXT,
   "owner" JSON,
-  "powerState" powerState_type,
+  "powerState" StreetlightGroup_powerState_type,
   "refStreetlight" JSON,
   "refStreetlightControlCabinet" JSON,
   "seeAlso" JSON,
