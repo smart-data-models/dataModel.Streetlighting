@@ -1,6 +1,6 @@
 /* (Beta) Export of data model StreetlightModel of the subject dataModel.Streetlighting for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE columnMadeOf_type AS ENUM ('steel', 'aluminium', 'wood', 'other');
-CREATE TYPE lampTechnology_type AS ENUM ('LED', 'LPS', 'HPS');
+CREATE TYPE StreetlightModel_columnMadeOf_type AS ENUM ('steel', 'aluminium', 'wood', 'other');
+CREATE TYPE StreetlightModel_lampTechnology_type AS ENUM ('LED', 'LPS', 'HPS');
 CREATE TYPE StreetlightModel_type AS ENUM ('StreetlightModel');
 CREATE TABLE StreetlightModel (
   "address" JSON,
@@ -13,7 +13,7 @@ CREATE TABLE StreetlightModel (
   "colorTemperature" NUMERIC,
   "columnBrandName" TEXT,
   "columnColor" TEXT,
-  "columnMadeOf" columnMadeOf_type,
+  "columnMadeOf" StreetlightModel_columnMadeOf_type,
   "columnManufacturerName" TEXT,
   "columnModelName" TEXT,
   "compliantWith" JSON,
@@ -26,7 +26,7 @@ CREATE TABLE StreetlightModel (
   "lampBrandName" TEXT,
   "lampManufacturerName" TEXT,
   "lampModelName" TEXT,
-  "lampTechnology" lampTechnology_type,
+  "lampTechnology" StreetlightModel_lampTechnology_type,
   "lampWeight" TEXT,
   "lanternBrandName" TEXT,
   "lanternManufacturerName" TEXT,
