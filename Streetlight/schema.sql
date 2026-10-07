@@ -1,8 +1,8 @@
 /* (Beta) Export of data model Streetlight of the subject dataModel.Streetlighting for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE controllingMethod_type AS ENUM ('group', 'individual');
-CREATE TYPE locationCategory_type AS ENUM ('bridge', 'centralIsland', 'facade', 'garden', 'park', 'parking', 'pedestrianPath', 'playground', 'road', 'sidewalk', 'tunnel');
-CREATE TYPE powerState_type AS ENUM ('bootingUp', 'low', 'off', 'on');
-CREATE TYPE status_type AS ENUM ('brokenLantern', 'columnIssue', 'defectiveLamp', 'ok');
+CREATE TYPE Streetlight_controllingMethod_type AS ENUM ('group', 'individual');
+CREATE TYPE Streetlight_locationCategory_type AS ENUM ('bridge', 'centralIsland', 'facade', 'garden', 'park', 'parking', 'pedestrianPath', 'playground', 'road', 'sidewalk', 'tunnel');
+CREATE TYPE Streetlight_powerState_type AS ENUM ('bootingUp', 'low', 'off', 'on');
+CREATE TYPE Streetlight_status_type AS ENUM ('brokenLantern', 'columnIssue', 'defectiveLamp', 'ok');
 CREATE TYPE Streetlight_type AS ENUM ('Streetlight');
 CREATE TABLE Streetlight (
   "address" JSON,
@@ -11,7 +11,7 @@ CREATE TABLE Streetlight (
   "areaServed" TEXT,
   "circuit" TEXT,
   "color" TEXT,
-  "controllingMethod" controllingMethod_type,
+  "controllingMethod" Streetlight_controllingMethod_type,
   "current" NUMERIC,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
@@ -31,7 +31,7 @@ CREATE TABLE Streetlight (
   "lifetimeMotionDetected" NUMERIC,
   "lifetimePowerConsumption" NUMERIC,
   "location" JSON,
-  "locationCategory" locationCategory_type,
+  "locationCategory" Streetlight_locationCategory_type,
   "municipalityInfo" JSON,
   "name" TEXT,
   "observationDateTime" TIMESTAMP,
@@ -39,14 +39,14 @@ CREATE TABLE Streetlight (
   "powerConsumption" NUMERIC,
   "powerFactor" NUMERIC,
   "powerRating" NUMERIC,
-  "powerState" powerState_type,
+  "powerState" Streetlight_powerState_type,
   "refDevice" JSON,
   "refStreetlightControlCabinet" JSON,
   "refStreetlightGroup" JSON,
   "refStreetlightModel" JSON,
   "seeAlso" JSON,
   "source" TEXT,
-  "status" status_type,
+  "status" Streetlight_status_type,
   "streetPoleNum" TEXT,
   "type" Streetlight_type,
   "voltage" NUMERIC
