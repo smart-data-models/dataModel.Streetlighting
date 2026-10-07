@@ -1,7 +1,7 @@
 /* (Beta) Export of data model StreetlightControlCabinet of the subject dataModel.Streetlighting for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE cupboardMadeOf_type AS ENUM ('concrete', 'metal', 'other', 'plastic');
+CREATE TYPE StreetlightControlCabinet_cupboardMadeOf_type AS ENUM ('concrete', 'metal', 'other', 'plastic');
 CREATE TYPE StreetlightControlCabinet_type AS ENUM ('StreetlightControlCabinet');
-CREATE TYPE workingMode_type AS ENUM ('automatic', 'manual', 'semiautomatic');
+CREATE TYPE StreetlightControlCabinet_workingMode_type AS ENUM ('automatic', 'manual', 'semiautomatic');
 CREATE TABLE StreetlightControlCabinet (
   "activePowerR" NUMERIC,
   "activePowerS" NUMERIC,
@@ -14,7 +14,7 @@ CREATE TABLE StreetlightControlCabinet (
   "color" TEXT,
   "compliantWith" JSON,
   "cosPhi" NUMERIC,
-  "cupboardMadeOf" cupboardMadeOf_type,
+  "cupboardMadeOf" StreetlightControlCabinet_cupboardMadeOf_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateLastProgramming" TIMESTAMP,
@@ -65,5 +65,5 @@ CREATE TABLE StreetlightControlCabinet (
   "voltageR" NUMERIC,
   "voltageS" NUMERIC,
   "voltageT" NUMERIC,
-  "workingMode" workingMode_type
+  "workingMode" StreetlightControlCabinet_workingMode_type
 );
